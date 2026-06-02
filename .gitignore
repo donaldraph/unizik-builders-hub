@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Build output
+app/dist/
+infra/cdk.out/
+*.tsbuildinfo
+
+# Secrets & local env — NEVER commit these
+.env*
+!.env.example
+*.pem
+.aws/
+
+# CDK context (can cache account id / VPC lookup data)
+cdk.context.json
+
+# Logs / OS junk
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNIZIK Builders Hub</title>
+<meta name="description" content="The tech community for builders at Nnamdi Azikiwe University, Awka. Cloud, code, open source, careers — one community, every track.">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SKWXK3C3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9SKWXK3C3T');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --orange: #FF9900;
+    --orange-dim: #CC7A00;
+    --blue: #1A4FAF;
+    --dark: #07080D;
+    --dark-2: #0D0F18;
+    --dark-3: #131622;
+    --white: #F0F2F8;
+    --gray: #6B7280;
+    --green: #25D366;
+    --border: rgba(255,153,0,0.12);
+  }
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--dark);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+    cursor: default;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.4;
+  }
+  .grid-bg {
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,153,0,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,153,0,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+  }
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(7,8,13,0.95), transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+  .nav-logo-mark { width: 38px; height: 38px; position: relative; }
+  .nav-logo-mark svg { width: 100%; height: 100%; }
+  .nav-logo-text {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    color: var(--white);
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+  }
+  .nav-logo-text span {
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--orange);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    background: var(--green);
+    color: #fff;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: all 0.2s ease;
+  }
+  .nav-cta:hover {
+    background: #1da851;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(37,211,102,0.3);
+  }
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 24px 80px;
+    overflow: hidden;
+  }
+  .hero-arch-bg {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(900px, 120vw);
+    opacity: 0.07;
+    pointer-events: none;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(ellipse, rgba(255,153,0,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-eyebrow {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    color: var(--orange);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    opacity: 0;
+    animation: fadeUp 0.6s ease 0.2s forwards;
+  }
+  .hero-eyebrow::before { content: '//'; margin-right: 8px; opacity: 0.5; }
+  .hero-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: clamp(56px, 12vw, 120px);
+    line-height: 0.92;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+    opacity: 0;
+    animation: fadeUp 0.7s ease 0.35s forwards;
+  }
+  .hero-title .line-1 { color: var(--white); }
+  .hero-title .line-2 { color: var(--orange); display: block; }
+  .hero-title .line-3 { color: var(--white); display: block; }
+  .hero-sub {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(15px, 2.5vw, 18px);
+    color: rgba(240,242,248,0.55);
+    max-width: 480px;
+    line-height: 1.7;
+    margin: 28px auto 0;
+    opacity: 0;
+    animation: fadeUp 0.7s ease 0.5s forwards;
+  }
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+    margin-top: 44px;
+    opacity: 0;
+    animation: fadeUp 0.7s ease 0.65s forwards;
+  }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 32px;
+    background: var(--green);
+    color: #fff;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 32px rgba(37,211,102,0.2);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(37,211,102,0.35); }
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 32px;
+    background: transparent;
+    color: var(--white);
+    font-family: 'Syne', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    border-radius: 100px;
+    border: 1px solid rgba(255,255,255,0.15);
+    transition: all 0.25s ease;
+  }
+  .btn-secondary:hover { border-color: var(--orange); color: var(--orange); transform: translateY(-2px); }
+  .hero-stats {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+    margin-top: 72px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+    opacity: 0;
+    animation: fadeUp 0.7s ease 0.8s forwards;
+  }
+  .stat { text-align: center; }
+  .stat-num {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    color: var(--orange);
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 12px;
+    color: var(--gray);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
+  .section {
+    position: relative;
+    z-index: 1;
+    padding: 100px 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .section-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--orange);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .section-label::before { content: '01 — '; opacity: 0.5; }
+  .section-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 56px;
+  }
+  .section-title em { font-style: normal; color: var(--orange); }
+  .groups-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2px;
+  }
+  .group-card {
+    position: relative;
+    padding: 32px;
+    background: var(--dark-2);
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .group-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,153,0,0.04), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .group-card:hover { border-color: rgba(255,153,0,0.35); }
+  .group-card:hover::before { opacity: 1; }
+  .group-card:hover .group-arrow { transform: translate(3px, -3px); opacity: 1; }
+  .group-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border);
+  }
+  .group-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+  .group-desc { font-size: 14px; color: rgba(240,242,248,0.5); line-height: 1.7; }
+  .group-arrow {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    color: var(--orange);
+    opacity: 0;
+    transition: all 0.3s ease;
+    font-size: 18px;
+  }
+  .group-tag {
+    display: inline-block;
+    margin-top: 16px;
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    padding: 4px 10px;
+    border-radius: 100px;
+    border: 1px solid var(--border);
+    color: var(--gray);
+    text-transform: uppercase;
+  }
+  .gate-section { position: relative; z-index: 1; padding: 0 24px 100px; }
+  .gate-banner {
+    max-width: 1100px;
+    margin: 0 auto;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    border: 1px solid var(--border);
+  }
+  .gate-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(7,8,13,0.95) 0%, rgba(7,8,13,0.5) 50%, transparent 100%);
+    display: flex;
+    align-items: center;
+    padding: 60px;
+  }
+  .gate-banner-content { max-width: 520px; }
+  .gate-banner-eyebrow {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--orange);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .gate-banner-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: clamp(28px, 4vw, 44px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+  }
+  .gate-banner-body { font-size: 15px; color: rgba(240,242,248,0.6); line-height: 1.7; margin-bottom: 32px; }
+  .join-section { position: relative; z-index: 1; padding: 0 24px 120px; }
+  .join-box {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: var(--dark-2);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 72px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .join-box::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(ellipse, rgba(255,153,0,0.06), transparent 70%);
+    pointer-events: none;
+  }
+  .join-steps { display: flex; flex-direction: column; gap: 28px; }
+  .step { display: flex; gap: 20px; align-items: flex-start; }
+  .step-num {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    color: var(--orange);
+    width: 28px;
+    flex-shrink: 0;
+    padding-top: 3px;
+  }
+  .step-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 15px; margin-bottom: 4px; }
+  .step-body { font-size: 13px; color: rgba(240,242,248,0.5); line-height: 1.6; }
+  .join-cta-side { text-align: center; }
+  .join-title { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 36px; line-height: 1.2; margin-bottom: 16px; }
+  .join-body { font-size: 14px; color: rgba(240,242,248,0.5); line-height: 1.7; margin-bottom: 32px; }
+  .btn-join {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 40px;
+    background: var(--green);
+    color: #fff;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 32px rgba(37,211,102,0.25);
+    width: 100%;
+    justify-content: center;
+  }
+  .btn-join:hover { transform: translateY(-2px); box-shadow: 0 16px 48px rgba(37,211,102,0.4); }
+  .join-note { margin-top: 14px; font-size: 12px; color: var(--gray); }
+  .ticker-wrap {
+    overflow: hidden;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 0;
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 1;
+  }
+  .ticker-track { display: flex; gap: 0; animation: ticker 30s linear infinite; white-space: nowrap; }
+  .ticker-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 32px;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: rgba(240,242,248,0.3);
+    text-transform: uppercase;
+  }
+  .ticker-dot { width: 4px; height: 4px; background: var(--orange); border-radius: 50%; flex-shrink: 0; }
+  footer {
+    position: relative;
+    z-index: 1;
+    padding: 56px 40px;
+    border-top: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+  .footer-right-col { display: flex; flex-direction: column; align-items: flex-end; text-align: right; }
+  .footer-left { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px; color: var(--white); }
+  .footer-left span { color: var(--orange); }
+  .footer-sub { font-size: 12px; color: var(--gray); margin-top: 4px; font-family: 'DM Sans', sans-serif; }
+  .footer-links { display: flex; gap: 28px; justify-content: flex-end; }
+  .footer-links a {
+    font-size: 12px;
+    color: var(--gray);
+    text-decoration: none;
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 0.08em;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--orange); }
+  .footer-socials { display: flex; gap: 16px; align-items: center; margin-top: 12px; }
+  .social-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-size: 14px;
+  }
+  .social-icon:hover { border-color: var(--orange); color: var(--orange); transform: translateY(-2px); }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .arch-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+    opacity: 0;
+    animation: fadeUp 0.7s ease 0.1s forwards;
+  }
+  @media (max-width: 768px) {
+    nav { padding: 16px 20px; }
+    .hero { padding: 100px 20px 60px; }
+    .hero-stats { gap: 28px; flex-wrap: wrap; }
+    .section { padding: 70px 20px; }
+    .gate-banner { height: 320px; }
+    .gate-banner-overlay { padding: 32px; }
+    .join-box { grid-template-columns: 1fr; padding: 40px 28px; gap: 40px; }
+    footer { grid-template-columns: 1fr; padding: 40px 20px; }
+    .footer-right-col { align-items: flex-start; text-align: left; }
+    .footer-links { justify-content: flex-start; flex-wrap: wrap; gap: 16px; }
+  }
+  @media (max-width: 480px) {
+    .hero-title { font-size: 52px; }
+    .groups-grid { grid-template-columns: 1fr; }
+    .gate-banner { height: 260px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="grid-bg"></div>
+
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-mark">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="18" width="7" height="16" fill="#1A4FAF"/>
+        <rect x="29" y="18" width="7" height="16" fill="#1A4FAF"/>
+        <rect x="2" y="15" width="36" height="6" rx="3" fill="#FF9900"/>
+        <rect x="17" y="5" width="6" height="13" fill="rgba(240,242,248,0.9)"/>
+        <polygon points="17,5 20,0 23,5" fill="#FF9900"/>
+      </svg>
+    </div>
+    <div class="nav-logo-text">
+      UNIZIK BUILDERS HUB
+      <span>Nnamdi Azikiwe University</span>
+    </div>
+  </a>
+  <a href="https://chat.whatsapp.com/GYoJICzgnX65PkKq6R1qX3" class="nav-cta" target="_blank" rel="noopener">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Join Free
+  </a>
+</nav>
+
+<section class="hero">
+  <div class="hero-arch-bg">
+    <svg viewBox="0 0 900 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="80" y="180" width="90" height="320" fill="#1A4FAF"/>
+      <rect x="730" y="180" width="90" height="320" fill="#1A4FAF"/>
+      <rect x="50" y="150" width="800" height="60" rx="30" fill="#FF9900"/>
+      <rect x="390" y="20" width="120" height="160" fill="rgba(240,242,248,0.6)"/>
+      <polygon points="390,20 450,0 510,20" fill="#FF9900"/>
+      <circle cx="450" cy="120" r="30" fill="none" stroke="#FF9900" stroke-width="6"/>
+    </svg>
+  </div>
+  <div class="arch-mark">
+    <svg width="72" height="56" viewBox="0 0 72 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="4" y="22" width="12" height="30" rx="2" fill="#1A4FAF"/>
+      <rect x="56" y="22" width="12" height="30" rx="2" fill="#1A4FAF"/>
+      <rect x="0" y="17" width="72" height="10" rx="5" fill="#FF9900"/>
+      <rect x="30" y="0" width="12" height="22" rx="2" fill="rgba(240,242,248,0.85)"/>
+    </svg>
+  </div>
+  <p class="hero-eyebrow">Nnamdi Azikiwe University, Awka · Anambra State</p>
+  <h1 class="hero-title">
+    <span class="line-1">UNIZIK</span>
+    <span class="line-2">BUILDERS</span>
+    <span class="line-3">HUB</span>
+  </h1>
+  <p class="hero-sub">Where UNIZIK's tech builders live. Cloud, code, open source, careers, and everything in between — one community, every track.</p>
+  <div class="hero-actions">
+    <a href="#join" class="btn-primary">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Join on WhatsApp
+    </a>
+    <a href="#groups" class="btn-secondary">Explore Groups →</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-num">7</div><div class="stat-label">Groups</div></div>
+    <div class="stat"><div class="stat-num">UNIZIK</div><div class="stat-label">Based in Awka</div></div>
+    <div class="stat"><div class="stat-num">Free</div><div class="stat-label">Always</div></div>
+  </div>
+</section>
+
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="ticker-dot"></span>AWS Student Builders</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Open Source Contributors</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Tech Careers &amp; Internships</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>GitHub Community</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Day Zero</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>General</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Cloud Computing</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Build in Public</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>UNIZIK · Awka · Anambra</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>AWS Student Builders</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Open Source Contributors</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Tech Careers &amp; Internships</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>GitHub Community</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Day Zero</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>General</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Cloud Computing</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Build in Public</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>UNIZIK · Awka · Anambra</span>
+  </div>
+</div>
+
+<section class="section" id="groups">
+  <p class="section-label">Community Groups</p>
+  <h2 class="section-title">Every track.<br>One <em>community.</em></h2>
+  <div class="groups-grid">
+    <div class="group-card">
+      <div class="group-icon" style="background:rgba(255,153,0,0.08); border-color:rgba(255,153,0,0.2);">☁️</div>
+      <span class="group-arrow">↗</span>
+      <div class="group-name">AWS Student Builders</div>
+      <div class="group-desc">Build on the cloud. Learn AWS, share projects, and grow as cloud engineers. Powered by the AWS Cloud Club at UNIZIK.</div>
+      <span class="group-tag">Cloud · AWS</span>
+    </div>
+    <div class="group-card">
+      <div class="group-icon" style="background:rgba(57,211,83,0.08); border-color:rgba(57,211,83,0.2);">⚡</div>
+      <span class="group-arrow">↗</span>
+      <div class="group-name">Tech Careers &amp; Internships</div>
+      <div class="group-desc">Internship openings, job listings, CV tips, interview prep, and career opportunities for UNIZIK tech students.</div>
+      <span class="group-tag">Careers · Jobs</span>
+    </div>
+    <div class="group-card">
+      <div class="group-icon" style="background:rgba(57,211,83,0.08); border-color:rgba(57,211,83,0.2);">&lt;/&gt;</div>
+      <span class="group-arrow">↗</span>
+      <div class="group-name">Open Source Contributors</div>
+      <div class="group-desc">Share PRs, find projects to contribute to, and build your GitHub profile. Every commit counts.</div>
+      <span class="group-tag">OSS · GitHub</span>
+    </div>
+    <div class="group-card">
+      <div class="group-icon" style="background:rgba(255,255,255,0.05); border-color:rgba(255,255,255,0.1);">🐙</div>
+      <span class="group-arrow">↗</span>
+      <div class="group-name">GitHub Community UNIZIK</div>
+      <div class="group-desc">UNIZIK's GitHub community. Version control, collaboration, and building in public — starting here, going global.</div>
+      <span class="group-tag">GitHub · OSS</span>
+    </div>
+    <div class="group-card">
+      <div class="group-icon" style="background:rgba(255,153,0,0.08); border-color:rgba(255,153,0,0.2);">◎</div>
+      <span class="group-arrow">↗</span>
+      <div class="group-name">Day Zero</div>
+      <div class="group-desc">From Nothing, To Everything. The inner circle for builders starting from scratch — raw ambition and daily progress.</div>
+      <span class="group-tag">Community · Builders</span>
+    </div>
+    <div class="group-card">
+      <div class="group-icon" style="background:rgba(255,153,0,0.08); border-color:rgba(255,153,0,0.2);">💬</div>
+      <span class="group-arrow">↗</span>
+      <div class="group-name">General</div>
+      <div class="group-desc">The open floor. Introductions, random tech talk, questions, and everything that doesn't fit elsewhere. All builders welcome.</div>
+      <span class="group-tag">Open · All</span>
+    </div>
+  </div>
+</section>
+
+<section class="gate-section">
+  <div class="gate-banner">
+    <div style="width:100%;height:100%;background:linear-gradient(135deg, #0D0F18 0%, #1A2040 50%, #0A0C14 100%); position:absolute; inset:0;"></div>
+    <svg style="position:absolute;bottom:0;right:60px;opacity:0.15;height:100%" viewBox="0 0 400 400" fill="none">
+      <rect x="40" y="160" width="60" height="240" fill="#1A4FAF"/>
+      <rect x="300" y="160" width="60" height="240" fill="#1A4FAF"/>
+      <rect x="20" y="130" width="360" height="50" rx="25" fill="#FF9900"/>
+      <rect x="170" y="10" width="60" height="145" fill="white" opacity="0.7"/>
+      <polygon points="170,10 200,-10 230,10" fill="#FF9900"/>
+    </svg>
+    <div class="gate-banner-overlay">
+      <div class="gate-banner-content">
+        <p class="gate-banner-eyebrow">// Our Campus</p>
+        <h2 class="gate-banner-title">Born at UNIZIK.<br>Building for the world.</h2>
+        <p class="gate-banner-body">Every great engineer started somewhere. For us, it starts here — at the gates of Nnamdi Azikiwe University, Awka.</p>
+        <a href="#join" class="btn-primary" style="display:inline-flex; width:auto;">Join the Hub →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="join-section" id="join">
+  <div class="join-box">
+    <div class="join-steps">
+      <p class="section-label" style="margin-bottom:0;">How to Join</p>
+      <div class="step">
+        <span class="step-num">01</span>
+        <div>
+          <div class="step-title">Click the WhatsApp button</div>
+          <div class="step-body">Tap "Join on WhatsApp" — it opens directly in the app on your phone.</div>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-num">02</span>
+        <div>
+          <div class="step-title">Join the community</div>
+          <div class="step-body">You'll land in the UNIZIK Builders Hub. From there, choose the groups that match your track.</div>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-num">03</span>
+        <div>
+          <div class="step-title">Start building</div>
+          <div class="step-body">Introduce yourself, share what you're working on, and connect with other builders at UNIZIK.</div>
+        </div>
+      </div>
+    </div>
+    <div class="join-cta-side">
+      <p class="section-label" style="text-align:center; margin-bottom:20px;">Ready?</p>
+      <h2 class="join-title">Your community<br>is waiting.</h2>
+      <p class="join-body">Free to join. No gatekeeping. Just builders helping builders — from UNIZIK to everywhere.</p>
+      <a href="https://chat.whatsapp.com/GYoJICzgnX65PkKq6R1qX3" class="btn-join" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Join on WhatsApp — Free
+      </a>
+      <p class="join-note">Free to join · Open to all UNIZIK students</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-left">
+    UNIZIK <span>BUILDERS HUB</span>
+    <div class="footer-sub">Nnamdi Azikiwe University, Awka · Anambra State, Nigeria</div>
+    <div class="footer-socials">
+      <a href="https://instagram.com/unizikbuilders" target="_blank" rel="noopener" class="social-icon" title="Instagram @unizikbuilders">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+      <a href="https://facebook.com/unizikbuilders" target="_blank" rel="noopener" class="social-icon" title="Facebook @unizikbuilders">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      </a>
+      <a href="https://chat.whatsapp.com/GYoJICzgnX65PkKq6R1qX3" target="_blank" rel="noopener" class="social-icon" title="Join on WhatsApp" style="border-color:rgba(37,211,102,0.2); color:#25D366;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="footer-right-col">
+    <div class="footer-links">
+      <a href="#groups">Groups</a>
+      <a href="#join">Join</a>
+      <a href="https://www.linkedin.com/company/aws-student-builders-unizik/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div style="margin-top: 14px; font-size: 11px; color: var(--gray); font-family: 'Space Mono', monospace; letter-spacing: 0.06em;">
+      AWS STUDENT BUILDERS UNIZIK<br>
+      <a href="https://www.linkedin.com/company/aws-student-builders-unizik/" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">↗ LinkedIn</a>
+      &nbsp;·&nbsp;
+      <a href="https://instagram.com/awsunizik" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">↗ Instagram</a>
+      &nbsp;·&nbsp;
+      <a href="https://twitter.com/awsunizik" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">↗ Twitter/X</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

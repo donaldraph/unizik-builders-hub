@@ -1,0 +1,64 @@
+# ---------------------------------------------------------------------------
+# OPTIONAL — CI/CD. You do NOT need this for your first deploy (do that
+# manually with the DEPLOYMENT.md guide). Turn this on later once you've
+# deployed once by hand and created the GitHub OIDC role in AWS.
+#
+# It authenticates to AWS with OIDC — short-lived federated credentials, so
+# there is NO long-lived AWS access key stored in GitHub secrets.
+#
+# Before enabling, set these repo variables/secrets:
+#   vars.AWS_REGION              e.g. us-east-1
+#   secrets.AWS_DEPLOY_ROLE_ARN  the IAM role GitHub assumes via OIDC
+# ---------------------------------------------------------------------------
+name: deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  id-token: write   # required for OIDC
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Configure AWS credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      # ---- Backend ----
+      - name: Deploy CDK
+        working-directory: infra
+        run: |
+          npm ci
+          npx cdk deploy --all --require-approval never -c stage=prod
+
+      # ---- Frontend ----
+      - name: Build app
+        working-directory: app
+        run: |
+          npm ci
+          npm run build
+        env:
+          VITE_API_URL: ${{ vars.VITE_API_URL }}
+          VITE_COGNITO_DOMAIN: ${{ vars.VITE_COGNITO_DOMAIN }}
+          VITE_USER_POOL_CLIENT_ID: ${{ vars.VITE_USER_POOL_CLIENT_ID }}
+          VITE_REDIRECT_URI: ${{ vars.VITE_REDIRECT_URI }}
+
+      - name: Sync app to S3 + invalidate CloudFront
+        run: |
+          aws s3 sync app/dist "s3://${{ vars.APP_BUCKET }}" --delete
+          aws cloudfront create-invalidation \
+            --distribution-id "${{ vars.APP_DISTRIBUTION_ID }}" \
+            --paths "/*"

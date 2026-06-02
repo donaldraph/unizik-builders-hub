@@ -1,0 +1,56 @@
+import { useEffect, useState } from 'react';
+import { Routes, Route, Navigate, useNavigate, useLocation } from 'react-router-dom';
+import { useAuth } from './auth.jsx';
+import { api } from './api.js';
+import Register from './pages/Register.jsx';
+import Dashboard from './pages/Dashboard.jsx';
+import { Gate, Callback, Pending, Loader, Brand } from './pages/Shell.jsx';
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/callback" element={<Callback />} />
+      <Route path="/register" element={<Guard><Register /></Guard>} />
+      <Route path="/pending" element={<Guard><Pending /></Guard>} />
+      <Route path="/dashboard" element={<Guard><Dashboard /></Guard>} />
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
+  );
+}
+
+// Only lets authenticated users through; bounces the rest to the gate.
+function Guard({ children }) {
+  const { isAuthenticated, loading } = useAuth();
+  if (loading) return <Loader label="Loading" />;
+  if (!isAuthenticated) return <Navigate to="/" replace />;
+  return children;
+}
+
+// The front door. If you're signed in, it figures out where you belong.
+function Home() {
+  const { isAuthenticated, idToken, loading } = useAuth();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [checking, setChecking] = useState(false);
+
+  useEffect(() => {
+    if (loading || !isAuthenticated) return;
+    let cancelled = false;
+    setChecking(true);
+    api.getMe(idToken)
+      .then((res) => {
+        if (cancelled) return;
+        if (!res.registered) navigate('/register', { replace: true });
+        else if (res.profile.status === 'VERIFIED') navigate('/dashboard', { replace: true });
+        else navigate('/pending', { replace: true });
+      })
+      .catch(() => !cancelled && navigate('/register', { replace: true }))
+      .finally(() => !cancelled && setChecking(false));
+    return () => { cancelled = true; };
+  }, [isAuthenticated, idToken, loading, navigate, location.key]);
+
+  if (loading || checking) return <Loader label="Getting you in" />;
+  if (isAuthenticated) return <Loader label="Getting you in" />;
+  return <Gate />;
+}

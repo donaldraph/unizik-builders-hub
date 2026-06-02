@@ -1,0 +1,277 @@
+/* ============================================================================
+   UNIZIK BUILDERS HUB — DESIGN SYSTEM
+   One source of truth for colour, type, space, and the shared primitives.
+   Every surface (landing, app, dashboard) imports this so they read as one
+   organisation instead of three separate projects.
+
+   How theming works:
+     - Brand colours and the scales live in :root and never change.
+     - Surface colours (background, text, borders) are semantic tokens that
+       flip with the theme.
+     - A page declares its theme on the root element:
+         <html data-theme="dark">   → the hub landing / hero surfaces
+         <html data-theme="light">  → the membership app, forms, dashboard
+   ============================================================================ */
+
+:root {
+  /* ---- Brand palette (fixed, theme-agnostic) ---------------------------- */
+  --brand-orange:        #FF9900;   /* AWS orange — the primary accent       */
+  --brand-orange-strong: #E68A00;   /* hover / pressed                       */
+  --brand-orange-dim:    #CC7A00;   /* muted / borders                       */
+  --brand-blue:          #1A4FAF;   /* UNIZIK blue — the secondary accent    */
+  --brand-blue-strong:   #153D85;
+  --brand-navy:          #232F3E;   /* AWS navy — headers, depth             */
+  --brand-green:         #25D366;   /* WhatsApp — the one join action        */
+  --brand-green-strong:  #1DA851;
+
+  /* ---- Neutral ramp ----------------------------------------------------- */
+  --neutral-0:   #07080D;   /* near-black */
+  --neutral-1:   #0D0F18;
+  --neutral-2:   #131622;
+  --neutral-3:   #1B1F2E;
+  --neutral-4:   #2A2F40;
+  --neutral-5:   #6B7280;   /* mid grey */
+  --neutral-6:   #9CA3AF;
+  --neutral-7:   #E5E7EB;
+  --neutral-8:   #F0F2F7;
+  --neutral-9:   #FFFFFF;
+
+  /* ---- Typography ------------------------------------------------------- */
+  --font-display: 'Syne', system-ui, sans-serif;        /* headings, brand   */
+  --font-mono:    'Space Mono', ui-monospace, monospace; /* labels, eyebrows */
+  --font-body:    'DM Sans', system-ui, sans-serif;      /* body copy         */
+
+  /* Fluid type scale — clamps so it holds up from a small Android screen
+     to a desktop without a dozen media queries. */
+  --text-xs:   0.75rem;                              /* 12px */
+  --text-sm:   0.8125rem;                            /* 13px */
+  --text-base: 0.9375rem;                            /* 15px */
+  --text-md:   1.0625rem;                            /* 17px */
+  --text-lg:   clamp(1.125rem, 1rem + 0.6vw, 1.375rem);
+  --text-xl:   clamp(1.375rem, 1.1rem + 1.2vw, 1.75rem);
+  --text-2xl:  clamp(1.75rem, 1.3rem + 2vw, 2.5rem);
+  --text-3xl:  clamp(2rem, 1.4rem + 3vw, 3.25rem);
+  --text-hero: clamp(3.25rem, 2rem + 7vw, 7.5rem);   /* hero display only */
+
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+  --weight-black:    800;
+
+  --leading-tight: 1.1;
+  --leading-snug:  1.3;
+  --leading-body:  1.7;
+
+  --tracking-tight: -0.02em;
+  --tracking-wide:  0.06em;
+  --tracking-label: 0.2em;   /* the mono eyebrows */
+
+  /* ---- Spacing (4px base) ----------------------------------------------- */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.5rem;
+  --space-6:  2rem;
+  --space-8:  3rem;
+  --space-10: 4rem;
+  --space-12: 5rem;
+  --space-16: 7rem;
+  --space-20: 9rem;
+
+  /* ---- Radius ----------------------------------------------------------- */
+  --radius-sm:   8px;
+  --radius-md:   12px;
+  --radius-lg:   16px;
+  --radius-pill: 100px;
+
+  /* ---- Shadows & glows -------------------------------------------------- */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.10);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,0.14);
+  --glow-orange: 0 8px 32px rgba(255,153,0,0.25);
+  --glow-green:  0 8px 32px rgba(37,211,102,0.28);
+
+  /* ---- Motion ----------------------------------------------------------- */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-fast: 0.18s var(--ease);
+  --transition-base: 0.28s var(--ease);
+
+  /* ---- Layout ----------------------------------------------------------- */
+  --container: 1100px;
+  --container-narrow: 640px;
+}
+
+/* ============================================================================
+   SURFACE THEMES — semantic tokens that flip
+   ============================================================================ */
+
+[data-theme="dark"] {
+  --bg:           var(--neutral-0);
+  --surface:      var(--neutral-1);
+  --surface-2:    var(--neutral-2);
+  --text:         #F0F2F8;
+  --text-muted:   rgba(240,242,248,0.55);
+  --text-subtle:  rgba(240,242,248,0.35);
+  --border:       rgba(255,153,0,0.12);
+  --border-hover: rgba(255,153,0,0.35);
+  --accent:       var(--brand-orange);
+  --accent-2:     var(--brand-blue);
+}
+
+[data-theme="light"] {
+  --bg:           var(--neutral-8);
+  --surface:      var(--neutral-9);
+  --surface-2:    #FAFBFC;
+  --text:         #0D1117;
+  --text-muted:   #6B7280;
+  --text-subtle:  #9CA3AF;
+  --border:       rgba(0,0,0,0.08);
+  --border-hover: var(--brand-orange);
+  --accent:       var(--brand-orange);
+  --accent-2:     var(--brand-blue);
+}
+
+/* Fallback so nothing renders unstyled if a page forgets to set a theme. */
+:root:not([data-theme]) {
+  --bg: var(--neutral-0); --surface: var(--neutral-1); --surface-2: var(--neutral-2);
+  --text: #F0F2F8; --text-muted: rgba(240,242,248,0.55); --text-subtle: rgba(240,242,248,0.35);
+  --border: rgba(255,153,0,0.12); --border-hover: rgba(255,153,0,0.35);
+  --accent: var(--brand-orange); --accent-2: var(--brand-blue);
+}
+
+/* ============================================================================
+   RESET & BASE
+   ============================================================================ */
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-black);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+}
+
+a { color: inherit; }
+
+/* Visible focus for keyboard users — accessibility, cheap and worth it. */
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Respect people who don't want motion. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================================
+   SHARED PRIMITIVES
+   The pieces that appear on every surface. Defined once, here.
+   ============================================================================ */
+
+/* ---- Eyebrow label (the mono "// SECTION" tags) ------------------------- */
+.ds-eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-label);
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+/* ---- Buttons ----------------------------------------------------------- */
+.ds-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-base);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  border: none;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-base),
+              background var(--transition-fast), border-color var(--transition-fast),
+              color var(--transition-fast);
+}
+.ds-btn:active { transform: translateY(0); }
+
+/* The single most important action: join on WhatsApp. Always green. */
+.ds-btn--whatsapp {
+  background: var(--brand-green);
+  color: #fff;
+  box-shadow: var(--glow-green);
+}
+.ds-btn--whatsapp:hover { background: var(--brand-green-strong); transform: translateY(-2px); }
+
+/* Primary action inside the app. Orange. */
+.ds-btn--primary {
+  background: var(--brand-orange);
+  color: #fff;
+  box-shadow: var(--glow-orange);
+}
+.ds-btn--primary:hover { background: var(--brand-orange-strong); transform: translateY(-2px); }
+.ds-btn--primary:disabled { opacity: 0.6; cursor: not-allowed; transform: none; box-shadow: none; }
+
+/* Secondary / outline. */
+.ds-btn--secondary {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border-hover);
+  font-weight: var(--weight-semibold);
+}
+.ds-btn--secondary:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-2px); }
+
+/* Quiet / ghost. */
+.ds-btn--ghost {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  font-weight: var(--weight-semibold);
+}
+.ds-btn--ghost:hover { color: var(--text); border-color: var(--text-muted); }
+
+/* ---- Card -------------------------------------------------------------- */
+.ds-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base),
+              transform var(--transition-base);
+}
+
+/* ---- Layout helpers ---------------------------------------------------- */
+.ds-container { max-width: var(--container); margin-inline: auto; padding-inline: var(--space-5); }
+.ds-container--narrow { max-width: var(--container-narrow); }
+
+/* ---- The shared page-load reveal --------------------------------------- */
+@keyframes ds-fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.ds-reveal { opacity: 0; animation: ds-fade-up 0.7s var(--ease) forwards; }

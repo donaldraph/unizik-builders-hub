@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Preview — AWS Student Builders UNIZIK</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --orange:#FF9900;--orange-dark:#E68A00;--orange-soft:#FFF4E5;
+    --blue:#1A4FAF;--navy:#232F3E;--green:#1E8E3E;--red:#DC2626;
+    --bg:#F0F2F7;--card:#FFFFFF;--c2:#FAFBFC;
+    --text:#0D1117;--muted:#6B7280;--faint:#9CA3AF;
+    --n200:#E5E7EB;--border:rgba(0,0,0,0.08);
+    --r-sm:6px;--r-md:10px;--r-lg:16px;--r-pill:100px;
+    --shadow:0 4px 16px rgba(0,0,0,0.08);--shadow-lg:0 8px 24px rgba(0,0,0,0.10);
+    --syne:'Syne',sans-serif;--body:'DM Sans',system-ui,sans-serif;--mono:'Space Mono',monospace;
+  }
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:var(--body);background:var(--bg);color:var(--text);line-height:1.6;}
+  h1,h2,h3{font-family:var(--syne);font-weight:700;}
+  .mono{font-family:var(--mono);}
+
+  /* preview ribbon */
+  .ribbon{background:var(--blue);color:#fff;text-align:center;padding:7px 12px;font-size:12px;font-family:var(--mono);letter-spacing:0.08em;}
+  .ribbon b{color:var(--orange);}
+
+  /* header */
+  .hdr{background:var(--navy);position:sticky;top:0;z-index:100;box-shadow:var(--shadow);}
+  .hdr-in{max-width:1100px;margin:0 auto;height:64px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;}
+  .logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+  .logo svg{width:36px;height:36px;}
+  .logo-text{font-family:var(--syne);font-weight:800;font-size:13px;color:#fff;letter-spacing:0.05em;line-height:1.2;text-transform:uppercase;}
+  .logo-text span{display:block;font-family:var(--mono);font-size:10px;font-weight:400;color:var(--orange);letter-spacing:0.12em;}
+  .hdr-act{display:flex;align-items:center;gap:14px;}
+  .online{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.6);}
+  .online .dot{width:8px;height:8px;border-radius:50%;background:#34D399;}
+  .hdr-avatar{width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid var(--orange);cursor:pointer;}
+  .btn-ghost-d{background:transparent;border:1px solid rgba(255,255,255,0.2);color:#fff;padding:8px 16px;border-radius:var(--r-pill);font-family:var(--syne);font-weight:700;font-size:13px;cursor:pointer;}
+
+  .main{max-width:1100px;margin:0 auto;padding:32px 24px 64px;}
+  .welcome{margin:8px 0 24px;}
+  .welcome h1{font-size:32px;}
+  .welcome p{color:var(--muted);}
+
+  .tabs{display:flex;gap:8px;border-bottom:2px solid var(--n200);margin-bottom:24px;}
+  .tab{padding:12px 20px;border:none;background:none;cursor:pointer;font-family:var(--syne);font-weight:700;font-size:15px;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-2px;}
+  .tab.active{color:var(--orange);border-bottom-color:var(--orange);}
+
+  .search{display:flex;gap:12px;margin-bottom:24px;flex-wrap:wrap;}
+  .search input,.search select{flex:1;min-width:200px;padding:12px 14px;border:1.5px solid var(--n200);border-radius:var(--r-md);font:inherit;font-size:15px;background:var(--c2);color:var(--text);}
+  .search input:focus,.search select:focus{outline:none;border-color:var(--orange);background:#fff;box-shadow:0 0 0 3px rgba(255,153,0,0.1);}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;}
+  .mcard{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:24px;text-align:center;transition:transform .25s,box-shadow .25s;}
+  .mcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg);}
+  .mcard .av{width:72px;height:72px;border-radius:50%;object-fit:cover;margin:0 auto 12px;border:3px solid var(--orange);}
+  .mcard .nm{font-weight:700;font-size:18px;}
+  .mcard .mt{font-size:13px;color:var(--muted);margin-bottom:12px;}
+  .pill{display:inline-flex;align-items:center;gap:6px;background:var(--orange-soft);color:#92400E;padding:5px 12px;border-radius:var(--r-pill);font-size:13px;font-weight:600;border:1px solid rgba(255,153,0,0.2);}
+  .bio{font-size:13px;color:var(--muted);margin-top:12px;}
+  .soc{display:flex;justify-content:center;gap:8px;margin-top:14px;}
+  .soc a{width:32px;height:32px;border-radius:50%;background:var(--n200);display:flex;align-items:center;justify-content:center;text-decoration:none;color:var(--text);font-size:14px;transition:background .2s,color .2s;}
+  .soc a:hover{background:var(--orange);color:#fff;}
+  .empty{text-align:center;color:var(--muted);padding:64px 24px;}
+
+  /* admin */
+  .card{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;}
+  table{width:100%;border-collapse:collapse;}
+  th{text-align:left;font-size:11px;color:var(--muted);padding:12px 16px;border-bottom:1px solid var(--border);font-weight:600;}
+  td{padding:16px;border-bottom:1px solid var(--border);font-size:13px;}
+  .badge{padding:4px 10px;border-radius:var(--r-pill);font-size:11px;font-weight:600;background:#FEF3C7;color:#92400E;}
+  .btn-sm{padding:6px 12px;font-size:12px;font-family:var(--syne);font-weight:700;border:none;border-radius:var(--r-sm);cursor:pointer;color:#fff;}
+  .btn-v{background:var(--green);}.btn-r{background:var(--red);}
+
+  /* modal */
+  .backdrop{position:fixed;inset:0;background:rgba(0,0,0,0.6);display:none;align-items:center;justify-content:center;z-index:200;padding:16px;}
+  .backdrop.show{display:flex;}
+  .modal{background:#fff;border-radius:var(--r-lg);max-width:440px;width:100%;max-height:90vh;overflow-y:auto;}
+  .modal-h{padding:20px 24px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;}
+  .modal-b{padding:24px;}
+  .fld{margin-bottom:20px;}.fld:last-child{margin-bottom:0;}
+  .fld label{display:block;font-size:13px;font-weight:600;margin-bottom:7px;}
+  .fld input,.fld textarea{width:100%;padding:12px 14px;border:1.5px solid var(--n200);border-radius:var(--r-md);font:inherit;font-size:15px;background:var(--c2);}
+  .fld input:focus,.fld textarea:focus{outline:none;border-color:var(--orange);background:#fff;box-shadow:0 0 0 3px rgba(255,153,0,0.1);}
+  .ava-pick{display:flex;align-items:center;gap:20px;padding:20px;background:var(--c2);border:1.5px dashed var(--n200);border-radius:var(--r-md);margin-bottom:24px;cursor:pointer;}
+  .ava-pick img{width:72px;height:72px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:var(--shadow);}
+  .btn-pri{width:100%;padding:14px;background:linear-gradient(135deg,var(--orange),var(--orange-dark));color:#fff;border:none;border-radius:var(--r-md);font-family:var(--syne);font-weight:700;font-size:15px;cursor:pointer;box-shadow:0 4px 16px rgba(255,153,0,0.25);}
+
+  .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--navy);color:#fff;padding:14px 24px;border-radius:var(--r-md);font-size:14px;z-index:300;box-shadow:var(--shadow-lg);display:none;}
+  .toast.show{display:block;}
+  @media(max-width:600px){.grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<div class="ribbon">PREVIEW with sample data · <b>not the live app</b> — the real dashboard pulls real members from your API</div>
+
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="logo" href="#">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="18" width="7" height="16" fill="#1A4FAF"/><rect x="29" y="18" width="7" height="16" fill="#1A4FAF"/>
+        <rect x="2" y="15" width="36" height="6" rx="3" fill="#FF9900"/><rect x="17" y="5" width="6" height="13" fill="rgba(255,255,255,0.9)"/>
+        <polygon points="17,5 20,0 23,5" fill="#FF9900"/>
+      </svg>
+      <span class="logo-text">AWS STUDENT BUILDERS<span>UNIZIK</span></span>
+    </a>
+    <div class="hdr-act">
+      <div class="online"><span class="dot"></span><span id="onlineCount">6</span> verified builders</div>
+      <img class="hdr-avatar" src="https://i.pravatar.cc/80?img=68" onclick="openEdit()" title="Edit profile">
+      <button class="btn-ghost-d">Sign out</button>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="welcome">
+    <h1>Welcome back, Donald</h1>
+    <p>Your journey from nothing to everything continues here.</p>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" id="t0" onclick="tab(0)">Members</button>
+    <button class="tab" id="t1" onclick="tab(1)">Verify Members</button>
+  </div>
+
+  <div id="pane0">
+    <div class="search">
+      <input id="q" placeholder="Search by name, tag, or faculty…" oninput="render()">
+      <select id="tag" onchange="render()">
+        <option value="">All tags</option>
+        <option>Cloud Engineer</option><option>Software Developer</option><option>Security</option>
+        <option>AI/ML</option><option>Data</option><option>Designer</option><option>Community Builder</option>
+      </select>
+      <select id="lvl" onchange="render()">
+        <option value="">All levels</option>
+        <option>100 Level</option><option>200 Level</option><option>300 Level</option><option>400 Level</option>
+      </select>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+
+  <div id="pane1" style="display:none;">
+    <div class="card">
+      <table>
+        <thead><tr><th>Member</th><th>Tag</th><th>Faculty</th><th>Joined</th><th>Action</th></tr></thead>
+        <tbody id="pending"></tbody>
+      </table>
+    </div>
+  </div>
+</main>
+
+<div class="backdrop" id="backdrop">
+  <div class="modal">
+    <div class="modal-h"><h3>Edit profile</h3><button onclick="closeEdit()" style="border:none;background:none;font-size:18px;cursor:pointer;color:var(--muted);">✕</button></div>
+    <div class="modal-b">
+      <label class="ava-pick"><img src="https://i.pravatar.cc/80?img=68"><div style="flex:1;"><div style="font-weight:600;">Profile photo</div><div style="font-size:13px;color:var(--muted);">Tap to change</div></div></label>
+      <div class="fld"><label>Full name</label><input value="Donald"></div>
+      <div class="fld"><label>Bio</label><textarea rows="3">Cloud Club Captain. Building serverless things and a community at UNIZIK.</textarea></div>
+      <div class="fld"><label>GitHub</label><input value="donaldraph"></div>
+      <div class="fld"><label>Phone (private)</label><input value="0803 123 4567"></div>
+      <button class="btn-pri" onclick="save()">Save changes</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const MEMBERS = [
+  {sub:'1',fullName:'Adaeze Nnamani',tag:'AI/ML',level:'200 Level',department:'Faculty of Physical Sciences',avatar:'https://i.pravatar.cc/80?img=47',bio:'ML enthusiast building models for climate prediction.',github:'adaeze',twitter:'@adaeze_ml',linkedin:''},
+  {sub:'2',fullName:'Ifeanyi Okoro',tag:'Security',level:'400 Level',department:'Faculty of Engineering',avatar:'https://i.pravatar.cc/80?img=12',bio:'Cybersecurity researcher and CTF player.',github:'ifeiy',twitter:'',linkedin:'https://linkedin.com/in/ifeanyi'},
+  {sub:'3',fullName:'Nneka Eze',tag:'Community Builder',level:'100 Level',department:'Faculty of Social Sciences',avatar:'https://i.pravatar.cc/80?img=45',bio:'Getting more women into tech at UNIZIK.',github:'nnekae',twitter:'@nneka_eze',linkedin:''},
+  {sub:'4',fullName:'Chukwuma Obi',tag:'Data',level:'300 Level',department:'Faculty of Management Sciences',avatar:'https://i.pravatar.cc/80?img=15',bio:'Data analyst working with QuickSight.',github:'chukwuma',twitter:'',linkedin:''},
+  {sub:'5',fullName:'Ugochi Amadi',tag:'Designer',level:'200 Level',department:'Faculty of Arts',avatar:'https://i.pravatar.cc/80?img=32',bio:'UI/UX designer bringing cloud experiences to life.',github:'ugodesign',twitter:'@ugodesign',linkedin:'https://linkedin.com/in/ugochi'},
+  {sub:'6',fullName:'Emeka Nwosu',tag:'Software Developer',level:'400 Level',department:'Faculty of Engineering',avatar:'https://i.pravatar.cc/80?img=33',bio:'Full-stack dev — React, Python, CDK.',github:'emeka',twitter:'@emeka_dev',linkedin:''},
+];
+let PENDING = [
+  {sub:'p1',fullName:'Chiamaka Okeke',matric:'202399988877',tag:'AI/ML',department:'Faculty of Physical Sciences',joined:'28 May'},
+  {sub:'p2',fullName:'Emmanuel Eze',matric:'202311122233',tag:'Cloud Engineer',department:'Faculty of Engineering',joined:'27 May'},
+];
+
+function render(){
+  const q=document.getElementById('q').value.toLowerCase();
+  const tag=document.getElementById('tag').value;
+  const lvl=document.getElementById('lvl').value;
+  const list=MEMBERS.filter(m=>
+    (!q||(m.fullName+' '+m.tag+' '+m.department).toLowerCase().includes(q))&&
+    (!tag||m.tag===tag)&&(!lvl||m.level===lvl));
+  const grid=document.getElementById('grid');
+  if(!list.length){grid.outerHTML='<div class="empty" id="grid">No builders match that yet.</div>';return;}
+  grid.innerHTML=list.map(m=>`
+    <div class="mcard">
+      <img class="av" src="${m.avatar}" alt="">
+      <div class="nm">${m.fullName}</div>
+      <div class="mt">${m.level} · ${m.department.replace('Faculty of ','')}</div>
+      <span class="pill">${m.tag}</span>
+      ${m.bio?`<p class="bio">${m.bio}</p>`:''}
+      <div class="soc">
+        ${m.github?`<a href="https://github.com/${m.github}" target="_blank" title="GitHub">💻</a>`:''}
+        ${m.linkedin?`<a href="${m.linkedin}" target="_blank" title="LinkedIn">🔗</a>`:''}
+        ${m.twitter?`<a href="https://twitter.com/${m.twitter.replace('@','')}" target="_blank" title="X">𝕏</a>`:''}
+      </div>
+    </div>`).join('');
+}
+function renderPending(){
+  document.getElementById('pending').innerHTML=PENDING.map(p=>`
+    <tr>
+      <td><strong>${p.fullName}</strong><br><span class="mono" style="font-size:11px;color:var(--muted);">${p.matric}</span></td>
+      <td><span class="pill">${p.tag}</span></td>
+      <td>${p.department.replace('Faculty of ','')}</td>
+      <td style="color:var(--muted);">${p.joined}</td>
+      <td><div style="display:flex;gap:8px;">
+        <button class="btn-sm btn-v" onclick="decide('${p.sub}','verified')">Verify</button>
+        <button class="btn-sm btn-r" onclick="decide('${p.sub}','rejected')">Reject</button>
+      </div></td>
+    </tr>`).join('') || '<tr><td colspan="5" class="empty">Queue is clear.</td></tr>';
+}
+function decide(sub,what){PENDING=PENDING.filter(p=>p.sub!==sub);renderPending();toast(what==='verified'?'Member verified':'Member rejected');}
+function tab(i){
+  document.getElementById('t0').className='tab'+(i===0?' active':'');
+  document.getElementById('t1').className='tab'+(i===1?' active':'');
+  document.getElementById('pane0').style.display=i===0?'block':'none';
+  document.getElementById('pane1').style.display=i===1?'block':'none';
+}
+function openEdit(){document.getElementById('backdrop').classList.add('show');}
+function closeEdit(){document.getElementById('backdrop').classList.remove('show');}
+function save(){closeEdit();toast('Profile updated');}
+function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2500);}
+document.getElementById('backdrop').addEventListener('click',e=>{if(e.target.id==='backdrop')closeEdit();});
+render();renderPending();
+</script>
+</body>
+</html>
