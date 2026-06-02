@@ -3,6 +3,7 @@ import { useAuth } from '../auth.jsx';
 import { api, uploadAvatar } from '../api.js';
 import { TAGS, LEVELS } from '../config.js';
 import { Brand, Loader, useToast } from './Shell.jsx';
+import { BrandIcon } from '../brandIcons.jsx';
 
 // Neutral grey avatar/photo placeholder (used until real images are supplied).
 const PLACEHOLDER =
@@ -50,6 +51,85 @@ const TEAM = [
   // TODO: add the rest of the core team below (copy a line and edit it).
   { name: 'TODO: Name', role: 'TODO: Role', photo: PLACEHOLDER },
   { name: 'TODO: Name', role: 'TODO: Role', photo: PLACEHOLDER },
+];
+
+// Community channels. `url: null` => rendered as "Coming soon", not clickable.
+// `brand` keys a real logo (see brandIcons.jsx); `color` is the brand colour.
+const CHANNELS = [
+  { name: 'WhatsApp', brand: 'whatsapp', color: '#25D366', url: 'https://chat.whatsapp.com/GYoJICzgnX65PkKq6R1qX3', action: 'Join', blurb: 'Our main room — daily chatter, questions, and quick announcements.' },
+  { name: 'LinkedIn', brand: 'linkedin', color: '#0A66C2', url: 'https://www.linkedin.com/company/aws-student-builders-unizik/', action: 'Follow', blurb: 'Milestones, events, and member wins worth sharing professionally.' },
+  { name: 'Meetup', brand: 'meetup', color: '#ED1C40', url: null, handle: 'meetup.com', blurb: 'RSVP to workshops and study jams — group launching soon.' },
+  { name: 'Instagram', brand: 'instagram', color: '#E4405F', url: null, handle: 'instagram.com/awsunizik', blurb: 'Behind-the-scenes and event highlights — launching soon.' },
+  { name: 'Facebook', brand: 'facebook', color: '#1877F2', url: null, handle: 'facebook.com/unizikbuilders', blurb: 'A wider community page for reach — launching soon.' },
+];
+
+// Where the certification "View on AWS" links point (exam detail lives on AWS).
+const AWS_CERT_HUB = 'https://aws.amazon.com/certification/';
+
+// "Where do I start?" — entry-point guidance, our own wording.
+const CERT_START = [
+  { tag: 'New to tech / non-IT', desc: 'No tech background yet? Begin with Cloud Practitioner — it builds the vocabulary and big-picture view everything else stands on.', url: 'https://aws.amazon.com/certification/certified-cloud-practitioner/' },
+  { tag: 'Business · sales · marketing', desc: 'Working with technical teams? Cloud Practitioner gives you enough cloud fluency to follow the conversation and make sharper calls.', url: 'https://aws.amazon.com/certification/certified-cloud-practitioner/' },
+  { tag: '1–3 yrs IT / STEM', desc: 'Already hands-on in IT or a STEM field? You can start straight at an Associate cert. Cloud Practitioner is optional here, not required.', url: AWS_CERT_HUB },
+];
+
+// Certification paths by career role. Cert names kept general; exam detail links
+// out to AWS. A node can be a string, or { name, optional } for an optional cert.
+// Roles without a published chain we were given carry chain: null (no invented data).
+const CERT_PATHS = [
+  {
+    category: 'Architecture',
+    roles: [
+      { title: 'Solutions Architect', does: 'Designs how cloud systems fit together — secure, scalable, and cost-aware.', chain: ['Cloud Practitioner', 'Solutions Architect – Associate', 'Solutions Architect – Professional'] },
+      { title: 'Application Architect', does: 'Shapes how the parts of an application connect and run in the cloud.', chain: ['Cloud Practitioner', 'Solutions Architect – Associate', 'Solutions Architect – Professional'] },
+    ],
+  },
+  {
+    category: 'Data Analytics',
+    roles: [
+      { title: 'Cloud Data Engineer', does: 'Builds the pipelines that move, clean, and shape data for analysis.', chain: ['Cloud Practitioner', 'Data Engineer – Associate'] },
+    ],
+  },
+  {
+    category: 'Development',
+    roles: [
+      { title: 'Software Development Engineer', does: 'Writes and ships cloud-native applications and services.', chain: ['Cloud Practitioner', 'Developer – Associate'] },
+    ],
+  },
+  {
+    category: 'Operations',
+    roles: [
+      { title: 'Systems Administrator', does: 'Keeps cloud systems running, patched, and healthy day to day.', chain: ['Cloud Practitioner', 'SysOps – Associate'] },
+      { title: 'Cloud Engineer', does: 'Builds and maintains the infrastructure that applications run on.', chain: ['Cloud Practitioner', 'Solutions Architect – Associate', 'SysOps – Associate'] },
+    ],
+  },
+  {
+    category: 'DevOps',
+    roles: [
+      { title: 'Test Engineer', does: 'Automates testing so releases stay fast and reliable.', chain: null },
+      { title: 'Cloud DevOps Engineer', does: 'Automates build, release, and deployment pipelines.', chain: ['Cloud Practitioner', 'SysOps / Developer – Associate', 'DevOps Engineer – Professional'] },
+      { title: 'DevSecOps Engineer', does: 'Bakes security into every step of the delivery pipeline.', chain: null },
+    ],
+  },
+  {
+    category: 'Security',
+    roles: [
+      { title: 'Cloud Security Engineer', does: 'Protects cloud workloads, identities, and data from threats.', chain: ['Cloud Practitioner', 'Solutions Architect – Associate', 'Security – Specialty'] },
+      { title: 'Cloud Security Architect', does: 'Designs the security model for an entire cloud environment.', chain: null },
+    ],
+  },
+  {
+    category: 'Networking',
+    roles: [
+      { title: 'Network Engineer', does: 'Designs and runs cloud networking and connectivity.', chain: ['Cloud Practitioner', 'Solutions Architect – Associate', 'Advanced Networking – Specialty'] },
+    ],
+  },
+  {
+    category: 'AI / ML',
+    roles: [
+      { title: 'Machine Learning Engineer', does: 'Builds, trains, and deploys machine-learning models on the cloud.', chain: ['Cloud Practitioner', 'ML Engineer – Associate', { name: 'ML – Specialty', optional: true }] },
+    ],
+  },
 ];
 
 // Hub navigation (Verify Members is appended separately, admin-only).
@@ -160,12 +240,11 @@ function HomeSection({ firstName, goTo, onEditProfile }) {
           <div className="hub-card-desc">Workshops, study jams, and hangouts. See what's coming up.</div>
           <span className="hub-card-cta">View events →</span>
         </button>
-        {/* TODO_URL: link to your social channels (WhatsApp / X / LinkedIn group) */}
-        <a className="hub-card" href="TODO_URL" target="_blank" rel="noopener">
-          <div className="hub-card-icon">📣</div>
-          <div className="hub-card-title">Follow our channels</div>
-          <div className="hub-card-desc">Stay in the loop with announcements, resources, and chatter.</div>
-          <span className="hub-card-cta">TODO: add link ↗</span>
+        <a className="hub-card" href="https://chat.whatsapp.com/GYoJICzgnX65PkKq6R1qX3" target="_blank" rel="noopener">
+          <div className="hub-card-icon">💬</div>
+          <div className="hub-card-title">Join us on WhatsApp</div>
+          <div className="hub-card-desc">Our main room — announcements, resources, and daily chatter.</div>
+          <span className="hub-card-cta">Open WhatsApp ↗</span>
         </a>
         <button className="hub-card" onClick={onEditProfile}>
           <div className="hub-card-icon">✨</div>
@@ -188,7 +267,72 @@ function HomeSection({ firstName, goTo, onEditProfile }) {
           <li>🎉 Invite your friends to join us — the best builders come in groups.</li>
         </ul>
       </div>
+
+      <div className="section-head" style={{ marginTop: 'var(--space-8)' }}>
+        <div className="ds-eyebrow">Community channels</div>
+        <h2>Find us everywhere</h2>
+      </div>
+      <div className="channel-grid">
+        {CHANNELS.map((c) => {
+          const live = !!c.url;
+          const inner = (
+            <>
+              <div className="channel-icon" style={{ color: c.color }}><BrandIcon name={c.brand} /></div>
+              <div className="channel-body">
+                <div className="channel-name">
+                  {c.name}
+                  {!live && <span className="ds-tag channel-soon">Coming soon</span>}
+                </div>
+                <div className="channel-blurb">{c.blurb}</div>
+              </div>
+              {live
+                ? <span className="channel-cta">{c.action} ↗</span>
+                : <span className="channel-handle">{c.handle}</span>}
+            </>
+          );
+          return live
+            ? <a key={c.name} className="channel-card" href={c.url} target="_blank" rel="noopener">{inner}</a>
+            : <div key={c.name} className="channel-card is-soon" aria-disabled="true">{inner}</div>;
+        })}
+      </div>
     </section>
+  );
+}
+
+// Tier of a cert from its general name — drives the colour, so the foundation →
+// associate → professional progression reads consistently across every chain.
+function certTier(name) {
+  if (/Professional|Specialty|Advanced/.test(name)) return 'pro';
+  if (/Associate/.test(name)) return 'assoc';
+  return 'foundation';
+}
+
+// One styled cert pill. `optional` certs read as a dashed "nice to have".
+function CertNode({ name, optional }) {
+  return (
+    <span className={`cert-node cert-node--${certTier(name)}${optional ? ' cert-node--optional' : ''}`}>
+      {name}{optional && <em className="cert-opt"> · optional</em>}
+    </span>
+  );
+}
+
+// A horizontal progression: pills joined by arrows. Wraps cleanly on mobile.
+function CertChain({ chain }) {
+  if (!chain) {
+    return <div className="cert-chain cert-chain--unset">Path varies — view on AWS</div>;
+  }
+  return (
+    <div className="cert-chain">
+      {chain.map((step, i) => {
+        const node = typeof step === 'string' ? { name: step } : step;
+        return (
+          <span className="cert-link" key={node.name}>
+            {i > 0 && <span className="cert-arrow" aria-hidden="true">→</span>}
+            <CertNode name={node.name} optional={node.optional} />
+          </span>
+        );
+      })}
+    </div>
   );
 }
 
@@ -202,44 +346,79 @@ function LearnSection() {
         <p>From your very first certification to hands-on labs — everything you need to level up.</p>
       </div>
 
+      {/* Where do I start? — entry-point guidance */}
       <div className="learn-block ds-card">
-        <h3>Start your certification journey</h3>
-        <p className="ds-muted">Pick the entry point that matches where you're starting from.</p>
+        <h3>Where do I start?</h3>
+        <p className="ds-muted">Pick the entry point that matches where you're coming from.</p>
         <div className="hub-grid" style={{ marginTop: 'var(--space-5)' }}>
-          {/* TODO_URL: AWS Certified Cloud Practitioner page */}
-          <a className="hub-card" href="TODO_URL" target="_blank" rel="noopener">
-            <span className="ds-tag ds-tag--filled">Beginner</span>
-            <div className="hub-card-title">AWS Certified Cloud Practitioner</div>
-            <div className="hub-card-desc">New to the cloud? Start here. Foundational concepts — no prior experience needed.</div>
-            <span className="hub-card-cta">TODO: add link ↗</span>
-          </a>
-          {/* TODO_URL: Associate-level certifications overview (Solutions Architect / Developer / SysOps) */}
-          <a className="hub-card" href="TODO_URL" target="_blank" rel="noopener">
-            <span className="ds-tag ds-tag--filled">IT / STEM background</span>
-            <div className="hub-card-title">Associate-level certs by role</div>
-            <div className="hub-card-desc">Solutions Architect, Developer, or SysOps — pick the path that fits your goals.</div>
-            <span className="hub-card-cta">TODO: add link ↗</span>
-          </a>
+          {CERT_START.map((s) => (
+            <a className="hub-card" href={s.url} target="_blank" rel="noopener" key={s.tag}>
+              <span className="ds-tag ds-tag--filled">{s.tag}</span>
+              <div className="hub-card-desc">{s.desc}</div>
+              <span className="hub-card-cta">View on AWS ↗</span>
+            </a>
+          ))}
         </div>
       </div>
 
+      {/* Certification paths by career role */}
       <div className="learn-block ds-card" style={{ marginTop: 'var(--space-6)' }}>
-        <h3>Hands-on with Skill Builder &amp; free labs</h3>
-        <p className="ds-muted">Learn by doing — guided labs and self-paced courses, free.</p>
+        <h3>Certification paths by career role</h3>
+        <p className="ds-muted">Pick a role, follow the chain. Each step is an AWS certification — names kept general; tap through to AWS for exam detail.</p>
+
+        <div className="cert-legend" aria-hidden="true">
+          <span className="cert-node cert-node--foundation">Foundational</span>
+          <span className="cert-arrow">→</span>
+          <span className="cert-node cert-node--assoc">Associate</span>
+          <span className="cert-arrow">→</span>
+          <span className="cert-node cert-node--pro">Professional / Specialty</span>
+        </div>
+
+        {CERT_PATHS.map((cat) => (
+          <div className="cert-category" key={cat.category}>
+            <div className="cert-cat-head">{cat.category}</div>
+            <div className="cert-role-grid">
+              {cat.roles.map((r) => (
+                <div className="cert-role-card" key={r.title}>
+                  <div className="cert-role-title">{r.title}</div>
+                  <div className="cert-role-does">{r.does}</div>
+                  <CertChain chain={r.chain} />
+                  <a className="hub-card-cta cert-role-link" href={AWS_CERT_HUB} target="_blank" rel="noopener">View on AWS →</a>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Hands-on + community resources */}
+      <div className="learn-block ds-card" style={{ marginTop: 'var(--space-6)' }}>
+        <h3>Build hands-on skills</h3>
+        <p className="ds-muted">Learn by doing — free, self-paced, and plugged into the wider community.</p>
         <div className="hub-grid" style={{ marginTop: 'var(--space-5)' }}>
-          {/* TODO_URL: AWS Skill Builder */}
-          <a className="hub-card" href="TODO_URL" target="_blank" rel="noopener">
+          <a className="hub-card" href="https://skillbuilder.aws" target="_blank" rel="noopener">
             <div className="hub-card-icon">🧠</div>
             <div className="hub-card-title">AWS Skill Builder</div>
-            <div className="hub-card-desc">Hundreds of free digital courses taught by AWS experts.</div>
-            <span className="hub-card-cta">TODO: add link ↗</span>
+            <div className="hub-card-desc">Hundreds of free, self-paced digital courses straight from AWS.</div>
+            <span className="hub-card-cta">skillbuilder.aws ↗</span>
           </a>
-          {/* TODO_URL: AWS free hands-on labs / workshops */}
-          <a className="hub-card" href="TODO_URL" target="_blank" rel="noopener">
-            <div className="hub-card-icon">🧪</div>
-            <div className="hub-card-title">Free hands-on labs</div>
-            <div className="hub-card-desc">Spin up real AWS services in a guided sandbox environment.</div>
-            <span className="hub-card-cta">TODO: add link ↗</span>
+          <a className="hub-card" href="https://aws.amazon.com/training/digital/aws-cloud-quest/" target="_blank" rel="noopener">
+            <div className="hub-card-icon">🎮</div>
+            <div className="hub-card-title">AWS Cloud Quest</div>
+            <div className="hub-card-desc">Learn by solving real cloud challenges in a role-playing game.</div>
+            <span className="hub-card-cta">Play Cloud Quest ↗</span>
+          </a>
+          <a className="hub-card" href="https://community.aws/buildergroups" target="_blank" rel="noopener">
+            <div className="hub-card-icon">🏗️</div>
+            <div className="hub-card-title">AWS Builder Center</div>
+            <div className="hub-card-desc">Create a Builder ID and join the global builder community.</div>
+            <span className="hub-card-cta">community.aws ↗</span>
+          </a>
+          <a className="hub-card" href="https://aws.amazon.com/developer/community/usergroups/" target="_blank" rel="noopener">
+            <div className="hub-card-icon">🌍</div>
+            <div className="hub-card-title">AWS User Groups</div>
+            <div className="hub-card-desc">Find a local group of builders meeting near you.</div>
+            <span className="hub-card-cta">Find a group ↗</span>
           </a>
         </div>
       </div>
@@ -258,8 +437,11 @@ function EventsSection() {
       </div>
 
       <div style={{ marginBottom: 'var(--space-6)' }}>
-        {/* TODO_MEETUP_URL is set at the top of this file */}
-        <a className="ds-btn ds-btn--secondary" href={TODO_MEETUP_URL} target="_blank" rel="noopener">📍 Join our Meetup group</a>
+        {/* TODO_MEETUP_URL is set at the top of this file. Until it's set, show a
+            non-clickable "coming soon" instead of a dead link. */}
+        {TODO_MEETUP_URL === 'TODO_MEETUP_URL'
+          ? <span className="ds-btn ds-btn--secondary is-soon" aria-disabled="true">📍 Meetup group — coming soon</span>
+          : <a className="ds-btn ds-btn--secondary" href={TODO_MEETUP_URL} target="_blank" rel="noopener">📍 Join our Meetup group</a>}
       </div>
 
       <div className="event-list">
@@ -364,9 +546,9 @@ function MemberCard({ m }) {
       <span className="ds-tag ds-tag--filled">{m.tag}</span>
       {m.bio && <p style={{ fontSize: 'var(--text-sm)', color: 'var(--text-muted)', marginTop: 'var(--space-3)' }}>{m.bio}</p>}
       <div className="m-socials">
-        {m.github && <a className="m-social" href={`https://github.com/${m.github}`} target="_blank" rel="noopener" title="GitHub">💻</a>}
-        {m.linkedin && <a className="m-social" href={m.linkedin} target="_blank" rel="noopener" title="LinkedIn">🔗</a>}
-        {m.twitter && <a className="m-social" href={`https://twitter.com/${m.twitter.replace('@', '')}`} target="_blank" rel="noopener" title="Twitter/X">𝕏</a>}
+        {m.github && <a className="m-social" href={`https://github.com/${m.github}`} target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><BrandIcon name="github" /></a>}
+        {m.linkedin && <a className="m-social" href={m.linkedin} target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><BrandIcon name="linkedin" /></a>}
+        {m.twitter && <a className="m-social" href={`https://twitter.com/${m.twitter.replace('@', '')}`} target="_blank" rel="noopener" title="X" aria-label="X"><BrandIcon name="x" /></a>}
       </div>
     </div>
   );
