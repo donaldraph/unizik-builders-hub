@@ -2,7 +2,7 @@
 from botocore.exceptions import ClientError
 from common import respond, user_sub, parse_body, TABLE
 
-EDITABLE = ["fullName", "bio", "github", "linkedin", "twitter", "avatarKey", "phone"]
+EDITABLE = ["fullName", "department", "level", "bio", "github", "linkedin", "twitter", "avatarKey", "phone"]
 
 
 def handler(event, context):

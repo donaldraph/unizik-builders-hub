@@ -187,6 +187,7 @@ body { background: var(--app-bg-warm); }
 .ds-input:focus { outline: none; border-color: var(--brand-orange); box-shadow: 0 0 0 3px rgba(255,153,0,0.1); background: var(--bg-raised); }
 textarea.ds-input { resize: vertical; line-height: 1.6; }
 select.ds-input { cursor: pointer; }
+.ds-input:disabled { color: var(--text-muted); background: var(--n-200); cursor: not-allowed; }
 
 /* Labels & helper text */
 .ds-label { display: block; font-family: var(--font-display); font-weight: var(--weight-semi); font-size: var(--text-sm); color: var(--text); margin-bottom: var(--space-2); }

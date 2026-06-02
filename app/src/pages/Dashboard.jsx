@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from 'react';
 import { useAuth } from '../auth.jsx';
 import { api, uploadAvatar } from '../api.js';
-import { TAGS, LEVELS } from '../config.js';
+import { TAGS, LEVELS, FACULTIES } from '../config.js';
 import { Brand, Loader, useToast } from './Shell.jsx';
 import { BrandIcon } from '../brandIcons.jsx';
 
@@ -14,43 +14,18 @@ const PLACEHOLDER =
 // Look for TODO markers; replace the placeholder strings with real values.
 // ============================================================================
 
-// Link to your Meetup group (Events tab).
-const TODO_MEETUP_URL = 'TODO_MEETUP_URL'; // TODO: paste your Meetup group URL
+// Link to your Meetup group (Events tab). `null` => button shows "coming soon".
+const MEETUP_URL = null; // paste your Meetup group URL when it's live
 
-// Upcoming events. Edit / add / remove freely.
-const EVENTS = [
-  // TODO: replace with your real upcoming events.
-  {
-    title: 'TODO: Event title (e.g. Cloud Study Jam)',
-    date: 'TODO: Sat, 14 Jun 2026 · 2:00 PM',
-    location: 'TODO: venue or "Online"',
-    description: 'TODO: a sentence on what attendees will do or learn.',
-  },
-  {
-    title: 'TODO: Second event title',
-    date: 'TODO: date & time',
-    location: 'TODO: location',
-    description: 'TODO: short description.',
-  },
-];
+// Upcoming events. Real data only — empty until events are scheduled.
+const EVENTS = [];
 
-// Past-event photos. Replace each `src` with a real image URL.
-const GALLERY = [
-  // TODO: replace `src` with real photo URLs (and write a caption in `alt`).
-  { src: PLACEHOLDER, alt: 'TODO: caption' },
-  { src: PLACEHOLDER, alt: 'TODO: caption' },
-  { src: PLACEHOLDER, alt: 'TODO: caption' },
-  { src: PLACEHOLDER, alt: 'TODO: caption' },
-  { src: PLACEHOLDER, alt: 'TODO: caption' },
-  { src: PLACEHOLDER, alt: 'TODO: caption' },
-];
+// Past-event photos. Real images only — empty until we have some to show.
+const GALLERY = [];
 
-// Core team / leadership. First entry is set; add the rest.
+// Core team / leadership. Real members only.
 const TEAM = [
-  { name: 'Donald', role: 'Student Builder Group Leader', photo: PLACEHOLDER }, // TODO: add Donald's photo URL
-  // TODO: add the rest of the core team below (copy a line and edit it).
-  { name: 'TODO: Name', role: 'TODO: Role', photo: PLACEHOLDER },
-  { name: 'TODO: Name', role: 'TODO: Role', photo: PLACEHOLDER },
+  { name: 'Donald', role: 'Student Builder Group Leader', photo: PLACEHOLDER },
 ];
 
 // Community channels. `url: null` => rendered as "Coming soon", not clickable.
@@ -437,23 +412,26 @@ function EventsSection() {
       </div>
 
       <div style={{ marginBottom: 'var(--space-6)' }}>
-        {/* TODO_MEETUP_URL is set at the top of this file. Until it's set, show a
-            non-clickable "coming soon" instead of a dead link. */}
-        {TODO_MEETUP_URL === 'TODO_MEETUP_URL'
-          ? <span className="ds-btn ds-btn--secondary is-soon" aria-disabled="true">📍 Meetup group — coming soon</span>
-          : <a className="ds-btn ds-btn--secondary" href={TODO_MEETUP_URL} target="_blank" rel="noopener">📍 Join our Meetup group</a>}
+        {/* Until MEETUP_URL is set, show a non-clickable "coming soon" instead of a dead link. */}
+        {MEETUP_URL
+          ? <a className="ds-btn ds-btn--secondary" href={MEETUP_URL} target="_blank" rel="noopener">📍 Join our Meetup group</a>
+          : <span className="ds-btn ds-btn--secondary is-soon" aria-disabled="true">📍 Meetup group — coming soon</span>}
       </div>
 
-      <div className="event-list">
-        {EVENTS.map((e, i) => (
-          <div className="event-card ds-card" key={i}>
-            <div className="event-date">{e.date}</div>
-            <div className="event-title">{e.title}</div>
-            <div className="event-loc">📍 {e.location}</div>
-            <p className="event-desc">{e.description}</p>
-          </div>
-        ))}
-      </div>
+      {EVENTS.length === 0 ? (
+        <div className="empty">No events scheduled yet — check our Meetup for what's coming.</div>
+      ) : (
+        <div className="event-list">
+          {EVENTS.map((e, i) => (
+            <div className="event-card ds-card" key={i}>
+              <div className="event-date">{e.date}</div>
+              <div className="event-title">{e.title}</div>
+              <div className="event-loc">📍 {e.location}</div>
+              <p className="event-desc">{e.description}</p>
+            </div>
+          ))}
+        </div>
+      )}
     </section>
   );
 }
@@ -467,13 +445,17 @@ function GallerySection() {
         <h2>Moments from past events</h2>
         <p>A look back at what we've built and celebrated together.</p>
       </div>
-      <div className="gallery-grid">
-        {GALLERY.map((g, i) => (
-          <div className="gallery-item" key={i}>
-            <img src={g.src} alt={g.alt} loading="lazy" />
-          </div>
-        ))}
-      </div>
+      {GALLERY.length === 0 ? (
+        <div className="empty">Photos from past events coming soon.</div>
+      ) : (
+        <div className="gallery-grid">
+          {GALLERY.map((g, i) => (
+            <div className="gallery-item" key={i}>
+              <img src={g.src} alt={g.alt} loading="lazy" />
+            </div>
+          ))}
+        </div>
+      )}
     </section>
   );
 }
@@ -555,10 +537,17 @@ function MemberCard({ m }) {
 }
 
 // ---- Edit own profile (persists via PUT /me) ----
+// Editable fields the form tracks. Matric and email are deliberately NOT here —
+// they're shown read-only below (identity fields set at registration).
+const EDITABLE = ['fullName', 'department', 'level', 'bio', 'github', 'linkedin', 'twitter', 'phone'];
+
 function EditProfile({ me, idToken, onClose, onSaved, showToast }) {
-  const [form, setForm] = useState({ fullName: me.fullName || '', bio: me.bio || '', github: me.github || '', linkedin: me.linkedin || '', twitter: me.twitter || '', phone: me.phone || '' });
+  const [form, setForm] = useState(() =>
+    EDITABLE.reduce((acc, k) => ({ ...acc, [k]: me[k] || '' }), {})
+  );
   const [avatarFile, setAvatarFile] = useState(null);
   const [preview, setPreview] = useState(avatarSrc(me));
+  const [errors, setErrors] = useState({});
   const [saving, setSaving] = useState(false);
   const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
 
@@ -571,11 +560,34 @@ function EditProfile({ me, idToken, onClose, onSaved, showToast }) {
     r.readAsDataURL(file);
   }
 
+  // Same required fields the registration flow enforces (matric/email aside,
+  // since those aren't editable here).
+  function validate() {
+    const e = {};
+    if (!form.fullName.trim()) e.fullName = 'Full name is required';
+    if (!form.department) e.department = 'Select your faculty';
+    if (!form.level) e.level = 'Select your level';
+    if (!form.github.trim()) e.github = 'GitHub username is required';
+    if (form.phone.trim() && !/^0[789][01]\d{8}$/.test(form.phone.replace(/\s/g, '')))
+      e.phone = 'Enter a valid Nigerian number';
+    setErrors(e);
+    return Object.keys(e).length === 0;
+  }
+
   async function save() {
+    if (!validate()) return;
     setSaving(true);
     try {
-      const updates = { ...form };
+      // Send only the fields that actually changed.
+      const updates = {};
+      for (const k of EDITABLE) {
+        const next = k === 'phone' ? form[k].replace(/\s/g, '') : form[k];
+        if (next !== (me[k] || '')) updates[k] = next;
+      }
       if (avatarFile) updates.avatarKey = await uploadAvatar(idToken, avatarFile);
+
+      if (Object.keys(updates).length === 0) { onClose(); return; }
+
       const res = await api.updateMe(idToken, updates);
       // Show the new photo immediately via the local preview; the next /me
       // refetch swaps in the presigned URL the backend now returns.
@@ -596,12 +608,35 @@ function EditProfile({ me, idToken, onClose, onSaved, showToast }) {
             <div style={{ flex: 1 }}><div style={{ fontWeight: 600 }}>Profile photo</div><div className="ds-muted" style={{ fontSize: 'var(--text-sm)' }}>Tap to change</div></div>
             <input type="file" accept="image/*" hidden onChange={pick} />
           </label>
-          <div className="field"><label className="ds-label">Full name</label><input className="ds-input" value={form.fullName} onChange={set('fullName')} /></div>
+
+          <div className="field"><label className="ds-label">Full name</label><input className="ds-input" value={form.fullName} onChange={set('fullName')} />{errors.fullName && <div className="ds-error">{errors.fullName}</div>}</div>
+
+          <div className="field"><label className="ds-label">Department / Faculty</label>
+            <select className="ds-input" value={form.department} onChange={set('department')}>
+              <option value="">Select your faculty</option>
+              {FACULTIES.map((f) => <option key={f}>{f}</option>)}
+            </select>
+            {errors.department && <div className="ds-error">{errors.department}</div>}
+          </div>
+
+          <div className="field"><label className="ds-label">Academic level</label>
+            <select className="ds-input" value={form.level} onChange={set('level')}>
+              <option value="">Select level</option>
+              {LEVELS.map((l) => <option key={l}>{l}</option>)}
+            </select>
+            {errors.level && <div className="ds-error">{errors.level}</div>}
+          </div>
+
           <div className="field"><label className="ds-label">Bio</label><textarea className="ds-input" rows={3} maxLength={160} value={form.bio} onChange={set('bio')} /></div>
-          <div className="field"><label className="ds-label">GitHub</label><div className="gh-field"><span className="gh-prefix">github.com/</span><input value={form.github} onChange={set('github')} autoCapitalize="none" /></div></div>
+          <div className="field"><label className="ds-label">GitHub</label><div className="gh-field"><span className="gh-prefix">github.com/</span><input value={form.github} onChange={set('github')} autoCapitalize="none" /></div>{errors.github && <div className="ds-error">{errors.github}</div>}</div>
           <div className="field"><label className="ds-label">LinkedIn</label><input className="ds-input" value={form.linkedin} onChange={set('linkedin')} placeholder="https://linkedin.com/in/…" /></div>
           <div className="field"><label className="ds-label">Twitter / X</label><input className="ds-input" value={form.twitter} onChange={set('twitter')} autoCapitalize="none" /></div>
-          <div className="field"><label className="ds-label">Phone <span className="opt">(private)</span></label><input className="ds-input" value={form.phone} onChange={set('phone')} /></div>
+          <div className="field"><label className="ds-label">Phone <span className="opt">(private)</span></label><input className="ds-input" value={form.phone} onChange={set('phone')} />{errors.phone && <div className="ds-error">{errors.phone}</div>}</div>
+
+          {/* Identity fields — shown for reference, set at registration, not editable here. */}
+          <div className="field"><label className="ds-label">Matric number <span className="opt">🔒 can't be changed</span></label><input className="ds-input" value={me.matric || '—'} disabled /></div>
+          <div className="field"><label className="ds-label">Email <span className="opt">🔒 can't be changed</span></label><input className="ds-input" value={me.email || '—'} disabled /></div>
+
           <button className="ds-btn ds-btn--primary ds-btn--block" onClick={save} disabled={saving}>{saving ? <span className="spinner" /> : 'Save changes'}</button>
         </div>
       </div>
