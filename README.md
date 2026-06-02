@@ -1,8 +1,8 @@
 # UNIZIK Builders Hub
 
-> The tech community for builders at Nnamdi Azikiwe University, Awka — and the membership platform behind AWS Student Builders UNIZIK.
+> Where students at Nnamdi Azikiwe University, Awka become builders — learning cloud and AI, shipping real projects, going from nothing to everything. This repo is the landing page and membership platform behind AWS Student Builders UNIZIK.
 
-I run the AWS Student Builders community at UNIZIK (we were the AWS Cloud Club before the rename). This repo is two things that share a brand and a domain: a landing page that gets students into the community, and a real membership platform where they sign up, build a profile, and show up in a member directory. The landing page brings people in. The platform is what they join.
+We're the student builders of UNIZIK: we learn AWS together, build real things you can put your name on, and back each other from a first line of code to a first offer letter. I run the community (we were the AWS Cloud Club before the rename), and this repo is the software behind it — two things that share a brand and a domain: a landing page that gets students in, and a real membership platform where they sign up, build a profile, and show up in a member directory. The landing page brings people in. The platform is what they join.
 
 If you want the engineering reasoning — why these services, what I turned down, how the data is modelled — that's in [`ARCHITECTURE.md`](./ARCHITECTURE.md). This README is the practical side: what's here and how to run it.
 

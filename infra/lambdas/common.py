@@ -6,6 +6,9 @@ import boto3
 _dynamodb = boto3.resource("dynamodb")
 TABLE = _dynamodb.Table(os.environ["TABLE_NAME"])
 
+_s3 = boto3.client("s3")
+AVATAR_BUCKET = os.environ.get("AVATAR_BUCKET")
+
 CORS_HEADERS = {
     "Access-Control-Allow-Origin": os.environ.get("ALLOWED_ORIGIN", "*"),
     "Access-Control-Allow-Headers": "Content-Type,Authorization",
@@ -51,18 +54,45 @@ def is_admin(event):
     return "admin" in user_groups(event)
 
 
+def presign_avatar(key, expires=3600):
+    """Turn a stored avatar object key into a short-lived GET URL.
+
+    The bucket blocks all public access, so the raw key can't load in an
+    <img>. We hand back a presigned URL the browser can fetch directly.
+    """
+    if not key or not AVATAR_BUCKET:
+        return None
+    return _s3.generate_presigned_url(
+        "get_object",
+        Params={"Bucket": AVATAR_BUCKET, "Key": key},
+        ExpiresIn=expires,
+    )
+
+
+def _with_avatar_url(view):
+    """Attach a loadable avatarUrl when the view carries an avatarKey."""
+    url = presign_avatar(view.get("avatarKey"))
+    if url:
+        view["avatarUrl"] = url
+    return view
+
+
 def strip_internal(item):
     """Remove DynamoDB key attributes before returning an item to its owner."""
-    return {k: v for k, v in item.items() if not k.startswith(INTERNAL_PREFIXES)}
+    return _with_avatar_url(
+        {k: v for k, v in item.items() if not k.startswith(INTERNAL_PREFIXES)}
+    )
 
 
 def public_view(item):
     """What anyone in the directory may see: no PII, no internal keys."""
-    return {
-        k: v
-        for k, v in item.items()
-        if k not in PRIVATE_FIELDS and not k.startswith(INTERNAL_PREFIXES)
-    }
+    return _with_avatar_url(
+        {
+            k: v
+            for k, v in item.items()
+            if k not in PRIVATE_FIELDS and not k.startswith(INTERNAL_PREFIXES)
+        }
+    )
 
 
 def parse_body(event):

@@ -28,9 +28,25 @@
   --dur-base: 0.28s;
   --dur-slow: 0.5s;
   --ease-out: var(--ease);
+
+  /* App-scoped heading + surface tweaks. The shared system has no warm-surface
+     or extra-tight tracking token, so they live here (design-system.css stays
+     the untouched source of truth). */
+  --tracking-tighter: -0.03em;   /* denser than --tracking-tight, for big Syne heads */
+  --app-bg-warm: #FAF7F1;        /* warm off-white page — bridges toward the landing feel */
 }
 
-#root { min-height: 100vh; }
+/* Warm off-white page instead of the flat cool grey from --bg: a barely-there
+   orange wash up top plus a faint dotted texture for paper-like depth. Kept
+   very light so cards and text stay perfectly readable. */
+body { background: var(--app-bg-warm); }
+#root {
+  min-height: 100vh;
+  background:
+    radial-gradient(1100px 520px at 50% -8%, rgba(255,153,0,0.05), transparent 70%),
+    radial-gradient(rgba(35,47,62,0.018) 1px, transparent 1px) 0 0 / 22px 22px,
+    var(--app-bg-warm);
+}
 
 /* ── APP HEADER ── */
 .app-header { background: var(--brand-navy); position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow-md); }
@@ -193,6 +209,19 @@ select.ds-input { cursor: pointer; }
 .section-head h2 { font-size: var(--text-xl); margin: var(--space-1) 0; }
 .section-head p { color: var(--text-muted); font-size: var(--text-base); }
 
+/* Large Syne headings across every tab read like the landing hero: denser
+   tracking and tighter leading so the wide black weight stops sprawling. The
+   font-sizes are already fluid clamps (--text-xl/--text-lg); the mobile block
+   below drops them a step further so two-word titles don't wrap huge. */
+.dash-welcome h1,
+.section-head h2,
+.step-head h2,
+.event-title {
+  letter-spacing: var(--tracking-tighter);
+  line-height: 1.05;
+  text-wrap: balance;
+}
+
 /* Scrollable tab bar so the hub nav stays one clean row and swipes on mobile */
 .tabs--scroll { overflow-x: auto; flex-wrap: nowrap; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
 .tabs--scroll::-webkit-scrollbar { display: none; }
@@ -246,4 +275,11 @@ select.ds-input { cursor: pointer; }
   .hub-grid { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .team-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Step the big Syne heads down a size on phones so they scale instead of
+     wrapping across 2–3 lines (checked at ~390px). */
+  .dash-welcome h1,
+  .section-head h2,
+  .step-head h2 { font-size: var(--text-lg); }
+  .event-title  { font-size: var(--text-md); }
 }

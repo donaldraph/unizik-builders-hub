@@ -58,6 +58,10 @@ export class ApiStack extends cdk.Stack {
     table.grantReadData(adminPendingFn);
     table.grantReadWriteData(adminVerifyFn);
     avatarBucket.grantPut(avatarUrlFn);
+    // Read access so these can presign GET URLs for stored avatars.
+    avatarBucket.grantRead(getProfileFn);
+    avatarBucket.grantRead(directoryFn);
+    avatarBucket.grantRead(adminPendingFn);
 
     const api = new apigw.RestApi(this, 'Api', {
       restApiName: `asbu-${props.stage}`,

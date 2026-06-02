@@ -140,7 +140,7 @@ function HomeSection({ firstName, goTo, onEditProfile }) {
 
       <div className="hub-mission ds-card">
         <div className="ds-eyebrow">Our mission</div>
-        <p>We're a student-run community at UNIZIK where we learn cloud and AI, build real projects, and connect with builders across 600+ campuses worldwide.</p>
+        <p>We're the student builders of UNIZIK — turning curiosity about cloud and AI into skills that get you hired. We learn AWS together, ship real projects you can put your name on, and back each other from a first line of code to a first offer. No experience needed, no permission required. Just show up and build. From nothing, to everything.</p>
       </div>
 
       <div className="section-head" style={{ marginTop: 'var(--space-8)' }}>
@@ -185,6 +185,7 @@ function HomeSection({ firstName, goTo, onEditProfile }) {
           <li>📚 Open <strong>Learn</strong> and start your AWS certification path.</li>
           <li>🤝 Browse the <strong>Directory</strong> to find builders in your faculty.</li>
           <li>🚀 Show up to the next event and start building with us.</li>
+          <li>🎉 Invite your friends to join us — the best builders come in groups.</li>
         </ul>
       </div>
     </section>
@@ -394,7 +395,10 @@ function EditProfile({ me, idToken, onClose, onSaved, showToast }) {
       const updates = { ...form };
       if (avatarFile) updates.avatarKey = await uploadAvatar(idToken, avatarFile);
       const res = await api.updateMe(idToken, updates);
-      onSaved({ ...me, ...updates, ...(res.profile || {}) });
+      // Show the new photo immediately via the local preview; the next /me
+      // refetch swaps in the presigned URL the backend now returns.
+      const optimistic = avatarFile ? { avatarUrl: preview } : {};
+      onSaved({ ...me, ...updates, ...optimistic, ...(res.profile || {}) });
     } catch (e) {
       showToast(e.message || 'Could not save'); setSaving(false);
     }
