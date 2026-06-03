@@ -249,7 +249,22 @@ select.ds-input { cursor: pointer; }
 .hub-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: var(--space-5); }
 .hub-card { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-2); text-align: left; text-decoration: none; background: var(--bg-raised); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--space-6); cursor: pointer; color: var(--text); font: inherit; transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base), border-color var(--dur-fast); }
 .hub-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); border-color: var(--brand-orange); }
-.hub-card-icon { font-size: 28px; line-height: 1; }
+/* Card glyphs: official AWS Student Builder icons (public/icons/), tinted to
+   brand orange via CSS mask and sized to the 28px footprint of the emoji they
+   replace. One source of truth for the colour. */
+.hub-card-icon {
+  width: 28px; height: 28px;
+  background-color: var(--brand-orange);
+  -webkit-mask: var(--hub-glyph) center / contain no-repeat;
+          mask: var(--hub-glyph) center / contain no-repeat;
+}
+.hub-card-icon--teams   { --hub-glyph: url(/icons/teams.svg); }
+.hub-card-icon--clock   { --hub-glyph: url(/icons/clock.svg); }
+.hub-card-icon--speaker { --hub-glyph: url(/icons/speaker.svg); }
+.hub-card-icon--smile   { --hub-glyph: url(/icons/smile.svg); }
+.hub-card-icon--wrench  { --hub-glyph: url(/icons/wrench.svg); }
+.hub-card-icon--trophy  { --hub-glyph: url(/icons/trophy.svg); }
+.hub-card-icon--drop    { --hub-glyph: url(/icons/drop.svg); }
 .hub-card-title { font-family: var(--font-display); font-weight: var(--weight-bold); font-size: var(--text-md); }
 .hub-card-desc { font-size: var(--text-sm); color: var(--text-muted); line-height: 1.6; }
 .hub-card-cta { margin-top: auto; padding-top: var(--space-2); font-family: var(--font-mono); font-size: var(--text-xs); color: var(--brand-orange); font-weight: var(--weight-bold); }

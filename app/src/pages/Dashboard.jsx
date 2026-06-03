@@ -204,25 +204,25 @@ function HomeSection({ firstName, goTo, onEditProfile }) {
       </div>
       <div className="hub-grid">
         <a className="hub-card" href="https://community.aws/buildergroups" target="_blank" rel="noopener">
-          <div className="hub-card-icon">🏗️</div>
+          <div className="hub-card-icon hub-card-icon--teams" aria-hidden="true" />
           <div className="hub-card-title">Join AWS Builder Center</div>
           <div className="hub-card-desc">Create your AWS Builder ID and plug into the global builder community.</div>
           <span className="hub-card-cta">community.aws ↗</span>
         </a>
         <button className="hub-card" onClick={() => goTo('events')}>
-          <div className="hub-card-icon">📅</div>
+          <div className="hub-card-icon hub-card-icon--clock" aria-hidden="true" />
           <div className="hub-card-title">Come to our next event</div>
           <div className="hub-card-desc">Workshops, study jams, and hangouts. See what's coming up.</div>
           <span className="hub-card-cta">View events →</span>
         </button>
         <a className="hub-card" href="https://chat.whatsapp.com/GYoJICzgnX65PkKq6R1qX3" target="_blank" rel="noopener">
-          <div className="hub-card-icon">💬</div>
+          <div className="hub-card-icon hub-card-icon--speaker" aria-hidden="true" />
           <div className="hub-card-title">Join us on WhatsApp</div>
           <div className="hub-card-desc">Our main room — announcements, resources, and daily chatter.</div>
           <span className="hub-card-cta">Open WhatsApp ↗</span>
         </a>
         <button className="hub-card" onClick={onEditProfile}>
-          <div className="hub-card-icon">✨</div>
+          <div className="hub-card-icon hub-card-icon--smile" aria-hidden="true" />
           <div className="hub-card-title">Complete your profile</div>
           <div className="hub-card-desc">Add your photo, bio, and socials so other builders can find you.</div>
           <span className="hub-card-cta">Edit profile →</span>
@@ -372,25 +372,25 @@ function LearnSection() {
         <p className="ds-muted">Learn by doing — free, self-paced, and plugged into the wider community.</p>
         <div className="hub-grid" style={{ marginTop: 'var(--space-5)' }}>
           <a className="hub-card" href="https://skillbuilder.aws" target="_blank" rel="noopener">
-            <div className="hub-card-icon">🧠</div>
+            <div className="hub-card-icon hub-card-icon--wrench" aria-hidden="true" />
             <div className="hub-card-title">AWS Skill Builder</div>
             <div className="hub-card-desc">Hundreds of free, self-paced digital courses straight from AWS.</div>
             <span className="hub-card-cta">skillbuilder.aws ↗</span>
           </a>
           <a className="hub-card" href="https://aws.amazon.com/training/digital/aws-cloud-quest/" target="_blank" rel="noopener">
-            <div className="hub-card-icon">🎮</div>
+            <div className="hub-card-icon hub-card-icon--trophy" aria-hidden="true" />
             <div className="hub-card-title">AWS Cloud Quest</div>
             <div className="hub-card-desc">Learn by solving real cloud challenges in a role-playing game.</div>
             <span className="hub-card-cta">Play Cloud Quest ↗</span>
           </a>
           <a className="hub-card" href="https://community.aws/buildergroups" target="_blank" rel="noopener">
-            <div className="hub-card-icon">🏗️</div>
+            <div className="hub-card-icon hub-card-icon--teams" aria-hidden="true" />
             <div className="hub-card-title">AWS Builder Center</div>
             <div className="hub-card-desc">Create a Builder ID and join the global builder community.</div>
             <span className="hub-card-cta">community.aws ↗</span>
           </a>
           <a className="hub-card" href="https://aws.amazon.com/developer/community/usergroups/" target="_blank" rel="noopener">
-            <div className="hub-card-icon">🌍</div>
+            <div className="hub-card-icon hub-card-icon--drop" aria-hidden="true" />
             <div className="hub-card-title">AWS User Groups</div>
             <div className="hub-card-desc">Find a local group of builders meeting near you.</div>
             <span className="hub-card-cta">Find a group ↗</span>
