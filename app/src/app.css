@@ -351,7 +351,19 @@ select.ds-input { cursor: pointer; }
 .gate-alt-link { color: var(--text-muted); text-decoration: none; border-bottom: 1px dashed var(--text-faint); padding-bottom: 1px; transition: color var(--dur-fast); }
 .gate-alt-link:hover { color: var(--brand-orange); border-color: var(--brand-orange); }
 
-.auth-split { min-height: 100vh; display: grid; grid-template-columns: 1.05fr 1fr; }
+.auth-split { position: relative; min-height: 100vh; display: grid; grid-template-columns: 1.05fr 1fr; }
+
+/* Single brand mark, pinned to the top and centred on the column seam
+   (1.05fr / 2.05fr) so it straddles the dark and light halves — a keystone
+   bridging the two. The arch "opens" once on load (see reduced-motion block). */
+.auth-logo {
+  position: absolute; z-index: 3; top: var(--space-5);
+  left: calc(100% * 1.05 / 2.05); transform: translateX(-50%);
+  display: grid; place-items: center; width: 72px; height: 72px;
+  border-radius: var(--radius-pill); background: var(--neutral-0);
+  box-shadow: 0 0 0 1px rgba(255,153,0,0.30), 0 var(--space-2) var(--space-5) rgba(0,0,0,0.30);
+}
+.auth-logo .auth-mark { width: 38px; height: 38px; margin: 0; }
 
 /* ---- Story panel (dark, editorial) ---- */
 .auth-story { position: relative; overflow: hidden; background: var(--neutral-0); color: #F0F2F8; display: flex; align-items: center; padding: var(--space-12) var(--space-10); }
@@ -359,18 +371,25 @@ select.ds-input { cursor: pointer; }
     radial-gradient(120% 80% at 15% 0%, rgba(255,153,0,0.16), transparent 55%),
     radial-gradient(100% 70% at 100% 100%, rgba(26,79,175,0.22), transparent 60%); pointer-events: none; }
 .auth-story-inner { position: relative; max-width: 460px; }
-.auth-mark { width: 48px; height: 48px; margin-bottom: var(--space-6); }
 .auth-story-title { font-size: var(--text-3xl); letter-spacing: var(--tracking-tighter); margin: var(--space-4) 0 var(--space-5); }
 .auth-story-lede { color: rgba(240,242,248,0.62); font-size: var(--text-md); line-height: var(--leading-body); margin-bottom: var(--space-8); }
 .auth-story-points { list-style: none; display: flex; flex-direction: column; gap: var(--space-4); margin-bottom: var(--space-8); }
 .auth-story-points li { display: flex; align-items: center; gap: var(--space-3); font-size: var(--text-base); color: rgba(240,242,248,0.82); }
-.auth-story-points li span { font-size: var(--text-lg); }
+/* Official AWS Student Builder glyphs, tinted to brand orange via CSS mask so the
+   single-path SVGs stay one consistent colour from one token. (public/icons/) */
+.auth-point-icon {
+  flex: 0 0 auto; width: 1.5rem; height: 1.5rem; background-color: var(--brand-orange);
+  -webkit-mask: var(--auth-point-glyph) center / contain no-repeat;
+          mask: var(--auth-point-glyph) center / contain no-repeat;
+}
+.auth-point-icon--wrench { --auth-point-glyph: url(/icons/wrench.svg); }
+.auth-point-icon--teams  { --auth-point-glyph: url(/icons/teams.svg); }
+.auth-point-icon--bolt   { --auth-point-glyph: url(/icons/bolt.svg); }
 .auth-story-foot { font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: var(--tracking-wide); color: rgba(240,242,248,0.4); }
 
 /* ---- Form panel (light) ---- */
 .auth-form-panel { display: flex; align-items: center; justify-content: center; padding: var(--space-10) var(--space-6); background: var(--app-bg-warm); }
 .auth-form-inner { width: 100%; max-width: 400px; }
-.auth-form-inner .auth-mark { width: 40px; height: 40px; margin-bottom: var(--space-5); }
 .auth-form-title { font-size: var(--text-2xl); margin-bottom: var(--space-2); }
 .auth-form-subtitle { color: var(--text-muted); font-size: var(--text-base); margin-bottom: var(--space-6); }
 
@@ -395,8 +414,27 @@ select.ds-input { cursor: pointer; }
 .auth-fallback a { color: var(--text-faint); text-decoration: none; }
 .auth-fallback a:hover { color: var(--text-muted); }
 
-/* On phones, drop the story panel and show just the form. */
+/* On phones, drop the story panel and show just the form. The seam is gone, so
+   the bridging logo simply centres over the single column. */
 @media (max-width: 860px) {
   .auth-split { grid-template-columns: 1fr; }
   .auth-story { display: none; }
+  .auth-logo { left: 50%; }
 }
+
+/* Gate-opening entrance for the brand arch — runs once on load, pure CSS/SVG,
+   near-zero weight. The legs part from centre, the lintel draws across, then the
+   keystone drops in. Skipped entirely when the user prefers reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .auth-logo .gate-leg,
+  .auth-logo .gate-lintel,
+  .auth-logo .gate-keystone { transform-box: fill-box; transform-origin: center; }
+  .auth-logo .gate-leg--l  { animation: gate-leg-l 600ms var(--ease-out) both; }
+  .auth-logo .gate-leg--r  { animation: gate-leg-r 600ms var(--ease-out) both; }
+  .auth-logo .gate-lintel  { animation: gate-lintel 420ms 320ms var(--ease-out) both; }
+  .auth-logo .gate-keystone { animation: gate-key 380ms 560ms var(--ease-out) both; }
+}
+@keyframes gate-leg-l  { from { transform: translateX(7px);  opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+@keyframes gate-leg-r  { from { transform: translateX(-7px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+@keyframes gate-lintel { from { transform: scaleX(0); }                  to { transform: scaleX(1); } }
+@keyframes gate-key    { from { transform: translateY(-5px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }

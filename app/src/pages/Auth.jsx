@@ -8,13 +8,15 @@ import {
 } from '../cognito.js';
 
 // The peaked-arch wordmark, matching the Brand logo in Shell.jsx.
+// The per-part classes drive the one-shot "gate opening" entrance (see app.css);
+// they're purely cosmetic and carry no behaviour.
 const ArchMark = () => (
   <svg className="auth-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <rect x="4" y="18" width="7" height="16" fill="#1A4FAF" />
-    <rect x="29" y="18" width="7" height="16" fill="#1A4FAF" />
-    <rect x="2" y="15" width="36" height="6" rx="3" fill="#FF9900" />
-    <rect x="17" y="5" width="6" height="13" fill="rgba(255,255,255,0.9)" />
-    <polygon points="17,5 20,0 23,5" fill="#FF9900" />
+    <rect className="gate-leg gate-leg--l" x="4" y="18" width="7" height="16" fill="#1A4FAF" />
+    <rect className="gate-leg gate-leg--r" x="29" y="18" width="7" height="16" fill="#1A4FAF" />
+    <rect className="gate-lintel" x="2" y="15" width="36" height="6" rx="3" fill="#FF9900" />
+    <rect className="gate-keystone" x="17" y="5" width="6" height="13" fill="rgba(255,255,255,0.9)" />
+    <polygon className="gate-keystone" points="17,5 20,0 23,5" fill="#FF9900" />
   </svg>
 );
 
@@ -34,7 +36,6 @@ function StoryPanel() {
   return (
     <aside className="auth-story" data-theme="dark">
       <div className="auth-story-inner">
-        <ArchMark />
         <p className="ds-eyebrow">// AWS Student Builders · UNIZIK</p>
         <h1 className="auth-story-title">Your cloud career starts on campus.</h1>
         <p className="auth-story-lede">
@@ -43,9 +44,9 @@ function StoryPanel() {
           build the network that launches their careers.
         </p>
         <ul className="auth-story-points">
-          <li><span>☁️</span> Hands-on AWS projects, study groups & certs</li>
-          <li><span>🤝</span> A verified directory of builders to learn with</li>
-          <li><span>🚀</span> Events, mentorship, and a launchpad for your career</li>
+          <li><span className="auth-point-icon auth-point-icon--wrench" aria-hidden="true" /> Hands-on AWS projects, study groups & certs</li>
+          <li><span className="auth-point-icon auth-point-icon--teams" aria-hidden="true" /> A verified directory of builders to learn with</li>
+          <li><span className="auth-point-icon auth-point-icon--bolt" aria-hidden="true" /> Events, mentorship, and a launchpad for your career</li>
         </ul>
         <p className="auth-story-foot">One account. Your profile, the roster, and everything the club ships.</p>
       </div>
@@ -184,10 +185,11 @@ export default function Auth() {
 
   return (
     <div className="auth-split">
+      {/* Single brand mark straddling the seam — bridges the dark and light halves. */}
+      <div className="auth-logo"><ArchMark /></div>
       <StoryPanel />
       <main className="auth-form-panel">
         <div className="auth-form-inner ds-animate-in">
-          <ArchMark />
           <h2 className="auth-form-title">{title}</h2>
           <p className="auth-form-subtitle">{subtitle}</p>
 
