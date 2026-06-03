@@ -77,11 +77,22 @@ export function AuthProvider({ children }) {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body,
     });
-    if (!res.ok) throw new Error('token exchange failed');
+    if (!res.ok) {
+      // Surface the real OAuth error body (e.g. {"error":"invalid_grant"}) so a
+      // 400 from /oauth2/token is diagnosable instead of an opaque message.
+      const detail = await res.text().catch(() => '');
+      console.error('[auth] token exchange failed', res.status, detail);
+      throw new Error('token exchange failed');
+    }
     const data = await res.json();
     sessionStorage.removeItem('asbu.pkce');
     persist({ idToken: data.id_token, accessToken: data.access_token, refreshToken: data.refresh_token });
   }, []);
+
+  // Used by the custom auth screens: after a direct (SRP) Cognito sign-in we
+  // already hold the JWTs, so we store them the same way the PKCE callback does.
+  // This is purely additive — the hosted-UI flow above is unchanged.
+  const setSession = useCallback((t) => persist(t), []);
 
   const logout = useCallback(() => {
     persist(null);
@@ -104,6 +115,7 @@ export function AuthProvider({ children }) {
     login,
     loginWithGoogle,
     handleCallback,
+    setSession,
     logout,
   };
 

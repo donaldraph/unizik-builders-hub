@@ -225,7 +225,9 @@ select.ds-input { cursor: pointer; }
 .step-head h2,
 .event-title,
 .learn-block h3,
-.modal-head h3 {
+.modal-head h3,
+.auth-story-title,
+.auth-form-title {
   font-family: var(--font-head);
   font-weight: var(--weight-semi);
   letter-spacing: -0.01em;
@@ -338,4 +340,63 @@ select.ds-input { cursor: pointer; }
   /* Shrink the wordmark on phones so "AWS STUDENT BUILDERS" stays one tidy
      line and doesn't crowd the avatar/actions on the right. */
   .ds-logo-text { font-size: var(--text-sm); }
+}
+
+/* ============================================================================
+   CUSTOM AUTH SCREENS (/auth) — split editorial layout
+   A dark story panel beside a light form panel. Lives alongside the original
+   hosted-UI Gate; nothing above is changed.
+   ============================================================================ */
+
+.gate-alt-link { color: var(--text-muted); text-decoration: none; border-bottom: 1px dashed var(--text-faint); padding-bottom: 1px; transition: color var(--dur-fast); }
+.gate-alt-link:hover { color: var(--brand-orange); border-color: var(--brand-orange); }
+
+.auth-split { min-height: 100vh; display: grid; grid-template-columns: 1.05fr 1fr; }
+
+/* ---- Story panel (dark, editorial) ---- */
+.auth-story { position: relative; overflow: hidden; background: var(--neutral-0); color: #F0F2F8; display: flex; align-items: center; padding: var(--space-12) var(--space-10); }
+.auth-story::before { content: ''; position: absolute; inset: 0; background:
+    radial-gradient(120% 80% at 15% 0%, rgba(255,153,0,0.16), transparent 55%),
+    radial-gradient(100% 70% at 100% 100%, rgba(26,79,175,0.22), transparent 60%); pointer-events: none; }
+.auth-story-inner { position: relative; max-width: 460px; }
+.auth-mark { width: 48px; height: 48px; margin-bottom: var(--space-6); }
+.auth-story-title { font-size: var(--text-3xl); letter-spacing: var(--tracking-tighter); margin: var(--space-4) 0 var(--space-5); }
+.auth-story-lede { color: rgba(240,242,248,0.62); font-size: var(--text-md); line-height: var(--leading-body); margin-bottom: var(--space-8); }
+.auth-story-points { list-style: none; display: flex; flex-direction: column; gap: var(--space-4); margin-bottom: var(--space-8); }
+.auth-story-points li { display: flex; align-items: center; gap: var(--space-3); font-size: var(--text-base); color: rgba(240,242,248,0.82); }
+.auth-story-points li span { font-size: var(--text-lg); }
+.auth-story-foot { font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: var(--tracking-wide); color: rgba(240,242,248,0.4); }
+
+/* ---- Form panel (light) ---- */
+.auth-form-panel { display: flex; align-items: center; justify-content: center; padding: var(--space-10) var(--space-6); background: var(--app-bg-warm); }
+.auth-form-inner { width: 100%; max-width: 400px; }
+.auth-form-inner .auth-mark { width: 40px; height: 40px; margin-bottom: var(--space-5); }
+.auth-form-title { font-size: var(--text-2xl); margin-bottom: var(--space-2); }
+.auth-form-subtitle { color: var(--text-muted); font-size: var(--text-base); margin-bottom: var(--space-6); }
+
+.auth-banner { border-radius: var(--radius-md); padding: var(--space-3) var(--space-4); font-size: var(--text-sm); line-height: 1.5; margin-bottom: var(--space-5); }
+.auth-banner--error { background: rgba(239,68,68,0.10); color: #B91C1C; border: 1px solid rgba(239,68,68,0.30); }
+.auth-banner--notice { background: var(--brand-orange-soft); color: var(--brand-orange-dim); border: 1px solid rgba(255,153,0,0.30); }
+
+.auth-divider { display: flex; align-items: center; gap: var(--space-4); margin: var(--space-5) 0; color: var(--text-faint); font-family: var(--font-mono); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: var(--tracking-label); }
+.auth-divider::before, .auth-divider::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+.auth-field-error { color: var(--signal-error); font-size: var(--text-xs); margin-top: var(--space-2); }
+
+.auth-form-inner .ds-btn--block { margin-top: var(--space-2); }
+
+.auth-links { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-3); margin-top: var(--space-5); font-size: var(--text-sm); color: var(--text-muted); }
+.auth-link { background: none; border: none; padding: 0; cursor: pointer; font: inherit; color: var(--brand-blue); text-decoration: none; }
+.auth-link:hover { color: var(--brand-orange); }
+.auth-link:disabled { color: var(--text-faint); cursor: not-allowed; }
+.auth-link--strong { font-weight: var(--weight-semi); }
+
+.auth-fallback { margin-top: var(--space-8); text-align: center; font-size: var(--text-xs); }
+.auth-fallback a { color: var(--text-faint); text-decoration: none; }
+.auth-fallback a:hover { color: var(--text-muted); }
+
+/* On phones, drop the story panel and show just the form. */
+@media (max-width: 860px) {
+  .auth-split { grid-template-columns: 1fr; }
+  .auth-story { display: none; }
 }

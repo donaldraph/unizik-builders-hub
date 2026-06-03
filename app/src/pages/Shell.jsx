@@ -1,5 +1,5 @@
-import { useEffect, useState, useCallback } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useEffect, useState, useCallback, useRef } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../auth.jsx';
 
 const GateMark = () => (
@@ -33,6 +33,11 @@ export function Gate() {
         <p style={{ marginTop: 'var(--space-6)', fontSize: 'var(--text-xs)' }} className="ds-muted">
           New here? The same button creates your account.
         </p>
+        {/* Additive door to the new custom auth screens — the hosted-UI buttons
+            above remain the proven path until the new flow is signed off. */}
+        <p style={{ marginTop: 'var(--space-4)', fontSize: 'var(--text-xs)' }}>
+          <Link to="/auth" className="gate-alt-link">Try the new sign-in →</Link>
+        </p>
       </div>
     </div>
   );
@@ -43,8 +48,14 @@ export function Callback() {
   const { handleCallback } = useAuth();
   const navigate = useNavigate();
   const [error, setError] = useState(null);
+  // The ?code is single-use. React.StrictMode double-invokes effects in dev, which
+  // would exchange the same code twice — the second call gets a 400 invalid_grant.
+  // This guard ensures we run the exchange exactly once per mount.
+  const exchanged = useRef(false);
 
   useEffect(() => {
+    if (exchanged.current) return;
+    exchanged.current = true;
     const code = new URLSearchParams(window.location.search).get('code');
     if (!code) { navigate('/', { replace: true }); return; }
     handleCallback(code)

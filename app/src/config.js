@@ -6,6 +6,10 @@ export const CONFIG = {
   cognitoDomain: env.VITE_COGNITO_DOMAIN,
   clientId: env.VITE_USER_POOL_CLIENT_ID,
   redirectUri: env.VITE_REDIRECT_URI || `${window.location.origin}/callback`,
+  // Direct Cognito API (custom auth screens). The hosted-UI PKCE flow doesn't
+  // need these; the amazon-cognito-identity-js path does.
+  userPoolId: env.VITE_USER_POOL_ID,
+  region: env.VITE_AWS_REGION || 'us-east-1',
 };
 
 // The builder tags — one source of truth, used by the register flow and the

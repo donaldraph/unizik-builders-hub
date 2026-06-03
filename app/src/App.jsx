@@ -4,12 +4,14 @@ import { useAuth } from './auth.jsx';
 import { api } from './api.js';
 import Register from './pages/Register.jsx';
 import Dashboard from './pages/Dashboard.jsx';
+import Auth from './pages/Auth.jsx';
 import { Gate, Callback, Pending, Loader, Brand } from './pages/Shell.jsx';
 
 export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/auth" element={<Auth />} />
       <Route path="/callback" element={<Callback />} />
       <Route path="/register" element={<Guard><Register /></Guard>} />
       <Route path="/pending" element={<Guard><Pending /></Guard>} />

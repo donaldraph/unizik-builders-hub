@@ -11,6 +11,10 @@
 </head>
 <body>
   <div id="root"></div>
+  <!-- amazon-cognito-identity-js (custom auth screens) bundles a Buffer polyfill
+       that reads Node's `global`. Alias it to the browser global before any
+       module loads so the SDK doesn't throw on import. -->
+  <script>window.global = window.globalThis;</script>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
