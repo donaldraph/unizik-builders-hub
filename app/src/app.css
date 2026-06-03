@@ -415,11 +415,18 @@ select.ds-input { cursor: pointer; }
 .auth-fallback a:hover { color: var(--text-muted); }
 
 /* On phones, drop the story panel and show just the form. The seam is gone, so
-   the bridging logo simply centres over the single column. */
+   the logo joins the flow directly above the form and the logo-plus-form pair is
+   centred as a single group — instead of the mark floating at the top while the
+   form sits mid-screen. */
 @media (max-width: 860px) {
-  .auth-split { grid-template-columns: 1fr; }
+  .auth-split { display: flex; flex-direction: column; justify-content: center; gap: var(--space-6); padding: var(--space-8) var(--space-5); }
   .auth-story { display: none; }
-  .auth-logo { left: 50%; }
+  /* Logo centres itself; the form panel keeps the column's default stretch so it
+     fills the width and the fields don't overflow. */
+  .auth-logo { position: static; transform: none; align-self: center; }
+  .auth-form-panel { padding: 0; }
+  /* Centre the heading + subtitle under the centred logo (mobile only). */
+  .auth-form-title, .auth-form-subtitle { text-align: center; }
 }
 
 /* Gate-opening entrance for the brand arch — runs once on load, pure CSS/SVG,
