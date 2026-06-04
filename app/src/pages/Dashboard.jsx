@@ -15,7 +15,7 @@ const PLACEHOLDER =
 // ============================================================================
 
 // Link to your Meetup group (Events tab). `null` => button shows "coming soon".
-const MEETUP_URL = null; // paste your Meetup group URL when it's live
+const MEETUP_URL = 'https://www.meetup.com/aws-sbg-at-nnamdi-azikwe-university-unizik/';
 
 // Upcoming events. Real data only — empty until events are scheduled.
 const EVENTS = [];
@@ -33,9 +33,9 @@ const TEAM = [
 const CHANNELS = [
   { name: 'WhatsApp', brand: 'whatsapp', color: '#25D366', url: 'https://chat.whatsapp.com/GYoJICzgnX65PkKq6R1qX3', action: 'Join', blurb: 'Our main room — daily chatter, questions, and quick announcements.' },
   { name: 'LinkedIn', brand: 'linkedin', color: '#0A66C2', url: 'https://www.linkedin.com/company/aws-student-builders-unizik/', action: 'Follow', blurb: 'Milestones, events, and member wins worth sharing professionally.' },
-  { name: 'Meetup', brand: 'meetup', color: '#ED1C40', url: null, handle: 'meetup.com', blurb: 'RSVP to workshops and study jams — group launching soon.' },
-  { name: 'Instagram', brand: 'instagram', color: '#E4405F', url: null, handle: 'instagram.com/awsunizik', blurb: 'Behind-the-scenes and event highlights — launching soon.' },
-  { name: 'Facebook', brand: 'facebook', color: '#1877F2', url: null, handle: 'facebook.com/unizikbuilders', blurb: 'A wider community page for reach — launching soon.' },
+  { name: 'Meetup', brand: 'meetup', color: '#ED1C40', url: 'https://www.meetup.com/aws-sbg-at-nnamdi-azikwe-university-unizik/', action: 'RSVP', handle: 'meetup.com', blurb: 'RSVP to our workshops and study jams.' },
+  { name: 'Instagram', brand: 'instagram', color: '#E4405F', url: 'https://www.instagram.com/unizikstudentbuilders/', action: 'Follow', handle: 'instagram.com/unizikstudentbuilders', blurb: 'Behind-the-scenes and event highlights.' },
+  { name: 'Facebook', brand: 'facebook', color: '#1877F2', url: 'https://www.facebook.com/unizikstudentbuilders', action: 'Follow', handle: 'facebook.com/unizikstudentbuilders', blurb: 'A wider community page for reach.' },
 ];
 
 // Where the certification "View on AWS" links point (exam detail lives on AWS).
@@ -353,7 +353,7 @@ function HomeSection({ firstName, goTo, onEditProfile }) {
             </>
           );
           return live
-            ? <a key={c.name} className="channel-card" href={c.url} target="_blank" rel="noopener">{inner}</a>
+            ? <a key={c.name} className="channel-card" href={c.url} target="_blank" rel="noopener noreferrer">{inner}</a>
             : <div key={c.name} className="channel-card is-soon" aria-disabled="true">{inner}</div>;
         })}
       </div>
@@ -501,7 +501,7 @@ function EventsSection() {
       <div style={{ marginBottom: 'var(--space-6)' }}>
         {/* Until MEETUP_URL is set, show a non-clickable "coming soon" instead of a dead link. */}
         {MEETUP_URL
-          ? <a className="ds-btn ds-btn--secondary" href={MEETUP_URL} target="_blank" rel="noopener">📍 Join our Meetup group</a>
+          ? <a className="ds-btn ds-btn--secondary" href={MEETUP_URL} target="_blank" rel="noopener noreferrer">📍 Join our Meetup group</a>
           : <span className="ds-btn ds-btn--secondary is-soon" aria-disabled="true">📍 Meetup group — coming soon</span>}
       </div>
 
