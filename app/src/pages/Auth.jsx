@@ -39,9 +39,7 @@ function StoryPanel() {
         <p className="ds-eyebrow">// AWS Student Builders · UNIZIK</p>
         <h1 className="auth-story-title">Your cloud career starts on campus.</h1>
         <p className="auth-story-lede">
-          The home for AWS Student Builders at UNIZIK — where students learn cloud, AI,
-          and other career-worthy skills, earn certifications, ship real projects, and
-          build the network that launches their careers.
+          We're the student builders of UNIZIK — a community of people who think like you and won't let you coast. We learn cloud, AI, and cloud security best practices together, but the real thing we're building is each other: pushing past the fear, onto a stage that's globally recognized, where your ability and who you are finally get seen. You don't rise here alone. You rise because the people around you refuse to let you stay small. No experience needed, no permission required. Just show up and build. From nothing, to everything.
         </p>
         <ul className="auth-story-points">
           <li><span className="auth-point-icon auth-point-icon--wrench" aria-hidden="true" /> Hands-on AWS projects, study groups & certs</li>

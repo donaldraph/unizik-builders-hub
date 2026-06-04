@@ -195,7 +195,7 @@ function HomeSection({ firstName, goTo, onEditProfile }) {
 
       <div className="hub-mission ds-card">
         <div className="ds-eyebrow">Our mission</div>
-        <p>We're the student builders of UNIZIK — turning curiosity about cloud and AI into skills that get you hired. We learn AWS together, ship real projects you can put your name on, and back each other from a first line of code to a first offer. No experience needed, no permission required. Just show up and build. From nothing, to everything.</p>
+        <p>We're the student builders of UNIZIK — a community of people who think like you and won't let you coast. We learn cloud, AI, and cloud security best practices together, but the real thing we're building is each other: pushing past the fear, onto a stage that's globally recognized, where your ability and who you are finally get seen. You don't rise here alone. You rise because the people around you refuse to let you stay small. No experience needed, no permission required. Just show up and build. From nothing, to everything.</p>
       </div>
 
       <div className="section-head" style={{ marginTop: 'var(--space-8)' }}>

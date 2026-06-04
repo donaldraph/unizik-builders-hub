@@ -175,7 +175,7 @@ body { background: var(--app-bg-warm); }
 .ds-logo { display: inline-flex; align-items: center; gap: var(--space-3); text-decoration: none; }
 .ds-logo-mark { width: 40px; height: 40px; flex-shrink: 0; display: inline-flex; }
 .ds-logo-mark svg { width: 100%; height: 100%; }
-.ds-logo-text { display: flex; flex-direction: column; font-family: var(--font-display); font-weight: var(--weight-black); font-size: var(--text-sm); line-height: 1.05; letter-spacing: -0.05em; }
+.ds-logo-text { display: flex; flex-direction: column; font-family: var(--font-display); font-weight: var(--weight-black); font-size: var(--text-sm); line-height: 1.05; letter-spacing: -0.08em; }
 .ds-logo-text span { font-size: var(--text-xs); font-weight: var(--weight-semi); letter-spacing: var(--tracking-label); color: var(--brand-orange); }
 
 /* Card gets default padding (design-system .ds-card sets only bg/border/radius) */
@@ -301,7 +301,11 @@ select.ds-input { cursor: pointer; }
 
 /* Community channels (Home) */
 .channel-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--space-4); }
-.channel-card { display: flex; align-items: center; gap: var(--space-4); text-decoration: none; color: var(--text); background: var(--bg-raised); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--space-5); transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base), border-color var(--dur-fast); }
+/* min-width:0 stops this nowrap flex row from flooring its grid track at its own
+   min-content. Without it, a single-column "1fr" (= minmax(auto,1fr)) grid is
+   forced as wide as the widest card, overflowing the viewport and giving the
+   whole body a horizontal scroll on mobile. */
+.channel-card { min-width: 0; display: flex; align-items: center; gap: var(--space-4); text-decoration: none; color: var(--text); background: var(--bg-raised); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--space-5); transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base), border-color var(--dur-fast); }
 .channel-card:not(.is-soon):hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); border-color: var(--brand-orange); }
 .channel-card.is-soon { opacity: 0.72; cursor: default; background: var(--bg-raised-2); border-style: dashed; }
 .channel-icon { font-size: 26px; line-height: 1; flex: 0 0 auto; }
