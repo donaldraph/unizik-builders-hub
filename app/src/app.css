@@ -423,9 +423,6 @@ select.ds-input { cursor: pointer; }
    hosted-UI Gate; nothing above is changed.
    ============================================================================ */
 
-.gate-alt-link { color: var(--text-muted); text-decoration: none; border-bottom: 1px dashed var(--text-faint); padding-bottom: 1px; transition: color var(--dur-fast); }
-.gate-alt-link:hover { color: var(--brand-orange); border-color: var(--brand-orange); }
-
 .auth-split { position: relative; min-height: 100vh; display: grid; grid-template-columns: 1.05fr 1fr; }
 
 /* Single brand mark, pinned to the top and centred on the column seam
@@ -484,10 +481,6 @@ select.ds-input { cursor: pointer; }
 .auth-link:hover { color: var(--brand-orange); }
 .auth-link:disabled { color: var(--text-faint); cursor: not-allowed; }
 .auth-link--strong { font-weight: var(--weight-semi); }
-
-.auth-fallback { margin-top: var(--space-8); text-align: center; font-size: var(--text-xs); }
-.auth-fallback a { color: var(--text-faint); text-decoration: none; }
-.auth-fallback a:hover { color: var(--text-muted); }
 
 /* On phones, drop the story panel and show just the form. The seam is gone, so
    the logo joins the flow directly above the form and the logo-plus-form pair is

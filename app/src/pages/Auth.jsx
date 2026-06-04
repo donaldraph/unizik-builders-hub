@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../auth.jsx';
 import {
   signUp, confirmSignUp, resendCode, signIn,
@@ -249,10 +249,6 @@ export default function Auth() {
               <button type="button" className="auth-link" onClick={() => go('signin')}>Back to sign in</button>
             )}
           </div>
-
-          <p className="auth-fallback">
-            <Link to="/">← Use the original sign-in</Link>
-          </p>
         </div>
       </main>
     </div>

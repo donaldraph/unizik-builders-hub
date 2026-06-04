@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback, useRef } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../auth.jsx';
 
 const GateMark = () => (
@@ -32,11 +32,6 @@ export function Gate() {
         </div>
         <p style={{ marginTop: 'var(--space-6)', fontSize: 'var(--text-xs)' }} className="ds-muted">
           New here? The same button creates your account.
-        </p>
-        {/* Additive door to the new custom auth screens — the hosted-UI buttons
-            above remain the proven path until the new flow is signed off. */}
-        <p style={{ marginTop: 'var(--space-4)', fontSize: 'var(--text-xs)' }}>
-          <Link to="/auth" className="gate-alt-link">Try the new sign-in →</Link>
         </p>
       </div>
     </div>

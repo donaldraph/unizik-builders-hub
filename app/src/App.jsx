@@ -5,7 +5,7 @@ import { api } from './api.js';
 import Register from './pages/Register.jsx';
 import Dashboard from './pages/Dashboard.jsx';
 import Auth from './pages/Auth.jsx';
-import { Gate, Callback, Pending, Loader, Brand } from './pages/Shell.jsx';
+import { Callback, Pending, Loader, Brand } from './pages/Shell.jsx';
 
 export default function App() {
   return (
@@ -25,7 +25,7 @@ export default function App() {
 function Guard({ children }) {
   const { isAuthenticated, loading } = useAuth();
   if (loading) return <Loader label="Loading" />;
-  if (!isAuthenticated) return <Navigate to="/" replace />;
+  if (!isAuthenticated) return <Navigate to="/auth" replace />;
   return children;
 }
 
@@ -54,5 +54,8 @@ function Home() {
 
   if (loading || checking) return <Loader label="Getting you in" />;
   if (isAuthenticated) return <Loader label="Getting you in" />;
-  return <Gate />;
+  // Custom /auth is now the primary sign-in. The old hosted-UI Gate is retired
+  // (kept in Shell.jsx for reference); the old gate route redirects here so any
+  // existing links/bookmarks to "/" still reach a working sign-in.
+  return <Navigate to="/auth" replace />;
 }
