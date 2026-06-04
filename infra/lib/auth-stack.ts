@@ -1,6 +1,9 @@
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as cognito from 'aws-cdk-lib/aws-cognito';
+import * as lambda from 'aws-cdk-lib/aws-lambda';
+import * as iam from 'aws-cdk-lib/aws-iam';
+import * as path from 'path';
 
 interface AuthStackProps extends cdk.StackProps {
   stage: string;
@@ -23,6 +26,18 @@ export class AuthStack extends cdk.Stack {
     super(scope, id, props);
     const isProd = props.stage === 'prod';
 
+    // Account-linking pre-sign-up trigger (Python; infra/lambdas/). Created
+    // before the pool so it can be attached as a trigger; IAM is granted after
+    // the pool exists (see below).
+    const preSignUpFn = new lambda.Function(this, 'PreSignUpLinkFn', {
+      runtime: lambda.Runtime.PYTHON_3_12,
+      code: lambda.Code.fromAsset(path.join(__dirname, '..', 'lambdas')),
+      handler: 'pre_signup_link.handler',
+      timeout: cdk.Duration.seconds(10),
+      memorySize: 256,
+      tracing: lambda.Tracing.ACTIVE,
+    });
+
     this.userPool = new cognito.UserPool(this, 'UserPool', {
       userPoolName: `asbu-${props.stage}`,
       selfSignUpEnabled: true,
@@ -41,7 +56,20 @@ export class AuthStack extends cdk.Stack {
       },
       accountRecovery: cognito.AccountRecovery.EMAIL_ONLY,
       removalPolicy: isProd ? cdk.RemovalPolicy.RETAIN : cdk.RemovalPolicy.DESTROY,
+      lambdaTriggers: { preSignUp: preSignUpFn },
     });
+
+    // Minimal Cognito permissions for the linking trigger. Scoped to user pools
+    // in this account/region rather than this.userPool.userPoolArn: the pool
+    // already depends on the function (as its trigger), so referencing the pool
+    // ARN back in the function's role would create a circular dependency. The
+    // handler only ever acts on the pool it's invoked for (event.userPoolId).
+    preSignUpFn.addToRolePolicy(new iam.PolicyStatement({
+      actions: ['cognito-idp:ListUsers', 'cognito-idp:AdminLinkProviderForUser'],
+      resources: [cdk.Arn.format(
+        { service: 'cognito-idp', resource: 'userpool', resourceName: '*' }, this,
+      )],
+    }));
 
     // Optional Google federation.
     const googleClientId = this.node.tryGetContext('googleClientId');
@@ -56,12 +84,20 @@ export class AuthStack extends cdk.Stack {
         userPool: this.userPool,
         clientId: googleClientId,
         clientSecretValue: cdk.SecretValue.unsafePlainText(googleClientSecret),
-        scopes: ['openid', 'email', 'profile'],
+        // Scope order mirrors the existing console-created provider
+        // ("profile email openid"). OAuth treats scopes as a set, so order is
+        // cosmetic — matched here only so the IaC definition is byte-identical.
+        scopes: ['profile', 'email', 'openid'],
         attributeMapping: {
           email: cognito.ProviderAttribute.GOOGLE_EMAIL,
           fullname: cognito.ProviderAttribute.GOOGLE_NAME,
         },
       });
+      // Cognito's Google provider also maps username -> sub by default, and the
+      // console-created provider has it. The high-level attributeMapping has no
+      // `username` field, so set it on the L1 child to mirror live exactly.
+      (google.node.defaultChild as cognito.CfnUserPoolIdentityProvider)
+        .addPropertyOverride('AttributeMapping.username', 'sub');
       providers.push(cognito.UserPoolClientIdentityProvider.GOOGLE);
     }
 
