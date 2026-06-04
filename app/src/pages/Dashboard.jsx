@@ -28,6 +28,11 @@ const TEAM = [
   { name: 'Donald', role: 'Student Builder Group Leader', photo: PLACEHOLDER },
 ];
 
+// Faculty advisors / mentors. Add more by appending to this array.
+const ADVISORS = [
+  { name: 'Prof. C. Nwajinka', role: 'Faculty Advisor · Dept. of Agricultural & Bio-Resources Engineering', photo: PLACEHOLDER },
+];
+
 // Community channels. `url: null` => rendered as "Coming soon", not clickable.
 // `brand` keys a real logo (see brandIcons.jsx); `color` is the brand colour.
 const CHANNELS = [
@@ -169,7 +174,7 @@ export default function Dashboard() {
         {tab === 'learn' && <LearnSection />}
         {tab === 'events' && <EventsSection />}
         {tab === 'gallery' && <GallerySection />}
-        {tab === 'team' && <TeamSection />}
+        {tab === 'team' && <><TeamSection /><AdvisorsSection /></>}
         {tab === 'directory' && <Directory members={members} />}
         {tab === 'admin' && isAdmin && (
           <>
@@ -562,6 +567,28 @@ function TeamSection() {
             <img className="team-photo" src={t.photo} alt={t.name} />
             <div className="team-name">{t.name}</div>
             <div className="team-role">{t.role}</div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+// ---- Advisors: faculty/mentor cards (from the editable ADVISORS array) ----
+function AdvisorsSection() {
+  return (
+    <section className="ds-animate-in" style={{ marginTop: 'var(--space-8)' }}>
+      <div className="section-head">
+        <div className="ds-eyebrow">Advisors</div>
+        <h2>Our advisors</h2>
+        <p>Faculty and mentors guiding the community.</p>
+      </div>
+      <div className="team-grid">
+        {ADVISORS.map((a, i) => (
+          <div className="team-card ds-card" key={i}>
+            <img className="team-photo" src={a.photo} alt={a.name} />
+            <div className="team-name">{a.name}</div>
+            <div className="team-role">{a.role}</div>
           </div>
         ))}
       </div>
