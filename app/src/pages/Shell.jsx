@@ -13,7 +13,8 @@ const GateMark = () => (
 
 // The login / sign-up gate.
 export function Gate() {
-  const { login, loginWithGoogle } = useAuth();
+  const { loginWithGoogle } = useAuth();
+  const navigate = useNavigate();
   return (
     <div className="screen-center">
       <div className="center-card ds-animate-in">
@@ -22,7 +23,10 @@ export function Gate() {
         <h1>Join the builders.</h1>
         <p>Sign in to create your profile, find other builders, and become part of the club roster.</p>
         <div className="gate-providers">
-          <button className="ds-btn ds-btn--primary ds-btn--block" onClick={() => login()}>
+          {/* Email/password is handled entirely on the custom /auth page (in-page
+              SRP via cognito.js) — it must never bounce to the Cognito hosted UI.
+              Only Google legitimately uses the hosted redirect (its own consent). */}
+          <button className="ds-btn ds-btn--primary ds-btn--block" onClick={() => navigate('/auth')}>
             Continue with email
           </button>
           <button className="btn-google" onClick={loginWithGoogle}>
@@ -31,7 +35,7 @@ export function Gate() {
           </button>
         </div>
         <p style={{ marginTop: 'var(--space-6)', fontSize: 'var(--text-xs)' }} className="ds-muted">
-          New here? The same button creates your account.
+          New here? You can create your account there too.
         </p>
       </div>
     </div>
