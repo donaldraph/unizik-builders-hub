@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback, useRef } from 'react';
 import { useAuth } from '../auth.jsx';
 import { api, uploadAvatar } from '../api.js';
 import { TAGS, LEVELS, FACULTIES } from '../config.js';
@@ -149,17 +149,21 @@ export default function Dashboard() {
   return (
     <>
       <Brand>
-        <div className="app-online"><span className="dot" />{members.length} verified builders</div>
-        <img className="app-avatar" src={avatarSrc(me)} alt="me" onClick={() => setEditing(true)} title="Edit profile" />
+        <span className="app-online" title={`${members.length} verified builders`}>
+          <span className="dot" />
+          <strong className="app-online-num">{members.length}</strong>
+          <span className="app-online-label">verified builders</span>
+        </span>
+        <AccountMenu
+          me={me}
+          isAdmin={isAdmin}
+          onEditProfile={() => setEditing(true)}
+          onVerifyMembers={() => setTab('admin')}
+        />
       </Brand>
 
       <main className="app-main">
-        <nav className="tabs tabs--scroll">
-          {SECTIONS.map((s) => (
-            <button key={s.id} className={`tab ${tab === s.id ? 'active' : ''}`} onClick={() => setTab(s.id)}>{s.label}</button>
-          ))}
-          {isAdmin && <button className={`tab ${tab === 'admin' ? 'active' : ''}`} onClick={() => setTab('admin')}>Verify Members</button>}
-        </nav>
+        <TabStrip sections={SECTIONS} active={tab} onSelect={setTab} />
 
         {tab === 'home' && <HomeSection firstName={firstName} goTo={setTab} onEditProfile={() => setEditing(true)} />}
         {tab === 'learn' && <LearnSection />}
@@ -167,7 +171,12 @@ export default function Dashboard() {
         {tab === 'gallery' && <GallerySection />}
         {tab === 'team' && <TeamSection />}
         {tab === 'directory' && <Directory members={members} />}
-        {tab === 'admin' && isAdmin && <AdminPanel idToken={idToken} onChange={load} showToast={showToast} />}
+        {tab === 'admin' && isAdmin && (
+          <>
+            <div className="section-head"><div className="ds-eyebrow">Admin</div><h2>Verify Members</h2></div>
+            <AdminPanel idToken={idToken} onChange={load} showToast={showToast} />
+          </>
+        )}
       </main>
 
       {editing && (
@@ -185,6 +194,84 @@ export default function Dashboard() {
 }
 
 // ---- Home: welcome landing + quick-start ----
+// Horizontal tab rail. Stays a self-contained scroller (the body never scrolls
+// sideways), but adds discoverability for the sections on a phone: edge fades
+// that signal more tabs exist, and auto-scrolling the active tab into view.
+function TabStrip({ sections, active, onSelect }) {
+  const scrollerRef = useRef(null);
+  const [fade, setFade] = useState({ left: false, right: false });
+
+  const updateFade = useCallback(() => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    setFade({
+      left: el.scrollLeft > 4,
+      right: el.scrollLeft + el.clientWidth < el.scrollWidth - 4,
+    });
+  }, []);
+
+  useEffect(() => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    updateFade();
+    el.addEventListener('scroll', updateFade, { passive: true });
+    window.addEventListener('resize', updateFade);
+    return () => { el.removeEventListener('scroll', updateFade); window.removeEventListener('resize', updateFade); };
+  }, [updateFade]);
+
+  // Keep the selected tab visible even when it sits off-screen in the scroller.
+  useEffect(() => {
+    const el = scrollerRef.current;
+    el?.querySelector('.tab.active')?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+  }, [active]);
+
+  return (
+    <div className={`tabs-wrap${fade.left ? ' fade-left' : ''}${fade.right ? ' fade-right' : ''}`}>
+      <nav className="tabs tabs--scroll" ref={scrollerRef}>
+        {sections.map((s) => (
+          <button key={s.id} className={`tab ${active === s.id ? 'active' : ''}`} onClick={() => onSelect(s.id)}>{s.label}</button>
+        ))}
+      </nav>
+    </div>
+  );
+}
+
+// Account menu behind the avatar: edit profile, Verify Members (admin), and —
+// on mobile — Sign out (desktop keeps the inline Sign-out button). This is where
+// the admin "Verify Members" action lives now, instead of in the tab strip.
+function AccountMenu({ me, isAdmin, onEditProfile, onVerifyMembers }) {
+  const { logout, name, email } = useAuth();
+  const [open, setOpen] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const onDocClick = (e) => { if (ref.current && !ref.current.contains(e.target)) setOpen(false); };
+    const onKey = (e) => { if (e.key === 'Escape') setOpen(false); };
+    document.addEventListener('mousedown', onDocClick);
+    document.addEventListener('keydown', onKey);
+    return () => { document.removeEventListener('mousedown', onDocClick); document.removeEventListener('keydown', onKey); };
+  }, [open]);
+
+  const pick = (fn) => () => { setOpen(false); fn?.(); };
+
+  return (
+    <div className="account" ref={ref}>
+      <button className="account-trigger" onClick={() => setOpen((v) => !v)} aria-haspopup="menu" aria-expanded={open} title="Account">
+        <img className="app-avatar" src={avatarSrc(me)} alt="Your account" />
+      </button>
+      {open && (
+        <div className="account-menu" role="menu">
+          {(name || email) && <div className="account-head">{name || email}</div>}
+          <button className="account-item" role="menuitem" onClick={pick(onEditProfile)}>Edit profile</button>
+          {isAdmin && <button className="account-item" role="menuitem" onClick={pick(onVerifyMembers)}>Verify Members</button>}
+          <button className="account-item account-item--signout account-item--danger" role="menuitem" onClick={pick(logout)}>Sign out</button>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function HomeSection({ firstName, goTo, onEditProfile }) {
   return (
     <section className="ds-animate-in">

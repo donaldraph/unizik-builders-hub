@@ -119,11 +119,11 @@ export function Brand({ children }) {
               <polygon points="17,5 20,0 23,5" fill="#FF9900"/>
             </svg>
           </span>
-          <span className="ds-logo-text">AWS STUDENT BUILDERS<span>UNIZIK</span></span>
+          <span className="ds-logo-text"><span className="ds-logo-name"><span className="ds-logo-aws">AWS</span><span className="ds-logo-rest"> STUDENT BUILDERS</span></span><span className="ds-logo-sub">UNIZIK</span></span>
         </a>
         <div className="app-header-actions">
           {children}
-          <button className="ds-btn ds-btn--ghost ds-btn--sm" onClick={logout}>Sign out</button>
+          <button className="ds-btn ds-btn--ghost ds-btn--sm app-signout" onClick={logout}>Sign out</button>
         </div>
       </div>
     </header>
