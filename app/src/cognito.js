@@ -113,6 +113,16 @@ function normalizeSrpError(err) {
   return err;
 }
 
+// Cognito wraps Lambda-trigger errors as "<TriggerName> failed with error <msg>.",
+// which leaks the internal trigger name and often doubles the trailing period.
+// Strip the wrapper and tidy punctuation so neither ever reaches the user.
+function unwrapLambdaError(message) {
+  const stripped = String(message || '')
+    .replace(/^[A-Za-z]+ failed with error\s*/i, '')
+    .trim();
+  return stripped.replace(/\.{2,}$/, '.');
+}
+
 // ---- Friendly error copy for every path -----------------------------------
 export function cognitoErrorMessage(err) {
   // Network / fetch failure has no Cognito code.
@@ -145,13 +155,24 @@ export function cognitoErrorMessage(err) {
       return 'Too many attempts. Please wait a moment and try again.';
     case 'NewPasswordRequired':
       return err.message;
+    case 'UserLambdaValidationException':
+      // A pre/post trigger rejected the request (e.g. the account-linking
+      // reverse-case block). Unwrap so no internal trigger name leaks.
+      return unwrapLambdaError(err.message);
     case 'CodeDeliveryFailureException':
       return "We couldn't send the verification email. Try again shortly.";
     default:
-      return err?.message || 'Something went wrong. Please try again.';
+      return unwrapLambdaError(err?.message) || 'Something went wrong. Please try again.';
   }
 }
 
 // Distinguishes the "needs verification" failure so the UI can switch to the
 // verify view and pre-fill the email.
 export const isUnconfirmed = (err) => (err?.code || err?.name) === 'UserNotConfirmedException';
+
+// True when the pre-sign-up trigger blocked a native sign-up because a Google
+// account already owns this email — lets the UI show a calm "use Continue with
+// Google" notice (and highlight that button) instead of a red error.
+export const isExistingGoogleAccount = (err) =>
+  (err?.code || err?.name) === 'UserLambdaValidationException'
+  && /already exists via Google/i.test(String(err?.message || ''));

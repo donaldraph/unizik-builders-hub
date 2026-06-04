@@ -4,7 +4,7 @@ import { useAuth } from '../auth.jsx';
 import {
   signUp, confirmSignUp, resendCode, signIn,
   forgotPassword, confirmForgotPassword,
-  cognitoErrorMessage, isUnconfirmed,
+  cognitoErrorMessage, isUnconfirmed, isExistingGoogleAccount,
 } from '../cognito.js';
 
 // The peaked-arch wordmark, matching the Brand logo in Shell.jsx.
@@ -62,9 +62,10 @@ export default function Auth() {
   const [error, setError] = useState(null);   // top-level banner
   const [notice, setNotice] = useState(null); // success/info banner
   const [busy, setBusy] = useState(false);
+  const [highlightGoogle, setHighlightGoogle] = useState(false); // nudge to the Google button
 
   const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
-  const go = (next) => { setView(next); setError(null); setFieldErrors({}); };
+  const go = (next) => { setView(next); setError(null); setFieldErrors({}); setHighlightGoogle(false); };
 
   // After we already hold tokens from a direct sign-in, hand off to the existing
   // Home → getMe routing (register / pending / dashboard) — same as hosted UI.
@@ -85,7 +86,7 @@ export default function Auth() {
   };
 
   async function run(fn) {
-    setError(null); setNotice(null);
+    setError(null); setNotice(null); setHighlightGoogle(false);
     if (!validate()) return;
     setBusy(true);
     try {
@@ -99,6 +100,11 @@ export default function Auth() {
         try { await resendCode({ email: form.email.trim() }); } catch { /* best effort */ }
         setNotice("Your email isn't verified yet. We've sent you a new code.");
         go('verify');
+      } else if (isExistingGoogleAccount(err)) {
+        // Not a failure — the email already belongs to a Google account. Show a
+        // calm notice and pulse the Google button rather than a red error.
+        setNotice('You already have an account with this email through Google — please use “Continue with Google” to sign in.');
+        setHighlightGoogle(true);
       } else {
         setError(cognitoErrorMessage(err));
       }
@@ -196,7 +202,12 @@ export default function Auth() {
 
           {(view === 'signin' || view === 'signup') && (
             <>
-              <button type="button" className="btn-google" onClick={loginWithGoogle} disabled={busy}>
+              <button
+                type="button"
+                className={`btn-google${highlightGoogle ? ' btn-google--highlight' : ''}`}
+                onClick={loginWithGoogle}
+                disabled={busy}
+              >
                 <GoogleIcon /> Continue with Google
               </button>
               <div className="auth-divider"><span>or</span></div>

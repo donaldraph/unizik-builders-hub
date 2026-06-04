@@ -71,6 +71,17 @@ body { background: var(--app-bg-warm); }
 .gate-providers { display: flex; flex-direction: column; gap: var(--space-3); }
 .btn-google { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-3); width: 100%; padding: var(--space-4) var(--space-8); background: var(--n-0); color: var(--text); border: 1.5px solid var(--border); border-radius: var(--radius-pill); font-family: var(--font-display); font-weight: var(--weight-bold); font-size: var(--text-base); cursor: pointer; transition: border-color var(--dur-fast), transform var(--dur-base) var(--ease-out); }
 .btn-google:hover { border-color: var(--text-muted); transform: translateY(-1px); }
+/* Calm "look here" nudge when sign-up is blocked because the email is a Google
+   account. Pulses twice, then settles into a soft orange ring. */
+.btn-google--highlight { border-color: var(--brand-orange); box-shadow: 0 0 0 3px var(--brand-orange-soft); animation: googlePulse 1.6s var(--ease-out) 2; }
+@keyframes googlePulse {
+  0%   { box-shadow: 0 0 0 0 rgba(255, 153, 0, 0.45); }
+  70%  { box-shadow: 0 0 0 9px rgba(255, 153, 0, 0); }
+  100% { box-shadow: 0 0 0 3px var(--brand-orange-soft); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-google--highlight { animation: none; }
+}
 
 /* ── CONTAINER ── */
 .app-main { max-width: var(--container); margin: 0 auto; padding: var(--space-8) var(--space-6) var(--space-16); }
