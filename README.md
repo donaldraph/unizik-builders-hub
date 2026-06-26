@@ -170,7 +170,7 @@ Honest about where things are:
 
 - WhatsApp community → https://chat.whatsapp.com/GYoJICzgnX65PkKq6R1qX3
 - LinkedIn → [AWS Student Builders UNIZIK](https://www.linkedin.com/company/aws-student-builders-unizik/)
-- Built by **Donald** — AWS Cloud Club Captain, UNIZIK · [@donaldraph](https://github.com/donaldraph)
+- Built by **Donald** — AWS SBG Leader, UNIZIK · [@donaldraph](https://github.com/donaldraph)
 
 ---
 
