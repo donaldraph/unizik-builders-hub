@@ -11,6 +11,7 @@ infra/cdk.out/
 !.env.example
 *.pem
 .aws/
+.aws/iam/   # local-only IAM trust/permission policy JSONs for the CI OIDC role
 
 # CDK context (can cache account id / VPC lookup data)
 cdk.context.json
