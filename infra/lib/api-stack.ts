@@ -57,6 +57,18 @@ export class ApiStack extends cdk.Stack {
     table.grantReadData(directoryFn);
     table.grantReadData(adminPendingFn);
     table.grantReadWriteData(adminVerifyFn);
+
+    // Approval flow: admin_verify sends a welcome email via the Resend HTTP API
+    // on VERIFIED. The from-address welcome@unizikbuilders.tech is covered by the
+    // verified Resend domain (send subdomain). The API key is passed via CDK
+    // context (-c resendApiKey=...) so it never lands in committed source,
+    // consistent with the Google client secret in auth-stack.
+    const resendApiKey = this.node.tryGetContext('resendApiKey');
+    adminVerifyFn.addEnvironment('WELCOME_FROM', 'welcome@unizikbuilders.tech');
+    if (resendApiKey) {
+      adminVerifyFn.addEnvironment('RESEND_API_KEY', resendApiKey);
+    }
+
     avatarBucket.grantPut(avatarUrlFn);
     // Read access so these can presign GET URLs for stored avatars.
     avatarBucket.grantRead(getProfileFn);
