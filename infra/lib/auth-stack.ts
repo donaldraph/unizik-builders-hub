@@ -3,6 +3,7 @@ import { Construct } from 'constructs';
 import * as cognito from 'aws-cdk-lib/aws-cognito';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as iam from 'aws-cdk-lib/aws-iam';
+import * as kms from 'aws-cdk-lib/aws-kms';
 import * as path from 'path';
 
 interface AuthStackProps extends cdk.StackProps {
@@ -37,6 +38,58 @@ export class AuthStack extends cdk.Stack {
       memorySize: 256,
       tracing: lambda.Tracing.ACTIVE,
     });
+
+    // KMS key for the CustomEmailSender trigger. Cognito encrypts every code and
+    // temporary password with this key (AWS Encryption SDK envelope format)
+    // before handing it to the sender Lambda, which decrypts it. Symmetric, as
+    // Cognito requires.
+    //
+    // Cognito's permission to USE the key is NOT a static key-policy statement
+    // for the service principal: at pool create/update the deploying principal
+    // creates a one-time KMS grant for Cognito, so that principal needs
+    // kms:CreateGrant on the key. The default key policy (account principals via
+    // IAM) plus the CloudFormation execution role (AdministratorAccess in the
+    // default CDK bootstrap) satisfies that. The Lambda gets kms:Decrypt
+    // explicitly via grantDecrypt (see below).
+    const customSenderKey = new kms.Key(this, 'CustomEmailSenderKey', {
+      description: `asbu-${props.stage} Cognito custom email sender code encryption`,
+      enableKeyRotation: true,
+      removalPolicy: isProd ? cdk.RemovalPolicy.RETAIN : cdk.RemovalPolicy.DESTROY,
+    });
+
+    // CustomEmailSender trigger (Python; infra/lambdas/custom_email_sender.py).
+    // Declared here, but NOT yet attached to the pool as a trigger (that's a
+    // later step). It needs aws-encryption-sdk to decrypt Cognito's code, which
+    // is not in the shared lambdas/ folder — it ships as a layer attached ONLY to
+    // this function (build/ holds the python/ site-packages root the layer needs).
+    const encryptionSdkLayer = new lambda.LayerVersion(this, 'EncryptionSdkLayer', {
+      code: lambda.Code.fromAsset(path.join(__dirname, '..', 'layers', 'encryption-sdk', 'build')),
+      compatibleRuntimes: [lambda.Runtime.PYTHON_3_12],
+      description: 'AWS Encryption SDK for the CustomEmailSender trigger',
+    });
+
+    const customEmailSenderFn = new lambda.Function(this, 'CustomEmailSenderFn', {
+      runtime: lambda.Runtime.PYTHON_3_12,
+      code: lambda.Code.fromAsset(path.join(__dirname, '..', 'lambdas')),
+      handler: 'custom_email_sender.handler',
+      timeout: cdk.Duration.seconds(10),
+      memorySize: 256,
+      tracing: lambda.Tracing.ACTIVE,
+      layers: [encryptionSdkLayer],
+      environment: {
+        CUSTOM_SENDER_KMS_KEY_ARN: customSenderKey.keyArn,
+      },
+    });
+
+    // Let the sender decrypt the codes Cognito encrypts with this key.
+    customSenderKey.grantDecrypt(customEmailSenderFn);
+
+    // Resend API key, wired exactly as api-stack does for admin_verify: passed via
+    // CDK context (-c resendApiKey=...) so it never lands in committed source.
+    const resendApiKey = this.node.tryGetContext('resendApiKey');
+    if (resendApiKey) {
+      customEmailSenderFn.addEnvironment('RESEND_API_KEY', resendApiKey);
+    }
 
     this.userPool = new cognito.UserPool(this, 'UserPool', {
       userPoolName: `asbu-${props.stage}`,
@@ -76,7 +129,18 @@ export class AuthStack extends cdk.Stack {
       },
       accountRecovery: cognito.AccountRecovery.EMAIL_ONLY,
       removalPolicy: isProd ? cdk.RemovalPolicy.RETAIN : cdk.RemovalPolicy.DESTROY,
-      lambdaTriggers: { preSignUp: preSignUpFn },
+      // CustomEmailSender takes over ALL Cognito email: with this trigger
+      // attached Cognito stops sending itself and instead invokes the function
+      // with each code encrypted under customSenderKmsKey. The withSES() config
+      // above stays as the declared fallback identity but is no longer the send
+      // path. Cognito creates a one-time KMS grant for itself at pool
+      // create/update (the CFN execution role authorizes that — see the key's
+      // comment); the function holds kms:Decrypt via the grant added in Step 4.
+      lambdaTriggers: {
+        preSignUp: preSignUpFn,
+        customEmailSender: customEmailSenderFn,
+      },
+      customSenderKmsKey: customSenderKey,
     });
 
     // Minimal Cognito permissions for the linking trigger. Scoped to user pools

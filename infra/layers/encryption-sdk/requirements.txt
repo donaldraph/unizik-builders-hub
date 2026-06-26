@@ -1,0 +1,8 @@
+# Runtime deps for the Cognito CustomEmailSender Lambda ONLY.
+# Cognito hands the verification code to the trigger encrypted with our KMS key
+# (AWS Encryption SDK envelope format); the Lambda decrypts it with this.
+#
+# Built into a Lambda Layer (see build.sh) so the dependency-free triggers in
+# infra/lambdas/ stay untouched. cryptography ships abi3 manylinux wheels, so
+# the layer builds with platform-targeted pip — no Docker required.
+aws-encryption-sdk==4.0.0
