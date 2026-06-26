@@ -43,6 +43,26 @@ export class AuthStack extends cdk.Stack {
       selfSignUpEnabled: true,
       signInAliases: { email: true },
       autoVerify: { email: true },
+      // Send Cognito's own emails (sign-up verification code, forgot-password)
+      // through SES from our verified domain instead of Cognito's default
+      // generic sender. withSES() sets emailSendingAccount = DEVELOPER and wires
+      // the IAM grant that lets Cognito call ses:SendEmail on the identity.
+      //
+      // The domain unizikbuilders.tech is already a verified SES identity in
+      // us-east-1 (DKIM/SPF/DMARC done). A verified DOMAIN identity covers every
+      // address @ that domain, so no-reply@unizikbuilders.tech needs NO separate
+      // address verification. sesVerifiedDomain tells CDK which identity ARN to
+      // scope the Cognito send-permission to.
+      //
+      // NOTE: do not deploy until SES production access is granted — while in
+      // the sandbox Cognito's SES sends will fail for unverified recipients.
+      email: cognito.UserPoolEmail.withSES({
+        fromEmail: 'no-reply@unizikbuilders.tech',
+        // Friendly display name shown to recipients.
+        fromName: 'AWS Student Builders UNIZIK',
+        sesRegion: 'us-east-1',
+        sesVerifiedDomain: 'unizikbuilders.tech',
+      }),
       standardAttributes: {
         email: { required: true, mutable: true },
         fullname: { required: false, mutable: true },
