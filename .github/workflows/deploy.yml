@@ -84,6 +84,19 @@ jobs:
         working-directory: infra
         run: npm ci
 
+      # Build the encryption-sdk Lambda layer that auth-stack references via
+      # Code.fromAsset(layers/encryption-sdk/build). That build/ dir holds wheels
+      # and is gitignored, so without this step `cdk diff` fails synth with
+      # CannotFindAsset (exactly what broke the PR #6 prod deploy). setup-python
+      # guarantees a modern pip on PATH; build.sh downloads platform-targeted
+      # wheels (linux/x86_64, py3.12), so the runner's own OS/Python is irrelevant.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build encryption-sdk Lambda layer
+        run: bash infra/layers/encryption-sdk/build.sh
+
       - name: Configure AWS credentials (OIDC)
         uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -123,6 +136,16 @@ jobs:
       - name: Install CDK deps
         working-directory: infra
         run: npm ci
+
+      # Build the encryption-sdk Lambda layer before deploy (same reason as the
+      # cdk-diff job above): auth-stack's Code.fromAsset points at the gitignored
+      # build/ wheels dir, so synth fails with CannotFindAsset without this step.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build encryption-sdk Lambda layer
+        run: bash infra/layers/encryption-sdk/build.sh
 
       - name: Configure AWS credentials (OIDC)
         uses: aws-actions/configure-aws-credentials@v4
