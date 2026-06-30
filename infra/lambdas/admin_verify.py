@@ -13,7 +13,11 @@ DECISIONS = {"VERIFIED", "REJECTED"}
 # verified unizikbuilders.tech (send subdomain) identity in Resend.
 RESEND_API_URL = "https://api.resend.com/emails"
 RESEND_API_KEY = os.environ.get("RESEND_API_KEY", "")
-WELCOME_FROM = os.environ.get("WELCOME_FROM", "welcome@unizikbuilders.tech")
+# Friendly display name + address. A named sender (not a bare welcome@ address)
+# and a working reply-to both read as a real conversation to Gmail, which helps
+# keep this out of the Promotions tab. Reply-to is the monitored Zoho inbox.
+WELCOME_FROM = os.environ.get("WELCOME_FROM", "AWS Student Builders UNIZIK <welcome@unizikbuilders.tech>")
+WELCOME_REPLY_TO = os.environ.get("WELCOME_REPLY_TO", "donaldraph@unizikbuilders.tech")
 
 # {name} is interpolated with the member's fullName in the subject before
 # sending; the body no longer uses it (format() leaves it untouched if absent).
@@ -50,6 +54,7 @@ def _send_welcome(member):
     payload = json.dumps({
         "from": WELCOME_FROM,
         "to": [email],
+        "reply_to": WELCOME_REPLY_TO,
         "subject": WELCOME_SUBJECT.format(name=name),
         "text": WELCOME_BODY.format(name=name),
     }).encode("utf-8")
