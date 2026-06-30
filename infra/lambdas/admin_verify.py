@@ -15,22 +15,22 @@ RESEND_API_URL = "https://api.resend.com/emails"
 RESEND_API_KEY = os.environ.get("RESEND_API_KEY", "")
 WELCOME_FROM = os.environ.get("WELCOME_FROM", "welcome@unizikbuilders.tech")
 
-# {name} is interpolated with the member's fullName before sending (both the
-# subject and the body); leave the {name} token wherever you want their name.
+# {name} is interpolated with the member's fullName in the subject before
+# sending; the body no longer uses it (format() leaves it untouched if absent).
 WELCOME_SUBJECT = "You're in, {name}."
-WELCOME_BODY = """{name},
+WELCOME_BODY = """You're in.
 
-You're welcome — officially one of us now.
+No long intro.
 
 You showed up. Now it's time to build.
 
-What we're building is bigger than a study group: cloud and AI engineers out of UNIZIK who can hold their own anywhere — hired, certified, shipping real things. You're part of that now.
+What we're building is bigger than a study group: cloud, AI, and Security engineers out of UNIZIK who can compete anywhere — hired, certified, shipping real things. You're part of that now.
 
 Come join the conversation. Tell us what you're trying to build, and let's get to work:
 
-https://chat.whatsapp.com/GYoJICzgnX65PkKq6R1qX3
+https://chat.whatsapp.com/GYoJlCzgnX65PkKq6R1qX3
 
-— AWS Student Builders UNIZIK"""
+— AWS Student Builders, UNIZIK"""
 
 
 def _send_welcome(member):
