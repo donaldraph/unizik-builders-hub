@@ -557,7 +557,8 @@ select.ds-input { cursor: pointer; }
 }
 .privacy-hero-inner { position: relative; max-width: 680px; margin: 0 auto; }
 .privacy-hero-title {
-  font-size: var(--text-3xl); letter-spacing: var(--tracking-tighter);
+  font-family: var(--font-head); font-weight: var(--weight-semi);
+  font-size: var(--text-3xl); letter-spacing: -0.01em;
   margin: var(--space-4) 0 var(--space-3);
 }
 .privacy-hero-date {
@@ -578,7 +579,8 @@ select.ds-input { cursor: pointer; }
 
 .privacy-section { margin-top: var(--space-10); }
 .privacy-section h2 {
-  font-size: var(--text-xl); letter-spacing: var(--tracking-tighter);
+  font-family: var(--font-head); font-weight: var(--weight-semi);
+  font-size: var(--text-xl); letter-spacing: -0.01em;
   margin: 0 0 var(--space-4); padding-bottom: var(--space-3);
   border-bottom: 1px solid var(--border);
 }
