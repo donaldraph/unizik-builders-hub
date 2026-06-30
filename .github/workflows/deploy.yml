@@ -99,6 +99,7 @@ jobs:
           -c stage=prod
           -c googleClientId=${{ secrets.GOOGLE_CLIENT_ID }}
           -c googleClientSecret=${{ secrets.GOOGLE_CLIENT_SECRET }}
+          -c resendApiKey=${{ secrets.RESEND_API_KEY }}
 
   # ── JOB 3: deploy prod — push to main or manual run only ──────────────────────
   deploy:
@@ -130,7 +131,9 @@ jobs:
           aws-region: ${{ env.AWS_REGION }}
 
       # Deploy all four asbu-prod-* stacks. -c stage=prod selects prod naming;
-      # the Google creds keep the Google IdP wired (auth-stack drops it without them).
+      # the Google creds keep the Google IdP wired (auth-stack drops it without them);
+      # resendApiKey keeps RESEND_API_KEY on AdminVerifyFn (api) + CustomEmailSenderFn
+      # (auth) — both drop it without the context, breaking welcome + auth emails.
       - name: cdk deploy (prod)
         working-directory: infra
         run: >
@@ -138,6 +141,7 @@ jobs:
           -c stage=prod
           -c googleClientId=${{ secrets.GOOGLE_CLIENT_ID }}
           -c googleClientSecret=${{ secrets.GOOGLE_CLIENT_SECRET }}
+          -c resendApiKey=${{ secrets.RESEND_API_KEY }}
 
       # CDK creates the app bucket but does NOT upload the SPA (see hosting-stack.ts).
       # Read the bucket/distribution from stack outputs, publish, then bust the cache.
