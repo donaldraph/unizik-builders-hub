@@ -6,6 +6,13 @@ app/dist/
 infra/cdk.out/
 *.tsbuildinfo
 
+# Lambda layer build artifacts (wheels) — rebuilt from requirements.txt by build.sh / CI
+infra/layers/*/build/
+
+# Python bytecode caches
+__pycache__/
+*.pyc
+
 # Secrets & local env — NEVER commit these
 .env*
 !.env.example
