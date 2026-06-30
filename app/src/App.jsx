@@ -5,6 +5,7 @@ import { api } from './api.js';
 import Register from './pages/Register.jsx';
 import Dashboard from './pages/Dashboard.jsx';
 import Auth from './pages/Auth.jsx';
+import Privacy from './pages/Privacy.jsx';
 import { Callback, Pending, Loader, Brand } from './pages/Shell.jsx';
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/auth" element={<Auth />} />
+      <Route path="/privacy" element={<Privacy />} />
       <Route path="/callback" element={<Callback />} />
       <Route path="/register" element={<Guard><Register /></Guard>} />
       <Route path="/pending" element={<Guard><Pending /></Guard>} />

@@ -1,6 +1,6 @@
 """GET /directory — verified members, public view only (no PII)."""
 from boto3.dynamodb.conditions import Key
-from common import respond, user_sub, public_view, TABLE
+from common import respond, user_sub, public_view, public_projection, TABLE
 
 
 def handler(event, context):
@@ -14,6 +14,8 @@ def handler(event, context):
         "IndexName": "GSI1",
         "KeyConditionExpression": Key("GSI1PK").eq("STATUS#VERIFIED"),
         "ScanIndexForward": False,  # newest first
+        # Read only the public attributes — PII never leaves DynamoDB.
+        **public_projection(),
     }
 
     items = []

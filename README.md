@@ -152,7 +152,7 @@ There's at least a `dev` and a `prod`, so I'm never testing against the data rea
 
 ## A note on privacy
 
-The registration form collects matric numbers, phone numbers, and emails. That's personal data and I treat it that way. The public member directory shows only what's safe to share — name, builder tag, bio, and the social links a member chose to add. The private fields (matric, email, phone) are returned only to the member who owns them and to an admin; the directory query reads a projection that doesn't even include them. There's a real consent step at sign-up and a short privacy notice. Member data is the one thing in this system I can't regenerate, so DynamoDB point-in-time recovery is on.
+The registration form collects matric numbers, phone numbers, and emails. That's personal data and I treat it that way. The public member directory shows only what's safe to share — name, profile photo, faculty, level, builder tag, bio, and the social links a member chose to add. The private fields (matric, email, phone) are returned only to the member who owns them and to an admin. The directory query uses a DynamoDB projection that reads only the public attributes, so the private ones never load out of the table in the first place, and the API strips any private field server-side before responding as a second layer of defence. There's a real consent step at sign-up and a short privacy notice. Member data is the one thing in this system I can't regenerate, so DynamoDB point-in-time recovery is on.
 
 ---
 

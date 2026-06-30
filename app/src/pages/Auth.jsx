@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../auth.jsx';
 import {
   signUp, confirmSignUp, resendCode, signIn,
@@ -55,6 +55,7 @@ function StoryPanel() {
 export default function Auth() {
   const { setSession, loginWithGoogle } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
 
   const [view, setView] = useState('signin'); // signin | signup | verify | forgot | reset
   const [form, setForm] = useState({ name: '', email: '', password: '', code: '', newPassword: '' });
@@ -63,6 +64,12 @@ export default function Auth() {
   const [notice, setNotice] = useState(null); // success/info banner
   const [busy, setBusy] = useState(false);
   const [highlightGoogle, setHighlightGoogle] = useState(false); // nudge to the Google button
+
+  // Seed the info banner from a redirect that sent us here (e.g. the /callback
+  // handler bouncing a cancelled/failed Google sign-in back with a friendly note).
+  useEffect(() => {
+    if (location.state?.notice) setNotice(location.state.notice);
+  }, [location.state]);
 
   const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
   const go = (next) => { setView(next); setError(null); setFieldErrors({}); setHighlightGoogle(false); };
@@ -260,6 +267,11 @@ export default function Auth() {
               <button type="button" className="auth-link" onClick={() => go('signin')}>Back to sign in</button>
             )}
           </div>
+
+          <p className="auth-legal">
+            By continuing you agree to our{' '}
+            <a className="auth-link" href="/privacy" target="_blank" rel="noopener">Privacy Policy</a>.
+          </p>
         </div>
       </main>
     </div>

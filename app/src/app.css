@@ -492,6 +492,7 @@ select.ds-input { cursor: pointer; }
 .auth-link:hover { color: var(--brand-orange); }
 .auth-link:disabled { color: var(--text-faint); cursor: not-allowed; }
 .auth-link--strong { font-weight: var(--weight-semi); }
+.auth-legal { margin-top: var(--space-6); font-size: var(--text-xs); color: var(--text-faint); text-align: center; }
 
 /* On phones, drop the story panel and show just the form. The seam is gone, so
    the logo joins the flow directly above the form and the logo-plus-form pair is
@@ -524,3 +525,91 @@ select.ds-input { cursor: pointer; }
 @keyframes gate-leg-r  { from { transform: translateX(-7px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
 @keyframes gate-lintel { from { transform: scaleX(0); }                  to { transform: scaleX(1); } }
 @keyframes gate-key    { from { transform: translateY(-5px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+/* ============================================================
+   Privacy policy — public, no-auth, long-form reading page.
+   Mobile-first: single column, generous spacing; the dark hero
+   band carries the same editorial aesthetic as the auth story
+   panel, the light article below is tuned for reading.
+   ============================================================ */
+.privacy-page { min-height: 100vh; background: var(--app-bg-warm); }
+
+.privacy-nav {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: var(--space-4); padding: var(--space-4) var(--space-5);
+  max-width: 760px; margin: 0 auto;
+}
+.privacy-nav-link {
+  flex: 0 0 auto; font-size: var(--text-sm); font-weight: var(--weight-semi);
+  color: var(--brand-blue); text-decoration: none;
+}
+.privacy-nav-link:hover { color: var(--brand-orange); }
+
+.privacy-hero {
+  position: relative; overflow: hidden;
+  background: var(--neutral-0); color: #F0F2F8;
+  padding: var(--space-10) var(--space-5);
+}
+.privacy-hero::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none; background:
+    radial-gradient(120% 80% at 15% 0%, rgba(255,153,0,0.16), transparent 55%),
+    radial-gradient(100% 70% at 100% 100%, rgba(26,79,175,0.22), transparent 60%);
+}
+.privacy-hero-inner { position: relative; max-width: 680px; margin: 0 auto; }
+.privacy-hero-title {
+  font-size: var(--text-3xl); letter-spacing: var(--tracking-tighter);
+  margin: var(--space-4) 0 var(--space-3);
+}
+.privacy-hero-date {
+  font-family: var(--font-mono); font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide); color: rgba(240,242,248,0.5);
+}
+
+.privacy-article {
+  max-width: 680px; margin: 0 auto;
+  padding: var(--space-10) var(--space-5) var(--space-16);
+  color: var(--text);
+}
+.privacy-article p { line-height: var(--leading-body); margin: 0 0 var(--space-4); }
+.privacy-lede {
+  font-size: var(--text-md); color: var(--text);
+  margin-bottom: var(--space-5);
+}
+
+.privacy-section { margin-top: var(--space-10); }
+.privacy-section h2 {
+  font-size: var(--text-xl); letter-spacing: var(--tracking-tighter);
+  margin: 0 0 var(--space-4); padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border);
+}
+.privacy-section ul {
+  list-style: none; margin: 0 0 var(--space-4); padding: 0;
+  display: flex; flex-direction: column; gap: var(--space-3);
+}
+.privacy-section li {
+  position: relative; padding-left: var(--space-5);
+  line-height: var(--leading-body); color: var(--text-muted);
+}
+.privacy-section li::before {
+  content: ''; position: absolute; left: 0; top: 0.6em;
+  width: 6px; height: 6px; border-radius: 50%; background: var(--brand-orange);
+}
+.privacy-section p { color: var(--text-muted); }
+.privacy-section strong { color: var(--text); font-weight: var(--weight-semi); }
+
+.privacy-mail { color: var(--brand-blue); text-decoration: none; font-weight: var(--weight-semi); }
+.privacy-mail:hover { color: var(--brand-orange); }
+
+.privacy-foot {
+  margin-top: var(--space-12); padding-top: var(--space-5);
+  border-top: 1px solid var(--border);
+}
+.privacy-foot a { color: var(--brand-blue); text-decoration: none; font-weight: var(--weight-semi); }
+.privacy-foot a:hover { color: var(--brand-orange); }
+
+/* Roomier hero + article on tablet and up. */
+@media (min-width: 768px) {
+  .privacy-hero { padding: var(--space-12) var(--space-8); }
+  .privacy-article { padding: var(--space-12) var(--space-8) var(--space-16); }
+  .privacy-nav { padding: var(--space-5) var(--space-8); }
+}

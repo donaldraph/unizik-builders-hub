@@ -202,7 +202,7 @@ export default function Register() {
               <label className="agree-box ds-card" style={{ display: 'flex', gap: 'var(--space-3)', alignItems: 'flex-start', marginTop: 'var(--space-5)', background: 'var(--brand-blue-soft)', borderColor: 'rgba(26,79,175,0.15)', padding: 'var(--space-4)' }}>
                 <input type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} style={{ marginTop: 3, accentColor: 'var(--brand-blue)' }} />
                 <span style={{ fontSize: 'var(--text-sm)', color: 'var(--text-muted)' }}>
-                  I agree to the AWS Student Builders UNIZIK community guidelines, and I consent to my details being stored and shown in the member directory. My matric number, email, and phone stay private — only my name, tag, bio, and the social links I choose are public.
+                  I agree to the AWS Student Builders UNIZIK community guidelines, and I consent to my details being stored and shown in the member directory. My matric number, email, and phone stay private — my name, profile photo, faculty, level, tag, bio, and the social links I choose are public. See our <a href="/privacy" target="_blank" rel="noopener" onClick={(e) => e.stopPropagation()} style={{ color: 'var(--brand-blue)', fontWeight: 'var(--weight-semi)' }}>Privacy Policy</a>.
                 </span>
               </label>
               {errors.consent && <div className="ds-error" style={{ marginTop: 'var(--space-2)' }}>{errors.consent}</div>}
