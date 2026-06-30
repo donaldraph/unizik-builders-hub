@@ -19,6 +19,15 @@ CORS_HEADERS = {
 PRIVATE_FIELDS = {"email", "matric", "phone"}
 # Internal key prefixes that should never leak in any response.
 INTERNAL_PREFIXES = ("PK", "SK", "GSI")
+# The only attributes the public directory may read from the database — an
+# allowlist, so a newly added attribute stays private until it's listed here.
+# This is the first of two layers: the directory query projects exactly these,
+# so PII never loads out of DynamoDB; public_view() then strips PII again as a
+# defence-in-depth second layer in case a caller ever skips the projection.
+PUBLIC_FIELDS = (
+    "sub", "fullName", "department", "level", "tag",
+    "bio", "github", "linkedin", "twitter", "avatarKey",
+)
 
 
 def respond(status, body):
@@ -82,6 +91,20 @@ def strip_internal(item):
     return _with_avatar_url(
         {k: v for k, v in item.items() if not k.startswith(INTERNAL_PREFIXES)}
     )
+
+
+def public_projection():
+    """ProjectionExpression kwargs so a query never reads PII from the table.
+
+    Returned ready to splat into TABLE.query(). Every field is aliased via
+    ExpressionAttributeNames so the allowlist can include DynamoDB reserved
+    words (e.g. status, level) without breaking the expression.
+    """
+    names = {f"#{f}": f for f in PUBLIC_FIELDS}
+    return {
+        "ProjectionExpression": ", ".join(names),
+        "ExpressionAttributeNames": names,
+    }
 
 
 def public_view(item):

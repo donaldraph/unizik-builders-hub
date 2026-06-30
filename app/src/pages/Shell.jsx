@@ -46,7 +46,6 @@ export function Gate() {
 export function Callback() {
   const { handleCallback } = useAuth();
   const navigate = useNavigate();
-  const [error, setError] = useState(null);
   // The ?code is single-use. React.StrictMode double-invokes effects in dev, which
   // would exchange the same code twice — the second call gets a 400 invalid_grant.
   // This guard ensures we run the exchange exactly once per mount.
@@ -55,24 +54,30 @@ export function Callback() {
   useEffect(() => {
     if (exchanged.current) return;
     exchanged.current = true;
-    const code = new URLSearchParams(window.location.search).get('code');
-    if (!code) { navigate('/', { replace: true }); return; }
+    const params = new URLSearchParams(window.location.search);
+    const oauthError = params.get('error');
+    const code = params.get('code');
+
+    // Cognito forwards IdP-level failures here as ?error=… rather than ?code=
+    // (e.g. the user cancelled the Google consent screen). Route them back to
+    // our own branded /auth with a friendly notice instead of stranding them.
+    if (oauthError) {
+      const notice = oauthError === 'access_denied'
+        ? 'Google sign-in was cancelled. You can try again, or sign in with email.'
+        : "We couldn't finish Google sign-in. Please try again.";
+      navigate('/auth', { replace: true, state: { notice } });
+      return;
+    }
+    if (!code) { navigate('/auth', { replace: true }); return; }
+
     handleCallback(code)
       .then(() => navigate('/', { replace: true }))
-      .catch(() => setError('Sign-in failed. Please try again.'));
+      .catch(() => navigate('/auth', {
+        replace: true,
+        state: { notice: 'Sign-in failed. Please try again.' },
+      }));
   }, [handleCallback, navigate]);
 
-  if (error) {
-    return (
-      <div className="screen-center">
-        <div className="center-card">
-          <h1>Something went wrong</h1>
-          <p>{error}</p>
-          <button className="ds-btn ds-btn--primary" onClick={() => navigate('/', { replace: true })}>Back to start</button>
-        </div>
-      </div>
-    );
-  }
   return <Loader label="Signing you in" />;
 }
 
