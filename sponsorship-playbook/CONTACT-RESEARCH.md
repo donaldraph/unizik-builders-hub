@@ -133,5 +133,8 @@ WHAT WE NEED FROM YOU: [Customize per prospect]
 
 WHAT YOU GET: [Tier benefits summary — customize]
 
-CONTACT: Donald Anyamba | [EMAIL] | [PHONE]
+CONTACT:
+  Donald Anyamba (Group Leader) | donaldraph.dev@gmail.com | +234 704 979 1307
+  [Program Manager Name TBD]   | [Email TBD]              | [Phone TBD]
+  [Marketing Director Name TBD]| [Email TBD]              | [Phone TBD]
 ```
