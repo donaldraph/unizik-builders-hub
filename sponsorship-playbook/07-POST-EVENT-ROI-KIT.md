@@ -89,7 +89,7 @@ Copy this template, fill in the brackets, and send as a PDF or polished email at
 
 | Sponsor | Tier | Logo Impressions (est.) | Booth Visits | App Downloads / Sign-ups | Speaking Slot | Social Media Mentions | Promo Codes Redeemed |
 |---------|------|------------------------|-------------|--------------------------|--------------|----------------------|---------------------|
-| [Headline Sponsor] | Headline | | | | Yes / No | | |
+| [Diamond Sponsor] | Diamond | | | | Yes / No | | |
 | [Gold Sponsor 1] | Gold | | | | Yes / No | | |
 | [Gold Sponsor 2] | Gold | | | | Yes / No | | |
 | [Silver Sponsor 1] | Silver | | | | No | | |
@@ -194,7 +194,7 @@ Copy this template, fill in the brackets, and send as a PDF or polished email at
 | Source | Amount (NGN) | Amount (USD) |
 |--------|-------------|-------------|
 | AWS Grant | | |
-| Headline Sponsor | | |
+| Diamond Sponsor | | |
 | Gold Sponsors | | |
 | Silver Sponsors | | |
 | Campus Games Sponsor | | |

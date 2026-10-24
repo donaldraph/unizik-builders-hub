@@ -378,7 +378,7 @@ We're the **AWS Student Builder Group at UNIZIK**, running two events with **$5,
 - **AWS re:Invent Watch & Build Party** (200-300 attendees)
 - **AWS Student Community Day Awka** (300-500 attendees)
 
-We'd love Aroma App as our **Campus Games & Swag Partner or In-Kind Partner**:
+We'd love Aroma App as our **Bronze Partner or In-Kind Partner**:
 
 - **Event catering delivered by Aroma**: attendees experience the product firsthand
 - An Aroma download station with promo codes for first-time users
@@ -618,7 +618,7 @@ AWS Student Builder Group Leader, UNIZIK
 | | |
 |---|---|
 | **Underlying Concern** | They want to participate but minimize financial exposure. Swag is the easiest internal approval. |
-| **Rebuttal** | Absolutely — we welcome in-kind contributions, and branded swag is a great fit. We'd feature your items as prizes in our campus games (Syntax Sprint, AWS Card Clash tournaments) and give your brand a "Swag Partner" tier with logo placement on all event materials. If the swag value is in the N300,000+ range, you'd get the same branding benefits as our Campus Games & Swag Partner tier — logo on materials, social media shoutouts, and a mention in our post-event report. |
+| **Rebuttal** | Absolutely — we welcome in-kind contributions, and branded swag is a great fit. We'd feature your items as prizes in our campus games (Syntax Sprint, AWS Card Clash tournaments) and give your brand a "Swag Partner" tier with logo placement on all event materials. If the swag value is in the N300,000+ range, you'd get the same branding benefits as our Bronze Partner tier — logo on materials, social media shoutouts, and a mention in our post-event report. |
 | **Pivot Question** | "What kind of branded items does your team typically produce? We can design a game activation specifically around them to maximize engagement." |
 
 ---

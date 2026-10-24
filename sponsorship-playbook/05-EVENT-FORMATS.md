@@ -63,7 +63,7 @@
 |---|---|---|---|
 | 09:00 | MC welcome — housekeeping, WiFi, Code of Conduct, hashtag reminder | 5 min | Energetic campus MC |
 | 09:05 | SBG Leader welcome address — "Why We Build" | 5 min | Personal story, community mission |
-| 09:10 | Headline Partner welcome — brand intro + challenge announcement | 2 min | Scripted, rehearsed, no hard sell |
+| 09:10 | Diamond Partner welcome — brand intro + challenge announcement | 2 min | Scripted, rehearsed, no hard sell |
 | 09:12 | Transition to re:Invent keynote livestream | 1 min | Test stream 10 min before |
 | 09:13 | **AWS re:Invent Keynote Livestream** on main screen | ~75 min | Volume up, lights dimmed, watch-party energy |
 | — | Live local hosts provide commentary during natural pauses | Interspersed | 2 hosts with mics, sitting stage-side |
@@ -85,7 +85,7 @@
 | 10:40 | Team formation — random or pre-registered teams of 3–4 | 5 min | Color-coded wristbands |
 | 10:45 | **BUILD BEGINS** | 75 min | Clock displayed on screen |
 | — | Mentors circulate — 1 mentor per 5 teams | Continuous | Pre-briefed on expected tech stack |
-| — | Sponsor Challenge overlay: "Integrate [Headline Partner API] for bonus points" | Optional | Only if sponsor provides API/SDK |
+| — | Sponsor Challenge overlay: "Integrate [Diamond Partner API] for bonus points" | Optional | Only if sponsor provides API/SDK |
 | 12:00 | Sprint 1 freeze — code pushed to GitHub repos | — | Teams can continue in Sprint 2 |
 
 **Resources Available:**
@@ -110,10 +110,10 @@
 
 | Position | Tier | Setup |
 |---|---|---|
-| Entrance left | Headline Partner | 2×3m booth, banner, demo screen, 2 reps |
+| Entrance left | Diamond Partner | 2×3m booth, banner, demo screen, 2 reps |
 | Entrance right | Gold Partner | 1.5×2m booth, banner, flyers |
 | Hallway 1 | Silver Partner | 1×1.5m table, roll-up banner |
-| Hallway 2 | Campus Games & Swag Partner | Table with branded merchandise display |
+| Hallway 2 | Bronze Partner | Table with branded merchandise display |
 | Hallway 3 | In-Kind Partner | Signage acknowledging contribution |
 
 ---
@@ -127,7 +127,7 @@
 | 13:45 | Lightning Talk 1: Student builder project showcase | 5 min | Selected student |
 | 13:50 | Lightning Talk 2: "My First AWS Certification" story | 5 min | Selected student |
 | 13:55 | Lightning Talk 3: "From Zero to Deployed" | 5 min | Selected student |
-| 14:00 | **Sponsor Lightning Talk** (Gold or Headline tier perk) | 10 min | Sponsor rep — must be technical/educational, not a pure sales pitch |
+| 14:00 | **Sponsor Lightning Talk** (Gold or Diamond tier perk) | 10 min | Sponsor rep — must be technical/educational, not a pure sales pitch |
 | 14:10 | Transition + stretch break | 5 min | — |
 | 14:15 | **Workshop Teaser:** Quick demo of AWS Cloud Quest tournament mode | 15 min | Technical Lead |
 
@@ -144,7 +144,7 @@ This is the high-energy, social-media-viral segment. All games run on the main s
 | **Format** | 1v1 bracket tournament — solve coding challenges fastest |
 | **Rounds** | 8 players, single elimination, 3 rounds |
 | **Tools** | Laptops connected to coding platform (LeetCode/HackerRank) |
-| **Prizes** | Branded swag from Campus Games & Swag Partner |
+| **Prizes** | Branded swag from Bronze Partner |
 | **Filming** | Dedicated camera for close-up reaction shots → social media reels |
 
 ### Game 2: AWS Card Clash Bracket (15:00–15:25)
@@ -165,7 +165,7 @@ This is the high-energy, social-media-viral segment. All games run on the main s
 | **Setup** | Pre-configured AWS Cloud9 or local terminals with AWS CLI installed |
 | **Timing** | First to show live URL wins |
 | **Twist** | Audience can shout (wrong) suggestions to distract |
-| **Prizes** | Headline or Gold sponsor prize bundle |
+| **Prizes** | Diamond or Gold sponsor prize bundle |
 
 ### Game 4: Cloud Quest Leaderboard Challenge (15:45–16:00)
 
@@ -263,7 +263,7 @@ This is the high-energy, social-media-viral segment. All games run on the main s
 | **08:00–09:00** | — | — | **Registration & Check-in** — Name tags, AWS Builder Center QR, sponsor booth tour, breakfast snacks |
 | **09:00–09:10** | *Main Hall — all attendees* | — | MC welcome, housekeeping, Code of Conduct, WiFi, hashtag |
 | **09:10–09:40** | *Main Hall — all attendees* | — | **Opening Keynote:** "The Future is Built by Students" — Invited AWS Community Builder or local tech leader (30 min) |
-| **09:40–09:50** | *Main Hall — all attendees* | — | Headline Partner welcome address (5 min) + logistics transition |
+| **09:40–09:50** | *Main Hall — all attendees* | — | Diamond Partner welcome address (5 min) + logistics transition |
 | **09:50–10:30** | **Session A1:** "What is Cloud Computing?" — Foundational concepts, AWS global infrastructure, real-world use cases (40 min) | **Session B1:** "Architecting for Scale on AWS" — VPC, ALB, Auto Scaling, multi-AZ patterns (40 min) | Sponsor booths open |
 | **10:30–10:45** | — | — | **Tea Break** — Coffee Break Sponsor branding at stations |
 | **10:45–11:30** | **Session A2:** "Your First AWS Account & Skill Builder Tour" — Live walkthrough of creating Builder Center profile, navigating Skill Builder free courses (45 min) | **Session B2:** "Building Serverless APIs with Lambda & API Gateway" — Live coding workshop (45 min) | — |
@@ -299,16 +299,16 @@ This is the high-energy, social-media-viral segment. All games run on the main s
 | Touchpoint | Eligible Tiers |
 |---|---|
 | Logo on all printed materials, slides, and signage | All tiers |
-| Welcome address from stage | Headline only |
+| Welcome address from stage | Diamond only |
 | Branded name tags/lanyards | Lanyard Sponsor (custom opportunity) |
 | Demo booth in common area | All tiers (size by tier) |
-| Workshop or breakout session hosting | Gold and Headline |
+| Workshop or breakout session hosting | Gold and Diamond |
 | Coffee/tea break station branding | Coffee Break Sponsor (custom opportunity) |
-| Lightning talk slot | Gold and Headline |
+| Lightning talk slot | Gold and Diamond |
 | Prize sponsor for project showcase | Any tier contributing prizes |
 | Social media mentions (pre, during, post) | All tiers (frequency by tier) |
 | Post-event impact report with metrics | All tiers |
-| Logo on attendee certificates | Headline and Gold |
+| Logo on attendee certificates | Diamond and Gold |
 
 ---
 
