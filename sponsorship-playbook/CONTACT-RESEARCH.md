@@ -125,8 +125,8 @@ Amazon Web Services with $5,383 in confirmed grants. We are the
 premier cloud computing student community in South-East Nigeria.
 
 WHAT WE'RE HOSTING:
-• AWS re:Invent Watch & Build Party — [DATE], 200-300 attendees
-• Student Community Day Awka — [DATE], 300-500 attendees
+• AWS re:Invent Watch & Build Party — December 4, 2026, 200-300 attendees
+• Student Community Day Awka — Q1 2027 (date TBA), 300-500 attendees
 • Bi-weekly campus tech games throughout the academic year
 
 WHAT WE NEED FROM YOU: [Customize per prospect]

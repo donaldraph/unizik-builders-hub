@@ -2,6 +2,13 @@
 
 > **AWS Student Builder Group at Nnamdi Azikiwe University (UNIZIK), Awka, Anambra State, Nigeria**
 
+### Confirmed Dates
+
+| Event | Date | Status |
+|---|---|---|
+| **AWS re:Invent Watch & Build Party** | **December 4, 2026** | Confirmed |
+| **Student Community Day (SCD)** | Q1 2027 (exact date TBA — announced 2 weeks post-re:Invent) | Planning |
+
 ---
 
 ## Compliance Checklist (Applies to ALL Events)
