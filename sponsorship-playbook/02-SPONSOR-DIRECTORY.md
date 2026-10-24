@@ -8,13 +8,15 @@
 
 ## Sponsorship Tier Reference
 
-| Tier | Investment (NGN) | Investment (USD approx.) |
-|------|-----------------|-------------------------|
-| Headline Partner (Dual-Event Bundle) | ₦2,500,000 | ~$1,600 |
-| Gold Partner | ₦1,200,000 | ~$800 |
-| Silver Partner | ₦600,000 | ~$400 |
-| Campus Games & Swag Partner | ₦300,000 | ~$200 |
-| In-Kind & Infrastructure Partner | Non-cash equivalents | Varies |
+| Tier | Single Event | Dual Event | Full Season |
+|------|-------------|------------|-------------|
+| Diamond | ₦750,000 | ₦1,200,000 | ₦1,500,000 |
+| Gold | ₦400,000 | ₦650,000 | ₦800,000 |
+| Silver | ₦200,000 | ₦350,000 | ₦450,000 |
+| Bronze | ₦100,000 | ₦175,000 | ₦225,000 |
+| In-Kind | Equivalent value | Equivalent value | Equivalent value |
+
+> **Scopes:** Single Event = re:Invent Watch Party OR SCD (your pick). Dual Event = both flagships. Full Season = both events + bi-weekly campus games year-round. See `04-SPONSORSHIP-TIERS.md` for full benefits matrix.
 
 ---
 
@@ -32,7 +34,7 @@ Companies with direct presence or commercial interest in Awka, Anambra State, an
 | **Overview & Core Users** | Aroma App is a hyperlocal delivery and lifestyle platform serving the Awka metropolitan area, centered around Aroma Junction — the city's commercial nerve center. Its core users are young urbanites (18–35) ordering food, groceries, and errands across Awka and Onitsha. |
 | **Value Alignment** | UNIZIK students are Aroma App's single largest addressable user cluster in Awka. The Ifite campus area alone houses thousands of potential daily-order users. Sponsoring a high-visibility AWS event puts the Aroma brand directly in front of tech-literate early adopters who influence peer spending habits — the exact demographic that drives referral loops for delivery apps. A live "Order with Aroma" activation at the event (QR code → first-order discount) could convert hundreds of sign-ups in a single afternoon. |
 | **Outreach Channels** | Email: hello@aromaapp.ng / partnerships@aromaapp.ng. Instagram DM: @aromaapp. LinkedIn: Search for founder/CEO and Head of Growth. In-person: Visit Aroma App offices near Aroma Junction, Awka. |
-| **Suggested Tier** | **Gold Partner** or **Campus Games & Swag Partner** (food voucher giveaways + branded delivery bags as prizes) |
+| **Suggested Tier** | **Gold Partner** or **Bronze Partner** (food voucher giveaways + branded delivery bags as prizes) |
 
 ---
 
@@ -104,7 +106,7 @@ Companies with direct presence or commercial interest in Awka, Anambra State, an
 | **Overview & Core Users** | Bookstores, tutorial centers, e-learning platforms, and academic service providers serving UNIZIK students. This includes both physical bookshops near campus and digital education platforms with a presence in Nigerian universities. |
 | **Value Alignment** | AWS certification prep materials and cloud computing textbooks are a growing revenue category for academic retailers. Sponsoring an AWS event lets them showcase these materials to the students most likely to buy them. A booth with discounted cloud computing books, study guides, and laptop accessories targets buyers at peak intent — they just spent a day learning AWS and want to continue. For e-learning platforms, distributing free trial codes to 200+ tech-motivated students is a high-conversion acquisition channel. |
 | **Outreach Channels** | In-person: Visit bookstores near UNIZIK gate and on Zik Avenue. For e-learning platforms (e.g., uLesson, PrepClass): partnerships@[company].com. LinkedIn: Search for Campus Partnerships or B2B leads. |
-| **Suggested Tier** | **Campus Games & Swag Partner** (book prizes, study material packs) or **In-Kind** |
+| **Suggested Tier** | **Bronze Partner** (book prizes, study material packs) or **In-Kind** |
 
 ---
 
@@ -122,7 +124,7 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 | **Overview & Core Users** | Moniepoint is Nigeria's leading business banking and payments platform, processing billions of naira in daily transactions through POS terminals, business accounts, and lending products. With 1M+ merchants and rapid expansion, their core users are SMEs, agents, and increasingly, student entrepreneurs running campus businesses. |
 | **Value Alignment** | UNIZIK's Ifite corridor is a dense micro-economy: shawarma joints, POS agents, mini-importers, and student-run logistics businesses — all prime Moniepoint merchant sign-ups. Sponsoring an AWS tech event lets Moniepoint run a live "Set Up Your Moniepoint Business Account" activation booth targeting the ~30% of attendees who run side hustles. The developer angle is even stronger: Moniepoint's APIs need integrators. Putting their payment API documentation in front of 200+ student developers at a hands-on build sprint is the most efficient top-of-funnel for future developer adoption in the South-East. |
 | **Outreach Channels** | Email: partnerships@moniepoint.com / marketing@moniepoint.com. LinkedIn: Target Head of Marketing, DevRel Lead, or Campus Partnerships Manager. Twitter: @moaborehie (CEO), @moaborehie. Website: Check for sponsorship inquiry form. |
-| **Suggested Tier** | **Headline Partner** or **Gold Partner** |
+| **Suggested Tier** | **Diamond Partner** or **Gold Partner** |
 
 ---
 
@@ -146,7 +148,7 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 | **Overview & Core Users** | PiggyVest is Nigeria's largest savings and investment platform with 4M+ users, predominantly Gen-Z and millennials (18–30). They offer automated savings, fixed returns (Safelock), and investment funds. Their brand is almost synonymous with "first investment app" for Nigerian students. |
 | **Value Alignment** | PiggyVest's user acquisition strategy is hyper-focused on the 18–25 university demographic — exactly the room at an AWS Student Community Day. A sponsorship activation could include: (1) a "Save Your First ₦1,000" live sign-up booth with instant referral bonuses, (2) prize pools funded via PiggyVest Safelock ("Win a ₦50,000 Safelock"), and (3) branded financial literacy lightning talks that complement the cloud career readiness theme. UNIZIK's 36,000 students in Anambra — a state with high savings culture — represent a premium acquisition cohort that PiggyVest's campus team should be eager to activate. |
 | **Outreach Channels** | Email: hello@piggyvest.com / partnerships@piggyvest.com. LinkedIn: Target Head of Growth, Campus Lead, or Partnerships Manager. Twitter/Instagram: @piaborehie, @PiggyVest. |
-| **Suggested Tier** | **Gold Partner** or **Campus Games & Swag Partner** (cash prizes via Safelock) |
+| **Suggested Tier** | **Gold Partner** or **Bronze Partner** (cash prizes via Safelock) |
 
 ---
 
@@ -170,7 +172,7 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 | **Overview & Core Users** | Chipper Cash enables free peer-to-peer cross-border payments across Nigeria, Ghana, Kenya, Uganda, South Africa, and more. Their users are young Africans (18–35) who send/receive money internationally — freelancers, diaspora families, and students with cross-border financial needs. |
 | **Value Alignment** | AWS Student Builder Groups are a global network — UNIZIK students collaborate with peers in Kenya, India, Philippines, and beyond. Chipper Cash's cross-border proposition maps directly to this internationally connected student community. A sponsorship activation could feature: "Send your first cross-border transfer free" sign-ups and a panel on "Building for Pan-African Markets" that aligns with Chipper's brand mission. For students exploring freelance cloud work (Upwork, Fiverr), Chipper is how they'll receive USD/GBP payments — making this a career-relevant sponsorship, not just brand awareness. |
 | **Outreach Channels** | Email: partnerships@chippercash.com / hello@chippercash.com. LinkedIn: Target Regional Marketing Manager (West Africa), Partnerships Lead. Twitter: @chaborehie. |
-| **Suggested Tier** | **Silver Partner** or **Campus Games & Swag Partner** |
+| **Suggested Tier** | **Silver Partner** or **Bronze Partner** |
 
 ---
 
@@ -182,7 +184,7 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 | **Overview & Core Users** | Billpoint provides POS terminals, payment processing, and business management tools for Nigerian merchants. Their user base includes small retailers, campus vendors, and agents who process card and transfer payments daily. |
 | **Value Alignment** | Billpoint's expansion into university towns depends on agent recruitment and merchant sign-ups. UNIZIK's Ifite campus economy has hundreds of vendors who could adopt Billpoint POS terminals. Sponsoring a tech event attended by students who influence their family businesses and campus vendors creates warm referral pathways. An activation booth offering "Set up a Billpoint terminal for your campus business" plus a technical workshop on "How POS Payment APIs Work Under the Hood" bridges brand awareness with genuine technical education. |
 | **Outreach Channels** | Email: hello@billpoint.ng / partnerships@billpoint.ng. LinkedIn: Target CEO, Head of Growth, or Business Development Manager. Website: Check for partnership inquiry form. |
-| **Suggested Tier** | **Silver Partner** or **Campus Games & Swag Partner** |
+| **Suggested Tier** | **Silver Partner** or **Bronze Partner** |
 
 ---
 
@@ -206,7 +208,7 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 | **Overview & Core Users** | MTN is Nigeria's largest mobile network operator with 80M+ subscribers. MTN Pulse is their youth-focused sub-brand targeting 18–25 year olds with affordable data bundles, social media plans, and lifestyle perks. Their campus marketing division runs activations at universities nationwide. |
 | **Value Alignment** | MTN Pulse's entire business model is campus data plan sales. An AWS event where 200+ students need reliable mobile data for cloud labs, live streaming, and project deployments is a perfect activation moment. MTN can provide: (1) free data vouchers as attendee welcome packs, (2) a portable cell booster/MiFi setup ensuring connectivity, (3) branded "Powered by MTN Pulse" Wi-Fi hotspots. The South-East is an MTN stronghold — Anambra penetration is already high, but Pulse-specific activation at UNIZIK tech events converts basic subscribers to premium data plan users. MTN's campus marketing team already has budget allocated for university event sponsorships. |
 | **Outreach Channels** | Email: campusmarketing@mtn.com / sponsorships@mtnnigeria.net. LinkedIn: Target Campus Marketing Manager (South-East Region), Youth Segment Lead, or Regional Marketing Manager. Physical: Visit MTN Experience Center, Awka or MTN office, Enugu (regional hub). Twitter: @ABOREHIE. |
-| **Suggested Tier** | **Headline Partner** or **Gold Partner** (cash + data bundles as In-Kind) |
+| **Suggested Tier** | **Diamond Partner** or **Gold Partner** (cash + data bundles as In-Kind) |
 
 ---
 
@@ -230,7 +232,7 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 | **Overview & Core Users** | Cowrywise is a SEC-licensed digital wealth management platform offering mutual funds, savings plans, and investment portfolios. With 500,000+ users, they target financially curious young Nigerians (20–35) who want to start investing with as little as ₦100. |
 | **Value Alignment** | Cloud skills → better jobs → higher income → investment capacity. Cowrywise's content marketing already pushes the "invest in yourself, then invest your returns" narrative. Sponsoring an AWS career-readiness event lets Cowrywise own the "financial future" conversation with students who are actively upskilling. An activation could include: a financial literacy lightning talk (10 min), a "Start Your First Mutual Fund" sign-up booth, and ₦10,000 investment top-ups as hackathon prizes. This positions Cowrywise as the app students open right after they land their first cloud job. |
 | **Outreach Channels** | Email: hello@cowrywise.com / partnerships@cowrywise.com. LinkedIn: Target Head of Growth, Community Manager, Partnerships Lead. Twitter: @cowrywise. Instagram: @cowrywise. |
-| **Suggested Tier** | **Silver Partner** or **Campus Games & Swag Partner** |
+| **Suggested Tier** | **Silver Partner** or **Bronze Partner** |
 
 ---
 
@@ -242,7 +244,7 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 | **Overview & Core Users** | Risevest enables Nigerians to invest in US stocks, real estate, and fixed income in USD. Their users are upwardly mobile young professionals and students (22–35) seeking dollar-denominated returns as a hedge against naira depreciation. |
 | **Value Alignment** | Students learning AWS cloud skills are building careers with USD-earning potential (remote work, freelance cloud consulting, international employers). Risevest's proposition — "earn in dollars, invest in dollars" — resonates powerfully at an event focused on globally marketable tech skills. A short talk on "From Cloud Certification to Dollar Income to Dollar Investments" ties Risevest's product to the career arc the AWS Student Builder Group promotes. Prize format: "$50 Risevest portfolio top-up" for hackathon winners is a memorable, differentiated prize. |
 | **Outreach Channels** | Email: hello@risevest.com / partnerships@risevest.com. LinkedIn: Target Head of Marketing, Growth Lead, or Partnerships. Twitter: @risaborehie. Instagram: @risevest. |
-| **Suggested Tier** | **Campus Games & Swag Partner** (investment credit prizes) or **Silver Partner** |
+| **Suggested Tier** | **Bronze Partner** (investment credit prizes) or **Silver Partner** |
 
 ---
 
@@ -254,7 +256,7 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 | **Overview & Core Users** | Interswitch is one of Africa's oldest and largest integrated digital payments and commerce companies, powering Verve cards, Quickteller, and payment switching for most Nigerian banks. Their developer platform (Interswitch Developer Portal) offers APIs for payments, identity verification, and value-added services. |
 | **Value Alignment** | Interswitch has a well-established developer ecosystem and university engagement track record (InterswitchSPAK scholarship/quiz competition). Sponsoring the AWS Student Community Day in Awka extends their South-East talent pipeline. A "Build with Interswitch APIs on AWS" workshop track serves their developer adoption goals directly. Interswitch also has CSR budget for educational initiatives — position this as a pipeline-to-employment opportunity. Their engineering teams recruit from Nigerian universities; this event surfaces high-potential candidates early. |
 | **Outreach Channels** | Email: developer@interswitchgroup.com / partnerships@interswitchgroup.com. LinkedIn: Target VP Engineering, Developer Relations Lead, CSR/University Programs Manager. Twitter: @interaborehie. Website: developer.interswitchgroup.com. |
-| **Suggested Tier** | **Headline Partner** or **Gold Partner** |
+| **Suggested Tier** | **Diamond Partner** or **Gold Partner** |
 
 ---
 
@@ -264,9 +266,9 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 |-------|--------|
 | **Tagline** | "Fast, Safe & Rewarding" |
 | **Overview & Core Users** | OPay is a mobile-first financial services platform offering payments, transfers, savings, lending, and ride-hailing. With 35M+ users and massive agent network penetration in Nigerian cities, OPay is the most-used fintech app among students for peer-to-peer transfers and bill payments. |
-| **Value Alignment** | OPay is likely already the most-installed fintech app among UNIZIK students. Sponsoring the event reinforces brand preference at a moment when competitors (Moniepoint, Kuda) are aggressively courting the same demographic. OPay's activation could focus on OPay Business accounts for student entrepreneurs and their savings product (OWealth). The sheer volume play — 200+ attendees who each transact daily through OPay — makes this a brand-loyalty reinforcement play rather than acquisition. OPay's massive marketing budget and existing campus presence make them a realistic Headline-tier prospect. |
+| **Value Alignment** | OPay is likely already the most-installed fintech app among UNIZIK students. Sponsoring the event reinforces brand preference at a moment when competitors (Moniepoint, Kuda) are aggressively courting the same demographic. OPay's activation could focus on OPay Business accounts for student entrepreneurs and their savings product (OWealth). The sheer volume play — 200+ attendees who each transact daily through OPay — makes this a brand-loyalty reinforcement play rather than acquisition. OPay's massive marketing budget and existing campus presence make them a realistic Diamond-tier prospect. |
 | **Outreach Channels** | Email: marketing@opay.com / partnerships@opay.ng. LinkedIn: Target Marketing Director, Campus/Youth Segment Lead, or Head of Partnerships. Twitter: @AborEhie. Physical: OPay agent hub, Awka (for local rep introduction). |
-| **Suggested Tier** | **Headline Partner** or **Gold Partner** |
+| **Suggested Tier** | **Diamond Partner** or **Gold Partner** |
 
 ---
 
@@ -278,7 +280,7 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 | **Overview & Core Users** | Bumpa is a social commerce platform that helps small businesses manage sales, inventory, and customer relationships across WhatsApp, Instagram, and their own online storefront. Their 100,000+ merchants are predominantly young Nigerian entrepreneurs (20–35) selling fashion, food, beauty, and accessories via social media. |
 | **Value Alignment** | A significant portion of UNIZIK students run side businesses — selling clothes, hair products, snacks, phone accessories — primarily through WhatsApp and Instagram. Bumpa's product is built for exactly these merchants. An activation at the AWS event could include: "Set up your Bumpa store in 5 minutes" live demo, a "Best Student Business" pitch competition with Bumpa premium subscriptions as prizes, and a lightning talk on "From Side Hustle to Scalable Commerce." For Bumpa, UNIZIK is a dense cluster of their target persona: young, digital-native, commercially active students. |
 | **Outreach Channels** | Email: hello@bumpa.shop / partnerships@bumpa.shop. LinkedIn: Target CEO (Kelvin Umechukwu — note: Igbo founder, South-East connection), Head of Growth, Community Lead. Twitter: @BumpaHQ. Instagram: @bumpa.shop. |
-| **Suggested Tier** | **Silver Partner** or **Campus Games & Swag Partner** |
+| **Suggested Tier** | **Silver Partner** or **Bronze Partner** |
 
 ---
 
@@ -412,7 +414,7 @@ Based on alignment strength, budget likelihood, and outreach warmth:
 
 | Week | Action |
 |------|--------|
-| Week 1 | Send initial pitches to Priority 1–5 (Headline + Gold targets) |
+| Week 1 | Send initial pitches to Priority 1–5 (Diamond + Gold targets) |
 | Week 1 | Visit Awka-based prospects in person (Aroma, Activ8, Tekhub, ISPs, caterers, printers) |
 | Week 2 | Send pitches to Priority 6–10 (Gold + Silver targets) |
 | Week 2 | Day-3 follow-up on Priority 1–5 unanswered leads |

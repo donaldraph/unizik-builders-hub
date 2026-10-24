@@ -52,7 +52,7 @@ We're the **AWS Student Builder Group at UNIZIK**, and we're hosting two flagshi
 - **AWS re:Invent Watch & Build Party** (200-300 attendees) — a high-energy keynote watch party with live build sprints
 - **AWS Student Community Day Awka** (300-500 attendees) — a full-day conference with workshops, demos, and project showcases
 
-We'd love Moniepoint to be our **Headline or Gold Partner**. Here's what's in it:
+We'd love Moniepoint to be our **Diamond or Gold Partner**. Here's what's in it:
 
 - A dedicated **"Start Your Business with Moniepoint"** activation booth for live POS demos and merchant sign-ups
 - Logo placement across all event materials, social channels, and livestream overlays
@@ -232,7 +232,7 @@ We're the **AWS Student Builder Group at UNIZIK**, running two events backed by 
 - **AWS re:Invent Watch & Build Party** (200-300 attendees) — live keynote streaming + code sprints (needs rock-solid connectivity)
 - **AWS Student Community Day Awka** (300-500 attendees) — a full-day tech conference
 
-We'd love MTN to be our **Headline Partner or Infrastructure Partner**:
+We'd love MTN to be our **Diamond Partner or Infrastructure Partner**:
 
 - **"Powered by MTN" event Wi-Fi** — branded internet infrastructure (MiFi routers, event data bundles)
 - MTN Pulse activation booth: discounted data plans, SIM registration, MoMo wallet sign-ups
@@ -269,7 +269,7 @@ We're the **AWS Student Builder Group at UNIZIK**, hosting two flagship events w
 - **AWS re:Invent Watch & Build Party** (200-300 attendees)
 - **AWS Student Community Day Awka** (300-500 attendees)
 
-We'd love Airtel as a **Headline or Gold Partner**:
+We'd love Airtel as a **Diamond or Gold Partner**:
 
 - **SmartCash activation booth** with live wallet sign-ups and instant rewards
 - Branded data bundle packages for attendees ("Airtel x AWS Builder Bundle")
