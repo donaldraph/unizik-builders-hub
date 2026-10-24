@@ -282,32 +282,129 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 
 ---
 
+# POOL C — ANAMBRA-ROOTED PARTNERS & TRADITIONAL BANKS
+
+Companies with deep roots in Anambra State, South-East Nigeria, or the traditional banking sector — targeting CSR budgets, youth empowerment mandates, and community goodwill.
+
+---
+
+## C1. Seaman Rice
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | Premium Nigerian rice, rooted in Anambra |
+| **Overview & Core Users** | Seaman Rice is a rice production and distribution brand based in Nnobi, Anambra State. As a local agribusiness with strong South-East identity, their brand targets household consumers across Anambra and neighbouring states. Their positioning as a quality Nigerian-grown rice brand gives them a community-first marketing approach. |
+| **Value Alignment** | Seaman Rice gains direct visibility among 200-500 university students and their families — the daily rice-buying demographic — through banner placements at high-energy events. For a Nnobi-based brand, associating with a tech-forward, AWS-backed student community at UNIZIK (the flagship federal university in Anambra) positions them as a brand that supports education and innovation, not just food. A banner at the re:Invent party and SCD with "Fueled by Seaman Rice" at the catering station creates natural, positive brand association. This is a low-cost, high-sentiment play. |
+| **Outreach Channels** | In-person visit to Nnobi production/office site. WhatsApp Business (standard in Anambra agribusiness). Instagram/Facebook: search @seamanrice or similar. Ask local Nnobi/Nnewi business contacts for a warm intro to management. |
+| **Suggested Tier** | **In-Kind Partner** (rice supply for event catering in exchange for banner placement and social media mention) |
+| **Proposed Deal** | Supply rice for event catering (est. 2-3 bags per event) in exchange for: 2 banner placements at venue, logo on catering station signage, social media thank-you post, mention in post-event report |
+
+---
+
+## C2. Sir Pius Ufudo Foundation
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | Empowering communities through education and development |
+| **Overview & Core Users** | The Sir Pius Ufudo Foundation is a philanthropic organization rooted in South-East Nigeria, focused on education, youth empowerment, and community development in Anambra State and beyond. Foundations of this nature typically fund scholarships, skill acquisition programmes, and community infrastructure projects. |
+| **Value Alignment** | A foundation dedicated to youth empowerment and education is a natural partner for an AWS Student Builder Group event. Sponsoring the SCD or re:Invent party directly fulfills their mission — helping students access world-class cloud computing skills that lead to employment and entrepreneurship. The Foundation can be recognized as the "Education Partner" with naming rights on the certification prep workshop or scholarship prize ("The Sir Pius Ufudo Cloud Scholarship"). This gives the Foundation tangible impact metrics: X students trained, Y certifications earned, Z projects built. |
+| **Outreach Channels** | Research needed: Search for the Foundation's website, social media presence, or registered contact via CAC (Corporate Affairs Commission) Nigeria. Ask UNIZIK faculty, local Anambra business networks, and community leaders for a warm introduction. Check LinkedIn and Facebook for Foundation page or trustees. |
+| **Suggested Tier** | **Gold Partner** or **Silver Partner** (cash sponsorship) or **In-Kind** (scholarship prizes, event venue support) |
+
+---
+
+## C3. Zenith Bank
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | "In Your Best Interest" |
+| **Overview & Core Users** | Zenith Bank is one of Nigeria's largest banks by assets, with a strong digital transformation agenda (Zenith Mobile, *966# USSD banking, ZenithDirect). They have active campus banking programmes and youth accounts. Zenith Bank has branches in Awka serving UNIZIK students. |
+| **Value Alignment** | Zenith Bank's campus banking teams already compete for student account sign-ups at UNIZIK. Sponsoring an AWS tech event gives them a premium activation environment — not a random flyer handout at the gate, but a curated booth where 300+ tech-literate students (high-value account holders) engage willingly. Offer them: live account opening station, Zenith debit card distribution, and a "Bank with Zenith" raffle. The FUTA SBG successfully pitched Zenith for their SCD — precedent exists. |
+| **Outreach Channels** | Email: info@zenithbank.com / CSR team via zenithbank.com/contact. Awka branch: Visit Zenith Bank Awka main branch on Zik Avenue for the Branch Manager. LinkedIn: Target Head of Digital Banking, CSR Manager, or Youth Banking Lead. |
+| **Suggested Tier** | **Diamond Partner** or **Gold Partner** |
+
+---
+
+## C4. First Bank of Nigeria
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | "You First" |
+| **Overview & Core Users** | First Bank is Nigeria's oldest and one of its largest banks, with an extensive branch network including Awka. They have FirstGem (women), FirstGen (youth), and First Edu accounts targeting students. Their CSR arm actively funds education and technology initiatives. |
+| **Value Alignment** | First Bank's "You First" brand positioning and FirstGen youth account are tailor-made for a student tech event sponsorship. They want young customers who will bank with them for decades. A partnership could include: FirstGen account sign-up booth, scholarship fund for AWS certification exam vouchers, and a "First Bank Innovation Award" for the best project at the hackathon/build sprint. First Bank's CSR department has a track record of funding education technology initiatives. |
+| **Outreach Channels** | Email: firstcontact@firstbanknigeria.com. CSR: Visit firstbanknigeria.com for CSR contact. Awka branch: Visit First Bank Awka, Zik Avenue. LinkedIn: Target Head of CSR, Youth Banking, or Brand & Communications. |
+| **Suggested Tier** | **Gold Partner** or **Silver Partner** |
+
+---
+
+## C5. UBA (United Bank for Africa)
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | "Africa's Global Bank" |
+| **Overview & Core Users** | UBA operates across 20 African countries with a strong digital banking push (UBA Mobile, Leo chatbot). They run the UBA Foundation which funds education programmes including the National Essay Competition and Read Africa Initiative. UBA has branches serving UNIZIK students in Awka. |
+| **Value Alignment** | UBA Foundation's education mandate is a direct fit. They can sponsor under their CSR/Foundation budget rather than marketing — often easier to approve. Offer: "UBA Foundation Cloud Skills Award" for top performers, Leo chatbot demo at the tech expo (their AI product!), and campus account sign-up activation. UBA's pan-African positioning ("Africa's Global Bank") resonates with AWS's global reach narrative. |
+| **Outreach Channels** | Email: cfc@ubagroup.com (Customer Fulfillment Centre). UBA Foundation: ubafoundation.com. Awka branch: Visit UBA Awka for Branch Manager intro. LinkedIn: Target UBA Foundation Director, Head of Marketing, or Campus Banking Lead. |
+| **Suggested Tier** | **Gold Partner** or **Silver Partner** |
+
+---
+
+## C6. Access Bank
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | "More Than Banking" |
+| **Overview & Core Users** | Access Bank (merged with Diamond Bank) is one of Nigeria's largest banks with strong youth banking products (Early Savers, AccessMore app) and one of the most active CSR programmes in Nigerian banking. They run sustainability and education initiatives extensively. |
+| **Value Alignment** | Access Bank's "More Than Banking" positioning and aggressive digital strategy make them receptive to tech community sponsorships. Their AccessMore app and USSD banking can be showcased to student developers as case studies in fintech. Offer: "Access Bank Digital Innovation Prize" for build sprint winners, AccessMore app sign-up activation, and a lightning talk on "Building Nigeria's Banking Infrastructure." Access Bank's Sustainability department sponsors tech education regularly. |
+| **Outreach Channels** | Email: contactcenter@accessbankplc.com. Sustainability/CSR: accessbankplc.com/sustainability. Awka branch: Visit Access Bank Awka. LinkedIn: Target Head of Sustainability, Brand Manager, or Digital Banking Lead. |
+| **Suggested Tier** | **Gold Partner** or **Silver Partner** |
+
+---
+
+## C7. Providus Bank
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | "Digital First, Customer Always" |
+| **Overview & Core Users** | Providus Bank is a mid-tier Nigerian bank with a strong digital-first and SME focus. They run the SME Development Programme supporting small businesses and entrepreneurs. While smaller than Zenith/First Bank, their lean structure means faster sponsorship approval cycles. |
+| **Value Alignment** | Providus Bank's SME Development Programme targets exactly the student entrepreneurs at UNIZIK who run campus businesses. The FUTA SBG already pitched them a Diamond partnership proposal — this means Providus has been approached by an AWS SBG before and may have internal context on the programme's value. UNIZIK can reference the FUTA precedent to warm the conversation. Offer: SME banking activation booth, "Providus Startup Prize" for best business-model pitch at SCD. |
+| **Outreach Channels** | Email: info@providusbank.com / customer@providusbank.com. Website: providusbank.com. LinkedIn: Target Head of SME Banking, Partnerships, or Marketing. Reference the FUTA SCD proposal as conversation context. |
+| **Suggested Tier** | **Silver Partner** or **Gold Partner** |
+
+---
+
 # PROSPECT PRIORITY MATRIX
 
 Based on alignment strength, budget likelihood, and outreach warmth:
 
-| Priority | Company | Rationale | Target Tier |
-|----------|---------|-----------|-------------|
-| 1 | **Moniepoint** | Massive campus activation budget, developer API angle, merchant sign-up KPIs | Headline |
-| 2 | **MTN Nigeria (Pulse)** | Existing campus sponsorship machinery, data bundle In-Kind is trivial cost for them | Headline / Gold |
-| 3 | **OPay** | Largest marketing budget among Nigerian fintechs, campus dominance play | Headline / Gold |
-| 4 | **Interswitch** | Developer ecosystem + CSR education budget + InterswitchSPAK precedent | Gold |
-| 5 | **Paystack** | Developer community team actively sponsors events, Stripe backing = budget | Gold |
-| 6 | **Flutterwave** | Developer advocacy program exists, hackathon sponsorship track record | Gold / Silver |
-| 7 | **Kuda Bank** | Aggressive campus acquisition, existing event sponsorship playbook | Gold / Silver |
-| 8 | **PiggyVest** | Gen-Z brand loyalty, campus sign-up activation model is proven | Gold / Campus Games |
-| 9 | **Airtel Nigeria** | SmartCash growth pressure, data bundles as In-Kind are low-cost | Gold / In-Kind |
-| 10 | **Aroma App** | Hyper-local, direct campus user base, food voucher activation | Gold / Campus Games |
-| 11 | **Cowrywise** | Financial literacy angle, investment credit prizes | Silver / Campus Games |
-| 12 | **Bumpa** | Igbo founder (cultural affinity), student merchant base | Silver / Campus Games |
-| 13 | **Risevest** | Dollar investment narrative ties to career upskilling story | Campus Games |
-| 14 | **Billpoint** | POS/merchant angle, smaller budget but South-East relevance | Silver / Campus Games |
-| 15 | **Activ8 Hub** | Venue + infrastructure In-Kind, ecosystem partner | In-Kind |
-| 16 | **Tekhub NG** | Venue + mentorship In-Kind, ecosystem partner | In-Kind |
-| 17 | **Local ISPs** | Internet infrastructure is critical; low cash cost for them | In-Kind |
-| 18 | **Campus Caterers** | Food In-Kind, direct campus presence | In-Kind |
-| 19 | **Print Shops** | Merch/banner In-Kind, portfolio motivation | In-Kind |
-| 20 | **Bookstores/EdTech** | Book prizes, study material packs | In-Kind / Campus Games |
+| Priority | Company | Rationale | Target Tier | Scope |
+|----------|---------|-----------|-------------|-------|
+| 1 | **Zenith Bank** | FUTA SBG precedent exists, campus banking competition in Awka, CSR budget | Diamond | Full Season |
+| 2 | **Moniepoint** | Massive campus activation budget, developer API angle, merchant sign-up KPIs | Diamond / Gold | Dual Event |
+| 3 | **MTN Nigeria (Pulse)** | Existing campus sponsorship machinery, data bundle In-Kind is trivial cost | Diamond / Gold | Full Season |
+| 4 | **OPay** | Largest marketing budget among Nigerian fintechs, campus dominance play | Gold | Dual Event |
+| 5 | **First Bank** | CSR education budget, FirstGen youth accounts, broad branch network | Gold | Dual Event |
+| 6 | **Paystack** | Developer community team actively sponsors events, Stripe backing = budget | Gold | Single Event (SCD) |
+| 7 | **UBA** | UBA Foundation education mandate, Leo AI product demo opportunity | Gold / Silver | Dual Event |
+| 8 | **Access Bank** | Active CSR programme, "More Than Banking" digital positioning | Gold / Silver | Dual Event |
+| 9 | **Flutterwave** | Developer advocacy program exists, hackathon sponsorship track record | Gold / Silver | Single Event (SCD) |
+| 10 | **Kuda Bank** | Aggressive campus acquisition, existing event sponsorship playbook | Silver | Single Event |
+| 11 | **PiggyVest** | Gen-Z brand loyalty, campus sign-up activation model is proven | Silver | Single Event |
+| 12 | **Airtel Nigeria** | SmartCash growth pressure, data bundles as In-Kind are low-cost | Silver / In-Kind | Full Season |
+| 13 | **Sir Pius Ufudo Foundation** | Education/youth empowerment mission, Anambra roots, scholarship angle | Gold / Silver | Dual Event |
+| 14 | **Providus Bank** | FUTA already pitched them — warm context, SME programme alignment | Silver | Single Event |
+| 15 | **Aroma App** | Hyper-local, direct campus user base, food voucher activation | Silver | Single Event |
+| 16 | **Cowrywise** | Financial literacy angle, investment credit prizes | Bronze | Single Event |
+| 17 | **Bumpa** | Igbo founder (cultural affinity), student merchant base | Bronze | Single Event |
+| 18 | **Interswitch** | Developer ecosystem + CSR education budget + InterswitchSPAK precedent | Gold | Single Event (SCD) |
+| 19 | **Chipper Cash** | Cross-border payments for freelance students, pan-African brand | Bronze | Single Event |
+| 20 | **Seaman Rice** | Nnobi-based, Anambra roots, rice supply for catering, low-cost goodwill | In-Kind | Dual Event |
+| 21 | **Activ8 Hub** | Venue + infrastructure In-Kind, ecosystem partner | In-Kind | Full Season |
+| 22 | **Tekhub NG** | Venue + mentorship In-Kind, ecosystem partner | In-Kind | Full Season |
+| 23 | **Local ISPs** | Internet infrastructure is critical; low cash cost for them | In-Kind | Dual Event |
+| 24 | **Campus Caterers** | Food In-Kind, direct campus presence | In-Kind | Dual Event |
+| 25 | **Print Shops** | Merch/banner In-Kind, portfolio motivation | In-Kind | Dual Event |
+| 26 | **Bookstores/EdTech** | Book prizes, study material packs | In-Kind / Bronze | Single Event |
 
 ---
 

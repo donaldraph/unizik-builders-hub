@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWS Student Builder Group at UNIZIK — Partnership Deck</title>
+<style>
+  /* ── Reset & Base ── */
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg:        #0a1628;
+    --bg-card:   #111d32;
+    --bg-accent: #162240;
+    --orange:    #FF9900;
+    --orange-d:  #cc7a00;
+    --white:     #ffffff;
+    --gray:      #cfd8dc;
+    --purple:    #c084fc;
+    --mint:      #00e5a0;
+    --slide-h:   100vh;
+  }
+
+  html { font-size: 16px; scroll-behavior: smooth; }
+
+  body {
+    font-family: -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--white);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Slide shell ── */
+  .slide {
+    min-height: var(--slide-h);
+    padding: 64px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+    break-after: page;
+  }
+
+  .slide::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--orange), var(--purple), var(--mint));
+  }
+
+  /* ── Slide number pill ── */
+  .slide-num {
+    position: absolute;
+    top: 32px; right: 48px;
+    background: var(--bg-accent);
+    border: 1px solid rgba(255,153,0,.25);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: .75rem;
+    color: var(--orange);
+    letter-spacing: .08em;
+    font-weight: 600;
+  }
+
+  /* ── Typography ── */
+  h1 { font-size: 2.8rem; font-weight: 800; line-height: 1.15; letter-spacing: -.02em; }
+  h2 { font-size: 2rem;   font-weight: 700; line-height: 1.2;  letter-spacing: -.015em; margin-bottom: 24px; }
+  h3 { font-size: 1.25rem; font-weight: 700; line-height: 1.3; }
+  p  { color: var(--gray); font-size: 1rem; max-width: 680px; }
+
+  .accent    { color: var(--orange); }
+  .highlight { color: var(--mint); }
+  .subtle    { color: var(--gray); }
+
+  /* ── AWS wordmark ── */
+  .aws-mark {
+    font-size: 3.2rem;
+    font-weight: 900;
+    letter-spacing: -.04em;
+    color: var(--white);
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+  .aws-mark .smile {
+    display: block;
+    width: 90px;
+    height: 8px;
+    margin: -6px auto 0;
+    background: var(--orange);
+    border-radius: 0 0 40px 40px;
+  }
+
+  /* ── Cards grid ── */
+  .cards { display: grid; gap: 24px; margin-top: 32px; }
+  .cards-3 { grid-template-columns: repeat(3, 1fr); }
+  .cards-4 { grid-template-columns: repeat(4, 1fr); }
+  .cards-2 { grid-template-columns: repeat(2, 1fr); }
+  .cards-5 { grid-template-columns: repeat(5, 1fr); }
+
+  .card {
+    background: var(--bg-card);
+    border: 1px solid rgba(255,255,255,.06);
+    border-radius: 14px;
+    padding: 28px 24px;
+    transition: border-color .2s;
+  }
+  .card:hover { border-color: rgba(255,153,0,.3); }
+
+  .card h3 { margin-bottom: 10px; }
+  .card p  { font-size: .9rem; }
+
+  .card-icon {
+    width: 48px; height: 48px;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem; font-weight: 800;
+    margin-bottom: 16px;
+  }
+  .icon-orange  { background: rgba(255,153,0,.12); color: var(--orange); }
+  .icon-purple  { background: rgba(168,85,247,.12); color: var(--purple); }
+  .icon-mint    { background: rgba(0,229,160,.12);  color: var(--mint); }
+  .icon-white   { background: rgba(255,255,255,.08); color: var(--white); }
+
+  /* ── Stat blocks ── */
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 40px; }
+  .stat-num {
+    font-size: 3.4rem;
+    font-weight: 900;
+    letter-spacing: -.03em;
+    color: var(--orange);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .stat-label { font-size: .95rem; color: var(--gray); font-weight: 500; }
+
+  /* ── Tables ── */
+  .tier-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 24px;
+    font-size: .85rem;
+  }
+  .tier-table th, .tier-table td {
+    padding: 12px 14px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,.06);
+  }
+  .tier-table th {
+    background: var(--bg-accent);
+    font-weight: 700;
+    font-size: .8rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+  }
+  .tier-table th:first-child,
+  .tier-table td:first-child {
+    text-align: left;
+    font-weight: 600;
+    color: var(--white);
+  }
+  .tier-table td { color: var(--gray); }
+  .tier-table .check { color: var(--mint); font-weight: 700; }
+  .tier-table .dash  { color: #5a6370; }
+
+  .tier-header {
+    font-weight: 800;
+    font-size: .9rem;
+  }
+  .tier-price {
+    font-size: .75rem;
+    color: var(--orange);
+    font-weight: 600;
+  }
+
+  .tier-table thead th:nth-child(5) {
+    background: linear-gradient(180deg, rgba(255,153,0,.18), var(--bg-accent));
+    border-top: 2px solid var(--orange);
+    border-radius: 8px 8px 0 0;
+  }
+
+  /* ── Deliverable rows ── */
+  .del-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: .88rem;
+  }
+  .del-table th {
+    text-align: left;
+    padding: 10px 16px;
+    background: var(--bg-accent);
+    font-weight: 700;
+    font-size: .78rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--orange);
+  }
+  .del-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(255,255,255,.05);
+    vertical-align: top;
+  }
+  .del-table td:first-child { font-weight: 600; color: var(--white); white-space: nowrap; }
+  .del-table td:last-child  { color: var(--gray); }
+
+  /* ── Track pill ── */
+  .track-pill {
+    display: inline-block;
+    background: rgba(255,153,0,.12);
+    color: var(--orange);
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  }
+
+  /* ── CTA section ── */
+  .cta-box {
+    background: linear-gradient(135deg, rgba(255,153,0,.08), rgba(168,85,247,.06));
+    border: 1px solid rgba(255,153,0,.2);
+    border-radius: 18px;
+    padding: 48px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .cta-box h2 { margin-bottom: 12px; }
+  .cta-box p  { margin: 0 auto 24px; }
+
+  .contact-row {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+  .contact-item {
+    text-align: center;
+  }
+  .contact-item .label {
+    font-size: .75rem;
+    color: var(--orange);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .contact-item .value {
+    font-size: 1rem;
+    color: var(--white);
+    font-weight: 600;
+  }
+
+  /* ── Tags / audience pills ── */
+  .audience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+  }
+  .audience-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 18px 20px;
+    background: var(--bg-card);
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,.04);
+  }
+  .audience-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    margin-top: 6px;
+    flex-shrink: 0;
+  }
+  .audience-item h4 { font-size: .95rem; font-weight: 600; margin-bottom: 2px; }
+  .audience-item p  { font-size: .82rem; margin: 0; }
+
+  /* ── Section label ── */
+  .section-label {
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 10px;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 900px) {
+    .slide { padding: 40px 32px; }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    .cards-3, .cards-4, .cards-5 { grid-template-columns: 1fr; }
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .stat-num { font-size: 2.4rem; }
+    .audience-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ── Print ── */
+  @media print {
+    .slide {
+      min-height: auto;
+      height: 100vh;
+      padding: 40px 56px;
+      page-break-after: always;
+      break-after: page;
+    }
+    .slide::after { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .card, .tier-table th, .audience-item, .cta-box {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+  }
+
+  /* ── Footer bar ── */
+  .slide-footer {
+    position: absolute;
+    bottom: 20px;
+    left: 80px;
+    right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .72rem;
+    color: #7a8694;
+    letter-spacing: .04em;
+  }
+  .slide-footer .aws-small {
+    font-weight: 800;
+    font-size: .8rem;
+    color: #8e99a4;
+  }
+
+  /* scope row styling */
+  .scope-label {
+    font-weight: 700;
+    font-size: .78rem;
+    letter-spacing: .04em;
+    color: var(--orange);
+    padding-top: 18px !important;
+  }
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 1 — TITLE
+     ════════════════════════════════════════════════════════ -->
+<section class="slide" style="justify-content:center; align-items:center; text-align:center;">
+  <div>
+    <div class="aws-mark">aws<span class="smile"></span></div>
+    <div style="margin-top:32px;">
+      <p class="section-label" style="margin-bottom:16px; color:var(--gray);">AWS Student Builder Group at</p>
+      <h1 style="font-size:3rem;">Nnamdi Azikiwe University</h1>
+    </div>
+    <div style="margin-top:40px; display:flex; justify-content:center; align-items:center; gap:16px;">
+      <span style="width:48px; height:2px; background:var(--orange); display:inline-block;"></span>
+      <span style="font-size:1.1rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--orange);">Student Community Day &mdash; Awka</span>
+      <span style="width:48px; height:2px; background:var(--orange); display:inline-block;"></span>
+    </div>
+    <p style="margin:24px auto 0; text-align:center; max-width:500px; font-size:1.05rem; color:var(--gray);">Empowering the Next Generation of Cloud Builders</p>
+    <p style="margin-top:40px; font-size:.85rem; color:#8e99a4; letter-spacing:.1em; text-transform:uppercase;">2026 / 2027 Season &nbsp;&bull;&nbsp; Partnership Prospectus</p>
+  </div>
+  <div class="slide-footer">
+    <span class="aws-small">aws</span>
+    <span>AWS Student Builder Group &bull; UNIZIK Awka</span>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 2 — ABOUT US
+     ════════════════════════════════════════════════════════ -->
+<section class="slide">
+  <span class="slide-num">02 / 10</span>
+  <p class="section-label">About Us</p>
+  <h2>We Build Cloud Skills <span class="accent">Together</span></h2>
+  <p style="margin-bottom:32px;">AWS Student Builder Groups bring students together to learn cloud computing, build real projects, and connect with other students around the world. At UNIZIK &mdash; one of South-East Nigeria&rsquo;s premier federal universities with <strong style="color:var(--white);">36,000+ students</strong> &mdash; we&rsquo;re turning that mission into a movement.</p>
+
+  <div class="cards cards-4">
+    <div class="card">
+      <div class="card-icon icon-orange">SC</div>
+      <h3>Study Circles</h3>
+      <p>Weekly Skill Builder sessions guiding members from Cloud Practitioner to Solutions Architect.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon icon-purple">WS</div>
+      <h3>Workshops</h3>
+      <p>Hands-on building with AWS services &mdash; serverless, AI/ML, containers &mdash; using Builder Labs and SimuLearn.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon icon-mint">HK</div>
+      <h3>Hackathons</h3>
+      <p>Rapid build sprints where teams ship real projects in hours, not weeks.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon icon-white">CP</div>
+      <h3>Cert Prep</h3>
+      <p>Structured exam prep with practice tests, study groups, and certification vouchers for top performers.</p>
+    </div>
+  </div>
+
+  <div style="margin-top:28px; padding:16px 20px; background:var(--bg-accent); border-radius:10px; border-left:3px solid var(--orange); display:inline-block;">
+    <span style="font-size:.85rem; color:var(--gray);">Powered by <strong style="color:var(--white);">12 months of AWS Skill Builder Premium Access</strong> &mdash; Cloud Quest, SimuLearn, Builder Labs, Card Clash, AWS Jam</span>
+  </div>
+
+  <div class="slide-footer">
+    <span class="aws-small">aws</span>
+    <span>AWS Student Builder Group &bull; UNIZIK Awka</span>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 3 — OUR EVENTS
+     ════════════════════════════════════════════════════════ -->
+<section class="slide">
+  <span class="slide-num">03 / 10</span>
+  <p class="section-label">Our Events</p>
+  <h2>Three Flagship <span class="accent">Activities</span></h2>
+  <p style="margin-bottom:8px;">A year-round engagement engine &mdash; not a one-off event.</p>
+
+  <div class="cards cards-3" style="margin-top:36px;">
+    <div class="card" style="border-top:3px solid var(--orange);">
+      <div class="track-pill">Event 1</div>
+      <h3>AWS re:Invent Watch &amp; Build Party</h3>
+      <p style="margin:10px 0 20px;">Livestream the re:Invent keynote, then build with the new announcements in real time. Rapid sprints, builder panels, campus games.</p>
+      <div style="display:flex; gap:16px;">
+        <div><span style="font-size:1.6rem; font-weight:800; color:var(--orange);">200-300</span><br><span style="font-size:.75rem; color:var(--gray);">Attendees</span></div>
+        <div><span style="font-size:1.6rem; font-weight:800; color:var(--white);">1 Day</span><br><span style="font-size:.75rem; color:var(--gray);">Full Day Event</span></div>
+      </div>
+    </div>
+    <div class="card" style="border-top:3px solid var(--purple);">
+      <div class="track-pill" style="background:rgba(168,85,247,.12); color:var(--purple);">Event 2</div>
+      <h3>Student Community Day (SCD)</h3>
+      <p style="margin:10px 0 20px;">A full-day conference with dual tracks, hands-on workshops, project showcases, speaker sessions, and networking.</p>
+      <div style="display:flex; gap:16px;">
+        <div><span style="font-size:1.6rem; font-weight:800; color:var(--purple);">300-500</span><br><span style="font-size:.75rem; color:var(--gray);">Attendees</span></div>
+        <div><span style="font-size:1.6rem; font-weight:800; color:var(--white);">2 Tracks</span><br><span style="font-size:.75rem; color:var(--gray);">Beginner + Advanced</span></div>
+      </div>
+    </div>
+    <div class="card" style="border-top:3px solid var(--mint);">
+      <div class="track-pill" style="background:rgba(0,229,160,.12); color:var(--mint);">Year-Round</div>
+      <h3>Bi-Weekly Campus Games</h3>
+      <p style="margin:10px 0 20px;">Card Clash leagues, Cloud Quest leaderboards, Syntax Sprints, Speed-Deploy CLI battles, and monthly Demo Days.</p>
+      <div style="display:flex; gap:16px;">
+        <div><span style="font-size:1.6rem; font-weight:800; color:var(--mint);">24+</span><br><span style="font-size:.75rem; color:var(--gray);">Sessions / Year</span></div>
+        <div><span style="font-size:1.6rem; font-weight:800; color:var(--white);">12 mo</span><br><span style="font-size:.75rem; color:var(--gray);">Continuous</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="aws-small">aws</span>
+    <span>AWS Student Builder Group &bull; UNIZIK Awka</span>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 4 — WHO'S IN THE ROOM
+     ════════════════════════════════════════════════════════ -->
+<section class="slide">
+  <span class="slide-num">04 / 10</span>
+  <p class="section-label">Who's in the Room</p>
+  <h2>A Curated Gathering of <span class="accent">Builders</span></h2>
+  <p>This isn't a crowd of passive listeners. It's the most proactive student talent in South-East Nigeria &mdash; people who are actively building, shipping, and preparing to enter the workforce.</p>
+
+  <div class="audience-grid">
+    <div class="audience-item">
+      <div class="audience-dot" style="background:var(--orange);"></div>
+      <div>
+        <h4>CS, Engineering &amp; Business Students</h4>
+        <p>From UNIZIK's core technical and entrepreneurial faculties &mdash; the campus's highest-signal cohort.</p>
+      </div>
+    </div>
+    <div class="audience-item">
+      <div class="audience-dot" style="background:var(--purple);"></div>
+      <div>
+        <h4>Student Founders &amp; Side-Hustle Operators</h4>
+        <p>Mini-importers, POS agents, freelance developers, food vendors &mdash; active micro-entrepreneurs running real businesses.</p>
+      </div>
+    </div>
+    <div class="audience-item">
+      <div class="audience-dot" style="background:var(--mint);"></div>
+      <div>
+        <h4>Aspiring Cloud Engineers &amp; Developers</h4>
+        <p>Students building portfolios, shipping projects, and preparing for AWS certifications and tech careers.</p>
+      </div>
+    </div>
+    <div class="audience-item">
+      <div class="audience-dot" style="background:var(--white);"></div>
+      <div>
+        <h4>Early-Career Professionals &amp; Ecosystem Partners</h4>
+        <p>Professionals from Awka tech hubs, GDG, She Code Africa, and innovation spaces across the South-East.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="aws-small">aws</span>
+    <span>AWS Student Builder Group &bull; UNIZIK Awka</span>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 5 — BY THE NUMBERS
+     ════════════════════════════════════════════════════════ -->
+<section class="slide" style="justify-content:center;">
+  <span class="slide-num">05 / 10</span>
+  <p class="section-label">By the Numbers</p>
+  <h2>Impact at a <span class="accent">Glance</span></h2>
+
+  <div class="stats">
+    <div>
+      <div class="stat-num">500+</div>
+      <div class="stat-label">Expected Attendees<br><span style="font-size:.78rem; color:#8e99a4;">across both flagship events</span></div>
+    </div>
+    <div>
+      <div class="stat-num">36,000+</div>
+      <div class="stat-label">Student Campus Population<br><span style="font-size:.78rem; color:#8e99a4;">UNIZIK, Awka</span></div>
+    </div>
+    <div>
+      <div class="stat-num">15+</div>
+      <div class="stat-label">Speakers &amp; Panelists<br><span style="font-size:.78rem; color:#8e99a4;">industry leaders, AWS builders, faculty</span></div>
+    </div>
+    <div>
+      <div class="stat-num">3</div>
+      <div class="stat-label">Flagship Activities<br><span style="font-size:.78rem; color:#8e99a4;">re:Invent Party &bull; SCD &bull; Campus Games</span></div>
+    </div>
+    <div>
+      <div class="stat-num">$5,383</div>
+      <div class="stat-label">AWS Grants Secured<br><span style="font-size:.78rem; color:#8e99a4;">$3,383 approved + $2,000 pipeline</span></div>
+    </div>
+    <div>
+      <div class="stat-num">12 mo</div>
+      <div class="stat-label">Premium Skill Builder Access<br><span style="font-size:.78rem; color:#8e99a4;">Cloud Quest, SimuLearn, Builder Labs, AWS Jam</span></div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="aws-small">aws</span>
+    <span>AWS Student Builder Group &bull; UNIZIK Awka</span>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 6 — WHY SPONSOR
+     ════════════════════════════════════════════════════════ -->
+<section class="slide">
+  <span class="slide-num">06 / 10</span>
+  <p class="section-label">Invest in Innovation</p>
+  <h2>Why <span class="accent">Sponsor</span> Us</h2>
+  <p style="margin-bottom:8px;">Sponsoring us isn&rsquo;t just logo placement. You&rsquo;re fueling a talent pipeline that is already building the future.</p>
+
+  <div class="cards cards-4" style="margin-top:32px;">
+    <div class="card" style="border-left:3px solid var(--orange);">
+      <div class="card-icon icon-orange">TP</div>
+      <h3>Talent Pipeline</h3>
+      <p>Gain direct, first-look access to South-East Nigeria&rsquo;s most proactive student builders &mdash; before they enter the open market.</p>
+    </div>
+    <div class="card" style="border-left:3px solid var(--purple);">
+      <div class="card-icon icon-purple">BA</div>
+      <h3>Brand Authority</h3>
+      <p>Position your brand at the intersection of AWS and campus innovation. Associate with the first AWS Student Community Day in Awka.</p>
+    </div>
+    <div class="card" style="border-left:3px solid var(--mint);">
+      <div class="card-icon icon-mint">PA</div>
+      <h3>Product Adoption</h3>
+      <p>Put your tools, APIs, and apps in the hands of builders who adopt early, integrate fast, and influence their peers.</p>
+    </div>
+    <div class="card" style="border-left:3px solid var(--white);">
+      <div class="card-icon icon-white">EI</div>
+      <h3>Ecosystem Impact</h3>
+      <p>Bridge the gap between academic theory and industry-grade engineering. Help grow Awka&rsquo;s tech ecosystem.</p>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="aws-small">aws</span>
+    <span>AWS Student Builder Group &bull; UNIZIK Awka</span>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 7 — SPONSORSHIP TIERS
+     ════════════════════════════════════════════════════════ -->
+<section class="slide">
+  <span class="slide-num">07 / 10</span>
+  <p class="section-label">Sponsorship Tiers</p>
+  <h2>Flexible Packages, <span class="accent">Real Value</span></h2>
+  <p style="margin-bottom:8px;">Choose a single event, two events, or the full season. Every tier delivers measurable impact.</p>
+
+  <table class="tier-table">
+    <thead>
+      <tr>
+        <th style="text-align:left;">Benefit</th>
+        <th><span class="tier-header">Bronze</span></th>
+        <th><span class="tier-header">Silver</span></th>
+        <th><span class="tier-header">Gold</span></th>
+        <th><span class="tier-header">Diamond</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- SCOPE: Single Event -->
+      <tr>
+        <td class="scope-label" colspan="5" style="border-bottom:1px solid rgba(255,153,0,.2);">Single Event (re:Invent OR SCD)</td>
+      </tr>
+      <tr>
+        <td>Price</td>
+        <td><span class="tier-price">&nbsp;&#8358;100,000</span></td>
+        <td><span class="tier-price">&nbsp;&#8358;200,000</span></td>
+        <td><span class="tier-price">&nbsp;&#8358;400,000</span></td>
+        <td><span class="tier-price">&nbsp;&#8358;750,000</span></td>
+      </tr>
+      <!-- SCOPE: Dual Event -->
+      <tr>
+        <td class="scope-label" colspan="5" style="border-bottom:1px solid rgba(255,153,0,.2);">Dual Event (re:Invent + SCD)</td>
+      </tr>
+      <tr>
+        <td>Price</td>
+        <td><span class="tier-price">&nbsp;&#8358;175,000</span></td>
+        <td><span class="tier-price">&nbsp;&#8358;350,000</span></td>
+        <td><span class="tier-price">&nbsp;&#8358;650,000</span></td>
+        <td><span class="tier-price">&#8358;1,200,000</span></td>
+      </tr>
+      <!-- SCOPE: Full Season -->
+      <tr>
+        <td class="scope-label" colspan="5" style="border-bottom:1px solid rgba(255,153,0,.2);">Full Season (Both Events + Bi-Weekly Games)</td>
+      </tr>
+      <tr>
+        <td>Price</td>
+        <td><span class="tier-price">&nbsp;&#8358;225,000</span></td>
+        <td><span class="tier-price">&nbsp;&#8358;450,000</span></td>
+        <td><span class="tier-price">&nbsp;&#8358;800,000</span></td>
+        <td><span class="tier-price">&#8358;1,500,000</span></td>
+      </tr>
+      <!-- BENEFITS -->
+      <tr>
+        <td class="scope-label" colspan="5" style="border-bottom:1px solid rgba(255,153,0,.2);">Benefits Included</td>
+      </tr>
+      <tr>
+        <td>Logo on Materials</td>
+        <td>Digital only</td>
+        <td>Digital + Backdrop</td>
+        <td>All materials</td>
+        <td>All + Merch</td>
+      </tr>
+      <tr>
+        <td>Event Passes</td>
+        <td>2</td>
+        <td>5</td>
+        <td>7</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Exhibition Booth</td>
+        <td>Shared</td>
+        <td class="check">Yes</td>
+        <td class="check">Yes</td>
+        <td>Prime Spot</td>
+      </tr>
+      <tr>
+        <td>Speaking Time</td>
+        <td class="dash">&mdash;</td>
+        <td>5 min</td>
+        <td>7 min</td>
+        <td>10 min</td>
+      </tr>
+      <tr>
+        <td>Recruitment / Talent Access</td>
+        <td>Mention</td>
+        <td class="check">Yes</td>
+        <td class="check">Yes</td>
+        <td class="check">Yes</td>
+      </tr>
+      <tr>
+        <td>Social Media</td>
+        <td>Group post</td>
+        <td>1 post</td>
+        <td>2 posts</td>
+        <td>Featured post</td>
+      </tr>
+      <tr>
+        <td>Post-Event Impact Report</td>
+        <td class="check">Yes</td>
+        <td class="check">Yes</td>
+        <td class="check">Yes</td>
+        <td class="check">Yes</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="slide-footer">
+    <span class="aws-small">aws</span>
+    <span>AWS Student Builder Group &bull; UNIZIK Awka</span>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 8 — PARTNERSHIP TRACKS
+     ════════════════════════════════════════════════════════ -->
+<section class="slide">
+  <span class="slide-num">08 / 10</span>
+  <p class="section-label">Beyond the Tiers</p>
+  <h2>Partnership <span class="accent">Tracks</span></h2>
+  <p style="margin-bottom:8px;">Can&rsquo;t do cash? We value in-kind contributions just as much. Pick a track that fits your brand.</p>
+
+  <div class="cards cards-5" style="margin-top:28px;">
+    <div class="card" style="padding:22px 18px;">
+      <div class="track-pill">Swag Partner</div>
+      <h3 style="font-size:1rem;">The Merch Track</h3>
+      <p style="font-size:.82rem;">Co-brand our official hoodies, t-shirts, and stickers &mdash; worn by 300+ builders on campus.</p>
+    </div>
+    <div class="card" style="padding:22px 18px;">
+      <div class="track-pill" style="background:rgba(168,85,247,.12); color:var(--purple);">Catering Partner</div>
+      <h3 style="font-size:1rem;">The Fuel Track</h3>
+      <p style="font-size:.82rem;">Sponsor the midday networking lunch or morning tea break. Exclusive signage in the dining area.</p>
+    </div>
+    <div class="card" style="padding:22px 18px;">
+      <div class="track-pill" style="background:rgba(0,229,160,.12); color:var(--mint);">Internet &amp; Cloud</div>
+      <h3 style="font-size:1rem;">The Connectivity Track</h3>
+      <p style="font-size:.82rem;">Provide the high-speed Wi-Fi powering the auditorium, or supply cloud credits for live deployment.</p>
+    </div>
+    <div class="card" style="padding:22px 18px;">
+      <div class="track-pill">Challenge Partner</div>
+      <h3 style="font-size:1rem;">The Talent Prize Track</h3>
+      <p style="font-size:.82rem;">Sponsor a hackathon category, provide the winning prize, and join the judging panel.</p>
+    </div>
+    <div class="card" style="padding:22px 18px;">
+      <div class="track-pill" style="background:rgba(168,85,247,.12); color:var(--purple);">Travel &amp; Hospitality</div>
+      <h3 style="font-size:1rem;">The Logistics Track</h3>
+      <p style="font-size:.82rem;">Cover speaker transport, premium hotel lodging, and VIP logistics for a seamless executive experience.</p>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="aws-small">aws</span>
+    <span>AWS Student Builder Group &bull; UNIZIK Awka</span>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 9 — SPONSOR DELIVERABLES
+     ════════════════════════════════════════════════════════ -->
+<section class="slide">
+  <span class="slide-num">09 / 10</span>
+  <p class="section-label">What You Get</p>
+  <h2>Sponsor <span class="accent">Deliverables</span></h2>
+  <p>Every sponsor receives tangible, documented outcomes &mdash; not vague promises.</p>
+
+  <table class="del-table">
+    <thead>
+      <tr>
+        <th style="width:220px;">Deliverable</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Premium Brand Visibility</td>
+        <td>Logo on event merchandise, stage backdrop, banners, digital screens, and selected marketing materials across all sponsored activities.</td>
+      </tr>
+      <tr>
+        <td>Exhibition Booth</td>
+        <td>Dedicated booth space for product demos, customer engagement, app sign-ups, and live activations with direct foot traffic.</td>
+      </tr>
+      <tr>
+        <td>Speaking Session</td>
+        <td>Dedicated stage time to address attendees, showcase products, and position your brand as a thought leader (duration per tier).</td>
+      </tr>
+      <tr>
+        <td>Product Activation</td>
+        <td>On-site opportunity to onboard users, distribute branded materials, run QR code campaigns, and demo your product live.</td>
+      </tr>
+      <tr>
+        <td>Digital Promotion</td>
+        <td>Recognition across pre-event, live, and post-event social media campaigns using #AWSStudentBuilderGroup.</td>
+      </tr>
+      <tr>
+        <td>Stage Recognition</td>
+        <td>Verbal acknowledgement during opening, closing, and key transition moments throughout each event.</td>
+      </tr>
+      <tr>
+        <td>Access to Talent</td>
+        <td>Direct interaction with students, founders, and early-career professionals for recruitment, internship, and networking.</td>
+      </tr>
+      <tr>
+        <td>Post-Event Impact Report</td>
+        <td>Detailed report within 72 hours: attendance, social reach, booth visits, app downloads, photos, and sponsor-specific metrics.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="slide-footer">
+    <span class="aws-small">aws</span>
+    <span>AWS Student Builder Group &bull; UNIZIK Awka</span>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 10 — CTA / CONTACT
+     ════════════════════════════════════════════════════════ -->
+<section class="slide" style="justify-content:center; align-items:center; text-align:center;">
+  <span class="slide-num">10 / 10</span>
+
+  <div class="cta-box" style="max-width:720px;">
+    <div class="aws-mark" style="font-size:2rem; margin-bottom:20px;">aws<span class="smile" style="width:56px; height:5px; margin-top:-4px;"></span></div>
+    <h2 style="font-size:2.2rem;">Let&rsquo;s Build <span class="accent">Together</span></h2>
+    <p style="text-align:center; max-width:520px;">Become a foundational partner for AWS Student Community Day Awka and secure your front-row seat to the future of tech in South-East Nigeria.</p>
+
+    <div class="contact-row">
+      <div class="contact-item">
+        <div class="label">Group Leader</div>
+        <div class="value">Donald Anyamba</div>
+      </div>
+      <div class="contact-item">
+        <div class="label">Email</div>
+        <div class="value">[your-email@example.com]</div>
+      </div>
+      <div class="contact-item">
+        <div class="label">Phone</div>
+        <div class="value">[+234 XXX XXX XXXX]</div>
+      </div>
+    </div>
+
+    <div style="margin-top:32px; font-size:.78rem; color:var(--gray);">
+      Learn more about AWS Student Builder Groups: <span style="color:var(--orange);">community.aws/buildergroups</span>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="aws-small">aws</span>
+    <span>AWS Student Builder Group &bull; UNIZIK Awka &bull; #AWSStudentBuilderGroup</span>
+  </div>
+</section>
+
+</body>
+</html>

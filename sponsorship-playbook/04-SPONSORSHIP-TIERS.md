@@ -1,4 +1,4 @@
-# Deliverable 4: Dual-Event Sponsorship Tier Architecture
+# Deliverable 4: Sponsorship Tier Architecture
 
 **AWS Student Builder Group at Nnamdi Azikiwe University, Awka, Anambra State**
 
@@ -6,171 +6,193 @@
 
 ---
 
-## Events Covered
+## Our Three Activities
 
-| Event | AWS Grant | Target Attendance | Format |
-|-------|-----------|-------------------|--------|
-| AWS re:Invent Watch & Build Party | $3,383 | 150–200 | Keynote streaming, build sprints, builder panels |
-| AWS Student Builder Groups Student Community Day Awka | $2,000 (pipeline) | 200–300 | Speaker tracks, workshops, project showcases |
-
----
-
-## Tier Overview
-
-| Tier | Investment | Slots | Scope |
-|------|-----------|-------|-------|
-| **Headline Partner** | ₦2,500,000 (~$1,600) | 1 | Maximum benefits across **both** events |
-| **Gold Partner** | ₦1,200,000 (~$800) | 2 | Strong presence at both events |
-| **Silver Partner** | ₦600,000 (~$400) | 4 | Solid visibility at one or both events |
-| **Campus Games & Swag Partner** | ₦300,000 (~$200) | 3 | Interactive activation and branded merchandise |
-| **In-Kind & Infrastructure Partner** | No minimum cash | Unlimited | Goods/services in lieu of direct funds |
-
-**Total auxiliary sponsorship target (if all cash tiers filled):** ₦2,500,000 + ₦2,400,000 + ₦2,400,000 + ₦900,000 = **₦8,200,000 (~$5,250)**
+| Activity | Format | Target Attendance | Frequency |
+|----------|--------|-------------------|-----------|
+| **AWS re:Invent Watch & Build Party** | Keynote streaming, build sprints, builder panels | 200–300 | Once (Dec) |
+| **AWS Student Community Day Awka** | Speaker tracks, workshops, project showcases | 300–500 | Once (Q1/Q2) |
+| **Campus Bi-Weekly Games** | Card Clash leagues, Cloud Quest sessions, study circles, Demo Days | 30–80 per session | Bi-weekly, year-round |
 
 ---
 
-## Benefits Matrix
+## How Sponsorship Scopes Work
 
-### Branding & Visibility
+Sponsors choose **how much of the calendar** their brand covers:
 
-| Benefit | Headline | Gold | Silver | Campus Games | In-Kind |
-|---------|----------|------|--------|--------------|---------|
-| Logo on all event materials | 2x2 (prominent) | 1.5x1.5 | 1x1 | 1x1 (games section only) | 1x1 (with "Supported by" label) |
-| Logo on event presentations | Every deck, title slide | Every deck, sponsors slide | Sponsors slide only | Games intro slide | Sponsors slide only |
-| Logo on event website / registration page | Above the fold, hero section | Partner section (top row) | Partner section (second row) | Games section | Infrastructure section |
-| Social media — dedicated post | 2 dedicated posts per event | 1 dedicated post per event | Grouped sponsor spotlight | Grouped games spotlight | 1 grouped "thank you" post |
-| Social media — stories/reels featuring sponsor | 3 reels + stories per event | 2 reels per event | 1 story per event | 1 reel (game activation) | 1 story (setup/infra credit) |
-| Pre-event email mention to attendees | Named in subject line + body | Named in body | Listed in footer | Listed in footer | Listed in footer |
-| Logo on attendee name badges | Front, prominent | Front, smaller | Back | -- | -- |
-| Logo on event lanyards | Co-branded | -- | -- | -- | -- |
-| Logo on event t-shirts | Front (below AWS branding) | Back (top row) | Back (lower row) | Back (games section) | Back ("powered by" section) |
+| Scope | What It Covers | Ideal For |
+|-------|---------------|-----------|
+| **Single Event** | Your brand at **one** flagship event (re:Invent Watch Party OR SCD — your pick) | Companies testing student sponsorship for the first time, or with a specific campaign window |
+| **Dual Event** | Your brand at **both** flagship events | Companies wanting maximum flagship reach without year-round commitment |
+| **Full Season** | Both flagship events **+** bi-weekly campus games (Card Clash leagues, Cloud Quest sessions, study circles, monthly Demo Days) | Companies building long-term brand loyalty with UNIZIK's tech community; year-round visibility |
 
-### On-Site Presence
+Within each scope, sponsors select a **tier** that sets the depth of their benefits:
 
-| Benefit | Headline | Gold | Silver | Campus Games | In-Kind |
-|---------|----------|------|--------|--------------|---------|
-| Speaking slot | 10-min keynote at both events | 5-min lightning talk at one event | -- | 2-min games intro | -- |
-| Workshop / breakout hosting | Host one full workshop session | Co-host one workshop | -- | -- | -- |
-| Exhibit / demo booth | Premium location (entrance area) | Standard location (main hall) | Shared table space | Games zone booth | Infra credit display |
-| Banner placements at venue | 4 banners (stage backdrop, entrance, hall, games zone) | 3 banners (entrance, hall, games zone) | 2 banners (hall, games zone) | 1 banner (games zone, dedicated) | 1 banner ("powered by" at infra station) |
-| Product demo during activities | Dedicated 5-min demo slot + booth demo | Booth demo only | -- | Demo integrated into games | -- |
-| Naming rights for event segments | "The [Brand] Build Sprint" + "The [Brand] Networking Hour" | "The [Brand] Lightning Talks" | -- | "The [Brand] Games Arena" | "Connectivity by [Brand]" or "Refreshments by [Brand]" |
+---
 
-### Access & Engagement
+## Pricing Grid
 
-| Benefit | Headline | Gold | Silver | Campus Games | In-Kind |
-|---------|----------|------|--------|--------------|---------|
-| Complimentary event passes | 10 | 5 | 3 | 2 | 1 |
-| Post-event impact report | Full report with custom metrics | Full report | Summary report | Summary report | Summary report |
-| Attendee contact access (opt-in, privacy-compliant) | Full list (consenting attendees) | Full list (consenting attendees) | -- | -- | -- |
-| Post-event thank-you + case study | Dedicated case study co-authored | Thank-you post + quote | Thank-you post | Thank-you post | Thank-you post |
-| First right of refusal for next event cycle | Yes | -- | -- | -- | -- |
+| Tier | Single Event | Dual Event | Full Season |
+|------|-------------|------------|-------------|
+| **Diamond** | ₦750,000 | ₦1,200,000 | ₦1,500,000 |
+| **Gold** | ₦400,000 | ₦650,000 | ₦800,000 |
+| **Silver** | ₦200,000 | ₦350,000 | ₦450,000 |
+| **Bronze** | ₦100,000 | ₦175,000 | ₦225,000 |
+| **In-Kind** | Equivalent value | Equivalent value | Equivalent value |
+
+**Slot limits per tier:** Diamond — 1 per scope. Gold — 2. Silver — 4. Bronze — unlimited. In-Kind — unlimited.
+
+---
+
+## Benefits Matrix — Brand Visibility
+
+Benefits below apply **per event** within the chosen scope. Full Season sponsors also receive the year-round extras listed in the next section.
+
+| Benefit | Diamond | Gold | Silver | Bronze | In-Kind |
+|---------|---------|------|--------|--------|---------|
+| **Logo size on materials** | 2×2 (prominent) | 1.5×1.5 | 1×1 | Small (0.75×0.75) | 1×1 with "Supported by" label |
+| **Logo on event website / registration** | Hero section, above fold | Partner section (top row) | Partner section (second row) | Partner section (third row) | Infrastructure / supporters section |
+| **Logo on presentations / slides** | Every deck, title slide | Every deck, sponsors slide | Sponsors slide | Sponsors slide (small) | Sponsors slide |
+| **Social media — dedicated post** | 2 dedicated solo posts | 1 dedicated post | Grouped sponsor spotlight | Mention in thank-you post | 1 grouped "thank you" post |
+| **Social media — stories / reels** | 3 reels + stories | 2 reels | 1 story | Tag in group story | 1 story (infra credit) |
+| **Pre-event email mention** | Named in subject line + body | Named in body | Listed in footer | Listed in footer | Listed in footer |
+| **Logo on attendee name badges** | Front, prominent | Front, smaller | Back | — | — |
+| **Logo on event lanyards** | Co-branded | — | — | — | — |
+| **Logo on event t-shirts** | Front (below AWS branding) | Back (top row) | Back (lower row) | — | Back ("powered by" section) |
+
+---
+
+## Benefits Matrix — On-Site Presence
+
+| Benefit | Diamond | Gold | Silver | Bronze | In-Kind |
+|---------|---------|------|--------|--------|---------|
+| **Speaking slot** | 10-min keynote | 5-min lightning talk | — | — | — |
+| **Workshop / breakout hosting** | Host one full session | Co-host one session | — | — | — |
+| **Exhibition booth** | Prime spot (entrance area) | Standard (main hall) | Shared table | Table only | Infra credit display |
+| **Banner placements** | 4 (stage, entrance, hall, games zone) | 3 (entrance, hall, games zone) | 2 (hall, games zone) | 1 (hall) | 1 ("powered by" at station) |
+| **Product demo during activities** | 5-min dedicated slot + booth | Booth demo | — | — | — |
+| **Naming rights** | 2 segments ("The [Brand] Build Sprint" + "The [Brand] Networking Hour") | 1 segment ("The [Brand] Lightning Talks") | — | — | Station credit ("Connectivity by [Brand]") |
+| **Event passes** | 10 | 7 | 5 | 2 | 1 |
+
+---
+
+## Benefits Matrix — Full Season Extras
+
+These benefits are **exclusive to the Full Season scope** and run year-round between flagship events:
+
+| Benefit | Diamond | Gold | Silver | Bronze |
+|---------|---------|------|--------|--------|
+| **Logo on bi-weekly game materials & leaderboards** | Prominent, every session | Present, every session | Every other session | Monthly only |
+| **Branded prize segment at Demo Days** | "The [Brand] Ship-It Award" — you name the top prize | "The [Brand] Honourable Mention" — secondary prize | — | — |
+| **Quarterly spotlight post** | Dedicated solo feature | Shared feature | — | — |
+| **Campus game series naming rights** | "The [Brand] Card Clash League" or "The [Brand] Cloud Quest Series" | — | — | — |
+| **Year-round social media presence** | Monthly mention across channels | Bi-monthly mention | Quarterly mention | Semester mention |
+| **Invitation to community study circles as guest** | Standing invitation + speaking slot | Standing invitation | By request | — |
+
+---
+
+## Benefits Matrix — Post-Event
+
+| Benefit | Diamond | Gold | Silver | Bronze | In-Kind |
+|---------|---------|------|--------|--------|---------|
+| **Impact report** | Full report with custom metrics | Full report | Summary report | Summary report | Summary report |
+| **Attendee contact access** (opt-in, privacy-compliant) | Full list | Full list | — | — | — |
+| **Photo/video assets featuring sponsor branding** | Full event gallery + curated highlights | Full event gallery | Shared gallery link | Shared gallery link | Shared gallery link |
+| **Post-event case study** | Dedicated case study co-authored with sponsor team | — | — | — | — |
+| **First right of refusal for next cycle** | Yes | — | — | — | — |
 
 ---
 
 ## Tier Details
 
-### Headline Partner — ₦2,500,000 (~$1,600)
+### Diamond
 
-**1 slot available. The definitive partner across both flagship events.**
+**The flagship partner. Maximum visibility, maximum access.**
 
-Your brand anchors the entire event experience. From the moment attendees see the registration page to the final thank-you reel, Headline Partner branding is woven into every touchpoint — without competing with or altering AWS branding.
+Your brand anchors the entire event experience — or the full annual season. From the registration page to the final thank-you reel, Diamond branding is woven into every touchpoint.
 
-**What makes this tier unique:**
-- **Dual-event naming rights**: "The [Brand] Build Sprint" at re:Invent Watch Party + "The [Brand] Networking Hour" at SCD Awka
-- **Keynote speaking slot (10 minutes)** at both events — address 150–300 student developers directly
-- **Co-branded event lanyards** worn by every attendee all day (maximum photo/video impressions)
-- **Logo on attendee name badges (front, prominent)** — your brand in every handshake
-- **4 banner placements per event** — stage backdrop, entrance, hall, games zone: your brand in every camera angle
-- **Hero-section logo** on event website/registration page (above the fold)
-- **First right of refusal** for the next sponsorship cycle
-- **Full post-event case study** co-authored with your marketing team
+| Scope | Price | What Makes It Unique |
+|-------|-------|---------------------|
+| Single Event | ₦750,000 | Own one flagship event completely — keynote stage time, 4 banners, co-branded lanyards, front-of-shirt logo |
+| Dual Event | ₦1,200,000 | All of the above across BOTH flagship events + first refusal for next cycle |
+| Full Season | ₦1,500,000 | Both events + year-round campus presence: your name on the Card Clash league, the Ship-It Award, monthly social posts, and standing invitation to study circles |
 
 ---
 
-### Gold Partner — ₦1,200,000 (~$800)
+### Gold
 
-**Up to 2 slots. High-impact visibility without the exclusivity premium.**
+**High-impact presence without the exclusivity premium.**
 
-Gold Partners get meaningful stage time, a strong booth presence, and dedicated social media content. The 5-minute lightning talk at one event gives direct access to the audience, and your workshop co-hosting slot lets you showcase products hands-on.
+Gold Partners get meaningful stage time, a strong booth, dedicated social content, and full attendee contact access. The 5-min lightning talk gives direct audience access, and the co-hosted workshop lets you showcase products hands-on.
 
-**Highlights:**
-- **5-min lightning talk** at one event (your choice: re:Invent Watch Party or SCD Awka)
-- **Workshop co-hosting** — run a hands-on session featuring your product/API alongside AWS tools
-- **3 banners per event** at high-traffic locations
-- **1 dedicated social media post + 2 reels** per event
-- **Logo on t-shirts (back, top row)** — visible in every group photo
-- **Full attendee contact list** (opt-in, privacy-compliant)
-- **Naming rights**: "The [Brand] Lightning Talks" segment
+| Scope | Price | Highlights |
+|-------|-------|------------|
+| Single Event | ₦400,000 | 5-min lightning talk, 3 banners, workshop co-hosting, dedicated social post, 7 passes |
+| Dual Event | ₦650,000 | All of the above at both events |
+| Full Season | ₦800,000 | Both events + bi-weekly leaderboard logo, "Honourable Mention" Demo Day prize, bi-monthly social mentions |
 
 ---
 
-### Silver Partner — ₦600,000 (~$400)
+### Silver
 
-**Up to 4 slots. Solid brand visibility at accessible investment.**
+**Solid visibility at an accessible investment.**
 
-Silver is designed for brands testing student community sponsorship for the first time or companies that want consistent logo presence without needing stage time. Your logo appears across all materials, you get shared table space for product collateral, and the grouped sponsor spotlight post ensures social visibility.
+Designed for brands testing student community sponsorship for the first time. Consistent logo presence across all materials, a shared exhibition table, and a summary impact report.
 
-**Highlights:**
-- **Logo (1x1) on all materials** — website, presentations (sponsors slide), email footer, t-shirts (back)
-- **2 banners per event** in the main hall and games zone
-- **Shared table space** for flyers, promo codes, and product demos
-- **3 complimentary event passes**
-- **1 Instagram/X story per event** featuring your brand
-- **Summary post-event impact report**
+| Scope | Price | Highlights |
+|-------|-------|------------|
+| Single Event | ₦200,000 | Logo (1×1) on all materials, 2 banners, shared table, 5 passes, 1 story per event |
+| Dual Event | ₦350,000 | All of the above at both events |
+| Full Season | ₦450,000 | Both events + logo on alternate bi-weekly game sessions, quarterly social mention |
 
 ---
 
-### Campus Games & Swag Partner — ₦300,000 (~$200)
+### Bronze
 
-**Up to 3 slots. Own the most shareable moments of the event.**
+**Entry-level brand awareness. Low commitment, real visibility.**
 
-This tier is purpose-built for brands that thrive on viral campus content. Your brand is embedded into the interactive games — the moments attendees film, share, and meme. Every game is designed with photo-op checkpoints, and your banner is the backdrop to every champion photo, every reaction clip, and every leaderboard screenshot.
+Perfect for local businesses, startups, and first-time sponsors who want their name in the room.
 
-**Highlights:**
-- **"The [Brand] Games Arena" naming rights** — MC announces your brand at every game start
-- **Dedicated games zone booth** for product demos between rounds
-- **1 banner at the games zone** positioned behind the competition area (in every photo)
-- **Logo on games intro slide** and leaderboard displays
-- **1 Instagram reel** capturing your game activation (high-energy crowd content)
-- **2-minute games introduction** — address participants before the competition starts
-- **Branded prizes** — winners receive your merch/products with your team presenting them
+| Scope | Price | Highlights |
+|-------|-------|------------|
+| Single Event | ₦100,000 | Small logo on materials, 1 banner in hall, table-only exhibit space, 2 passes, mention in thank-you post |
+| Dual Event | ₦175,000 | All of the above at both events |
+| Full Season | ₦225,000 | Both events + monthly mention on game leaderboards, semester social mention |
 
 ---
 
-### In-Kind & Infrastructure Partner — No Minimum Cash Value
+## In-Kind & Infrastructure Partners
 
-**Unlimited slots. Provide what money alone can't buy in Awka.**
+**Any scope. No minimum cash value. Solve the problems money alone can't fix in Awka.**
 
-In-kind partners solve the critical operational challenges of running a 200+ person tech event in Awka: reliable internet, steady power, food/drinks, and quality merchandise. These contributions are acknowledged across all materials and receive the same post-event gratitude as cash sponsors.
+In-kind sponsors provide goods or services whose value maps to a cash tier's benefits:
 
-**Eligible contributions:**
-| Category | Examples |
-|----------|----------|
-| **High-Speed Internet** | MiFi devices, dedicated routers, bulk data SIMs, Starlink/VSAT for the day |
-| **Event Catering** | Lunch/snacks for 150–300 attendees, water, drinks, energy snacks |
-| **Power Backup** | Generator + fuel, industrial inverter, UPS units for AV equipment |
-| **Branded Merchandise** | Custom t-shirts, stickers, notebooks, pens, tote bags |
-| **Venue & Logistics** | Chairs, tables, projectors, PA system, transportation |
+### In-Kind Categories & Equivalent Tier Benefits
 
-**Benefits:**
-- **1 banner** at the infrastructure/catering station with "Powered by [Brand]" or "Refreshments by [Brand]" signage
-- **Logo (1x1)** on event website (infrastructure section), presentations (sponsors slide), t-shirts (back, "powered by" section)
-- **1 grouped "thank you" social media post** alongside other in-kind partners
-- **1 Instagram story** showing your contribution in action (e.g., setup, food station, internet testing)
-- **1 complimentary event pass**
-- **Summary post-event impact report**
-- **"Connectivity by [Brand]"** or **"Refreshments by [Brand]"** naming credit for your specific contribution
+| Category | Examples | Estimated Value Range | Equivalent Tier Benefits |
+|----------|----------|----------------------|------------------------|
+| **Internet & Connectivity** | MiFi routers, dedicated fiber, bulk data SIMs, Starlink terminal | ₦100,000–₦400,000+ | Bronze → Gold tier benefits depending on value. "Connectivity by [Brand]" naming at every station. Logo on WiFi cards. |
+| **Power** | Generator + fuel, industrial inverter, UPS for AV equipment | ₦150,000–₦500,000+ | Silver → Gold tier benefits. "Powered by [Brand]" on generator station signage. |
+| **Catering** | Lunch / snacks / drinks for 200–500 attendees | ₦200,000–₦600,000+ | Silver → Gold tier benefits. "Refreshments by [Brand]" at every food station. Branded napkins/cups. |
+| **Merchandise** | T-shirts, hoodies, stickers, notebooks, tote bags, lanyards | ₦100,000–₦400,000+ | Bronze → Gold tier benefits. "Printed by [Brand]" on shirt tags. Logo on merch packaging. |
+| **Venue** | Hall booking, AV equipment, projectors, chairs/tables, PA system | ₦200,000–₦800,000+ | Silver → Diamond tier benefits. "Venue Partner" credit on all materials. |
+| **Logistics** | Speaker transport, accommodation, shuttle service | ₦100,000–₦300,000+ | Bronze → Silver tier benefits. "Logistics Partner" credit. |
+
+**How In-Kind valuation works:**
+1. Sponsor and SBG Leader agree on the fair market value of the contribution
+2. The contribution is mapped to the closest cash tier at that value
+3. The sponsor receives the corresponding tier benefits for that scope
+4. All in-kind agreements confirmed in writing (email minimum)
 
 ---
 
 ## Campus Games & Physical Banner Activations
 
-Every game below is engineered for three things: crowd energy that fills the room, social media moments that spread across campus WhatsApp groups and Instagram, and sponsor branding that appears naturally in every clip without feeling forced.
+Every game is engineered for crowd energy, social media virality, and natural sponsor branding in every clip.
 
 ### Game 1: Syntax Sprint
 
-**Format:** Timed coding challenge projected on the main screen. Two participants face off on split-screen terminals. The audience watches live. First to pass all test cases wins.
+**Format:** Timed coding challenge on the main screen. Two participants face off on split-screen terminals. First to pass all test cases wins.
 
 **Sponsor Integration:**
 - Sponsor banner behind the stage — visible in every wide shot and audience selfie
@@ -178,88 +200,67 @@ Every game below is engineered for three things: crowd energy that fills the roo
 - Winner receives a sponsor-branded prize, presented by the sponsor's representative
 - MC announces "This Syntax Sprint is brought to you by [Sponsor]" at round start
 
-**Why it goes viral:**
-- Split-screen coding battles with a ticking clock generate genuine tension and crowd reactions
-- The moment a winner is declared, everyone films — the sponsor banner and timer logo are in frame
-- Photo-op: winner holding prize in front of sponsor backdrop = shareable content with organic brand placement
+**Why it goes viral:** Split-screen coding battles with a ticking clock generate genuine tension and crowd reactions. The winner celebration photo with the sponsor backdrop is guaranteed shareable content.
 
 ---
 
 ### Game 2: AWS Card Clash Tournament
 
-**Format:** Multi-round bracket tournament using AWS Card Clash. 16-player single elimination displayed on a physical bracket board. Each round projected live. Champion crowned at the event closing.
+**Format:** 16-player single elimination bracket. Each round projected live. Champion crowned at closing.
 
 **Sponsor Integration:**
-- Sponsor banner at the tournament table — positioned so every over-the-shoulder photo includes it
-- Branded score sheets with sponsor logo in the header (physical takeaway — attendees keep these)
-- Champion photo taken with sponsor backdrop + trophy/prize
-- Tournament bracket board has sponsor logo at the top ("The [Sponsor] Card Clash Championship")
+- Sponsor banner at the tournament table — in every over-the-shoulder photo
+- Branded score sheets with sponsor logo (physical takeaway)
+- Champion photo with sponsor backdrop + trophy/prize
+- Tournament bracket board: "The [Sponsor] Card Clash Championship" at the top
 
-**Why it goes viral:**
-- Tournament brackets create narrative tension — attendees follow their friends through rounds
-- The bracket board itself becomes a photo magnet (people checking matchups, posting updates)
-- Champion crowning moment = the single most photographed moment at any event. Sponsor backdrop guaranteed in every shot
-- Bracket board with sponsor logo gets photographed and shared on WhatsApp groups repeatedly throughout the event
+**Why it goes viral:** Bracket boards are photo magnets. People post updates as friends progress through rounds. The champion crowning is the most photographed moment of the event.
 
 ---
 
 ### Game 3: Speed-Deploy CLI Battles
 
-**Format:** Two participants race to complete a deployment task (e.g., deploy a static site to S3, spin up a Lambda function) on projected terminals. Live audience watches commands fly. First successful deploy wins.
+**Format:** Two participants race to deploy (e.g., static site to S3, Lambda function) on projected terminals. First successful deploy wins.
 
 **Sponsor Integration:**
-- Sponsor logo on the terminal splash screen (custom MOTD displayed before each round)
-- "Powered by [Sponsor]" text on the leaderboard display
-- Sponsor banner flanking both sides of the projection screen
+- Sponsor logo on terminal splash screen (custom MOTD)
+- "Powered by [Sponsor]" on the leaderboard display
+- Sponsor banners flanking both sides of projection
 - Winner announced as "[Name], champion of the [Sponsor] Speed-Deploy!"
 
-**Why it goes viral:**
-- Watching someone deploy under time pressure with the whole room watching is inherently dramatic
-- Terminal commands flying on a big screen look impressive in video clips
-- The leaderboard with "Powered by [Sponsor]" gets screenshotted and shared every round
-- Fast-paced format means multiple rounds = multiple content opportunities
+**Why it goes viral:** Terminal commands flying on a big screen look impressive in video. Multiple rounds = multiple content moments.
 
 ---
 
 ### Game 4: Cloud Quest Leaderboard Challenge
 
-**Format:** Group AWS Cloud Quest session (using Skill Builder premium access). Participants race through assignments for 30–45 minutes. Live leaderboard projected on sponsor-branded screen. Top 3 scorers win prizes.
+**Format:** Group Cloud Quest session (30–45 min). Live leaderboard projected. Top 3 scorers win prizes.
 
 **Sponsor Integration:**
-- Leaderboard displayed on a sponsor-branded screen/frame (digital border with sponsor logo)
-- Top scorer prizes provided by sponsor, presented by sponsor representative
-- "The [Sponsor] Cloud Quest Challenge" branding on leaderboard header
-- Sponsor booth adjacent to the challenge area for product demos during the session
+- Leaderboard on a sponsor-branded screen/frame
+- Prizes from sponsor, presented by sponsor rep
+- "The [Sponsor] Cloud Quest Challenge" on leaderboard header
+- Sponsor booth adjacent for demos during the session
 
-**Why it goes viral:**
-- Leaderboard updates create real-time excitement — attendees check standings, react, push harder
-- The leaderboard screen is the most-photographed element during the session (everyone checks rankings)
-- Prize presentation photo = organic sponsor placement
-- Group participation means 50+ people simultaneously engaged, each potentially sharing their ranking
+**Why it goes viral:** Leaderboard updates create real-time excitement. Every ranking screenshot includes the sponsor header.
 
 ---
 
 ### Game 5: API Roulette
 
-**Format:** A physical or digital wheel with random API challenge segments (e.g., "Call the OpenWeather API and display temperature", "Query a REST endpoint and parse JSON", "Build a webhook receiver in 5 minutes"). Participants spin, get a challenge, and code live. Audience votes on best solution.
+**Format:** Physical/digital wheel with random API challenges. Spin, get a challenge, code live. Audience votes on best solution.
 
 **Sponsor Integration:**
-- Sponsor name on wheel segments (alternating with challenge names)
+- Sponsor name on wheel segments
 - "Spin the [Sponsor] API Wheel!" — MC call
-- Sponsor banner behind the wheel for photo/video framing
-- Quick-win prizes for each round from sponsor's branded swag
+- Sponsor banner behind wheel for framing
+- Quick-win prizes each round from sponsor swag
 
-**Why it goes viral:**
-- The physical wheel spin is inherently theatrical — everyone films the spin moment
-- Random challenges mean unexpected comedy and drama (someone gets an easy one, someone gets a hard one)
-- Quick rounds (5 min each) keep energy high and create multiple shareable moments per session
-- The wheel itself is a prop people pose with between rounds
+**Why it goes viral:** The wheel spin is theatrical — everyone films it. Random challenges = unexpected comedy and drama.
 
 ---
 
 ### Banner Placement Strategy
-
-Every game zone is designed so sponsor banners appear in photos and videos from **every angle**:
 
 ```
 ┌─────────────────────────────────────────────────┐
@@ -282,17 +283,11 @@ Every game zone is designed so sponsor banners appear in photos and videos from 
 └─────────────────────────────────────────────────┘
 ```
 
-**Key placement rules:**
-- **Behind the action**: Banners behind the stage/screen appear in every photo of the game
-- **Flanking the projection**: Banners on either side of the screen appear in every wide-angle shot
-- **At the entrance**: Every attendee walks past the banner; it appears in crowd-entry videos
-- **Near the booth**: Post-game foot traffic flows naturally toward the sponsor's demo area
-
-**Content capture protocol:**
-- Designated social media volunteer captures each game round
-- Every photo/video is framed to include at least one sponsor banner
-- Instagram reels use game highlights as A-roll with sponsor branding naturally visible
-- Champion photos are taken in front of the dedicated sponsor photo backdrop
+**Placement rules:**
+- **Behind the action**: Appears in every photo of the game
+- **Flanking the projection**: Appears in every wide-angle shot
+- **At the entrance**: Every attendee walks past; appears in crowd-entry videos
+- **Near the booth**: Post-game foot traffic flows to the demo area
 
 ---
 
@@ -302,55 +297,68 @@ Every game zone is designed so sponsor banners appear in photos and videos from 
 
 | Method | Details | Best For |
 |--------|---------|----------|
-| **Bank Transfer** | Account details provided upon sponsorship confirmation. Naira transfers only. | Local companies, banks, fintechs |
-| **Paystack Invoice** | Digital invoice sent to sponsor's email. Card or bank payment. | Tech companies, startups |
-| **Flutterwave Payment Link** | Custom payment link with sponsor name. Supports card, bank, USSD. | Pan-Nigerian brands, fast processing |
+| **Bank Transfer** | Account details provided upon confirmation. Naira only. | Local companies, banks |
+| **Paystack Invoice** | Digital invoice sent to sponsor email. Card or bank payment. | Tech companies, startups |
+| **Flutterwave Link** | Custom payment link. Supports card, bank, USSD. | Pan-Nigerian brands |
+| **Cash** | With signed receipt issued within 48 hours. | Local Awka businesses |
 
-- All payments denominated in **Nigerian Naira (₦)**
-- USD equivalents shown for reference only; exchange rate at time of agreement applies
-- Payment in full due **14 days before the event** (or upon agreement signing, whichever is later)
-- Installment payments (50/50 split) available for Headline and Gold tiers upon request
+### Payment Terms
 
-### Fulfillment Agreements
+- All payments in **Nigerian Naira (₦)**
+- **50% deposit** to confirm slot. Balance due **2 weeks before event**.
+- Full Season sponsors may split into **quarterly installments** upon request.
+- Receipts issued for all cash sponsorships within 48 hours.
 
-1. **Written confirmation required.** All sponsorship agreements must be confirmed in writing via email at minimum. A formal MOU template is available upon request.
+### Fulfillment Requirements
 
-2. **Receipts provided.** Official receipts will be issued for all cash sponsorships within 48 hours of payment confirmation.
-
-3. **In-kind delivery deadline.** All in-kind contributions (equipment, merchandise, food/beverage arrangements) must be delivered or confirmed **at least 3 business days before each event.**
-
-4. **Logo/asset submission deadline.** Sponsor logos (PNG/SVG, minimum 300dpi) and brand guidelines must be submitted **at least 10 days before each event** to ensure correct placement on all printed and digital materials.
-
-5. **Cancellation policy.** Sponsorships cancelled more than 21 days before an event receive a full refund. Cancellations within 21 days receive a 50% refund (production costs already committed). In-kind commitments must be honoured or replaced with cash equivalent.
-
-6. **AWS co-branding compliance.** All sponsor materials will be reviewed to ensure they do not alter, obscure, or compete with official AWS branding. No competing cloud provider logos (Google Cloud, Microsoft Azure, etc.) will be accepted. Sponsors agree to this condition upon signing.
+1. **Written confirmation required.** Email minimum. Formal MOU template available on request.
+2. **Logo/asset submission deadline.** PNG/SVG, minimum 300dpi — **at least 10 days before each event.**
+3. **In-kind delivery deadline.** All in-kind contributions delivered or confirmed **at least 3 business days before each event.**
+4. **Cancellation policy.** 21+ days before event → full refund. Within 21 days → 50% refund (production costs committed). In-kind commitments must be honoured or replaced with cash equivalent.
+5. **AWS co-branding compliance.** All sponsor materials reviewed to ensure they don't alter or compete with AWS branding. No competing cloud provider logos accepted.
 
 ---
 
-## Quick Reference: What Each Tier Gets At a Glance
+## Quick Reference Card
+
+*Designed to be screenshot-able and shareable on WhatsApp.*
 
 ```
-                        HEADLINE   GOLD   SILVER   GAMES   IN-KIND
-                        ────────   ────   ──────   ─────   ───────
-Both events covered        ✓        ✓       ○        ○       ○
-Stage speaking time       10m       5m      --       2m      --
-Workshop hosting           ✓        ✓       --       --      --
-Banners per event          4        3       2        1       1
-Dedicated social posts     2/evt    1/evt   --       --      --
-Reels/stories              3/evt    2/evt   1/evt    1/evt   1/evt
-Logo on t-shirts           Front    Back    Back     Back    Back
-Logo on lanyards           ✓        --      --       --      --
-Logo on name badges        Front    Front   Back     --      --
-Event passes              10        5       3        2       1
-Attendee contact list      ✓        ✓       --       --      --
-Case study                 ✓        --      --       --      --
-Naming rights              2 segs   1 seg   --      Arena   Station
-First refusal next cycle   ✓        --      --       --      --
+═══════════════════════════════════════════════════════════════════════
+         AWS STUDENT BUILDER GROUP AT UNIZIK — SPONSORSHIP TIERS
+═══════════════════════════════════════════════════════════════════════
 
-✓ = included   ○ = one event only   -- = not included
+                    SINGLE EVENT    DUAL EVENT     FULL SEASON
+                    (1 flagship)    (2 flagships)  (2 events + games)
+─────────────────────────────────────────────────────────────────────
+ DIAMOND            ₦750,000        ₦1,200,000     ₦1,500,000
+   → 10-min keynote, 4 banners, co-branded lanyards,
+     front-of-shirt logo, naming rights (2 segments),
+     case study, first refusal
+─────────────────────────────────────────────────────────────────────
+ GOLD               ₦400,000        ₦650,000       ₦800,000
+   → 5-min talk, 3 banners, workshop co-hosting,
+     dedicated social post, attendee contacts, 7 passes
+─────────────────────────────────────────────────────────────────────
+ SILVER             ₦200,000        ₦350,000       ₦450,000
+   → Logo on all materials, 2 banners, shared table,
+     grouped spotlight post, 5 passes
+─────────────────────────────────────────────────────────────────────
+ BRONZE             ₦100,000        ₦175,000       ₦225,000
+   → Logo on materials, 1 banner, table-only exhibit,
+     thank-you mention, 2 passes
+─────────────────────────────────────────────────────────────────────
+ IN-KIND            Equivalent value across any scope
+   → Internet, power, catering, merch, venue, logistics
+     Benefits mapped to cash tier at agreed valuation
+═══════════════════════════════════════════════════════════════════════
+
+ Contact: Donald Anyamba, Student Builder Group Leader
+ #AWSStudentBuilderGroup
+═══════════════════════════════════════════════════════════════════════
 ```
 
 ---
 
-*AWS Student Builder Group at Nnamdi Azikiwe University — Sponsorship Tier Architecture v1.0*
+*AWS Student Builder Group at Nnamdi Azikiwe University — Sponsorship Tier Architecture v2.0*
 *Contact: Donald Anyamba, Student Builder Group Leader*
