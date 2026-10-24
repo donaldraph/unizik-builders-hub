@@ -24,7 +24,7 @@ The Leaders Library (hosted on Box.com, synced locally) contains the following r
 
 ---
 
-## Compliance Rules Extracted — Must-Follow for All Proposals
+## Compliance Rules Extracted - Must-Follow for All Proposals
 
 ### 1. Group Naming Convention
 - **Required format:** "AWS Student Builder Group at Nnamdi Azikiwe University"
@@ -41,7 +41,7 @@ The Leaders Library (hosted on Box.com, synced locally) contains the following r
 ### 3. Sponsorship Rules
 - **Permitted sponsor types:** Financial (cash) and In-Kind (goods/services)
 - **Prohibited sponsors:** Google, Microsoft, or any competing cloud provider
-- If co-hosting with GDG or Azure groups, split costs equally — but competing cloud branding stays off AWS materials
+- If co-hosting with GDG or Azure groups, split costs equally - but competing cloud branding stays off AWS materials
 - All sponsors must agree to the event Code of Conduct
 - Sponsors must have a positive reputation aligned with group values
 - Sponsor benefits must be clearly tiered with documented deliverables
@@ -120,4 +120,4 @@ From `01- Creative Assets _ Fonts, Icons, Etc./`:
 | Program Icon | White variant | JPG, PNG, SVG, PDF |
 | Additional Icons | Bolt (Grey, Magenta, Mint, Purple, White), Clock (Blue), and more | JPG, PNG, SVG |
 
-These assets are available for use on sponsor proposals, event banners, social media posts, and printed materials — following the brand guidelines above.
+These assets are available for use on sponsor proposals, event banners, social media posts, and printed materials - following the brand guidelines above.

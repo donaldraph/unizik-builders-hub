@@ -13,7 +13,7 @@ Copy this template, fill in the brackets, and send as a PDF or polished email at
 
 ---
 
-### [EVENT NAME] — Post-Event Impact Report
+### [EVENT NAME] - Post-Event Impact Report
 
 #### AWS Student Builder Group at Nnamdi Azikiwe University
 
@@ -23,7 +23,7 @@ Copy this template, fill in the brackets, and send as a PDF or polished email at
 | **Venue** | [VENUE, Awka, Anambra State] |
 | **Event Duration** | [X] hours |
 | **Report Prepared By** | [NAME], Student Builder Group Leader |
-| **Report Date** | [DATE — within 72 hours of event] |
+| **Report Date** | [DATE - within 72 hours of event] |
 
 ---
 
@@ -66,7 +66,7 @@ Copy this template, fill in the brackets, and send as a PDF or polished email at
 | TikTok | Total views | |
 | **Total Estimated Digital Reach** | **All platforms** | **[TOTAL]** |
 
-**Top-performing post:** [Platform] — [Description] — [Impressions/Engagement]
+**Top-performing post:** [Platform] - [Description] - [Impressions/Engagement]
 
 ---
 
@@ -127,7 +127,7 @@ Copy this template, fill in the brackets, and send as a PDF or polished email at
 | Responses collected | [X] |
 
 **Top 3 things attendees loved:**
-1. [e.g., "The hands-on build sprint — I deployed my first app on AWS"]
+1. [e.g., "The hands-on build sprint - I deployed my first app on AWS"]
 2. [e.g., "Networking with other student builders from different universities"]
 3. [e.g., "The Card Clash tournament was so competitive and fun"]
 
@@ -135,11 +135,11 @@ Copy this template, fill in the brackets, and send as a PDF or polished email at
 - [e.g., "More power outlets for laptops during workshops"]
 
 **Select attendee quotes (anonymized):**
-> "[Quote 1 — something showing technical engagement or excitement]"
+> "[Quote 1 - something showing technical engagement or excitement]"
 
-> "[Quote 2 — something showing community or networking value]"
+> "[Quote 2 - something showing community or networking value]"
 
-> "[Quote 3 — something referencing a sponsor product or activation positively]"
+> "[Quote 3 - something referencing a sponsor product or activation positively]"
 
 ---
 
@@ -170,11 +170,11 @@ Copy this template, fill in the brackets, and send as a PDF or polished email at
 
 > "Partnering with the AWS Student Builder Group at UNIZIK gave [Company] direct access to [X]+ engaged student builders and developers in South-East Nigeria. The event energy, technical depth, and community spirit exceeded our expectations. We saw [X] sign-ups for [product] and meaningful conversations with students who are exactly the users we want to reach. We look forward to continuing this partnership."
 >
-> — [Name], [Title], [Company]
+> - [Name], [Title], [Company]
 
 ---
 
-#### 9. Budget Summary (Internal — Shared with AWS Only)
+#### 9. Budget Summary (Internal - Shared with AWS Only)
 
 | Category | Budgeted (NGN) | Actual (NGN) | Variance | Notes |
 |----------|---------------|-------------|----------|-------|
@@ -219,7 +219,7 @@ How to capture every metric cleanly during the event.
 
 **Day-of execution:**
 - Station 2 volunteers at the check-in desk
-- Every attendee scans the QR code or fills the physical sheet — no exceptions
+- Every attendee scans the QR code or fills the physical sheet - no exceptions
 - For walk-ins, add a "walk-in" tag in the form or a separate section on the sheet
 - At the 1-hour mark, export the form count and note it as "early attendance"
 - At event close, export final form responses immediately
@@ -259,14 +259,14 @@ How to capture every metric cleanly during the event.
 - Display sponsor QR codes / promo codes on slides during their speaking slot
 - Include them on printed handouts at sponsor booths
 - Have booth volunteers remind attendees to use the specific code
-- Sponsors pull their own analytics post-event — follow up with them on Day 2
+- Sponsors pull their own analytics post-event - follow up with them on Day 2
 
 ### 4. AWS Builder Center Sign-Ups
 
 **How it works:**
 - AWS provides every Student Builder Group Leader a **unique Builder Center sign-up link**
 - Share this link via QR code at check-in, on slides, and in follow-up emails
-- AWS tracks the number of accounts created through your link — you don't need to do anything extra
+- AWS tracks the number of accounts created through your link - you don't need to do anything extra
 - Request the count from your Account Manager within 1 week post-event, or check your Leader dashboard
 
 **Day-of execution:**
@@ -317,7 +317,7 @@ How to capture every metric cleanly during the event.
 
 **Day-of execution:**
 - Display the survey QR code on the last slide of the closing session
-- MC says: "Before you leave, please take 60 seconds to fill this out — it helps us make the next event even better"
+- MC says: "Before you leave, please take 60 seconds to fill this out - it helps us make the next event even better"
 - Have volunteers at the exit gently remind people
 - Incentive: "Everyone who fills the survey enters a raffle for [small prize]"
 
@@ -338,15 +338,15 @@ How to capture every metric cleanly during the event.
 
 | Timeframe | Action | Owner | Deliverable |
 |-----------|--------|-------|-------------|
-| **Event Day — during event** | Photographer follows shot list; social tracker monitors hashtags | Photographer, Social Tracker | Raw photos, hashtag screenshots |
-| **Event Day — within 2 hrs of close** | Export check-in form data; screenshot social media metrics; collect photographer files; collect booth tally sheets | Core Team | Raw data files |
-| **Day 1 — morning** | Compile attendance numbers; begin photo selection and editing (top 20-30 photos); draft impact report skeleton | SBG Leader | Draft report shell |
-| **Day 1 — afternoon** | Send thank-you emails to speakers and volunteers (separate from sponsor emails) | Director of Events | Sent emails |
-| **Day 1 — evening** | Calculate social media totals; fill in all metrics tables; write executive summary | SBG Leader | Completed metrics |
-| **Day 2 — morning** | Complete impact report draft; upload photo gallery to Google Drive / Box | SBG Leader | Report PDF + gallery link |
-| **Day 2 — afternoon** | Send impact report + gallery link to sponsors (using thank-you email template below) | SBG Leader | Sponsor emails sent |
-| **Day 2 — evening** | Post highlight reel / photo carousel on all social channels with #AWSStudentBuilderGroup | Director of Marketing | Published social content |
-| **Day 3 — 72-hour mark** | Final impact report delivered to ALL sponsors who have not yet received it | SBG Leader | All sponsors covered |
+| **Event Day - during event** | Photographer follows shot list; social tracker monitors hashtags | Photographer, Social Tracker | Raw photos, hashtag screenshots |
+| **Event Day - within 2 hrs of close** | Export check-in form data; screenshot social media metrics; collect photographer files; collect booth tally sheets | Core Team | Raw data files |
+| **Day 1 - morning** | Compile attendance numbers; begin photo selection and editing (top 20-30 photos); draft impact report skeleton | SBG Leader | Draft report shell |
+| **Day 1 - afternoon** | Send thank-you emails to speakers and volunteers (separate from sponsor emails) | Director of Events | Sent emails |
+| **Day 1 - evening** | Calculate social media totals; fill in all metrics tables; write executive summary | SBG Leader | Completed metrics |
+| **Day 2 - morning** | Complete impact report draft; upload photo gallery to Google Drive / Box | SBG Leader | Report PDF + gallery link |
+| **Day 2 - afternoon** | Send impact report + gallery link to sponsors (using thank-you email template below) | SBG Leader | Sponsor emails sent |
+| **Day 2 - evening** | Post highlight reel / photo carousel on all social channels with #AWSStudentBuilderGroup | Director of Marketing | Published social content |
+| **Day 3 - 72-hour mark** | Final impact report delivered to ALL sponsors who have not yet received it | SBG Leader | All sponsors covered |
 | **Day 3** | Send sponsor testimonial request emails | SBG Leader | Testimonial requests sent |
 | **Day 5** | Follow up with sponsors who haven't acknowledged the report | SBG Leader | Follow-up emails |
 | **Day 7** | Send slides, recording links, and resources to attendees via Meetup and email | Core Team | Attendee follow-up |
@@ -355,7 +355,7 @@ How to capture every metric cleanly during the event.
 | **Day 10** | Compile final sponsor metrics with 7-day post-event data; update report if needed | SBG Leader | Final report version |
 | **Day 14** | Submit completed expense Excel file + all receipts to StudentBuilders@amazon.com | SBG Leader | AWS reporting complete |
 | **Day 14** | Schedule follow-up calls with sponsors to discuss future partnership / next event | SBG Leader | Calls scheduled |
-| **Day 21** | Internal debrief with Core Team — document lessons learned for next event | Full Core Team | Lessons learned doc |
+| **Day 21** | Internal debrief with Core Team - document lessons learned for next event | Full Core Team | Lessons learned doc |
 
 ---
 
@@ -363,7 +363,7 @@ How to capture every metric cleanly during the event.
 
 ### Template A: Cash Sponsor Thank-You (with Impact Report)
 
-**Subject:** Thank You for Powering [EVENT NAME] — Your Impact Report Is Here
+**Subject:** Thank You for Powering [EVENT NAME] - Your Impact Report Is Here
 
 ---
 
@@ -382,7 +382,7 @@ Here are a few highlights from the event:
 
 I have attached the **full Post-Event Impact Report** with detailed metrics, photos, and social media highlights. You can also browse the **event photo gallery here:** [LINK]
 
-We would love to include a quote from you in our community wrap-up post. If you are open to it, I have drafted a short testimonial for your review — feel free to edit or replace it entirely:
+We would love to include a quote from you in our community wrap-up post. If you are open to it, I have drafted a short testimonial for your review - feel free to edit or replace it entirely:
 
 > "Partnering with the AWS Student Builder Group at UNIZIK gave [Company] direct access to [X]+ engaged student builders in South-East Nigeria. The energy and technical depth of the community exceeded our expectations."
 
@@ -396,30 +396,30 @@ Warm regards,
 Student Builder Group Leader
 AWS Student Builder Group at UNIZIK
 [Your Email]
-[Your Phone — optional]
-[Your LinkedIn — optional]
+[Your Phone - optional]
+[Your LinkedIn - optional]
 
 ---
 
 ### Template B: In-Kind Sponsor Thank-You
 
-**Subject:** Thank You for Supporting [EVENT NAME] — You Made It Happen
+**Subject:** Thank You for Supporting [EVENT NAME] - You Made It Happen
 
 ---
 
 Dear [Contact First Name],
 
-Thank you for [Company]'s generous in-kind contribution to [EVENT NAME]. Your support with **[internet connectivity / catering / power backup / merchandise / venue — specify]** was essential to making the event run smoothly.
+Thank you for [Company]'s generous in-kind contribution to [EVENT NAME]. Your support with **[internet connectivity / catering / power backup / merchandise / venue - specify]** was essential to making the event run smoothly.
 
 A few numbers that show the impact of your contribution:
 
-- **[X] attendees** benefited directly from [what they provided — e.g., "reliable high-speed internet throughout the 6-hour event"]
+- **[X] attendees** benefited directly from [what they provided - e.g., "reliable high-speed internet throughout the 6-hour event"]
 - **[X] social media posts** featured your branding
 - **[X] attendees** mentioned [specific contribution] as a highlight in their feedback
 
 I have attached a summary report and linked to our **event photo gallery:** [LINK]
 
-Your brand was visible to **[X]+ people** — both in-person and across our digital channels. We would love to continue this partnership. Our next event, **[NEXT EVENT NAME]**, is on **[DATE]**, and we would welcome the chance to discuss how [Company] can be involved again.
+Your brand was visible to **[X]+ people** - both in-person and across our digital channels. We would love to continue this partnership. Our next event, **[NEXT EVENT NAME]**, is on **[DATE]**, and we would welcome the chance to discuss how [Company] can be involved again.
 
 Thank you for investing in the student tech community in Awka.
 
@@ -436,13 +436,13 @@ AWS Student Builder Group at UNIZIK
 
 Use this if you did not include the testimonial ask in the main thank-you email.
 
-**Subject:** Quick Ask — Would You Share a Quote About [EVENT NAME]?
+**Subject:** Quick Ask - Would You Share a Quote About [EVENT NAME]?
 
 ---
 
 Hi [First Name],
 
-I hope this message finds you well. Thank you again for [Company]'s support at [EVENT NAME] — the feedback from attendees has been overwhelmingly positive.
+I hope this message finds you well. Thank you again for [Company]'s support at [EVENT NAME] - the feedback from attendees has been overwhelmingly positive.
 
 We are putting together a community wrap-up post and a case study to share with our network and future sponsors. Would you be open to providing a short quote (2-3 sentences) about your experience as a sponsor?
 
@@ -450,11 +450,11 @@ To make it easy, here is a draft you can approve, edit, or replace entirely:
 
 > "Partnering with the AWS Student Builder Group at UNIZIK gave [Company] direct access to [X]+ engaged student builders in South-East Nigeria. We saw real engagement with [product/brand] and look forward to continuing this partnership."
 >
-> — [Name], [Title], [Company]
+> - [Name], [Title], [Company]
 
 If you would prefer, I am happy to jump on a 5-minute call and draft something based on our conversation.
 
-Thank you for your time — we truly appreciate your partnership.
+Thank you for your time - we truly appreciate your partnership.
 
 Best,
 
@@ -476,7 +476,7 @@ Before sending any report, verify you have:
 - [ ] Sponsor-specific metrics filled in for each partner
 - [ ] CSAT score and attendee quotes included
 - [ ] Executive summary written (not left as template text)
-- [ ] Budget summary completed (for AWS submission only — do NOT send to sponsors)
+- [ ] Budget summary completed (for AWS submission only - do NOT send to sponsors)
 - [ ] PDF exported cleanly with no broken formatting
 - [ ] Email personalized for each sponsor (not a mass CC)
 - [ ] Testimonial request included or sent separately

@@ -1,4 +1,4 @@
-# AWS Student Builder Group at UNIZIK — Sponsorship & Event Playbook
+# AWS Student Builder Group at UNIZIK - Sponsorship & Event Playbook
 
 **Organization:** AWS Student Builder Group at Nnamdi Azikiwe University (UNIZIK), Awka, Anambra State, Nigeria
 **Prepared by:** Donald Anyamba, Student Builder Group Leader
@@ -8,20 +8,20 @@
 
 ## Flagship Events
 
-| Event | AWS Grant | Target Attendance | Status |
-|-------|-----------|-------------------|--------|
-| **AWS re:Invent Watch & Build Party** | $3,383 (approved) | 200-300 | Sponsorship outreach phase |
-| **Student Community Day (SCD)** | $2,000 (pipeline) | 300-500 | Planning phase |
-| **Bi-Weekly Campus Games** | — | 30-80 per session | Year-round engagement |
+| Event | Date | Target Attendance | Status |
+|-------|------|-------------------|--------|
+| **AWS re:Invent Watch & Build Party** | Dec 4, 2026 | 500+ | Sponsorship outreach phase |
+| **Student Community Day (SCD)** | Q1 2027 (TBA) | 700+ | Planning phase |
+| **Bi-Weekly Campus Games** | Year-round | 30-80 per session | Active |
 
 ## Sponsorship Tiers (₦1,500,000 Max)
 
 | Tier | Single Event | Dual Event | Full Season |
 |------|-------------|------------|-------------|
-| Diamond | ₦750,000 | ₦1,200,000 | ₦1,500,000 |
-| Gold | ₦400,000 | ₦650,000 | ₦800,000 |
-| Silver | ₦200,000 | ₦350,000 | ₦450,000 |
-| Bronze | ₦100,000 | ₦175,000 | ₦225,000 |
+| Diamond | ₦850,000 | ₦1,250,000 | ₦1,500,000 |
+| Gold | ₦500,000 | ₦800,000 | ₦950,000 |
+| Silver | ₦300,000 | ₦475,000 | ₦600,000 |
+| Bronze | ₦150,000 | ₦250,000 | ₦350,000 |
 | In-Kind | Equivalent value | Equivalent value | Equivalent value |
 
 ## Playbook Documents
@@ -35,8 +35,8 @@
 | 05 | [Event Formats](05-EVENT-FORMATS.md) | re:Invent Watch Party run-of-show, SCD conference agenda (dual-track), ecosystem collaboration blueprint, Awka-specific contingency (power, internet, AV) |
 | 06 | [Curriculum Engine](06-CURRICULUM-ENGINE.md) | 12-month beginner-to-pro progression (4 stages, 48 weeks), weekly cadence with specific Skill Builder courses, gamification with 19 badges |
 | 07 | [Post-Event ROI Kit](07-POST-EVENT-ROI-KIT.md) | Impact report template, data collection toolkit, 72-hour post-event timeline, thank-you templates |
-| — | [Contact Research](CONTACT-RESEARCH.md) | Verified contact details for all 26 prospects — emails, phones, LinkedIn targets, outreach priority strategy |
-| — | [SCD Partnership Deck](UNIZIK-AWS-SBG-Partnership-Deck.html) | Polished HTML presentation deck for sponsor outreach (open in browser, print to PDF) |
+| - | [Contact Research](CONTACT-RESEARCH.md) | Verified contact details for all 26 prospects - emails, phones, LinkedIn targets, outreach priority strategy |
+| - | [SCD Partnership Deck](UNIZIK-AWS-SBG-Partnership-Deck.html) | Polished HTML presentation deck for sponsor outreach (open in browser, print to PDF) |
 
 ## Compliance Foundation
 
