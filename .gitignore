@@ -23,6 +23,9 @@ __pycache__/
 # CDK context (can cache account id / VPC lookup data)
 cdk.context.json
 
+# Tool caches
+.impeccable/
+
 # Logs / OS junk
 *.log
 .DS_Store
