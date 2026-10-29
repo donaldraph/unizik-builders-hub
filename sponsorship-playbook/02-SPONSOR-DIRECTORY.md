@@ -31,7 +31,7 @@ Companies with direct presence or commercial interest in Awka, Anambra State, an
 | Field | Detail |
 |-------|--------|
 | **Tagline** | "Your Awka Super-App" |
-| **Overview & Core Users** | Aroma App is a hyperlocal delivery and lifestyle platform serving the Awka metropolitan area, centered around Aroma Junction - the city's commercial nerve center. Its core users are young urbanites (18–35) ordering food, groceries, and errands across Awka and Onitsha. |
+| **Overview & Core Users** | Aroma App is a hyperlocal delivery and lifestyle platform serving the Awka metropolitan area, centered around Aroma Junction - the city's commercial nerve center. Its core users are young urbanites (18-35) ordering food, groceries, and errands across Awka and Onitsha. |
 | **Value Alignment** | UNIZIK students are Aroma App's single largest addressable user cluster in Awka. The Ifite campus area alone houses thousands of potential daily-order users. Sponsoring a high-visibility AWS event puts the Aroma brand directly in front of tech-literate early adopters who influence peer spending habits - the exact demographic that drives referral loops for delivery apps. A live "Order with Aroma" activation at the event (QR code → first-order discount) could convert hundreds of sign-ups in a single afternoon. |
 | **Outreach Channels** | Email: hello@aromaapp.ng / partnerships@aromaapp.ng. Instagram DM: @aromaapp. LinkedIn: Search for founder/CEO and Head of Growth. In-person: Visit Aroma App offices near Aroma Junction, Awka. |
 | **Suggested Tier** | **Gold Partner** or **Bronze Partner** (food voucher giveaways + branded delivery bags as prizes) |
@@ -55,7 +55,7 @@ Companies with direct presence or commercial interest in Awka, Anambra State, an
 | Field | Detail |
 |-------|--------|
 | **Tagline** | "Building South-East Nigeria's Tech Ecosystem" |
-| **Overview & Core Users** | Tekhub NG is an innovation and incubation hub serving the Awka–Onitsha corridor. They offer training programs, hackathon spaces, and startup incubation targeting young Nigerians entering tech careers. Their audience overlaps directly with UNIZIK's Computer Science, Engineering, and Business faculties. |
+| **Overview & Core Users** | Tekhub NG is an innovation and incubation hub serving the Awka-Onitsha corridor. They offer training programs, hackathon spaces, and startup incubation targeting young Nigerians entering tech careers. Their audience overlaps directly with UNIZIK's Computer Science, Engineering, and Business faculties. |
 | **Value Alignment** | Tekhub NG needs a steady inflow of technically skilled students to fill their training cohorts and incubation programs. The AWS Student Builder Group is the highest-quality funnel for cloud-ready talent in Anambra State. Sponsoring the re:Invent Watch Party and Student Community Day positions Tekhub as the natural "next step" for students graduating from AWS study circles into startup-building. Offer them a demo booth and a 10-minute lightning talk slot to pitch their incubation programs directly to attendees. |
 | **Outreach Channels** | Email: info@tekhub.ng / hello@tekhub.ng. Social: @tekhubng on Twitter/Instagram. LinkedIn: Search for Founder or Programs Manager. In-person: Visit in Awka. |
 | **Suggested Tier** | **In-Kind & Infrastructure Partner** (venue co-hosting, mentorship) or **Silver Partner** |
@@ -80,7 +80,7 @@ Companies with direct presence or commercial interest in Awka, Anambra State, an
 |-------|--------|
 | **Tagline** | Various local food businesses |
 | **Overview & Core Users** | Restaurants and caterers operating around UNIZIK's Ifite campus gate, Aroma Junction food courts, and Awka eateries. These businesses serve the daily student meal market. Examples include popular campus-area joints, shawarma vendors, and catering outfits that service university events. |
-| **Value Alignment** | Feeding 200+ hungry developers for a full-day event is expensive (estimated ₦400,000–₦700,000 for refreshments + lunch). For a campus food vendor, catering the AWS Student Community Day is direct exposure to their primary customer base with branded napkins, cups, and signage at every refreshment station. The "Coffee Break Sponsored by [Vendor]" format guarantees that every attendee sees the brand at peak engagement moments. Post-event, the caterer can offer a promo code distributed to all attendees via the event follow-up email. |
+| **Value Alignment** | Feeding 200+ hungry developers for a full-day event is expensive (estimated ₦400,000-₦700,000 for refreshments + lunch). For a campus food vendor, catering the AWS Student Community Day is direct exposure to their primary customer base with branded napkins, cups, and signage at every refreshment station. The "Coffee Break Sponsored by [Vendor]" format guarantees that every attendee sees the brand at peak engagement moments. Post-event, the caterer can offer a promo code distributed to all attendees via the event follow-up email. |
 | **Outreach Channels** | In-person visits to campus-area restaurants and caterers. WhatsApp Business contacts (standard in Nigerian food service). Instagram DMs for popular local food vendors. Ask UNIZIK Student Affairs for their approved caterers list. |
 | **Suggested Tier** | **In-Kind & Infrastructure Partner** (full or partial event catering in exchange for branding and promotion) |
 
@@ -107,6 +107,18 @@ Companies with direct presence or commercial interest in Awka, Anambra State, an
 | **Value Alignment** | AWS certification prep materials and cloud computing textbooks are a growing revenue category for academic retailers. Sponsoring an AWS event lets them showcase these materials to the students most likely to buy them. A booth with discounted cloud computing books, study guides, and laptop accessories targets buyers at peak intent - they just spent a day learning AWS and want to continue. For e-learning platforms, distributing free trial codes to 200+ tech-motivated students is a high-conversion acquisition channel. |
 | **Outreach Channels** | In-person: Visit bookstores near UNIZIK gate and on Zik Avenue. For e-learning platforms (e.g., uLesson, PrepClass): partnerships@[company].com. LinkedIn: Search for Campus Partnerships or B2B leads. |
 | **Suggested Tier** | **Bronze Partner** (book prizes, study material packs) or **In-Kind** |
+
+---
+
+## A8. Lovebite Bread
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | Local bakery, local flavor |
+| **Overview & Core Users** | Lovebite Bread is a hyper-local bakery brand operating in the Awka/Anambra area, run by Dr. Jonas Chikelue Ogbuefi. Low online footprint (Instagram @lovebite_bread with ~117 followers), no website. This is a neighborhood bakery selling through physical distribution channels, not a national brand. |
+| **Value Alignment** | Every tech event needs food, and bread is the universal Nigerian event staple. For Lovebite, getting their brand in front of 500-1,200 students at two AWS-backed events is exposure they cannot buy with any billboard. "Refreshments powered by Lovebite Bread" signage at the catering station, branded napkins or wrapping, and social media posts turn a simple food supply deal into genuine brand awareness among UNIZIK's entire student tech community. Lovebite gets the association with innovation and education. We get fed. Everybody wins. |
+| **Outreach Channels** | Instagram DM: @lovebite_bread (best first contact). In-person visit to bakery/shop location in Awka. Ask local contacts for a phone number or WhatsApp Business. No email or website exists. |
+| **Suggested Tier** | **In-Kind Partner** (bread and baked goods for event catering) or **Bronze Partner** (₦150,000) |
 
 ---
 
@@ -145,8 +157,8 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 | Field | Detail |
 |-------|--------|
 | **Tagline** | "Save, Invest, Earn" |
-| **Overview & Core Users** | PiggyVest is Nigeria's largest savings and investment platform with 4M+ users, predominantly Gen-Z and millennials (18–30). They offer automated savings, fixed returns (Safelock), and investment funds. Their brand is almost synonymous with "first investment app" for Nigerian students. |
-| **Value Alignment** | PiggyVest's user acquisition strategy is hyper-focused on the 18–25 university demographic - exactly the room at an AWS Student Community Day. A sponsorship activation could include: (1) a "Save Your First ₦1,000" live sign-up booth with instant referral bonuses, (2) prize pools funded via PiggyVest Safelock ("Win a ₦50,000 Safelock"), and (3) branded financial literacy lightning talks that complement the cloud career readiness theme. UNIZIK's 36,000 students in Anambra - a state with high savings culture - represent a premium acquisition cohort that PiggyVest's campus team should be eager to activate. |
+| **Overview & Core Users** | PiggyVest is Nigeria's largest savings and investment platform with 4M+ users, predominantly Gen-Z and millennials (18-30). They offer automated savings, fixed returns (Safelock), and investment funds. Their brand is almost synonymous with "first investment app" for Nigerian students. |
+| **Value Alignment** | PiggyVest's user acquisition strategy is hyper-focused on the 18-25 university demographic - exactly the room at an AWS Student Community Day. A sponsorship activation could include: (1) a "Save Your First ₦1,000" live sign-up booth with instant referral bonuses, (2) prize pools funded via PiggyVest Safelock ("Win a ₦50,000 Safelock"), and (3) branded financial literacy lightning talks that complement the cloud career readiness theme. UNIZIK's 36,000 students in Anambra - a state with high savings culture - represent a premium acquisition cohort that PiggyVest's campus team should be eager to activate. |
 | **Outreach Channels** | Email: hello@piggyvest.com / partnerships@piggyvest.com. LinkedIn: Target Head of Growth, Campus Lead, or Partnerships Manager. Twitter/Instagram: @piaborehie, @PiggyVest. |
 | **Suggested Tier** | **Gold Partner** or **Bronze Partner** (cash prizes via Safelock) |
 
@@ -157,7 +169,7 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 | Field | Detail |
 |-------|--------|
 | **Tagline** | "The Money App for Africans" |
-| **Overview & Core Users** | Kuda is a digital-first neobank offering free transfers, budgeting tools, and a sleek mobile experience. With 7M+ users, their primary target is young Nigerians (18–35) who want modern banking without legacy bank friction. They have aggressive campus acquisition programs. |
+| **Overview & Core Users** | Kuda is a digital-first neobank offering free transfers, budgeting tools, and a sleek mobile experience. With 7M+ users, their primary target is young Nigerians (18-35) who want modern banking without legacy bank friction. They have aggressive campus acquisition programs. |
 | **Value Alignment** | Every UNIZIK student needs a bank account, and most are choosing between Kuda, Opay, and Moniepoint personal. Kuda's campus activation playbook already exists - they've sponsored tech events at UNILAG, OAU, and Covenant. An AWS event in Awka extends their South-East presence where penetration is lower than in Lagos/Abuja. Offer them a "Sign up for Kuda, get a free AWS sticker pack" activation loop - both brands acquire a user. The developer angle: Kuda's Open Banking APIs need awareness among student builders who will choose payment integrations for their projects. |
 | **Outreach Channels** | Email: partnerships@kuda.com / hello@kuda.com. LinkedIn: Target Head of Partnerships, Campus Marketing Lead, or Growth Manager. Twitter: @kudabank. Instagram: @kudabank. |
 | **Suggested Tier** | **Gold Partner** or **Silver Partner** |
@@ -169,7 +181,7 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 | Field | Detail |
 |-------|--------|
 | **Tagline** | "Send and Receive Money Across Africa" |
-| **Overview & Core Users** | Chipper Cash enables free peer-to-peer cross-border payments across Nigeria, Ghana, Kenya, Uganda, South Africa, and more. Their users are young Africans (18–35) who send/receive money internationally - freelancers, diaspora families, and students with cross-border financial needs. |
+| **Overview & Core Users** | Chipper Cash enables free peer-to-peer cross-border payments across Nigeria, Ghana, Kenya, Uganda, South Africa, and more. Their users are young Africans (18-35) who send/receive money internationally - freelancers, diaspora families, and students with cross-border financial needs. |
 | **Value Alignment** | AWS Student Builder Groups are a global network - UNIZIK students collaborate with peers in Kenya, India, Philippines, and beyond. Chipper Cash's cross-border proposition maps directly to this internationally connected student community. A sponsorship activation could feature: "Send your first cross-border transfer free" sign-ups and a panel on "Building for Pan-African Markets" that aligns with Chipper's brand mission. For students exploring freelance cloud work (Upwork, Fiverr), Chipper is how they'll receive USD/GBP payments - making this a career-relevant sponsorship, not just brand awareness. |
 | **Outreach Channels** | Email: partnerships@chippercash.com / hello@chippercash.com. LinkedIn: Target Regional Marketing Manager (West Africa), Partnerships Lead. Twitter: @chaborehie. |
 | **Suggested Tier** | **Silver Partner** or **Bronze Partner** |
@@ -205,7 +217,7 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 | Field | Detail |
 |-------|--------|
 | **Tagline** | "Everywhere You Go" - MTN Pulse: "Live Your Best Life" |
-| **Overview & Core Users** | MTN is Nigeria's largest mobile network operator with 80M+ subscribers. MTN Pulse is their youth-focused sub-brand targeting 18–25 year olds with affordable data bundles, social media plans, and lifestyle perks. Their campus marketing division runs activations at universities nationwide. |
+| **Overview & Core Users** | MTN is Nigeria's largest mobile network operator with 80M+ subscribers. MTN Pulse is their youth-focused sub-brand targeting 18-25 year olds with affordable data bundles, social media plans, and lifestyle perks. Their campus marketing division runs activations at universities nationwide. |
 | **Value Alignment** | MTN Pulse's entire business model is campus data plan sales. An AWS event where 200+ students need reliable mobile data for cloud labs, live streaming, and project deployments is a perfect activation moment. MTN can provide: (1) free data vouchers as attendee welcome packs, (2) a portable cell booster/MiFi setup ensuring connectivity, (3) branded "Powered by MTN Pulse" Wi-Fi hotspots. The South-East is an MTN stronghold - Anambra penetration is already high, but Pulse-specific activation at UNIZIK tech events converts basic subscribers to premium data plan users. MTN's campus marketing team already has budget allocated for university event sponsorships. |
 | **Outreach Channels** | Email: campusmarketing@mtn.com / sponsorships@mtnnigeria.net. LinkedIn: Target Campus Marketing Manager (South-East Region), Youth Segment Lead, or Regional Marketing Manager. Physical: Visit MTN Experience Center, Awka or MTN office, Enugu (regional hub). Twitter: @ABOREHIE. |
 | **Suggested Tier** | **Diamond Partner** or **Gold Partner** (cash + data bundles as In-Kind) |
@@ -218,7 +230,7 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 |-------|--------|
 | **Tagline** | "The Smartphone Network" - SmartCash: "Your Money, Your Way" |
 | **Overview & Core Users** | Airtel is Nigeria's second-largest telco with 60M+ subscribers. Airtel SmartCash PSB (Payment Service Bank) is their mobile money platform competing directly with Opay and MTN MoMo. Their campus strategy targets student data consumption and SmartCash wallet adoption. |
-| **Value Alignment** | Airtel needs to grow SmartCash wallet adoption in South-East Nigeria where MTN MoMo has a head start. An AWS Student Community Day sponsorship gives Airtel a captive audience for a "Download SmartCash + Get ₦500 Bonus" activation. Data bundle sponsorship (Airtel SmartConnect) for event-day connectivity serves dual purpose: reliable internet for cloud labs AND mass SIM/data plan activation. For Airtel, the cost of providing 200 data vouchers (₦200,000–₦300,000 wholesale) is a fraction of their normal campus activation cost-per-acquisition. |
+| **Value Alignment** | Airtel needs to grow SmartCash wallet adoption in South-East Nigeria where MTN MoMo has a head start. An AWS Student Community Day sponsorship gives Airtel a captive audience for a "Download SmartCash + Get ₦500 Bonus" activation. Data bundle sponsorship (Airtel SmartConnect) for event-day connectivity serves dual purpose: reliable internet for cloud labs AND mass SIM/data plan activation. For Airtel, the cost of providing 200 data vouchers (₦200,000-₦300,000 wholesale) is a fraction of their normal campus activation cost-per-acquisition. |
 | **Outreach Channels** | Email: sponsorships@airtel.com.ng / partnerships@airtel.com.ng. LinkedIn: Target Regional Marketing Manager, Youth/Campus Segment Lead. Physical: Airtel office, Awka or Enugu regional office. Twitter: @AirtelNigeria. |
 | **Suggested Tier** | **Gold Partner** (cash + data bundles as In-Kind) or **In-Kind & Infrastructure Partner** |
 
@@ -229,7 +241,7 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 | Field | Detail |
 |-------|--------|
 | **Tagline** | "Wealth Management for Everyone" |
-| **Overview & Core Users** | Cowrywise is a SEC-licensed digital wealth management platform offering mutual funds, savings plans, and investment portfolios. With 500,000+ users, they target financially curious young Nigerians (20–35) who want to start investing with as little as ₦100. |
+| **Overview & Core Users** | Cowrywise is a SEC-licensed digital wealth management platform offering mutual funds, savings plans, and investment portfolios. With 500,000+ users, they target financially curious young Nigerians (20-35) who want to start investing with as little as ₦100. |
 | **Value Alignment** | Cloud skills → better jobs → higher income → investment capacity. Cowrywise's content marketing already pushes the "invest in yourself, then invest your returns" narrative. Sponsoring an AWS career-readiness event lets Cowrywise own the "financial future" conversation with students who are actively upskilling. An activation could include: a financial literacy lightning talk (10 min), a "Start Your First Mutual Fund" sign-up booth, and ₦10,000 investment top-ups as hackathon prizes. This positions Cowrywise as the app students open right after they land their first cloud job. |
 | **Outreach Channels** | Email: hello@cowrywise.com / partnerships@cowrywise.com. LinkedIn: Target Head of Growth, Community Manager, Partnerships Lead. Twitter: @cowrywise. Instagram: @cowrywise. |
 | **Suggested Tier** | **Silver Partner** or **Bronze Partner** |
@@ -241,7 +253,7 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 | Field | Detail |
 |-------|--------|
 | **Tagline** | "Dollar Investments Made Simple" |
-| **Overview & Core Users** | Risevest enables Nigerians to invest in US stocks, real estate, and fixed income in USD. Their users are upwardly mobile young professionals and students (22–35) seeking dollar-denominated returns as a hedge against naira depreciation. |
+| **Overview & Core Users** | Risevest enables Nigerians to invest in US stocks, real estate, and fixed income in USD. Their users are upwardly mobile young professionals and students (22-35) seeking dollar-denominated returns as a hedge against naira depreciation. |
 | **Value Alignment** | Students learning AWS cloud skills are building careers with USD-earning potential (remote work, freelance cloud consulting, international employers). Risevest's proposition - "earn in dollars, invest in dollars" - resonates powerfully at an event focused on globally marketable tech skills. A short talk on "From Cloud Certification to Dollar Income to Dollar Investments" ties Risevest's product to the career arc the AWS Student Builder Group promotes. Prize format: "$50 Risevest portfolio top-up" for hackathon winners is a memorable, differentiated prize. |
 | **Outreach Channels** | Email: hello@risevest.com / partnerships@risevest.com. LinkedIn: Target Head of Marketing, Growth Lead, or Partnerships. Twitter: @risaborehie. Instagram: @risevest. |
 | **Suggested Tier** | **Bronze Partner** (investment credit prizes) or **Silver Partner** |
@@ -277,10 +289,22 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 | Field | Detail |
 |-------|--------|
 | **Tagline** | "The Easiest Way to Run Your Business" |
-| **Overview & Core Users** | Bumpa is a social commerce platform that helps small businesses manage sales, inventory, and customer relationships across WhatsApp, Instagram, and their own online storefront. Their 100,000+ merchants are predominantly young Nigerian entrepreneurs (20–35) selling fashion, food, beauty, and accessories via social media. |
+| **Overview & Core Users** | Bumpa is a social commerce platform that helps small businesses manage sales, inventory, and customer relationships across WhatsApp, Instagram, and their own online storefront. Their 100,000+ merchants are predominantly young Nigerian entrepreneurs (20-35) selling fashion, food, beauty, and accessories via social media. |
 | **Value Alignment** | A significant portion of UNIZIK students run side businesses - selling clothes, hair products, snacks, phone accessories - primarily through WhatsApp and Instagram. Bumpa's product is built for exactly these merchants. An activation at the AWS event could include: "Set up your Bumpa store in 5 minutes" live demo, a "Best Student Business" pitch competition with Bumpa premium subscriptions as prizes, and a lightning talk on "From Side Hustle to Scalable Commerce." For Bumpa, UNIZIK is a dense cluster of their target persona: young, digital-native, commercially active students. |
 | **Outreach Channels** | Email: hello@bumpa.shop / partnerships@bumpa.shop. LinkedIn: Target CEO (Kelvin Umechukwu - note: Igbo founder, South-East connection), Head of Growth, Community Lead. Twitter: @BumpaHQ. Instagram: @bumpa.shop. |
 | **Suggested Tier** | **Silver Partner** or **Bronze Partner** |
+
+---
+
+## B15. Nutanix
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | "The Leader in Hybrid Multicloud Computing" |
+| **Overview & Core Users** | Nutanix is a global enterprise hybrid cloud platform company serving 32,000+ customers across financial services, education, healthcare, and government. Their products include Nutanix Cloud Infrastructure, Enterprise AI, Kubernetes Platform, and Unified Storage. They run Nutanix University (training/certification), a Community Edition for hands-on learning, and Nutanix User Groups worldwide. |
+| **Value Alignment** | Nutanix complements AWS rather than competing with it. Nutanix Cloud Clusters actually runs on AWS, so there is zero compliance conflict. Their education angle is the sweet spot: Nutanix University training credits, Community Edition licenses, and certification vouchers are high-value, low-cost giveaways for a student tech event. For Nutanix, an AWS-backed student event in South-East Nigeria is a rare chance to seed brand awareness among future enterprise IT decision-makers in an under-penetrated market. A "Hybrid Cloud 101 with Nutanix" lightning talk or a Nutanix Community Edition lab station at the SCD positions them as the "and also" to AWS, not a competitor. |
+| **Outreach Channels** | Email: university@nutanix.com (education/training), partnerhelp@nutanix.com (partnerships). Contact form: nutanix.com/contact-us. LinkedIn: Target Developer Advocate, University Programs Manager, EMEA/Africa Community Lead. Developer portal: nutanix.dev. No Africa-specific office found, route through EMEA. |
+| **Suggested Tier** | **Silver Partner** or **Bronze Partner** (cash or In-Kind: training credits, Community Edition licenses, certification vouchers) |
 
 ---
 
@@ -407,6 +431,8 @@ Based on alignment strength, budget likelihood, and outreach warmth:
 | 24 | **Campus Caterers** | Food In-Kind, direct campus presence | In-Kind | Dual Event |
 | 25 | **Print Shops** | Merch/banner In-Kind, portfolio motivation | In-Kind | Dual Event |
 | 26 | **Bookstores/EdTech** | Book prizes, study material packs | In-Kind / Bronze | Single Event |
+| 27 | **Nutanix** | Hybrid cloud education angle, training credits, Community Edition licenses, complements AWS | Silver / Bronze | Single Event (SCD) |
+| 28 | **Lovebite Bread** | Awka-local bakery, bread for event catering, low-cost brand exposure to 1,200+ students | In-Kind | Dual Event |
 
 ---
 
@@ -414,12 +440,12 @@ Based on alignment strength, budget likelihood, and outreach warmth:
 
 | Week | Action |
 |------|--------|
-| Week 1 | Send initial pitches to Priority 1–5 (Diamond + Gold targets) |
+| Week 1 | Send initial pitches to Priority 1-5 (Diamond + Gold targets) |
 | Week 1 | Visit Awka-based prospects in person (Aroma, Activ8, Tekhub, ISPs, caterers, printers) |
-| Week 2 | Send pitches to Priority 6–10 (Gold + Silver targets) |
-| Week 2 | Day-3 follow-up on Priority 1–5 unanswered leads |
-| Week 3 | Send pitches to Priority 11–20 (Silver + Campus Games + In-Kind) |
-| Week 3 | Day-7 follow-up on Priority 1–5; Day-3 follow-up on Priority 6–10 |
+| Week 2 | Send pitches to Priority 6-10 (Gold + Silver targets) |
+| Week 2 | Day-3 follow-up on Priority 1-5 unanswered leads |
+| Week 3 | Send pitches to Priority 11-20 (Silver + Campus Games + In-Kind) |
+| Week 3 | Day-7 follow-up on Priority 1-5; Day-3 follow-up on Priority 6-10 |
 | Week 4 | Final follow-up sweep; confirm commitments; begin sponsor onboarding |
 
 > **Note:** Customize each pitch using the templates in Deliverable 3 (Pitch Engine). Never send a generic pitch - every message must reference the company's specific products and KPIs.

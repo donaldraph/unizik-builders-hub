@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWS Student Builder Group at UNIZIK - Partnership Overview</title>
+<style>
+  @font-face { font-family: 'Ember'; src: url('assets/fonts/AmazonEmberDisplay_Lt.ttf'); font-weight: 300; }
+  @font-face { font-family: 'Ember'; src: url('assets/fonts/AmazonEmberDisplay_Rg.ttf'); font-weight: 400; }
+  @font-face { font-family: 'Ember'; src: url('assets/fonts/AmazonEmberDisplay_Md.ttf'); font-weight: 500; }
+  @font-face { font-family: 'Ember'; src: url('assets/fonts/AmazonEmberDisplay_Bd.ttf'); font-weight: 700; }
+  @font-face { font-family: 'Ember'; src: url('assets/fonts/AmazonEmberDisplay_He.ttf'); font-weight: 900; }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --navy: #161D26;
+    --orange: #FF9900;
+    --blue: #42B4FF;
+    --purple: #AD5CFF;
+    --white: #FFFFFF;
+    --light-gray: #F4F4F4;
+    --gray: #8899A6;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  body {
+    font-family: 'Ember', 'Segoe UI', system-ui, sans-serif;
+    background: var(--navy);
+    color: var(--white);
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 28px 32px 24px;
+    font-size: 11px;
+    line-height: 1.45;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Subtle grid background like the deck */
+  body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,153,0,.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,153,0,.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--orange);
+    margin-bottom: 18px;
+    position: relative;
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .program-icon svg { width: 42px; height: 42px; }
+
+  .header-title h1 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.3px;
+  }
+
+  .header-title .sub {
+    font-size: 10px;
+    color: var(--orange);
+    font-weight: 500;
+    margin-top: 2px;
+  }
+
+  .backed-badge {
+    background: rgba(255,153,0,.12);
+    border: 1px solid rgba(255,153,0,.3);
+    border-radius: 6px;
+    padding: 6px 12px;
+    text-align: center;
+    font-size: 9px;
+    color: var(--orange);
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  .backed-badge strong { font-size: 10px; display: block; }
+
+  /* Two-column layout */
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 16px;
+  }
+
+  .section-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--orange);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 8px;
+  }
+
+  /* Events section */
+  .event-card {
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+  }
+
+  .event-card .event-name {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 4px;
+  }
+
+  .event-card .event-name .accent { color: var(--orange); }
+
+  .event-card .event-meta {
+    font-size: 9.5px;
+    color: var(--gray);
+    line-height: 1.5;
+  }
+
+  .event-card .event-meta strong { color: var(--blue); font-weight: 500; }
+
+  /* Stats row */
+  .stats-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .stat-box {
+    background: rgba(255,153,0,.08);
+    border: 1px solid rgba(255,153,0,.15);
+    border-radius: 6px;
+    padding: 8px 10px;
+    text-align: center;
+  }
+
+  .stat-box .num {
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--orange);
+    line-height: 1;
+  }
+
+  .stat-box .label {
+    font-size: 8px;
+    color: var(--gray);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-top: 3px;
+  }
+
+  /* Benefits */
+  .benefits-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .benefits-list li {
+    font-size: 10px;
+    padding: 4px 0;
+    padding-left: 16px;
+    position: relative;
+    color: rgba(255,255,255,.85);
+  }
+
+  .benefits-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    background: var(--orange);
+    border-radius: 2px;
+  }
+
+  /* Pricing table */
+  .pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9.5px;
+    margin-top: 6px;
+  }
+
+  .pricing-table th {
+    background: rgba(255,153,0,.15);
+    color: var(--orange);
+    font-weight: 700;
+    padding: 6px 8px;
+    text-align: left;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+
+  .pricing-table th:first-child { border-radius: 4px 0 0 0; }
+  .pricing-table th:last-child { border-radius: 0 4px 0 0; }
+
+  .pricing-table td {
+    padding: 5px 8px;
+    border-bottom: 1px solid rgba(255,255,255,.06);
+    color: rgba(255,255,255,.8);
+  }
+
+  .pricing-table tr:last-child td { border-bottom: none; }
+
+  .pricing-table .tier-name {
+    font-weight: 700;
+    color: var(--white);
+  }
+
+  .pricing-table .diamond .tier-name { color: var(--blue); }
+  .pricing-table .gold .tier-name { color: var(--orange); }
+  .pricing-table .silver .tier-name { color: #C0C0C0; }
+  .pricing-table .bronze .tier-name { color: #CD7F32; }
+
+  /* What you get section - full width */
+  .full-width {
+    grid-column: 1 / -1;
+  }
+
+  .partner-perks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px;
+    margin-top: 6px;
+  }
+
+  .perk {
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .perk .perk-icon { font-size: 16px; margin-bottom: 4px; }
+  .perk .perk-title { font-size: 9px; font-weight: 700; color: var(--white); }
+  .perk .perk-desc { font-size: 8px; color: var(--gray); margin-top: 2px; line-height: 1.3; }
+
+  /* Footer / Contact */
+  .footer {
+    border-top: 1px solid rgba(255,255,255,.1);
+    padding-top: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-top: auto;
+  }
+
+  .contact-item .role {
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--orange);
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+
+  .contact-item .name {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--white);
+  }
+
+  .contact-item .info {
+    font-size: 9px;
+    color: var(--gray);
+    line-height: 1.5;
+  }
+
+  .contact-item .info a {
+    color: var(--blue);
+    text-decoration: none;
+  }
+
+  .bottom-bar {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 8px;
+    color: var(--gray);
+  }
+
+  .bottom-bar .tag {
+    background: rgba(255,153,0,.1);
+    color: var(--orange);
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 8px;
+  }
+
+  /* Print styles */
+  @media print {
+    body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      width: 100%;
+      padding: 24px 28px 20px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-left">
+    <div class="program-icon">
+      <svg viewBox="0 0 3000 3000" fill="none">
+        <path d="M2333.33 3000H2000V2666.67H1666.67V3000H1333.33V2666.67H1000V3000H666.667V2333.33H2333.33V3000ZM666.667 2333.33H0V2000H333.333V1666.67H0V1333.33H333.333V1000H0V666.667H666.667V2333.33ZM3000 1000H2666.67V1333.33H3000V1666.67H2666.67V2000H3000V2333.33H2333.33V666.667H3000V1000ZM1000 333.333H1333.33V0H1666.67V333.333H2000V0H2333.33V666.667H666.667V0H1000V333.333Z" fill="#FF9900"/>
+      </svg>
+    </div>
+    <div class="header-title">
+      <h1>AWS Student Builder Group at UNIZIK</h1>
+      <div class="sub">Partnership Overview - Nnamdi Azikiwe University, Awka</div>
+    </div>
+  </div>
+  <div class="backed-badge">
+    <strong>Backed by Amazon Web Services</strong>
+    Grants, tools, and global program support
+  </div>
+</div>
+
+<!-- STATS ROW -->
+<div class="stats-row">
+  <div class="stat-box">
+    <div class="num">1,200+</div>
+    <div class="label">Total Attendees</div>
+  </div>
+  <div class="stat-box">
+    <div class="num">36,000</div>
+    <div class="label">UNIZIK Students</div>
+  </div>
+  <div class="stat-box">
+    <div class="num">2</div>
+    <div class="label">Flagship Events</div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="content">
+
+  <!-- LEFT COLUMN: Events -->
+  <div>
+    <div class="section-title">Our Events</div>
+
+    <div class="event-card">
+      <div class="event-name">AWS re:Invent Watch <span class="accent">&amp; Build Party</span></div>
+      <div class="event-meta">
+        <strong>December 4, 2026</strong> - Awka, Anambra State<br>
+        500+ attendees. Live keynote stream from Las Vegas. Hands-on build sprints. Prizes. Food. The biggest tech watch party South-East Nigeria has seen.
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-name">AWS Student Community Day <span class="accent">Awka</span></div>
+      <div class="event-meta">
+        <strong>Q1 2027</strong> (date TBA) - Awka, Anambra State<br>
+        700+ attendees. Full-day conference. Dual-track workshops. Project showcases. Networking. The flagship student cloud event in the South-East.
+      </div>
+    </div>
+
+    <div class="section-title" style="margin-top:12px;">Why Partner With Us</div>
+    <ul class="benefits-list">
+      <li>Direct access to 500-700 tech-literate students per event, the hardest demographic to reach through traditional advertising</li>
+      <li>Live product activation: QR codes, app sign-ups, demos. Conversion rates at engaged student events are unmatched</li>
+      <li>Brand placement across all materials, social channels, livestream overlays, and post-event content</li>
+      <li>Speaking slots to tell your story to a room that is actually listening</li>
+      <li>Post-event impact report with real numbers within 72 hours</li>
+      <li>Year-round visibility through bi-weekly campus games (Full Season partners)</li>
+    </ul>
+  </div>
+
+  <!-- RIGHT COLUMN: Pricing -->
+  <div>
+    <div class="section-title">Investment Tiers</div>
+
+    <table class="pricing-table">
+      <thead>
+        <tr>
+          <th>Tier</th>
+          <th>Single Event</th>
+          <th>Dual Event</th>
+          <th>Full Season</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="diamond">
+          <td class="tier-name">Diamond</td>
+          <td>&#8358;850,000</td>
+          <td>&#8358;1,250,000</td>
+          <td>&#8358;1,500,000</td>
+        </tr>
+        <tr class="gold">
+          <td class="tier-name">Gold</td>
+          <td>&#8358;500,000</td>
+          <td>&#8358;800,000</td>
+          <td>&#8358;950,000</td>
+        </tr>
+        <tr class="silver">
+          <td class="tier-name">Silver</td>
+          <td>&#8358;300,000</td>
+          <td>&#8358;475,000</td>
+          <td>&#8358;600,000</td>
+        </tr>
+        <tr class="bronze">
+          <td class="tier-name">Bronze</td>
+          <td>&#8358;150,000</td>
+          <td>&#8358;250,000</td>
+          <td>&#8358;350,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p style="font-size:8.5px; color:var(--gray); margin-top:8px; line-height:1.4;">
+      <strong style="color:var(--white);">Single Event:</strong> re:Invent Watch Party OR Student Community Day.
+      <strong style="color:var(--white);">Dual Event:</strong> Both flagships.
+      <strong style="color:var(--white);">Full Season:</strong> Both events + bi-weekly campus games all year. In-Kind partnerships welcome at equivalent value.
+    </p>
+
+    <div class="section-title" style="margin-top:14px;">Who's In The Room</div>
+    <ul class="benefits-list">
+      <li>Computer Science, Engineering, and Business students from UNIZIK (36,000+ student body)</li>
+      <li>Early-career developers building with AWS cloud tools</li>
+      <li>Student entrepreneurs running campus businesses (POS agents, food vendors, freelancers, mini-importers)</li>
+      <li>Tech community leaders and professionals from the Awka corridor</li>
+      <li>Faculty members and academic staff from technical departments</li>
+    </ul>
+
+    <div class="section-title" style="margin-top:14px;">The Fine Print</div>
+    <ul class="benefits-list">
+      <li>Sponsorship commitments confirmed via signed partnership agreement</li>
+      <li>All partner logos appear alongside AWS branding per program guidelines</li>
+      <li>Impact reports with attendance data, social reach, photos, and your specific metrics delivered within 72 hours</li>
+      <li>Flexible payment: full upfront or 50/50 split across events</li>
+    </ul>
+  </div>
+</div>
+
+<!-- WHAT PARTNERS GET - Full Width -->
+<div style="margin-bottom:14px;">
+  <div class="section-title">What Every Partner Gets</div>
+  <div class="partner-perks">
+    <div class="perk">
+      <div class="perk-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      </div>
+      <div class="perk-title">Brand Visibility</div>
+      <div class="perk-desc">Logo on banners, slides, social media, livestream, and all event materials</div>
+    </div>
+    <div class="perk">
+      <div class="perk-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#42B4FF" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
+      <div class="perk-title">Direct Access</div>
+      <div class="perk-desc">Booth space for live demos, sign-ups, product activations, and talent scouting</div>
+    </div>
+    <div class="perk">
+      <div class="perk-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#AD5CFF" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      </div>
+      <div class="perk-title">Stage Time</div>
+      <div class="perk-desc">Speaking slots to present, demo, hire, or tell your story to an engaged audience</div>
+    </div>
+    <div class="perk">
+      <div class="perk-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      </div>
+      <div class="perk-title">Impact Report</div>
+      <div class="perk-desc">Real numbers within 72 hours: attendance, social reach, booth traffic, your KPIs</div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER / CONTACT -->
+<div class="footer">
+  <div class="contact-item">
+    <div class="role">Group Leader</div>
+    <div class="name">Donald Anyamba</div>
+    <div class="info">
+      donaldraph.dev@gmail.com<br>
+      +234 704 979 1307<br>
+      <a href="https://www.linkedin.com/in/donaldraph/">linkedin.com/in/donaldraph</a>
+    </div>
+  </div>
+  <div class="contact-item">
+    <div class="role">Program Manager</div>
+    <div class="name">Favour Chigozirim</div>
+    <div class="info">
+      chigozirimfavour001@gmail.com<br>
+      +234 704 435 0689
+    </div>
+  </div>
+  <div class="contact-item">
+    <div class="role">Marketing Director</div>
+    <div class="name">Chukwujigha Felix</div>
+    <div class="info">
+      fe59ik@gmail.com<br>
+      +234 803 859 0972
+    </div>
+  </div>
+</div>
+
+<div class="bottom-bar">
+  <span>AWS Student Builder Group at UNIZIK, Awka - Anambra State, Nigeria</span>
+  <span class="tag">#AWSStudentBuilderGroup</span>
+  <span>community.aws/buildergroups</span>
+</div>
+
+</body>
+</html>

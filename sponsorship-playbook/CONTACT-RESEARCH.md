@@ -35,6 +35,19 @@
 
 > **Note on both:** These are hyper-local entities without significant web presence. The most effective outreach channel is a personal introduction or in-person visit, which is standard for Awka/Anambra-area business culture. Prepare a 1-page sponsorship summary and your SCD deck to bring in-person.
 
+### 3. LOVEBITE BREAD (Awka, Anambra State)
+
+| Field | Detail | Status |
+|-------|--------|--------|
+| **Type** | Local bakery / bread brand | - |
+| **Location** | Awka, Anambra State | - |
+| **Website** | No website found | VERIFIED - searched |
+| **Email** | None found online | - |
+| **Phone** | Not available online | - |
+| **Social Media** | Instagram: @lovebite_bread (~117 followers), Threads: @lovebite_bread. Run by Dr. Jonas Chikelue Ogbuefi | VERIFIED |
+| **Outreach Strategy** | **Instagram DM + in-person visit.** DM @lovebite_bread first as a warm opener, then arrange a face-to-face meeting. Ask local Awka contacts for a phone number or bakery location. Bring a 1-page sponsorship summary + partnership deck in person. | RECOMMENDATION |
+| **Sponsorship Ask** | In-Kind: Branded bread and baked goods for event catering. In return: "Refreshments by Lovebite Bread" signage at catering stations, logo on refreshment area, social media shout-outs, mention in post-event report | - |
+
 ---
 
 ## Pan-Nigerian Tech/Consumer Brands
@@ -51,6 +64,7 @@
 | 10 | **Chipper Cash** | Via in-app support or enterprise.chippercash.com | - | LinkedIn: search "Chipper Cash West Africa Marketing" or "Chipper Cash Partnerships". Twitter: @chippercashapp. Instagram: @chippercashapp | **VERIFIED** - from chippercash.com (no direct email; use enterprise portal or LinkedIn) |
 | 11 | **OPay** | **whistleblower01@opay-inc.com** (only email found - not for partnerships) | **0700 8888 328** (app/card), **0700 8888 329** (POS) | LinkedIn: search "OPay Nigeria Marketing" or "OPay Partnerships". HQ: Alexander House, Plot 9, Alausa, Lagos | **VERIFIED** - from opayweb.com. For partnership: use LinkedIn or contact form at opayweb.com/contact-us |
 | 12 | **Cowrywise** | **support@cowrywise.com** | **0700 COWRYWISE** (0700-269-7994) | LinkedIn: search "Cowrywise Growth" or "Cowrywise Partnerships". HQ: 5C Reverend Ogunbiyi Street, Ikeja GRA, Lagos | **VERIFIED** - from cowrywise.com |
+| 13 | **Nutanix** | **university@nutanix.com** (education/training), **partnerhelp@nutanix.com** (partnerships) | (855) NUTANIX / (408) 216-8360 (US HQ) | LinkedIn: search "Nutanix University Programs" or "Nutanix Developer Advocate" or "Nutanix EMEA Community". Developer portal: nutanix.dev. Contact form: nutanix.com/contact-us | **VERIFIED** - from nutanix.com/contact-us |
 
 ---
 
@@ -85,6 +99,7 @@ These have confirmed email addresses. Customize the pitches from `03-PITCH-ENGIN
 - Flutterwave → hi@flutterwavego.com
 - Cowrywise → support@cowrywise.com (ask for partnerships/growth team)
 - MTN Nigeria → info@mtn.ng + mtnfoundation@mtn.ng
+- Nutanix → university@nutanix.com (education angle) + partnerhelp@nutanix.com
 
 ### Tier 2: LinkedIn-First Approach
 These companies have no public partnership email. Start with LinkedIn InMail to the right person:
@@ -105,6 +120,7 @@ Traditional banks respond best to formal letters delivered to branch managers wh
 ### Tier 4: In-Person Only (Awka Local)
 - SEAMAN RICE → visit Nnobi factory, bring 1-page proposal + SCD deck
 - Sir Pius Ufudo Foundation → get personal introduction, deliver formal letter
+- Lovebite Bread → DM @lovebite_bread on Instagram first, then visit bakery in Awka with 1-page proposal
 - Aroma App → visit office near Aroma Junction
 - Activ8 Hub → walk in and pitch
 - Tekhub NG → walk in and pitch
@@ -134,7 +150,7 @@ WHAT WE NEED FROM YOU: [Customize per prospect]
 WHAT YOU GET: [Tier benefits summary - customize]
 
 CONTACT:
-  Donald Anyamba (Group Leader) | donaldraph.dev@gmail.com | +234 704 979 1307
+  Donald Anyamba (Group Leader) | donaldraph.dev@gmail.com | +234 704 979 1307 | linkedin.com/in/donaldraph
   Favour Chigozirim (Program Manager) | chigozirimfavour001@gmail.com | +234 704 435 0689
-  [Marketing Director Name TBD]| [Email TBD]              | [Phone TBD]
+  Chukwujigha Felix (Marketing Director) | fe59ik@gmail.com | +234 803 859 0972
 ```

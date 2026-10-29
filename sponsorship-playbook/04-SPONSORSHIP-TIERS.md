@@ -12,7 +12,7 @@
 |----------|--------|-------------------|-----------|
 | **AWS re:Invent Watch & Build Party** | Keynote streaming, build sprints, builder panels | 500+ | Once (Dec) |
 | **AWS Student Community Day Awka** | Speaker tracks, workshops, project showcases | 700+ | Once (Q1/Q2) |
-| **Campus Bi-Weekly Games** | Card Clash leagues, Cloud Quest sessions, study circles, Demo Days | 30–80 per session | Bi-weekly, year-round |
+| **Campus Bi-Weekly Games** | Card Clash leagues, Cloud Quest sessions, study circles, Demo Days | 30-80 per session | Bi-weekly, year-round |
 
 ---
 
@@ -172,7 +172,7 @@ In-kind sponsors provide goods or services whose value maps to a cash tier's ben
 | Category | Examples | Estimated Value Range | Equivalent Tier Benefits |
 |----------|----------|----------------------|------------------------|
 | **Internet & Connectivity** | MiFi routers, dedicated fiber, bulk data SIMs, Starlink terminal | ₦150,000-₦500,000+ | Bronze to Gold tier benefits depending on value. "Connectivity by [Brand]" naming at every station. Logo on WiFi cards. |
-| **Power** | Generator + fuel, industrial inverter, UPS for AV equipment | ₦150,000–₦500,000+ | Silver → Gold tier benefits. "Powered by [Brand]" on generator station signage. |
+| **Power** | Generator + fuel, industrial inverter, UPS for AV equipment | ₦150,000-₦500,000+ | Silver → Gold tier benefits. "Powered by [Brand]" on generator station signage. |
 | **Catering** | Lunch / snacks / drinks for 500+ attendees | ₦250,000-₦700,000+ | Silver to Gold tier benefits. "Refreshments by [Brand]" at every food station. Branded napkins/cups. |
 | **Merchandise** | T-shirts, hoodies, stickers, notebooks, tote bags, lanyards | ₦150,000-₦500,000+ | Bronze to Gold tier benefits. "Printed by [Brand]" on shirt tags. Logo on merch packaging. |
 | **Venue** | Hall booking, AV equipment, projectors, chairs/tables, PA system | ₦300,000-₦950,000+ | Silver to Diamond tier benefits. "Venue Partner" credit on all materials. |
@@ -234,7 +234,7 @@ Every game is engineered for crowd energy, social media virality, and natural sp
 
 ### Game 4: Cloud Quest Leaderboard Challenge
 
-**Format:** Group Cloud Quest session (30–45 min). Live leaderboard projected. Top 3 scorers win prizes.
+**Format:** Group Cloud Quest session (30-45 min). Live leaderboard projected. Top 3 scorers win prizes.
 
 **Sponsor Integration:**
 - Leaderboard on a sponsor-branded screen/frame

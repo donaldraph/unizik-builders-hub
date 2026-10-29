@@ -33,14 +33,14 @@
 | Parameter | Value |
 |---|---|
 | **Expected Attendance** | 500+ |
-| **Duration** | 10.5 hours (08:00–18:30) |
+| **Duration** | 10.5 hours (08:00-18:30) |
 | **Venue Type** | Large auditorium or conference hall with breakout rooms, UNIZIK campus or Awka event center |
 | **Budget** | $3,383 AWS grant + auxiliary sponsor contributions |
 | **Meetup Listing** | Published 4+ weeks before event with full agenda, speaker bios, and registration link |
 
 ---
 
-## Phase 1: Pre-Show & Registration - 08:00–09:00
+## Phase 1: Pre-Show & Registration - 08:00-09:00
 
 | Time | Activity | Owner | Sponsor Touchpoint |
 |---|---|---|---|
@@ -64,7 +64,7 @@
 
 ---
 
-## Phase 2: Opening & Keynote Livestream - 09:00–10:30
+## Phase 2: Opening & Keynote Livestream - 09:00-10:30
 
 | Time | Activity | Duration | Notes |
 |---|---|---|---|
@@ -84,12 +84,12 @@
 
 ---
 
-## Phase 3: Rapid Build Sprint 1 - 10:30–12:00
+## Phase 3: Rapid Build Sprint 1 - 10:30-12:00
 
 | Time | Activity | Duration | Notes |
 |---|---|---|---|
 | 10:30 | Sprint briefing - theme announced (tied to re:Invent keynote announcements, e.g., "Serverless AI Agent") | 10 min | Theme decided live based on keynote |
-| 10:40 | Team formation - random or pre-registered teams of 3–4 | 5 min | Color-coded wristbands |
+| 10:40 | Team formation - random or pre-registered teams of 3-4 | 5 min | Color-coded wristbands |
 | 10:45 | **BUILD BEGINS** | 75 min | Clock displayed on screen |
 | - | Mentors circulate - 1 mentor per 5 teams | Continuous | Pre-briefed on expected tech stack |
 | - | Sponsor Challenge overlay: "Integrate [Diamond Partner API] for bonus points" | Optional | Only if sponsor provides API/SDK |
@@ -103,7 +103,7 @@
 
 ---
 
-## Phase 4: Lunch & Networking - 12:00–13:00
+## Phase 4: Lunch & Networking - 12:00-13:00
 
 | Time | Activity | Duration | Notes |
 |---|---|---|---|
@@ -125,11 +125,11 @@
 
 ---
 
-## Phase 5: Builder Panels & Lightning Talks - 13:00–14:30
+## Phase 5: Builder Panels & Lightning Talks - 13:00-14:30
 
 | Time | Activity | Duration | Speaker |
 |---|---|---|---|
-| 13:00 | **Panel: "Building in South-East Nigeria"** | 35 min | 3–4 local tech leaders, AWS Community Builders, startup founders |
+| 13:00 | **Panel: "Building in South-East Nigeria"** | 35 min | 3-4 local tech leaders, AWS Community Builders, startup founders |
 | 13:35 | Audience Q&A | 10 min | Moderated |
 | 13:45 | Lightning Talk 1: Student builder project showcase | 5 min | Selected student |
 | 13:50 | Lightning Talk 2: "My First AWS Certification" story | 5 min | Selected student |
@@ -140,11 +140,11 @@
 
 ---
 
-## Phase 6: Campus Games Extravaganza - 14:30–16:00
+## Phase 6: Campus Games Extravaganza - 14:30-16:00
 
 This is the high-energy, social-media-viral segment. All games run on the main stage with audience seating. Sponsor banners surround the competition area.
 
-### Game 1: Syntax Sprint (14:30–15:00)
+### Game 1: Syntax Sprint (14:30-15:00)
 
 | Detail | Value |
 |---|---|
@@ -154,7 +154,7 @@ This is the high-energy, social-media-viral segment. All games run on the main s
 | **Prizes** | Branded swag from Bronze Partner |
 | **Filming** | Dedicated camera for close-up reaction shots → social media reels |
 
-### Game 2: AWS Card Clash Bracket (15:00–15:25)
+### Game 2: AWS Card Clash Bracket (15:00-15:25)
 
 | Detail | Value |
 |---|---|
@@ -164,7 +164,7 @@ This is the high-energy, social-media-viral segment. All games run on the main s
 | **Commentary** | MC provides live commentary like an esports cast |
 | **Filming** | Screen mirrored to projector so audience follows along |
 
-### Game 3: Speed-Deploy CLI Battle (15:25–15:45)
+### Game 3: Speed-Deploy CLI Battle (15:25-15:45)
 
 | Detail | Value |
 |---|---|
@@ -174,7 +174,7 @@ This is the high-energy, social-media-viral segment. All games run on the main s
 | **Twist** | Audience can shout (wrong) suggestions to distract |
 | **Prizes** | Diamond or Gold sponsor prize bundle |
 
-### Game 4: Cloud Quest Leaderboard Challenge (15:45–16:00)
+### Game 4: Cloud Quest Leaderboard Challenge (15:45-16:00)
 
 | Detail | Value |
 |---|---|
@@ -185,14 +185,14 @@ This is the high-energy, social-media-viral segment. All games run on the main s
 | **Prizes** | Top 3 on leaderboard receive sponsor prizes |
 
 **Social Media Protocol for Games:**
-- Dedicated social media volunteer films vertical video clips (15–30 seconds each)
+- Dedicated social media volunteer films vertical video clips (15-30 seconds each)
 - Post to Instagram Reels, TikTok, and X/Twitter within 10 minutes of each game
 - Tag all sponsors in posts per tier entitlements
 - Use hashtags: #AWSStudentBuilderGroup #reInventWatchPartyAwka
 
 ---
 
-## Phase 7: Rapid Build Sprint 2 + Demos - 16:00–17:30
+## Phase 7: Rapid Build Sprint 2 + Demos - 16:00-17:30
 
 | Time | Activity | Duration | Notes |
 |---|---|---|---|
@@ -203,7 +203,7 @@ This is the high-energy, social-media-viral segment. All games run on the main s
 
 ---
 
-## Phase 8: Awards & Closing - 17:40–18:30
+## Phase 8: Awards & Closing - 17:40-18:30
 
 | Time | Activity | Duration | Notes |
 |---|---|---|---|
@@ -225,7 +225,7 @@ This is the high-energy, social-media-viral segment. All games run on the main s
 |---|---|
 | **Official Name** | AWS Student Builder Groups Student Community Day Awka |
 | **Expected Attendance** | 700+ |
-| **Duration** | 10 hours (08:00–18:00) |
+| **Duration** | 10 hours (08:00-18:00) |
 | **Venue** | Large venue with 2 session rooms + common area for booths/lunch |
 | **Budget** | $2,000 anticipated AWS grant + auxiliary sponsor contributions |
 | **Meetup Listing** | Published 6+ weeks before; cross-promoted on Eventbrite/Konfhub with Meetup link |
@@ -267,24 +267,24 @@ This is the high-energy, social-media-viral segment. All games run on the main s
 
 | Time | Track A: Cloud Foundations | Track B: Builder Advanced | Common Area |
 |---|---|---|---|
-| **08:00–09:00** | - | - | **Registration & Check-in** - Name tags, AWS Builder Center QR, sponsor booth tour, breakfast snacks |
-| **09:00–09:10** | *Main Hall - all attendees* | - | MC welcome, housekeeping, Code of Conduct, WiFi, hashtag |
-| **09:10–09:40** | *Main Hall - all attendees* | - | **Opening Keynote:** "The Future is Built by Students" - Invited AWS Community Builder or local tech leader (30 min) |
-| **09:40–09:50** | *Main Hall - all attendees* | - | Diamond Partner welcome address (5 min) + logistics transition |
-| **09:50–10:30** | **Session A1:** "What is Cloud Computing?" - Foundational concepts, AWS global infrastructure, real-world use cases (40 min) | **Session B1:** "Architecting for Scale on AWS" - VPC, ALB, Auto Scaling, multi-AZ patterns (40 min) | Sponsor booths open |
-| **10:30–10:45** | - | - | **Tea Break** - Coffee Break Sponsor branding at stations |
-| **10:45–11:30** | **Session A2:** "Your First AWS Account & Skill Builder Tour" - Live walkthrough of creating Builder Center profile, navigating Skill Builder free courses (45 min) | **Session B2:** "Building Serverless APIs with Lambda & API Gateway" - Live coding workshop (45 min) | - |
-| **11:30–12:15** | **Workshop A1:** AWS Cloud Quest: Cloud Practitioner - Guided tournament-mode session, attendees play on their devices (45 min, uses Skill Builder, no credit card) | **Session B3:** "AI/ML on AWS - From Bedrock to SageMaker" - Concepts + demo (45 min) | - |
-| **12:15–13:15** | - | - | **Networking Lunch** - Themed discussion tables (see below), sponsor demos active, speed networking |
-| **13:15–14:00** | **Session A3:** Storytelling for Career Readiness Workshop - Led by trained SBGL using AWS Storytelling kit (45 min, from Leader Library) | **Workshop B1:** AWS SimuLearn Roleplay Lab - "You're the Solutions Architect" scenario-based simulation (45 min, uses Skill Builder, no credit card) | - |
-| **14:00–14:45** | **Session A4:** "AWS Certifications Demystified" - Cert paths, free exam prep on Skill Builder, study group formation (45 min) | **Session B4:** "Infrastructure as Code with CDK & CloudFormation" - Live deploy workshop (45 min) | - |
-| **14:45–15:00** | - | - | **Afternoon Break** - Snacks, sponsor booth final push |
-| **15:00–15:45** | **Session A5:** Open Source 101 on AWS - Intro to open source + using OSS tools on AWS (slide deck from Leader Library, 45 min) | **Workshop B2:** AWS Builder Labs - Hands-on lab session (45 min, uses Skill Builder, no credit card) | - |
-| **15:45–16:30** | *Main Hall - all attendees* | - | **Project Showcase:** 5 student teams demo projects (5 min each + 1 min Q&A). Judges: SBG Leader, sponsor rep, faculty advisor |
-| **16:30–17:00** | *Main Hall - all attendees* | - | **Closing Keynote:** "From Student to Builder to Professional" - Career panel or inspirational talk (30 min) |
-| **17:00–17:30** | *Main Hall - all attendees* | - | **Awards & Recognition** - Project showcase winners, top Cloud Quest scorers, volunteer appreciation, sponsor acknowledgments |
-| **17:30–17:45** | *Main Hall - all attendees* | - | **"What's Next"** - Upcoming meetups, Skill Builder study circles, certification study groups. AWS Builder Center final push. CSAT survey (s12d.com/aws-scd26) |
-| **17:45–18:00** | *Main Hall - all attendees* | - | **Group Photo** + informal networking, teardown begins |
+| **08:00-09:00** | - | - | **Registration & Check-in** - Name tags, AWS Builder Center QR, sponsor booth tour, breakfast snacks |
+| **09:00-09:10** | *Main Hall - all attendees* | - | MC welcome, housekeeping, Code of Conduct, WiFi, hashtag |
+| **09:10-09:40** | *Main Hall - all attendees* | - | **Opening Keynote:** "The Future is Built by Students" - Invited AWS Community Builder or local tech leader (30 min) |
+| **09:40-09:50** | *Main Hall - all attendees* | - | Diamond Partner welcome address (5 min) + logistics transition |
+| **09:50-10:30** | **Session A1:** "What is Cloud Computing?" - Foundational concepts, AWS global infrastructure, real-world use cases (40 min) | **Session B1:** "Architecting for Scale on AWS" - VPC, ALB, Auto Scaling, multi-AZ patterns (40 min) | Sponsor booths open |
+| **10:30-10:45** | - | - | **Tea Break** - Coffee Break Sponsor branding at stations |
+| **10:45-11:30** | **Session A2:** "Your First AWS Account & Skill Builder Tour" - Live walkthrough of creating Builder Center profile, navigating Skill Builder free courses (45 min) | **Session B2:** "Building Serverless APIs with Lambda & API Gateway" - Live coding workshop (45 min) | - |
+| **11:30-12:15** | **Workshop A1:** AWS Cloud Quest: Cloud Practitioner - Guided tournament-mode session, attendees play on their devices (45 min, uses Skill Builder, no credit card) | **Session B3:** "AI/ML on AWS - From Bedrock to SageMaker" - Concepts + demo (45 min) | - |
+| **12:15-13:15** | - | - | **Networking Lunch** - Themed discussion tables (see below), sponsor demos active, speed networking |
+| **13:15-14:00** | **Session A3:** Storytelling for Career Readiness Workshop - Led by trained SBGL using AWS Storytelling kit (45 min, from Leader Library) | **Workshop B1:** AWS SimuLearn Roleplay Lab - "You're the Solutions Architect" scenario-based simulation (45 min, uses Skill Builder, no credit card) | - |
+| **14:00-14:45** | **Session A4:** "AWS Certifications Demystified" - Cert paths, free exam prep on Skill Builder, study group formation (45 min) | **Session B4:** "Infrastructure as Code with CDK & CloudFormation" - Live deploy workshop (45 min) | - |
+| **14:45-15:00** | - | - | **Afternoon Break** - Snacks, sponsor booth final push |
+| **15:00-15:45** | **Session A5:** Open Source 101 on AWS - Intro to open source + using OSS tools on AWS (slide deck from Leader Library, 45 min) | **Workshop B2:** AWS Builder Labs - Hands-on lab session (45 min, uses Skill Builder, no credit card) | - |
+| **15:45-16:30** | *Main Hall - all attendees* | - | **Project Showcase:** 5 student teams demo projects (5 min each + 1 min Q&A). Judges: SBG Leader, sponsor rep, faculty advisor |
+| **16:30-17:00** | *Main Hall - all attendees* | - | **Closing Keynote:** "From Student to Builder to Professional" - Career panel or inspirational talk (30 min) |
+| **17:00-17:30** | *Main Hall - all attendees* | - | **Awards & Recognition** - Project showcase winners, top Cloud Quest scorers, volunteer appreciation, sponsor acknowledgments |
+| **17:30-17:45** | *Main Hall - all attendees* | - | **"What's Next"** - Upcoming meetups, Skill Builder study circles, certification study groups. AWS Builder Center final push. CSAT survey (s12d.com/aws-scd26) |
+| **17:45-18:00** | *Main Hall - all attendees* | - | **Group Photo** + informal networking, teardown begins |
 
 ---
 
@@ -354,7 +354,7 @@ This is the high-energy, social-media-viral segment. All games run on the main s
 | Contribution | Expected |
 |---|---|
 | 1 speaker or panelist | Required |
-| 3–5 event-day volunteers | Strongly encouraged |
+| 3-5 event-day volunteers | Strongly encouraged |
 | Social media amplification (share event post to their audience) | Required |
 | Cross-listing on their Meetup/WhatsApp/channels | Strongly encouraged |
 | Content or workshop materials (if running a session) | If applicable |
@@ -404,7 +404,7 @@ FOR YOUR COMMUNITY:
 
 FROM YOUR COMMUNITY:
   - 1 speaker or panelist (we'll coordinate the topic)
-  - 3–5 volunteers to help with event-day logistics
+  - 3-5 volunteers to help with event-day logistics
   - A share of our event post to your audience
 
 This is a student-organized, community-driven event backed by AWS. We believe
@@ -428,9 +428,9 @@ AWS Student Builder Group Leader, UNIZIK
 
 | Layer | Solution | Est. Cost | Setup Lead Time |
 |---|---|---|---|
-| **Primary** | Dedicated fiber broadband from venue ISP (e.g., Glo Fiber, Spectranet, iPNX - availability varies in Awka) | Included in venue or ₦30,000–₦80,000/month | 2+ weeks to confirm installation |
-| **Secondary** | Mobile hotspot bank: 3× MiFi devices (MTN + Airtel + Glo) with unlimited/high-cap data plans | ₦15,000–₦25,000 total for data bundles (MTN SME: 25GB for ₦6,000; Airtel: 25GB for ₦6,000) | Purchase 1 week before; top up day before |
-| **Tertiary** | Starlink portable terminal (if available for rent/loan in SE Nigeria) | ₦50,000–₦100,000 rental for event day | 2+ weeks; explore Starlink rental services in Lagos that ship nationwide |
+| **Primary** | Dedicated fiber broadband from venue ISP (e.g., Glo Fiber, Spectranet, iPNX - availability varies in Awka) | Included in venue or ₦30,000-₦80,000/month | 2+ weeks to confirm installation |
+| **Secondary** | Mobile hotspot bank: 3× MiFi devices (MTN + Airtel + Glo) with unlimited/high-cap data plans | ₦15,000-₦25,000 total for data bundles (MTN SME: 25GB for ₦6,000; Airtel: 25GB for ₦6,000) | Purchase 1 week before; top up day before |
+| **Tertiary** | Starlink portable terminal (if available for rent/loan in SE Nigeria) | ₦50,000-₦100,000 rental for event day | 2+ weeks; explore Starlink rental services in Lagos that ship nationwide |
 | **Offline Fallback** | Local NAS / server with pre-cached content | ₦0 (use existing hardware) | Set up night before |
 
 ### Pre-Cache Checklist (Execute Night Before Event)
@@ -483,9 +483,9 @@ AWS Student Builder Group Leader, UNIZIK
 | Layer | Solution | Specification | Est. Cost |
 |---|---|---|---|
 | **Primary** | Venue mains electricity (EEDC - Enugu Electricity Distribution Company) | Standard supply | Included in venue fee |
-| **Secondary** | Diesel generator on standby | 10 KVA minimum (e.g., Firman, Sumec, or Lister brand - widely available in Awka) | ₦15,000–₦25,000 rental/day + ₦10,000–₦15,000 fuel (20–30 litres diesel at ₦500–₦700/litre) |
-| **Tertiary** | UPS units for critical equipment | 2× 1500VA UPS (for projectors, routers, streaming laptop) | ₦30,000–₦50,000 purchase or borrow from department |
-| **Attendee Charging** | Power strip distribution | 10× 4-way extension boards distributed across tables | ₦15,000–₦25,000 purchase |
+| **Secondary** | Diesel generator on standby | 10 KVA minimum (e.g., Firman, Sumec, or Lister brand - widely available in Awka) | ₦15,000-₦25,000 rental/day + ₦10,000-₦15,000 fuel (20-30 litres diesel at ₦500-₦700/litre) |
+| **Tertiary** | UPS units for critical equipment | 2× 1500VA UPS (for projectors, routers, streaming laptop) | ₦30,000-₦50,000 purchase or borrow from department |
+| **Attendee Charging** | Power strip distribution | 10× 4-way extension boards distributed across tables | ₦15,000-₦25,000 purchase |
 
 ### Generator Operations Checklist
 
@@ -521,7 +521,7 @@ AWS Student Builder Group Leader, UNIZIK
 - [ ] **Projector compatibility:** Test laptop → projector connection (HDMI, VGA, USB-C adapter)
 - [ ] **Screen/projection surface:** Confirm size is visible from back row (minimum 100" for 200+ attendees)
 - [ ] **Sound system:** Test venue PA; bring backup portable speaker (JBL PartyBox or similar)
-- [ ] **AC/ventilation:** Confirm working AC or adequate fan coverage for 200–500 people
+- [ ] **AC/ventilation:** Confirm working AC or adequate fan coverage for 200-500 people
 - [ ] **Restrooms:** Confirm cleanliness, adequate supply, signage
 - [ ] **Parking/transport:** Confirm nearby parking; plan shuttle/Bolt coordination for off-campus venues
 - [ ] **Room layout:** Confirm seating capacity matches expected attendance; arrange tables for team collaboration
@@ -543,7 +543,7 @@ AWS Student Builder Group Leader, UNIZIK
 ### Rain Contingency
 - All critical activities are indoors
 - If venue has outdoor elements (registration, photo wall), prepare indoor alternatives
-- Covered walkway from parking to entrance (use canopy/tent if needed, ₦10,000–₦20,000 rental)
+- Covered walkway from parking to entrance (use canopy/tent if needed, ₦10,000-₦20,000 rental)
 - Umbrella station at entrance for attendees arriving in rain
 
 ---
