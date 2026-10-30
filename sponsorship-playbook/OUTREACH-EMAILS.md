@@ -9,8 +9,17 @@
 2. **Tier 2 emails** go via LinkedIn InMail first. Find the right person on LinkedIn, then adapt the email into a shorter DM.
 3. **Tier 3 emails** are for banks. Print a formal version on letterhead, deliver to the Awka branch manager, AND send the email to HQ.
 4. **Tier 4 pitches** are in-person talking points. Print the partnership deck, grab the 1-page summary, and walk in.
-5. **Attach the PDF backing slide** (`UNIZIK-AWS-SBG-Sponsor-OnePager.html` printed to PDF) to every email and LinkedIn message.
-6. After sending, log the date in `CONTACT-RESEARCH.md` and start the Day-3 / Day-7 follow-up cadence from `03-PITCH-ENGINE.md`.
+5. After sending, log the date in `CONTACT-RESEARCH.md` and start the Day-3 / Day-7 follow-up cadence from `03-PITCH-ENGINE.md`.
+
+## Attachments (include with every email)
+
+Every outreach email should have these three attachments:
+
+1. **AWS Affiliation Letter** - your official affiliation letter from AWS confirming the Student Builder Group. This is the trust anchor. It proves Amazon backs you before they even finish reading the email.
+2. **Partnership Overview (1-pager)** - `UNIZIK-AWS-SBG-Sponsor-OnePager.pdf`. One page with event stats, pricing tiers, benefits, and contact info. Quick reference they can forward to their boss.
+3. **Full Partnership Deck** - `UNIZIK-AWS-SBG-Partnership-Deck.pdf`. The full 10-slide deck for prospects who want the complete picture.
+
+For **Tier 4 in-person pitches**, print all three and bring them physically.
 
 ---
 
@@ -41,7 +50,11 @@ Here's what I'm thinking:
 - Your logo across all event materials, social channels, and the event livestream.
 - A 5-minute stage slot to talk about why the best time to start saving is before you actually have money.
 
-We're looking at a Silver or Gold partnership for this. The full partnership deck is attached.
+We're looking at a Silver or Gold partnership for this.
+
+If you're not the right person for this, I'd appreciate it if you could point us to whoever handles partnerships or sponsorships on your end.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck.
 
 500 tech students in Anambra State who are about to start earning. That's your people. Let's talk?
 
@@ -80,7 +93,9 @@ What I'm proposing:
 - Logo placement on all event collateral, social media shoutouts, and livestream graphics.
 - Stage mention: "Banking for this event powered by Kuda." Clean and direct.
 
-Partnership deck is attached with full details and tier pricing. Would love to connect with whoever handles campus partnerships or sponsorships on your end.
+If this should land on someone else's desk, I'd be grateful for the redirect.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck with tier pricing.
 
 Best,
 Donald Anyamba
@@ -115,7 +130,11 @@ Here's what a partnership could look like:
 - Logo on all event materials, social channels, and livestream.
 - Direct access to recruit from a pool of students who just proved they can ship code.
 
-The full partnership deck is attached. Flutterwave already sponsors developer events. This one happens to be in the region with the densest concentration of tech talent that nobody's paying attention to yet.
+Flutterwave already sponsors developer events. This one happens to be in the region with the densest concentration of tech talent that nobody's paying attention to yet.
+
+If there's someone on your team who handles developer community sponsorships, I'd appreciate the introduction.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck.
 
 Let's chat?
 
@@ -149,7 +168,11 @@ Here's what makes sense:
 - **Cowrywise investment credits as prizes**. "₦5,000 Cowrywise top-up" for hackathon winners, quiz champions, best project demos. Students remember the prize that actually grew their money.
 - Logo and brand visibility across both events.
 
-The full deck is attached. These students are building careers with global earning potential. Getting Cowrywise in front of them now means they default to you when the money starts flowing.
+These students are building careers with global earning potential. Getting Cowrywise in front of them now means they default to you when the money starts flowing.
+
+If I've reached the wrong inbox, could you forward this to whoever handles growth or partnerships? Would really appreciate it.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck.
 
 Best,
 Donald Anyamba
@@ -186,7 +209,9 @@ Here's what makes sense:
 
 This is also a great fit for the **MTN Foundation** if it falls under your education/digital skills CSR funding. Happy to send a formal proposal to either team.
 
-Partnership deck attached.
+If this needs to reach someone specific on the sponsorships or campus engagement side, a quick forward would mean a lot.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck.
 
 Best,
 Donald Anyamba
@@ -221,9 +246,51 @@ What I'm proposing:
 
 Nutanix complements AWS, it doesn't compete with it. NC2 literally runs on AWS. So there's zero conflict with our program rules.
 
-This would be a first-of-its-kind Nutanix engagement with a West African student tech community. The partnership deck is attached with tier details.
+This would be a first-of-its-kind Nutanix engagement with a West African student tech community. If I've reached the wrong inbox, could you forward this to whoever handles university partnerships? Would really appreciate it.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck with tier details.
 
 Worth a conversation?
+
+Best,
+Donald Anyamba
+AWS Student Builder Group Leader, UNIZIK Awka
+donaldraph.dev@gmail.com | +234 704 979 1307
+linkedin.com/in/donaldraph
+
+---
+
+### 7. Arthurite Integrated
+
+**Send to:** info@arthuriteintegrated.com (also DM CEO Somtochukwu Ezepue on LinkedIn)
+**Subject:** You're an AWS Partner. We're Training 700 Students on AWS. Let's Talk.
+
+Hi Somtochukwu and the Arthurite team,
+
+I'll keep this short because the pitch basically writes itself.
+
+You're an AWS Select Partner. You build on AWS, you hire people who know AWS, and you need more of them. I run the **AWS Student Builder Group at UNIZIK Awka**, and we're producing exactly those people. Amazon Web Services backs us directly with grants, premium Skill Builder access, and global program support.
+
+We're hosting two flagship events this session:
+
+- **AWS re:Invent Watch & Build Party** (December 4, 2026) - 500+ attendees, live keynote stream from Las Vegas, hands-on build sprints
+- **AWS Student Community Day Awka** (Q1 2027) - 700+ attendees, full-day conference with workshops and project showcases
+
+Here's what makes sense for Arthurite:
+
+- A **recruitment booth** at both events. Talk to students who already know S3, Lambda, EC2, and DynamoDB. Skip the "what is cloud?" conversation entirely.
+- A **"Build on AWS with Arthurite"** workshop track at the SCD. Your engineers walk students through a real-world project. You get to evaluate talent live.
+- **Internship pipeline access.** Our top builders get a fast track to your team. You solve your hiring pipeline problem in South-East Nigeria in one afternoon.
+- Judging seat at the hackathon. See the best student projects firsthand.
+- Logo and brand visibility at both events.
+
+One more thing. The CEO is Igbo, UNIZIK is in Anambra, and the South-East tech ecosystem needs more companies like Arthurite investing in it. This isn't just a sponsorship. It's building the pipeline you'll hire from for the next five years.
+
+I hosted your "One With AI" summit on my radar. We're doing the same kind of community building, just at the student level. Let's connect these dots.
+
+If there's someone on your team who'd be better for this conversation, I'd appreciate the introduction.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck.
 
 Best,
 Donald Anyamba
@@ -270,7 +337,9 @@ Here's what a Moniepoint partnership looks like:
 
 The campus micro-economy in Awka is growing fast. This is a chance to be the default payment provider for an entire generation of student entrepreneurs before anyone else locks it down.
 
-Deck attached.
+If there's someone else on your team better suited for this, a quick forward would mean a lot.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck.
 
 Best,
 Donald Anyamba
@@ -307,7 +376,9 @@ What I'd love from Paystack:
 
 The pipeline effect is real. Students who learn Paystack first will default to Paystack in every project after. That's hundreds of future developers in South-East Nigeria who reach for Paystack before anything else.
 
-Deck attached with full tier options.
+If this should reach someone on the DevRel or partnerships side, I'd appreciate the redirect.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck with tier options.
 
 Best,
 Donald Anyamba
@@ -347,7 +418,9 @@ What makes sense for Chipper Cash:
 
 These are students building globally competitive skills. They'll be sending and receiving money across borders for the rest of their careers. Getting them on Chipper Cash now is a long play that pays off.
 
-Deck attached.
+If you're not the right person, could you point me toward whoever handles partnerships or campus marketing? Would really appreciate it.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck.
 
 Best,
 Donald Anyamba
@@ -388,7 +461,9 @@ Here's the play:
 
 OPay has the biggest marketing budget among Nigerian fintechs. This is a focused, high-impact deployment of a fraction of that budget in a market you already own but could lose.
 
-Deck attached with tier options.
+If this needs to get to a specific person at OPay, I'd be grateful for the forward.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck with tier options.
 
 Best,
 Donald Anyamba
@@ -426,7 +501,9 @@ What Airtel could own:
 
 The campus data market in Awka is worth fighting for. 36,000 students at UNIZIK alone, most of them buying data weekly. An AWS event is the highest-visibility stage to make that pitch.
 
-Deck attached.
+If this should land on someone else's desk at Airtel, I'd be grateful for the redirect.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck.
 
 Best,
 Donald Anyamba
@@ -467,6 +544,8 @@ UNIZIK has 36,000 students, and Zenith Bank already has a branch on Zik Avenue s
 
 The precedent exists at FUTA. The opportunity is identical here, possibly bigger. Awka is the commercial hub of South-East Nigeria, and UNIZIK is its flagship university.
 
+If this email should reach your CSR or sponsorships team specifically, I would appreciate being directed to the right contact.
+
 Full partnership deck and tier details are attached.
 
 Best regards,
@@ -504,7 +583,9 @@ What a First Bank partnership includes:
 
 First Bank's CSR arm funds education and technology initiatives regularly. This checks every box: youth engagement, tech empowerment, and direct customer acquisition in one package.
 
-Partnership deck attached.
+If there is a more appropriate contact within First Bank for sponsorship discussions, please kindly direct us accordingly.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck.
 
 Best regards,
 Donald Anyamba
@@ -538,7 +619,9 @@ Second, the **UBA Foundation education angle**. Sponsor a "UBA Foundation Cloud 
 
 Also available: campus banking activation booth, logo placement across all materials, and stage recognition at both events.
 
-Full details in the attached deck.
+Should this reach a different team within UBA, we would appreciate being pointed in the right direction.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck.
 
 Best regards,
 Donald Anyamba
@@ -570,6 +653,8 @@ What's on the table:
 - **"Access Bank Digital Innovation Prize"** for build sprint winners. Cash prize, branded certificate, and a story for Access Bank's sustainability report.
 - Logo placement on all event materials, social media, and livestream.
 - Stage recognition at both events.
+
+If we should be speaking with a different contact at Access Bank, please let us know.
 
 Attached is the full partnership deck with tier options and benefits.
 
@@ -607,7 +692,9 @@ What I'm proposing:
 
 The FUTA pitch gave you context on what AWS Student Builder Groups are. This one gives you a second campus to plant the flag. And since Awka is a major commercial city, the SME angle is even stronger here.
 
-Deck attached.
+If this should reach a different team at Providus Unity Bank, please kindly forward this along.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck.
 
 Best regards,
 Donald Anyamba
@@ -638,7 +725,9 @@ What makes this different from a random campus event:
 
 Also available: logo placement, stage time, direct recruiting access to top performers.
 
-Partnership deck attached with all the details.
+If there's someone on your developer relations or partnerships team who'd be better for this discussion, I'd appreciate the connection.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck.
 
 Best,
 Donald Anyamba
@@ -801,7 +890,9 @@ Here's the pitch:
 
 I'll also mention this: Bumpa's founder is Igbo. Our students are Igbo. UNIZIK is in Anambra. There's a cultural connection here that matters. Supporting a tech event at a South-Eastern university isn't just business, it's home.
 
-Deck attached with full details.
+If you're not the right person for this, I'd really appreciate it if you could point us to whoever handles partnerships at Bumpa.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck.
 
 Best,
 Donald Anyamba
@@ -904,7 +995,375 @@ I run the AWS Student Builder Group at UNIZIK Awka, backed by Amazon Web Service
 
 Our students are actively learning cloud computing and need supplementary study tools. Distributing free trial codes to 700 tech-motivated students is about as efficient as user acquisition gets.
 
-In return: logo placement, booth space, and a social media shoutout. Deck attached if you want the full picture.
+In return: logo placement, booth space, and a social media shoutout. Attached: our AWS affiliation letter, partnership overview, and the full deck if you want the full picture.
+
+Best,
+Donald Anyamba
+AWS Student Builder Group Leader, UNIZIK Awka
+donaldraph.dev@gmail.com | +234 704 979 1307
+linkedin.com/in/donaldraph
+
+---
+
+---
+
+# NEW ADDITIONS - MEDIA, COMMUNITY & ADDITIONAL PARTNERS (#30-39)
+
+---
+
+### 30. She Code Africa (Community Partner)
+
+**Send to:** partnerships@shecodeafrica.org (or DM via Twitter/LinkedIn: @SheCodeAfrica)
+**Subject:** Let's Put a Laptop in a Female Builder's Hands at UNIZIK - She Code Africa x AWS SBG
+
+Hi SCA team,
+
+I'll skip the pleasantries and go straight to the point. We have female builders at UNIZIK who are serious. They show up to our AWS sessions, they write code, they ship projects, and they do it in an environment where being a woman in tech still means constantly proving you belong.
+
+I run the **AWS Student Builder Group at UNIZIK Awka**, backed by Amazon Web Services. We're hosting:
+
+- **AWS re:Invent Watch & Build Party** (Dec 4, 2026) - 500+ attendees
+- **AWS Student Community Day Awka** (Q1 2027) - 700+ attendees, first-ever AWS Student Community event in Awka
+
+Here's what I want to propose. It's not a cash ask.
+
+I want to create the **"She Code Africa Builder Award"** at our Student Community Day. One outstanding female builder in our community gets recognized on stage with a laptop, cloud credits, a mentorship package, or whatever form you think hits hardest. Presented by a She Code Africa representative who also gets a speaking slot to talk about what SCA is building across Africa.
+
+The story practically writes itself. A young woman in Awka, backed by the largest women-in-tech community on the continent, getting the tools she needs to build something real. That's the kind of moment people share.
+
+What we offer in return: logo on all event materials, full social media coverage, dedicated stage time, and a named award that puts SCA front and center.
+
+If this doesn't land on the right desk, I'd appreciate it if you could pass it along to whoever handles community partnerships at SCA.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck.
+
+We share the same mission. Let's make something happen.
+
+Best,
+Donald Anyamba
+AWS Student Builder Group Leader, UNIZIK Awka
+donaldraph.dev@gmail.com | +234 704 979 1307
+linkedin.com/in/donaldraph
+
+---
+
+### 31. TechCabal (Media Partner)
+
+**Send to:** editorial@bigcabal.com (or DM via Twitter/LinkedIn: @TechCabal)
+**Subject:** First AWS Student Community Event in Awka - 1,200 Students, and It's Never Been Covered
+
+Hi TechCabal team,
+
+Here's a story nobody's told yet: students at a university in Awka, Anambra State, backed by Amazon Web Services, are building cloud computing skills and hosting events that pull 500+ people. No VC money. No Lagos address. Just students who decided to build.
+
+I lead the **AWS Student Builder Group at UNIZIK**, and we're running two events this session:
+
+- **AWS re:Invent Watch & Build Party** (Dec 4, 2026) - 500+ students livestreaming the biggest cloud conference in the world from Awka
+- **AWS Student Community Day Awka** (Q1 2027) - 700+ attendees, dual-track workshops, hackathon, panel discussions
+
+This is the first AWS Student Community event in Awka. Period. And there's a real narrative here about tech talent growing outside the Lagos-Abuja corridor that your readers care about.
+
+What I'm proposing is a **media partnership**:
+
+- **Pre-event feature** on TechCabal covering the AWS SBG movement at UNIZIK
+- **Live event coverage** or a post-event write-up
+- In return: a media booth at both events, exclusive interview access with speakers and attendees, logo on all materials as "Official Media Partner," and first access to our post-event impact data
+
+No cash changes hands. You get a story; we get the reach.
+
+If this sits better with someone else on your team, I'd be grateful if you could point me their way.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck for context.
+
+Best,
+Donald Anyamba
+AWS Student Builder Group Leader, UNIZIK Awka
+donaldraph.dev@gmail.com | +234 704 979 1307
+linkedin.com/in/donaldraph
+
+---
+
+### 32. TechPoint Africa (Media Partner)
+
+**Send to:** info@techpoint.africa (or DM via Twitter/LinkedIn: @TechPointAfrica)
+**Subject:** 700 Student Builders in Awka, Backed by AWS - Somebody Should Be Writing About This
+
+Hi TechPoint team,
+
+If I told you there's a student community in Anambra State running events that pull 500-700 people, backed by Amazon Web Services grants, with members actively building and deploying cloud applications, would you believe it came from UNIZIK?
+
+That's exactly what's happening.
+
+I'm Donald, and I lead the **AWS Student Builder Group at UNIZIK Awka**. We have two flagship events this session:
+
+- **AWS re:Invent Watch & Build Party** (Dec 4, 2026) - 500+ students
+- **AWS Student Community Day Awka** (Q1 2027) - 700+ attendees, first AWS Student Community event in Awka
+
+TechPoint covers the stories that show where Nigerian tech is actually going, not just where it already is. This is one of those stories. The South-East is producing builders, and nobody's paying attention yet.
+
+I'd love to have TechPoint come on as a **media partner**:
+
+- Pre-event or post-event coverage on TechPoint Africa
+- Media booth and exclusive access at both events
+- Your logo on all materials as "Media Partner"
+- First access to event data, attendee demographics, and impact numbers
+
+This isn't a paid arrangement. You get a compelling narrative about tech ecosystem growth outside Lagos; we get credibility and reach.
+
+If there's someone specific who handles media partnerships or event coverage at TechPoint, I'd appreciate being pointed in their direction.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck.
+
+Best,
+Donald Anyamba
+AWS Student Builder Group Leader, UNIZIK Awka
+donaldraph.dev@gmail.com | +234 704 979 1307
+linkedin.com/in/donaldraph
+
+---
+
+### 33. Andela (Talent Partner)
+
+**Send to:** Via LinkedIn InMail (search "Andela Talent Partnerships" or "Andela University Relations")
+**Subject:** 500+ Student Developers in One Room at UNIZIK - Andela Should Be the First to Meet Them
+
+Hi Andela team,
+
+You spend money finding developers. We have a room full of them.
+
+I run the **AWS Student Builder Group at UNIZIK Awka**, backed by Amazon Web Services. Our members are learning cloud computing, building full-stack applications, and studying for AWS certifications. These are the students who will be applying to Andela in 12-18 months. But you could meet them now, before anyone else does.
+
+We're hosting:
+
+- **AWS re:Invent Watch & Build Party** (Dec 4, 2026) - 500+ attendees
+- **AWS Student Community Day Awka** (Q1 2027) - 700+ attendees, hackathon, workshops, project showcases
+
+Here's what a **talent partnership** looks like:
+
+- **"Best Builder" prize** sponsored by Andela. The winner gets a fast-track interview, mentorship session, or Andela swag bundle. Your name on the award that every developer in the room wants to win.
+- **Recruitment booth** at both events. Talk directly to students, collect CVs, show them what an Andela career path looks like.
+- **Speaking slot** to talk about what Andela looks for in developers and how students can prepare.
+- Logo across all event materials and social channels.
+
+Your business model is literally connecting African developers with global opportunities. We're producing those developers. The math is simple.
+
+If you're not the right person for this, I'd really appreciate a nudge toward whoever handles university partnerships or talent sourcing at Andela.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck.
+
+Best,
+Donald Anyamba
+AWS Student Builder Group Leader, UNIZIK Awka
+donaldraph.dev@gmail.com | +234 704 979 1307
+linkedin.com/in/donaldraph
+
+---
+
+### 34. ALX Africa (Training Partner)
+
+**Send to:** Via LinkedIn InMail (search "ALX Africa Partnerships" or "ALX Community Manager Nigeria")
+**Subject:** 700 Students at UNIZIK Already Learning AWS - ALX Should Be the Next Step in Their Pipeline
+
+Hi ALX team,
+
+Your students come from somewhere. Before they apply to ALX, they're at universities learning the fundamentals. And right now, at UNIZIK Awka, a group of students backed by Amazon Web Services is already ahead of the curve.
+
+I lead the **AWS Student Builder Group at UNIZIK**. Our members have 12 months of premium AWS Skill Builder access, they build with cloud tools regularly, and they're exactly the profile that thrives at ALX. We're hosting:
+
+- **AWS re:Invent Watch & Build Party** (Dec 4, 2026) - 500+ attendees
+- **AWS Student Community Day Awka** (Q1 2027) - 700+ attendees, dual-track workshops, hackathon
+
+I'd love to explore a **training partnership**:
+
+- **Co-sponsor a workshop track** at SCD. ALX runs a session on career readiness, software engineering fundamentals, or whatever aligns with your current programs.
+- **ALX scholarships as prizes.** Free enrollment or course access for top performers at the hackathon. That's direct pipeline into your programs.
+- **Branded presence** at both events. Logo on materials, booth space, social media coverage.
+
+We're both building the next generation of African tech talent. The difference is we're doing it at the university level and you're doing it at the career level. A handshake between those two stages just makes sense.
+
+If there's someone else at ALX who'd be better for this conversation, I'd appreciate the introduction.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck.
+
+Best,
+Donald Anyamba
+AWS Student Builder Group Leader, UNIZIK Awka
+donaldraph.dev@gmail.com | +234 704 979 1307
+linkedin.com/in/donaldraph
+
+---
+
+### 35. Mono (Fintech API Sponsor)
+
+**Send to:** Via LinkedIn InMail (search "Mono Developer Relations" or "Mono Partnerships")
+**Subject:** 500 Student Developers at UNIZIK Need a Financial API to Build With - Mono Fits Perfectly
+
+Hi Mono team,
+
+Every fintech app needs financial data. Every developer building a fintech app needs to learn how to pull that data. And at UNIZIK Awka, we have 500+ students building applications and learning cloud computing skills, most of whom have never integrated a financial API.
+
+I run the **AWS Student Builder Group at UNIZIK**, backed by Amazon Web Services. We're hosting:
+
+- **AWS re:Invent Watch & Build Party** (Dec 4, 2026) - 500+ attendees
+- **AWS Student Community Day Awka** (Q1 2027) - 700+ attendees, full-day conference with workshops and a hackathon
+
+Here's the pitch:
+
+- **"Build with Mono" hackathon challenge** at the SCD. Students integrate Mono's API into their projects. You get dozens of new developers who now know your platform and default to it when they build their startups.
+- **Developer workshop slot:** "Connecting to Bank Data in 20 Minutes with Mono." Hands-on, practical, and every student walks out knowing your API.
+- Cash sponsorship at the Silver or Gold tier, or in-kind developer credits for hackathon teams.
+- Logo on all event materials, booth space, and social media coverage.
+
+Your developer community is how you win long-term. These are the builders who will choose Mono when they ship their own products.
+
+If I've reached the wrong inbox, could you point me to the developer relations or partnerships team? Would really appreciate it.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck.
+
+Best,
+Donald Anyamba
+AWS Student Builder Group Leader, UNIZIK Awka
+donaldraph.dev@gmail.com | +234 704 979 1307
+linkedin.com/in/donaldraph
+
+---
+
+### 36. Termii (Communications API Sponsor)
+
+**Send to:** Via LinkedIn InMail (search "Termii Developer Relations" or "Termii Partnerships") or hello@termii.com
+**Subject:** 500+ Student Developers Building Apps at UNIZIK - Every One of Them Needs a Messaging API
+
+Hi Termii team,
+
+Here's something every student developer hits eventually: their app works, the UI is clean, the backend talks to the database. Then they realize they need to send an OTP to verify a user, or a transaction alert, or a notification. And they have no idea which messaging API to use.
+
+That's 500+ students at UNIZIK Awka, backed by Amazon Web Services, all building real applications. And the messaging API they learn first is the one they'll keep using.
+
+I lead the **AWS Student Builder Group at UNIZIK**, and we're hosting:
+
+- **AWS re:Invent Watch & Build Party** (Dec 4, 2026) - 500+ attendees
+- **AWS Student Community Day Awka** (Q1 2027) - 700+ attendees, hackathon, workshops, project showcases
+
+What I'm proposing:
+
+- **API credits for hackathon teams.** Every team gets Termii sandbox credits to add real messaging features to their projects. SMS verification, email alerts, the works.
+- **Developer workshop**: "Add SMS Verification to Your App in 15 Minutes." Short, practical, high-conversion.
+- Cash sponsorship or in-kind (API credits + swag). We're flexible.
+- Logo on all materials, booth space, social channels.
+
+The developers who integrate your API today are the CTOs choosing their messaging stack in 3 years. That's the pipeline.
+
+If this needs to get to a specific person on your side, I'd appreciate being pointed in the right direction.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck.
+
+Best,
+Donald Anyamba
+AWS Student Builder Group Leader, UNIZIK Awka
+donaldraph.dev@gmail.com | +234 704 979 1307
+linkedin.com/in/donaldraph
+
+---
+
+### 37. GTCO / Guaranty Trust Bank (Bank Sponsor)
+
+**Send to:** Via LinkedIn InMail (search "GTCO Sponsorships" or "GTBank Brand Marketing") or visit GT Awka branch
+**Subject:** GTBank Already Invests in Tech Events - Here's the One Happening 30 Minutes From Your Awka Branch
+
+Hi GTCO team,
+
+You already run one of the biggest tech-meets-culture events in Nigeria with GTBank Food and Drink Festival. You sponsor tech initiatives. You understand that showing up where tech talent gathers is how you stay relevant with the next generation.
+
+So here's one you might not know about yet.
+
+I lead the **AWS Student Builder Group at UNIZIK Awka**, backed by Amazon Web Services. We're hosting:
+
+- **AWS re:Invent Watch & Build Party** (Dec 4, 2026) - 500+ attendees, UNIZIK Auditorium
+- **AWS Student Community Day Awka** (Q1 2027) - 700+ attendees, full-day tech conference
+
+UNIZIK has 36,000+ students. Most of them are opening their first "real" bank accounts right now. A lot of them already have GTBank. But the ones who don't are making that decision soon, and whoever is in the room when 500+ students are having their best tech experience of the year gets remembered.
+
+Here's what a partnership looks like:
+
+- **GTBank activation booth** at both events. Account sign-ups, product demos, whatever your campus team wants to run.
+- Logo on all event materials, social media, and livestream graphics.
+- **Stage recognition** at opening and closing ceremonies.
+- **Talent access**: direct line to students building cloud computing skills, shipping projects, and learning high-demand career skills.
+
+This is a Bronze or Silver conversation. Attached: our AWS affiliation letter, partnership overview, and the full deck.
+
+If there's someone on the sponsorships or campus marketing team this should go to, I'd appreciate the redirect.
+
+Best,
+Donald Anyamba
+AWS Student Builder Group Leader, UNIZIK Awka
+donaldraph.dev@gmail.com | +234 704 979 1307
+linkedin.com/in/donaldraph
+
+---
+
+### 38. Innoson Group (Anambra Local / In-Kind)
+
+**Send to:** Via formal letter to Innoson Vehicle Manufacturing HQ, Nnewi + LinkedIn DM (search "Innoson Group CSR" or "Innoson Communications")
+**Subject:** Anambra's Biggest Manufacturer x Anambra's Sharpest Tech Students - A Partnership That Makes Sense
+
+Dear Innoson team,
+
+Innoson proved that world-class manufacturing can happen in Anambra State. We're trying to prove the same thing for technology.
+
+I lead the **AWS Student Builder Group at Nnamdi Azikiwe University**, backed by Amazon Web Services. We're the official student cloud computing and builder community on campus in Awka. We're hosting:
+
+- **AWS re:Invent Watch & Build Party** (Dec 4, 2026) - 500+ students at UNIZIK Auditorium
+- **AWS Student Community Day Awka** (Q1 2027) - 700+ attendees, first-ever AWS Student Community event in Awka
+
+Here's why this matters to Innoson: the future of manufacturing is software. IoT, automation, data analytics, cloud infrastructure. The students in our community are learning exactly those skills. The engineers of tomorrow who could help Innoson build smarter vehicles and smarter factories are sitting in this room.
+
+What I'm proposing:
+
+- **Logistics/transport partnership**: help with speaker transport or event logistics. "Transportation by Innoson" is a powerful statement at a tech event.
+- Or a **general sponsorship** that positions Innoson as a company investing in Anambra's tech future. Logo on all materials, stage recognition, social media coverage.
+- Direct access to students studying engineering, computer science, and applied technology.
+
+This is Anambra investing in Anambra. That's the message.
+
+If this should reach someone specific in your CSR or communications department, I'd be very grateful for the connection.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck.
+
+Best,
+Donald Anyamba
+AWS Student Builder Group Leader, UNIZIK Awka
+donaldraph.dev@gmail.com | +234 704 979 1307
+linkedin.com/in/donaldraph
+
+---
+
+### 39. Laptop.ng / Slot Systems (Device Partner)
+
+**Send to:** Via LinkedIn InMail (search "Slot Systems Marketing" or "Laptop.ng Partnerships") or visit nearest Slot outlet in Awka
+**Subject:** We Need 2-3 Laptops as Prizes for 1,200 Students - Your Logo Gets Announced From Stage
+
+Hi Slot / Laptop.ng team,
+
+Nothing says "we invest in builders" like actually putting a laptop in a builder's hands. And I mean that literally.
+
+I lead the **AWS Student Builder Group at UNIZIK Awka**, backed by Amazon Web Services. We're hosting two major tech events:
+
+- **AWS re:Invent Watch & Build Party** (Dec 4, 2026) - 500+ attendees
+- **AWS Student Community Day Awka** (Q1 2027) - 700+ attendees, hackathon, project showcases, workshops
+
+We're looking for a **device partner** to provide 2-3 laptops as prizes for our hackathon winners and "Builder of the Year" award. Here's what you get in return:
+
+- **Stage announcement**: "This laptop is provided by Slot/Laptop.ng." Every person in the room hears your name at the most exciting moment of the event.
+- **Logo on all event materials**, including banners, digital screens, and social media.
+- **Booth space** at both events. Direct sales to 500+ students who are learning high-income tech skills. These are people who will buy laptops. Probably soon.
+- **Social media feature**: photos of the winner holding their new laptop with your branding visible. That content gets shared.
+
+Here's the math: 2-3 laptops in exchange for your brand in front of 1,200+ tech-focused students across two events, stage time, booth access, and social proof. That's a good trade.
+
+If this needs to reach your marketing or partnerships team specifically, I'd appreciate the pointer.
+
+Attached: our AWS affiliation letter, partnership overview, and the full deck.
 
 Best,
 Donald Anyamba

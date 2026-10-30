@@ -122,6 +122,18 @@ Companies with direct presence or commercial interest in Awka, Anambra State, an
 
 ---
 
+## A9. Innoson Group
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | "Proudly Made in Nigeria" |
+| **Overview & Core Users** | Innoson Vehicle Manufacturing (IVM) is Nigeria's first and largest indigenous automobile manufacturer, headquartered in Nnewi, Anambra State. Founded by Chief Innocent Chukwuma (1961-2022), the group also operates Innoson Technical & Industrial Company (plastic/rubber manufacturing), Innoson Kiara Academy, and Innoson Group Foundation. They produce SUVs, buses, pickups, and ambulances. The Nnewi factory employs over 7,000 workers. |
+| **Value Alignment** | Innoson is the biggest brand to come out of Anambra State. Period. Their "Made in Nigeria" story resonates with the AWS Student Builder Group's mission of building local capacity with global tools. Innoson needs tech talent for their digital transformation (fleet management systems, dealer portals, supply chain software) and this event puts 500+ future engineers in one room. The cultural angle is strong: an Nnewi-rooted company sponsoring a UNIZIK tech event is community investing in community. Offer them the "Innoson Innovation Award" for the best hardware/IoT project at SCD. |
+| **Outreach Channels** | In-person: Visit Innoson factory/office in Nnewi (30 min from Awka). Website: innosonvehicles.com. Email: info@innosonvehicles.com (general). LinkedIn: Search for Innoson Group CSR or Marketing Manager. Ask Nnewi/Awka business networks for a warm intro to management. |
+| **Suggested Tier** | **Diamond Partner** or **Gold Partner** (cash sponsorship + vehicle branding at venue) |
+
+---
+
 # POOL B - PAN-NIGERIAN TECH / CONSUMER BRANDS
 
 Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-student ecosystem represents an under-penetrated but high-value acquisition channel in South-East Nigeria. These companies have formal partnership/sponsorship processes.
@@ -308,6 +320,78 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 
 ---
 
+## B16. Arthurite Integrated
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | AWS Select Partner, cloud solutions for Africa |
+| **Overview & Core Users** | Arthurite Integrated is an AWS Select Partner based in Lagos (No 2 Nnobi Street, Kilo Surulere). They deliver cloud migration, managed services, custom application development, AI acceleration, and cost optimization. Their product portfolio includes Green Eats (serverless food ordering), Hive, Reportlee, and TavernCentral. CEO is Somtochukwu Ezepue (R.Eng, PMP, MBA, AWS certified). Team of 11-50 employees. They also run community events like the "One With AI 2026" summit. |
+| **Value Alignment** | This is the single most natural sponsor on the entire list. Arthurite is an AWS partner that builds on AWS, hires people who know AWS, and needs a steady pipeline of AWS-certified talent. The AWS Student Builder Group at UNIZIK is literally manufacturing their future workforce. Sponsoring the re:Invent Watch Party and SCD gives Arthurite direct access to 500-700 students already learning the exact stack they build on. Offer them: a recruitment booth, a "Build on AWS with Arthurite" workshop track at SCD, internship pipeline access, and a hackathon judging seat. The CEO is Igbo (Somtochukwu Ezepue), so there is a direct cultural connection to UNIZIK and the South-East tech ecosystem they should want to invest in. |
+| **Outreach Channels** | Email: info@arthuriteintegrated.com. Website: arthuriteintegrated.com. LinkedIn: @arthurite-integrated (DM CEO Somtochukwu Ezepue directly). Twitter/X: @Arthurite_IX. Instagram: @arthuriteintegrated. |
+| **Suggested Tier** | **Gold Partner** or **Silver Partner** (cash sponsorship + recruitment/internship pipeline access) |
+
+---
+
+## B17. Mono
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | "The API infrastructure for African fintech" |
+| **Overview & Core Users** | Mono provides APIs that let businesses connect to their users' bank accounts for identity verification, account linking, payments, and financial data access. Think of them as Africa's Plaid. Their customers are fintech developers, lending platforms, and neobanks building on top of Nigerian banking rails. Backed by Y Combinator. |
+| **Value Alignment** | Mono's entire growth depends on developer adoption. Every student who learns to integrate Mono's APIs during a build sprint at the re:Invent Watch Party is a future implementer at their fintech startup or employer. A "Connect a Bank Account with Mono + AWS Lambda" workshop track is a natural fit. For Mono, 500+ student developers in one room learning to build financial applications is the most efficient top-of-funnel acquisition channel. They've sponsored hackathons before. |
+| **Outreach Channels** | LinkedIn: @withmono (DM Head of Developer Relations or Partnerships). Twitter/X: @mono_hq. Website: mono.co. Developer portal: docs.mono.co. No public email found; LinkedIn DM is the primary channel. |
+| **Suggested Tier** | **Silver Partner** or **Bronze Partner** (cash + API credits for hackathon teams) |
+
+---
+
+## B18. Termii
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | "Communications infrastructure for businesses" |
+| **Overview & Core Users** | Termii provides messaging APIs (SMS, WhatsApp, voice, email) for businesses to reach customers. Their products include OTP verification, bulk messaging, and customer engagement tools. Used by 10,000+ businesses across Africa. HQ in Lagos. |
+| **Value Alignment** | Every app students build needs user verification and messaging. Termii's APIs are the Nigerian-optimized alternative to Twilio. A workshop on "Add OTP Verification to Your App with Termii + AWS" gives students a practical skill while seeding Termii adoption. Their developer community programs and event sponsorship history (they've backed African tech events before) make them a warm lead. The ask: API credits for hackathon teams + a developer evangelism talk. |
+| **Outreach Channels** | Email: support@termii.com (general), ada.obi@termii.ai (verified from website). LinkedIn: @termii-networks. Instagram: @termii_network. Website: termii.com. Developer docs: developer.termii.com. |
+| **Suggested Tier** | **Silver Partner** or **Bronze Partner** (cash + API credits) |
+
+---
+
+## B19. Andela
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | "Brilliance is evenly distributed" |
+| **Overview & Core Users** | Andela is a global talent marketplace connecting companies with vetted software engineers across Africa. Originally started in Lagos in 2014, they've expanded to 100+ countries. They train, vet, and place African developers with international companies. Their alumni network is one of the strongest in African tech. |
+| **Value Alignment** | Andela is where UNIZIK students want to end up. The AWS Student Builder Group is literally building the talent pipeline that Andela needs. Sponsoring the SCD gives Andela early access to 500+ student developers who are already learning cloud skills. Offer them: a recruitment/talent showcase booth, a "Career in Global Tech" panel session, and first-look access to student portfolios. For students, Andela's presence validates that the skills they're learning have real market value. This is a talent pipeline play, not a brand awareness play. |
+| **Outreach Channels** | LinkedIn: @andela (DM Head of Talent Partnerships or Community). Twitter: @thisisandela. Instagram: @thisisandela. Facebook: @thisisandela. Website: andela.com. No public partnership email found; LinkedIn is the primary channel. |
+| **Suggested Tier** | **Silver Partner** or **In-Kind** (mentorship, interview prep sessions, talent pipeline access) |
+
+---
+
+## B20. ALX Africa
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | "Transforming potential into impact" |
+| **Overview & Core Users** | ALX Africa (part of Sand Technologies/ALX Ventures) offers tech training programs including a 12-month Software Engineering Programme, Data Science, and AI training. They've trained 100,000+ learners across Africa. Their model: rigorous project-based learning with peer collaboration, targeting young Africans entering tech careers. |
+| **Value Alignment** | ALX and the AWS Student Builder Group share the same mission - turning students into industry-ready tech professionals. ALX wants sign-ups for their next cohort. UNIZIK has 500+ students hungry for structured tech training. A sponsorship activation could include: an ALX program showcase booth, a "From Student to Software Engineer" talk by an ALX alumnus, and application fee waivers as prizes. For ALX, the conversion rate in a room of students who just spent a day building on AWS is significantly higher than cold outreach. |
+| **Outreach Channels** | LinkedIn: @alxafrica (DM Head of Partnerships or Community Lead). Twitter: @alaborehie. Instagram: @alx_africa. Facebook: @alxafrica. Website: alxafrica.com. No public email found; LinkedIn/social DM is the primary channel. |
+| **Suggested Tier** | **Bronze Partner** or **In-Kind** (training scholarships as prizes, mentorship sessions) |
+
+---
+
+## B21. Slot Systems (Slot.ng)
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | "Nigeria's leading retail technology company" |
+| **Overview & Core Users** | Slot Systems Limited is Nigeria's largest chain of phone and laptop retail stores with 50+ outlets nationwide. They sell phones, laptops, tablets, and accessories from all major brands. Founded by Nnamdi Ezeigbo. They are the go-to store for Nigerian students buying devices. |
+| **Value Alignment** | Every student builder needs a device. Slot is where most of them buy their laptops and phones. Sponsoring the re:Invent Watch Party and SCD with devices as prizes creates massive goodwill and social media buzz. Imagine: "Hackathon winners get a brand new laptop from Slot." That's the kind of prize that gets shared 10,000 times on social media. Slot gets their logo on stage, in every post-event photo, and on the lips of every student who watched someone win a laptop. For Slot, the cost of 2-3 laptops (₦300,000-₦500,000) is a fraction of their campus marketing budget. |
+| **Outreach Channels** | Email: info@slot.ng (general), order@slot.ng (sales). LinkedIn: @slot-systems-limited. Instagram: @slotlimited. Facebook: @slotlimited. Website: slot.ng. In-person: Visit Slot store in Awka or Onitsha. |
+| **Suggested Tier** | **Gold Partner** or **Silver Partner** (In-Kind: laptops and devices as hackathon prizes + exhibition booth) |
+
+---
+
 # POOL C - ANAMBRA-ROOTED PARTNERS & TRADITIONAL BANKS
 
 Companies with deep roots in Anambra State, South-East Nigeria, or the traditional banking sector - targeting CSR budgets, youth empowerment mandates, and community goodwill.
@@ -399,6 +483,60 @@ Companies with deep roots in Anambra State, South-East Nigeria, or the tradition
 
 ---
 
+## C8. GTCO / Guaranty Trust Bank
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | "Guaranty Trust - Habari" |
+| **Overview & Core Users** | Guaranty Trust Holding Company (GTCO) operates GTBank, one of Nigeria's largest and most digitally progressive banks. They pioneered internet and mobile banking adoption in Nigeria. GTBank runs the annual GTBank Fashion Weekend and, more relevantly, the GTBank Tech Festival (now Habari by GTBank), which showcases innovation and technology. They have branches in Awka serving UNIZIK students. |
+| **Value Alignment** | GTBank is the most innovation-forward bank in Nigeria. They literally run their own tech festival. Sponsoring an AWS Student Community Day is a natural extension of their "tech-first" brand positioning. GTBank's campus banking team competes for student accounts at UNIZIK. An AWS event gives them a premium activation environment: "Open a GTBank account, get AWS sticker swag" is a simple, high-conversion loop. Their Habari platform (music, food, fashion, tech) gives them a cultural marketing angle too. The ask is straightforward: cash sponsorship + campus banking activation booth + co-branded swag. |
+| **Outreach Channels** | Email: gtconnect@gtbank.com (customer service). Website: gtbank.com. Awka branch: Visit GTBank Awka on Zik Avenue for Branch Manager intro. LinkedIn: @gtbank (Target Head of Digital/Innovation, CSR Manager, or Youth Banking Lead). Twitter: @gtbank. Instagram: @gtbank. Facebook: @gtbank. |
+| **Suggested Tier** | **Diamond Partner** or **Gold Partner** |
+
+---
+
+# POOL D - MEDIA & COMMUNITY PARTNERS
+
+Non-cash partnerships focused on event coverage, community building, and social impact. These partners provide visibility, mentorship, and audience amplification rather than direct financial sponsorship.
+
+---
+
+## D1. She Code Africa
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | "Celebrating and empowering young girls and women in tech across Africa" |
+| **Overview & Core Users** | She Code Africa (SCA) is a non-profit organization focused on celebrating and empowering young girls and women in technology across Africa. They run bootcamps, mentorship programs, hackathons, and community chapters at universities. Their community spans 50+ chapters across African countries. Founded by Ada Nduka Oyom. |
+| **Value Alignment** | This is not a cash sponsorship. This is a community partnership with a specific, high-impact ask: sponsor one female builder in the UNIZIK AWS Student Builder Group with a laptop, cloud credits, or a mentorship package. Present it on stage as the "She Code Africa Builder Award." This does three things: (1) gives SCA visibility at a major AWS-backed event in the South-East, (2) makes the event feel special for female builders in the community, and (3) creates the kind of story that gets shared online for weeks. SCA may also send a speaker or panelist. |
+| **Outreach Channels** | Website: shecodeafrica.org. Twitter/X: @SheCodeAfrica. LinkedIn: @shecodeafrica. Instagram: @shecodeafrica. Email: info@shecodeafrica.org (widely cited). DM Ada Nduka Oyom directly on LinkedIn or Twitter. |
+| **Suggested Tier** | **Community Partner** (no cash; In-Kind: laptop/mentorship for one female builder + speaker slot) |
+
+---
+
+## D2. TechCabal
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | "Africa's leading technology media company" |
+| **Overview & Core Users** | TechCabal (a Big Cabal Media publication) is Africa's leading technology news platform, covering startups, policy, funding, and the business of technology across the continent. Their audience is tech founders, investors, developers, and decision-makers across Africa and the diaspora. They also run TC Daily (newsletter) and the Moonshot conference. |
+| **Value Alignment** | TechCabal doesn't pay you. You don't pay them. They cover the event, and you give them exclusive access. A TechCabal article about "The First AWS Student Community Day in Awka" reaches every tech founder, investor, and hiring manager in their readership. That's the kind of visibility money can't buy. Offer them: a media booth, exclusive interview access with speakers and organizers, early photo access, and a quote from the AWS SBG team for their article. Their audience is exactly the kind of people who'd see UNIZIK's event and think "these students are serious." |
+| **Outreach Channels** | Email: toads@bigcabal.com (verified from site - Big Cabal Media). LinkedIn: @techcabal. Instagram: @techcabal. Facebook: @TechCabal. Twitter/X: @TechCabal. Website: techcabal.com. DM editorial team via Twitter or LinkedIn. |
+| **Suggested Tier** | **Media Partner** (no cash; In-Kind: event coverage, articles, social amplification in exchange for media booth + exclusive access) |
+
+---
+
+## D3. TechPoint Africa
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | "Africa's foremost tech media platform" |
+| **Overview & Core Users** | TechPoint Africa covers technology news, startups, and innovation across Africa. They run Techpoint Inspired (newsletter) and the annual Techpoint Build conference. Their audience overlaps with TechCabal's but skews slightly more toward the builder/developer community. Having two media partners doubles coverage and creates a sense of event significance. |
+| **Value Alignment** | Same model as TechCabal, different audience segment. TechPoint Africa's coverage of an AWS student event in the South-East validates the growing tech ecosystem outside Lagos. Offer them: media booth, exclusive interviews, early content access. Two media partners is better than one because it creates an "everybody's talking about it" effect. If both TechCabal and TechPoint cover the event, it signals to sponsors and future partners that the UNIZIK AWS SBG is the real deal. |
+| **Outreach Channels** | Website: techpoint.africa. Twitter/X: @TechpointAfrica. LinkedIn: @techpoint-africa. Email: hello@techpoint.africa (widely cited). DM editorial team on Twitter or LinkedIn. |
+| **Suggested Tier** | **Media Partner** (no cash; In-Kind: event coverage, articles, social amplification in exchange for media booth + exclusive access) |
+
+---
+
 # PROSPECT PRIORITY MATRIX
 
 Based on alignment strength, budget likelihood, and outreach warmth:
@@ -433,6 +571,17 @@ Based on alignment strength, budget likelihood, and outreach warmth:
 | 26 | **Bookstores/EdTech** | Book prizes, study material packs | In-Kind / Bronze | Single Event |
 | 27 | **Nutanix** | Hybrid cloud education angle, training credits, Community Edition licenses, complements AWS | Silver / Bronze | Single Event (SCD) |
 | 28 | **Lovebite Bread** | Awka-local bakery, bread for event catering, low-cost brand exposure to 1,200+ students | In-Kind | Dual Event |
+| 29 | **Arthurite Integrated** | AWS Select Partner, direct talent pipeline, Igbo CEO, cloud services company that hires AWS-trained devs | Gold / Silver | Dual Event |
+| 30 | **Innoson Group** | Biggest Anambra brand, Nnewi-based manufacturer, community pride angle, needs tech talent for digital transformation | Diamond / Gold | Dual Event |
+| 31 | **GTCO / GTBank** | Most innovation-forward Nigerian bank, runs their own tech festival (Habari), campus banking competition | Diamond / Gold | Dual Event |
+| 32 | **Slot Systems** | Nigeria's largest device retail chain, laptops as hackathon prizes creates massive social buzz | Gold / Silver | Dual Event |
+| 33 | **Mono** | Fintech API infrastructure (Africa's Plaid), developer adoption play, Y Combinator backed | Silver / Bronze | Single Event (SCD) |
+| 34 | **Termii** | Communications API, developer adoption play, API credits for hackathon teams | Silver / Bronze | Single Event (SCD) |
+| 35 | **Andela** | Global talent marketplace, talent pipeline access, recruitment booth, career panel speaker | Silver / In-Kind | Single Event (SCD) |
+| 36 | **ALX Africa** | Tech training org, next-cohort sign-ups, training scholarships as prizes | Bronze / In-Kind | Single Event |
+| 37 | **She Code Africa** | Community partner, "She Code Africa Builder Award" for one female builder (laptop/mentorship) | Community Partner | Dual Event |
+| 38 | **TechCabal** | Africa's leading tech media, event coverage and articles in exchange for media booth + exclusive access | Media Partner | Dual Event |
+| 39 | **TechPoint Africa** | Second major tech media outlet, doubles coverage, validates event significance | Media Partner | Dual Event |
 
 ---
 

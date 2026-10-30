@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AWS Student Builder Group at UNIZIK — Partnership Deck</title>
+<title>AWS Student Builder Group at UNIZIK - Partnership Deck</title>
 <style>
   /* ── Amazon Ember Display ── */
   @font-face { font-family: 'Ember'; src: url('assets/fonts/AmazonEmberDisplay_Lt.ttf'); font-weight: 300; }
@@ -81,6 +81,30 @@
     background: var(--orange);
   }
 
+  /* ── Photos ── */
+  .photo-frame {
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,.08);
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* ── Two-column layout (text + photo side by side) ── */
+  .split-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-top: 24px;
+  }
+  .split-layout .text-col p { max-width: 100%; }
+
   /* ── Cards ── */
   .cards { display: grid; gap: 20px; margin-top: 28px; }
   .cards-2 { grid-template-columns: repeat(2, 1fr); }
@@ -104,7 +128,7 @@
   .card-icon svg { width: 100%; height: 100%; }
 
   /* ── Stats ── */
-  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 36px; }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin-top: 36px; }
   .stat-num {
     font-size: 3.2rem;
     font-weight: 900;
@@ -115,6 +139,35 @@
   }
   .stat-label { font-size: .9rem; color: var(--gray-lt); font-weight: 500; }
   .stat-sub { font-size: .78rem; color: var(--gray); }
+
+  /* ── Event info bar ── */
+  .event-info-bar {
+    margin-top: 40px;
+    padding: 20px 28px;
+    background: var(--dark-2);
+    border-top: 3px solid var(--orange);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .event-info-bar .info-item {
+    text-align: center;
+  }
+  .event-info-bar .info-label {
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 4px;
+  }
+  .event-info-bar .info-value {
+    font-size: .95rem;
+    font-weight: 700;
+    color: var(--white);
+  }
 
   /* ── Tables ── */
   .tier-table {
@@ -271,6 +324,7 @@
     .stats { grid-template-columns: repeat(2, 1fr); }
     .audience-grid { grid-template-columns: 1fr; }
     .contact-grid { grid-template-columns: 1fr; }
+    .split-layout { grid-template-columns: 1fr; }
   }
 
   /* ── Print ── */
@@ -282,7 +336,7 @@
       page-break-after: always;
       break-after: page;
     }
-    body, .slide, .card, .tier-table th, .audience-item, .contact-block, .del-table th {
+    body, .slide, .card, .tier-table th, .audience-item, .contact-block, .del-table th, .event-info-bar {
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
@@ -292,7 +346,7 @@
 <body>
 
 <!-- ════════════════════════════════════════════════════════
-     SLIDE 1 — TITLE
+     SLIDE 1 - TITLE
      ════════════════════════════════════════════════════════ -->
 <section class="slide" style="align-items:center; text-align:center;">
 
@@ -328,93 +382,25 @@
 </section>
 
 <!-- ════════════════════════════════════════════════════════
-     SLIDE 2 — ABOUT US
+     SLIDE 2 - WHO WE ARE
      ════════════════════════════════════════════════════════ -->
 <section class="slide">
-  <span class="slide-num">02 / 10</span>
+  <span class="slide-num">02 / 14</span>
 
-  <h2>We Build Cloud Skills <span class="accent">Together</span></h2>
-  <p style="margin-bottom:28px;">Most students hear "cloud computing" and think of weather apps. We fix that. The AWS Student Builder Group at UNIZIK is a student-run community where <strong style="color:var(--white);">36,000+ students</strong> finally get hands-on access to the same tools powering Netflix, Airbnb, and half the internet. We don't just talk about tech. We ship it.</p>
+  <h2>Who We <span class="accent">Are</span></h2>
 
-  <div class="cards cards-4">
-    <div class="card">
-      <div class="card-icon">
-        <svg viewBox="0 0 2580 3870" fill="none"><path d="M430 430H2150V0H2580V3870H2150V3440H430V3870H0V0H430V430ZM430 3010H2150V2150H430V3010ZM430 1720H2150V860H430V1720Z" fill="#FF9900"/></svg>
-      </div>
-      <h3>Study Circles</h3>
-      <p>Weekly sessions where we go from "what is a VPC?" to passing the Solutions Architect exam. Together.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">
-        <svg viewBox="0 0 4300 2150" fill="none"><path d="M1290 2150H430V1720H1290V2150ZM1720 860H4300V1290H3870V2150H3440V1290H3010V2150H2580V1290H1720V1720H1290V430H1720V860ZM430 1720H0V430H430V1720ZM1290 430H430V0H1290V430Z" fill="#AD5CFF"/></svg>
-      </div>
-      <h3>Workshops</h3>
-      <p>Serverless, AI/ML, containers. Not slides about them. Actual deployments on Builder Labs and SimuLearn.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">
-        <svg viewBox="0 0 2580 3870" fill="none"><path d="M2150 860H1720V1720H2580V2150H2150V2580H1720V3010H1290V3440H860V3870H430V3010H860V2150H0V1720H430V1290H860V860H1290V430H1720V0H2150V860Z" fill="#42B4FF"/></svg>
-      </div>
-      <h3>Hackathons</h3>
-      <p>Rapid build sprints where teams ship real projects in hours, not weeks.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">
-        <svg viewBox="0 0 5590 2580" fill="none"><path d="M1290 430H1720V860H3870V430H4300V0H5160V430H5590V860H4730V1720H5590V2150H5160V2580H4300V2150H3870V1720H1720V2150H1290V2580H430V2150H0V1720H860V860H0V430H430V0H1290V430Z" fill="#00E582"/></svg>
-      </div>
-      <h3>Cert Prep</h3>
-      <p>Practice tests, study groups, and vouchers for the top performers. Real credentials, not just vibes.</p>
-    </div>
-  </div>
+  <div class="split-layout">
+    <div class="text-col">
+      <p style="margin-bottom:14px;">The AWS Student Builders Group at Nnamdi Azikiwe University (AWS SBG UNIZIK) is the official, student-led cloud computing and builder community on campus in Awka, Anambra State, backed directly by Amazon Web Services (AWS).</p>
+      <p style="margin-bottom:14px;">We are part of a global network of AWS Student Builder Groups across universities worldwide. AWS funds us with grants, gives our members 12 months of premium Skill Builder access (Cloud Quest, SimuLearn, Builder Labs, Card Clash, AWS Jam), and connects us to a worldwide community of builders.</p>
+      <p>We don't just talk about tech. We ship it.</p>
 
-  <div style="margin-top:24px; padding:14px 20px; background:var(--dark-2); border-left:3px solid var(--orange); display:inline-block;">
-    <span style="font-size:.85rem; color:var(--gray-lt);">Backed by <strong style="color:var(--white);">12 months of AWS Skill Builder Premium</strong> (Cloud Quest, SimuLearn, Builder Labs, Card Clash, AWS Jam)</span>
-  </div>
-
-  <div class="slide-footer">
-    <svg viewBox="0 0 3000 3000" fill="none"><path d="M2333.33 3000H2000V2666.67H1666.67V3000H1333.33V2666.67H1000V3000H666.667V2333.33H2333.33V3000ZM666.667 2333.33H0V2000H333.333V1666.67H0V1333.33H333.333V1000H0V666.667H666.667V2333.33ZM3000 1000H2666.67V1333.33H3000V1666.67H2666.67V2000H3000V2333.33H2333.33V666.667H3000V1000ZM1000 333.333H1333.33V0H1666.67V333.333H2000V0H2333.33V666.667H666.667V0H1000V333.333Z" fill="#FF9900"/></svg>
-    <span class="ft-text">AWS Student Builder Group &bull; UNIZIK Awka</span>
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════════════════
-     SLIDE 3 — OUR EVENTS
-     ════════════════════════════════════════════════════════ -->
-<section class="slide">
-  <span class="slide-num">03 / 10</span>
-
-  <h2>Three Flagship <span class="accent">Activities</span></h2>
-  <p style="margin-bottom:8px;">Not a one-off event. A full year of building, competing, and showing up.</p>
-
-  <div class="cards cards-3" style="margin-top:32px;">
-    <div class="card" style="border-top:3px solid var(--orange);">
-      <div style="font-size:.7rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--orange); margin-bottom:12px;">Event 1</div>
-      <h3>AWS re:Invent Watch &amp; Build Party</h3>
-      <p style="margin:10px 0 20px;">We watch the re:Invent keynote live, then immediately build with whatever AWS just dropped. Sprints, panels, and a room full of people who actually care about cloud.</p>
-      <div style="display:flex; gap:20px;">
-        <div><span style="font-size:1.5rem; font-weight:900; color:var(--orange);">Dec 4</span><br><span style="font-size:.75rem; color:var(--gray);">2026</span></div>
-        <div><span style="font-size:1.5rem; font-weight:900; color:var(--orange);">500+</span><br><span style="font-size:.75rem; color:var(--gray);">Attendees</span></div>
-        <div><span style="font-size:1.5rem; font-weight:900; color:var(--white);">1 Day</span><br><span style="font-size:.75rem; color:var(--gray);">Full Day Event</span></div>
+      <div style="margin-top:20px; padding:14px 20px; background:var(--dark-2); border-left:3px solid var(--orange); display:inline-block;">
+        <span style="font-size:.85rem; color:var(--gray-lt);">Backed by <strong style="color:var(--white);">Amazon Web Services</strong> with grants, tools, and global community support</span>
       </div>
     </div>
-    <div class="card" style="border-top:3px solid var(--purple);">
-      <div style="font-size:.7rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--purple); margin-bottom:12px;">Event 2</div>
-      <h3>Student Community Day (SCD)</h3>
-      <p style="margin:10px 0 20px;">The big one. A full-day conference with two tracks, workshops, project showcases, speakers, and the kind of networking that actually leads somewhere.</p>
-      <div style="display:flex; gap:20px;">
-        <div><span style="font-size:1.5rem; font-weight:900; color:var(--purple);">Q1 2027</span><br><span style="font-size:.75rem; color:var(--gray);">Date TBA</span></div>
-        <div><span style="font-size:1.5rem; font-weight:900; color:var(--purple);">700+</span><br><span style="font-size:.75rem; color:var(--gray);">Attendees</span></div>
-        <div><span style="font-size:1.5rem; font-weight:900; color:var(--white);">2 Tracks</span><br><span style="font-size:.75rem; color:var(--gray);">Beginner + Advanced</span></div>
-      </div>
-    </div>
-    <div class="card" style="border-top:3px solid var(--mint);">
-      <div style="font-size:.7rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--mint); margin-bottom:12px;">Year-Round</div>
-      <h3>Bi-Weekly Campus Games</h3>
-      <p style="margin:10px 0 20px;">Card Clash leagues, Cloud Quest leaderboards, Syntax Sprints, Speed-Deploy CLI battles, monthly Demo Days. Something to fight over every two weeks.</p>
-      <div style="display:flex; gap:20px;">
-        <div><span style="font-size:1.5rem; font-weight:900; color:var(--mint);">24+</span><br><span style="font-size:.75rem; color:var(--gray);">Sessions / Year</span></div>
-        <div><span style="font-size:1.5rem; font-weight:900; color:var(--white);">12 mo</span><br><span style="font-size:.75rem; color:var(--gray);">Continuous</span></div>
-      </div>
+    <div class="photo-frame" style="height:340px;">
+      <img src="assets/photos/unizik-chike-okoli.jpg" alt="AWS SBG UNIZIK team on campus">
     </div>
   </div>
 
@@ -425,41 +411,175 @@
 </section>
 
 <!-- ════════════════════════════════════════════════════════
-     SLIDE 4 — WHO'S IN THE ROOM
+     SLIDE 3 - BRIDGING THE GAP
      ════════════════════════════════════════════════════════ -->
 <section class="slide">
-  <span class="slide-num">04 / 10</span>
+  <span class="slide-num">03 / 14</span>
 
-  <h2>Who Shows Up to <span class="accent">These Things</span></h2>
-  <p>Not a crowd of people scrolling their phones in the back row. These are the students who actually build stuff, run businesses, and will be earning real money in 2-3 years.</p>
+  <h2>Bridging the <span class="accent">Gap</span></h2>
 
-  <div class="audience-grid">
-    <div class="audience-item">
-      <div class="audience-bar" style="background:var(--orange);"></div>
-      <div>
-        <h3 style="font-size:1rem;">CS, Engineering &amp; Business Students</h3>
-        <p>The students most likely to end up building software, running companies, or both. UNIZIK's technical core.</p>
+  <div class="split-layout">
+    <div class="text-col">
+      <p style="margin-bottom:14px;">There is a real gap between what textbooks teach and what the tech industry actually demands. Most students graduate knowing theory. Very few can deploy a production app, debug a distributed system, or pass an industry certification.</p>
+      <p style="margin-bottom:14px;">At UNIZIK, we aren't just a group; we are a collective of students who want to build things that matter. From writing full-stack software to designing cloud architecture, we turn tech enthusiasts into industry-ready global professionals.</p>
+      <p>We don't just plan; we execute.</p>
+    </div>
+    <div class="photo-frame" style="height:340px;">
+      <img src="assets/photos/students-working.jpg" alt="Students building at their laptops">
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <svg viewBox="0 0 3000 3000" fill="none"><path d="M2333.33 3000H2000V2666.67H1666.67V3000H1333.33V2666.67H1000V3000H666.667V2333.33H2333.33V3000ZM666.667 2333.33H0V2000H333.333V1666.67H0V1333.33H333.333V1000H0V666.667H666.667V2333.33ZM3000 1000H2666.67V1333.33H3000V1666.67H2666.67V2000H3000V2333.33H2333.33V666.667H3000V1000ZM1000 333.333H1333.33V0H1666.67V333.333H2000V0H2333.33V666.667H666.667V0H1000V333.333Z" fill="#FF9900"/></svg>
+    <span class="ft-text">AWS Student Builder Group &bull; UNIZIK Awka</span>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 4 - RE:INVENT WATCH & BUILD PARTY
+     ════════════════════════════════════════════════════════ -->
+<section class="slide">
+  <span class="slide-num">04 / 14</span>
+
+  <h2>AWS re:Invent Watch &amp; <span class="accent">Build Party</span></h2>
+
+  <div class="split-layout">
+    <div class="text-col">
+      <p style="margin-bottom:14px;">AWS re:Invent is Amazon's biggest annual cloud computing conference, held in Las Vegas every December. Thousands of developers, engineers, and cloud architects fly in from around the world. New services get launched. Keynotes get wild.</p>
+      <p style="margin-bottom:14px;">Our Watch &amp; Build Party brings that experience to Awka. We livestream the keynotes, run hands-on build sprints with whatever AWS just dropped, play campus games, and give out prizes. All in one high-energy day.</p>
+      <p>500 students in a room, building together. That's what this is.</p>
+
+      <div style="margin-top:20px; display:flex; gap:24px; flex-wrap:wrap;">
+        <div><span style="font-size:1.6rem; font-weight:900; color:var(--orange);">Dec 4</span><br><span style="font-size:.75rem; color:var(--gray);">2026</span></div>
+        <div><span style="font-size:1.6rem; font-weight:900; color:var(--orange);">9:00 AM</span><br><span style="font-size:.75rem; color:var(--gray);">Start Time</span></div>
+        <div><span style="font-size:1.6rem; font-weight:900; color:var(--orange);">500+</span><br><span style="font-size:.75rem; color:var(--gray);">Expected Attendees</span></div>
+      </div>
+
+      <div style="margin-top:14px; padding:10px 16px; background:var(--dark-2); border-left:3px solid var(--orange); display:inline-block;">
+        <span style="font-size:.82rem; color:var(--gray-lt);"><strong style="color:var(--white);">Venue:</strong> UNIZIK Auditorium, Awka</span>
       </div>
     </div>
-    <div class="audience-item">
-      <div class="audience-bar" style="background:var(--purple);"></div>
-      <div>
-        <h3 style="font-size:1rem;">Student Founders &amp; Side-Hustle Operators</h3>
-        <p>Mini-importers, POS agents, freelance developers, food vendors. They already make money. They just need better tools.</p>
+    <div class="photo-frame" style="height:380px;">
+      <img src="assets/photos/crowd-auditorium.jpg" alt="Packed auditorium at an AWS student event">
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <svg viewBox="0 0 3000 3000" fill="none"><path d="M2333.33 3000H2000V2666.67H1666.67V3000H1333.33V2666.67H1000V3000H666.667V2333.33H2333.33V3000ZM666.667 2333.33H0V2000H333.333V1666.67H0V1333.33H333.333V1000H0V666.667H666.667V2333.33ZM3000 1000H2666.67V1333.33H3000V1666.67H2666.67V2000H3000V2333.33H2333.33V666.667H3000V1000ZM1000 333.333H1333.33V0H1666.67V333.333H2000V0H2333.33V666.667H666.667V0H1000V333.333Z" fill="#FF9900"/></svg>
+    <span class="ft-text">AWS Student Builder Group &bull; UNIZIK Awka</span>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 5 - STUDENT COMMUNITY DAY AWKA
+     ════════════════════════════════════════════════════════ -->
+<section class="slide">
+  <span class="slide-num">05 / 14</span>
+
+  <h2>Student Community Day <span class="accent">Awka</span></h2>
+
+  <div class="split-layout">
+    <div class="text-col">
+      <p style="margin-bottom:14px;">AWS Student Community Day is a full-day, student-led tech conference. Think dual-track workshops covering Web Development, Cybersecurity, UI/UX Design, AI/Machine Learning, and Cloud Computing. Panel discussions with industry professionals. Project showcases. A hackathon. Real networking that actually leads somewhere.</p>
+      <p style="margin-bottom:14px;">This is the first AWS Student Community event in Awka. Not the second. Not the third. The very first one. The brands that show up now are the ones people remember.</p>
+      <p>700+ students, multiple tracks, one massive day.</p>
+
+      <div style="margin-top:20px; display:flex; gap:24px; flex-wrap:wrap;">
+        <div><span style="font-size:1.6rem; font-weight:900; color:var(--purple);">Q1 2027</span><br><span style="font-size:.75rem; color:var(--gray);">Date TBA</span></div>
+        <div><span style="font-size:1.6rem; font-weight:900; color:var(--purple);">700+</span><br><span style="font-size:.75rem; color:var(--gray);">Expected Attendees</span></div>
+        <div><span style="font-size:1.6rem; font-weight:900; color:var(--white);">2 Tracks</span><br><span style="font-size:.75rem; color:var(--gray);">Beginner + Advanced</span></div>
       </div>
     </div>
-    <div class="audience-item">
-      <div class="audience-bar" style="background:var(--mint);"></div>
-      <div>
-        <h3 style="font-size:1rem;">Aspiring Cloud Engineers &amp; Developers</h3>
-        <p>Building portfolios, shipping projects, studying for AWS certs. These ones are serious about tech careers.</p>
+    <div class="photo-frame" style="height:380px;">
+      <img src="assets/photos/classroom-crowd-behind.png" alt="Students engaged in a hands-on workshop session">
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <svg viewBox="0 0 3000 3000" fill="none"><path d="M2333.33 3000H2000V2666.67H1666.67V3000H1333.33V2666.67H1000V3000H666.667V2333.33H2333.33V3000ZM666.667 2333.33H0V2000H333.333V1666.67H0V1333.33H333.333V1000H0V666.667H666.667V2333.33ZM3000 1000H2666.67V1333.33H3000V1666.67H2666.67V2000H3000V2333.33H2333.33V666.667H3000V1000ZM1000 333.333H1333.33V0H1666.67V333.333H2000V0H2333.33V666.667H666.667V0H1000V333.333Z" fill="#FF9900"/></svg>
+    <span class="ft-text">AWS Student Builder Group &bull; UNIZIK Awka</span>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 6 - CAMPUS GAMES
+     ════════════════════════════════════════════════════════ -->
+<section class="slide">
+  <span class="slide-num">06 / 14</span>
+
+  <h2>Campus <span class="accent">Games</span></h2>
+
+  <div class="split-layout">
+    <div class="text-col">
+      <p style="margin-bottom:14px;">Two big events are great. But what keeps a community alive is consistency. Our bi-weekly Campus Games are the engine that keeps our builders building, year-round.</p>
+
+      <div style="margin-top:8px; display:grid; gap:12px;">
+        <div style="padding:14px 18px; background:var(--dark-2); border-left:3px solid var(--orange);">
+          <h3 style="font-size:.92rem; margin-bottom:4px;">Card Clash Leagues</h3>
+          <p style="font-size:.82rem; max-width:100%;">The official AWS card game that teaches cloud services through competitive play. Bracket tournaments, prizes for the top decks.</p>
+        </div>
+        <div style="padding:14px 18px; background:var(--dark-2); border-left:3px solid var(--purple);">
+          <h3 style="font-size:.92rem; margin-bottom:4px;">Cloud Quest Speed Runs</h3>
+          <p style="font-size:.82rem; max-width:100%;">Leaderboard battles on AWS Skill Builder. Fastest to clear a quest set wins. Real skills, real rankings.</p>
+        </div>
+        <div style="padding:14px 18px; background:var(--dark-2); border-left:3px solid var(--mint);">
+          <h3 style="font-size:.92rem; margin-bottom:4px;">Syntax Sprint &amp; Demo Days</h3>
+          <p style="font-size:.82rem; max-width:100%;">Timed coding battles plus monthly showcases where members demo what they've built. Ship it or explain why you didn't.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:16px; display:flex; gap:24px;">
+        <div><span style="font-size:1.4rem; font-weight:900; color:var(--mint);">30-80</span><br><span style="font-size:.75rem; color:var(--gray);">Students / Session</span></div>
+        <div><span style="font-size:1.4rem; font-weight:900; color:var(--mint);">24+</span><br><span style="font-size:.75rem; color:var(--gray);">Sessions / Year</span></div>
       </div>
     </div>
-    <div class="audience-item">
-      <div class="audience-bar" style="background:var(--blue);"></div>
-      <div>
-        <h3 style="font-size:1rem;">Early-Career Professionals &amp; Ecosystem Partners</h3>
-        <p>Working professionals from Awka tech hubs, GDG, She Code Africa, and innovation spaces across the South-East.</p>
+    <div class="photo-frame" style="height:400px;">
+      <img src="assets/photos/classroom-workshop.jpg" alt="Students in a hands-on workshop session">
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <svg viewBox="0 0 3000 3000" fill="none"><path d="M2333.33 3000H2000V2666.67H1666.67V3000H1333.33V2666.67H1000V3000H666.667V2333.33H2333.33V3000ZM666.667 2333.33H0V2000H333.333V1666.67H0V1333.33H333.333V1000H0V666.667H666.667V2333.33ZM3000 1000H2666.67V1333.33H3000V1666.67H2666.67V2000H3000V2333.33H2333.33V666.667H3000V1000ZM1000 333.333H1333.33V0H1666.67V333.333H2000V0H2333.33V666.667H666.667V0H1000V333.333Z" fill="#FF9900"/></svg>
+    <span class="ft-text">AWS Student Builder Group &bull; UNIZIK Awka</span>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 7 - WHAT WE'VE BUILT SO FAR
+     ════════════════════════════════════════════════════════ -->
+<section class="slide">
+  <span class="slide-num">07 / 14</span>
+
+  <h2>What We've Built <span class="accent">So Far</span></h2>
+  <p style="margin-bottom:8px;">We aren't pitching you a plan. This is already happening.</p>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:24px;">
+    <div>
+      <div class="cards" style="gap:16px; margin-top:0;">
+        <div class="card" style="border-left:3px solid var(--orange); border-top:none;">
+          <h3 style="font-size:.95rem;">Study Circles &amp; Workshops</h3>
+          <p style="font-size:.82rem;">Regular hands-on sessions where members go from "what is a VPC?" to deploying production-ready apps on AWS. Not slides about it. Actually doing it.</p>
+        </div>
+        <div class="card" style="border-left:3px solid var(--purple); border-top:none;">
+          <h3 style="font-size:.95rem;">Campus Games Program</h3>
+          <p style="font-size:.82rem;">Bi-weekly competitive sessions. Card Clash, Cloud Quest leaderboards, coding battles. Consistent attendance of 30-80 students every two weeks.</p>
+        </div>
+        <div class="card" style="border-left:3px solid var(--mint); border-top:none;">
+          <h3 style="font-size:.95rem;">AWS Skill Builder Pipeline</h3>
+          <p style="font-size:.82rem;">200+ students actively enrolled in the official AWS Academy curriculum with 12 months of premium access. Cloud Quest, SimuLearn, Builder Labs.</p>
+        </div>
+        <div class="card" style="border-left:3px solid var(--blue); border-top:none;">
+          <h3 style="font-size:.95rem;">Community &amp; Outreach</h3>
+          <p style="font-size:.82rem;">Growing student engagement across UNIZIK's technical faculties, cross-community collaborations, and national AWS SBG network connections.</p>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid; gap:16px;">
+      <div class="photo-frame" style="height:200px;">
+        <img src="assets/photos/unizik-team-outdoor.jpg" alt="AWS SBG UNIZIK team outdoors">
+      </div>
+      <div class="photo-frame" style="height:200px;">
+        <img src="assets/photos/group-photo-stage.jpg" alt="Group photo on stage after an event">
       </div>
     </div>
   </div>
@@ -471,46 +591,66 @@
 </section>
 
 <!-- ════════════════════════════════════════════════════════
-     SLIDE 5 — BY THE NUMBERS
+     SLIDE 8 - AT A GLANCE
      ════════════════════════════════════════════════════════ -->
 <section class="slide" style="justify-content:center;">
-  <span class="slide-num">05 / 10</span>
+  <span class="slide-num">08 / 14</span>
 
   <!-- Decorative orange block -->
   <div class="block-accent" style="top:0; right:0; width:80px; height:160px; opacity:.5;"></div>
 
-  <h2>Impact at a <span class="accent">Glance</span></h2>
+  <h2>At a <span class="accent">Glance</span></h2>
 
-  <div class="stats">
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center; margin-top:12px;">
     <div>
-      <div class="stat-num">1,200+</div>
-      <div class="stat-label">Expected Attendees</div>
-      <div class="stat-sub">across both flagship events</div>
+      <div class="stats" style="grid-template-columns:repeat(2, 1fr); gap:28px;">
+        <div>
+          <div class="stat-num">1,200+</div>
+          <div class="stat-label">Attendees</div>
+          <div class="stat-sub">across both flagship events</div>
+        </div>
+        <div>
+          <div class="stat-num">10+</div>
+          <div class="stat-label">Speakers</div>
+          <div class="stat-sub">industry pros, AWS builders, faculty</div>
+        </div>
+        <div>
+          <div class="stat-num">5+</div>
+          <div class="stat-label">Panelists</div>
+          <div class="stat-sub">tech leaders and founders</div>
+        </div>
+        <div>
+          <div class="stat-num">36,000+</div>
+          <div class="stat-label">Campus Population</div>
+          <div class="stat-sub">UNIZIK, Awka</div>
+        </div>
+      </div>
+
+      <div style="margin-top:28px; padding:14px 20px; background:var(--dark-2); border-left:3px solid var(--orange);">
+        <span style="font-size:.88rem; font-weight:700; color:var(--white);">Hackathon, Workshops, Networking, and More</span>
+      </div>
     </div>
-    <div>
-      <div class="stat-num">36,000+</div>
-      <div class="stat-label">Student Campus Population</div>
-      <div class="stat-sub">UNIZIK, Awka</div>
+    <div class="photo-frame" style="height:320px;">
+      <img src="assets/photos/crowd-closeup.jpg" alt="Students engaged at an event">
     </div>
-    <div>
-      <div class="stat-num">15+</div>
-      <div class="stat-label">Speakers &amp; Panelists</div>
-      <div class="stat-sub">industry pros, AWS builders, faculty</div>
+  </div>
+
+  <div class="event-info-bar">
+    <div class="info-item">
+      <div class="info-label">Date (re:Invent)</div>
+      <div class="info-value">December 4, 2026</div>
     </div>
-    <div>
-      <div class="stat-num">3</div>
-      <div class="stat-label">Flagship Activities</div>
-      <div class="stat-sub">re:Invent Party &bull; SCD &bull; Campus Games</div>
+    <div class="info-item">
+      <div class="info-label">Date (SCD)</div>
+      <div class="info-value">Q1 2027 (TBA)</div>
     </div>
-    <div>
-      <div class="stat-num">Backed</div>
-      <div class="stat-label">By Amazon Web Services</div>
-      <div class="stat-sub">grants, tools, and global community support</div>
+    <div class="info-item">
+      <div class="info-label">Time</div>
+      <div class="info-value">9:00 AM</div>
     </div>
-    <div>
-      <div class="stat-num">12 mo</div>
-      <div class="stat-label">Premium Skill Builder Access</div>
-      <div class="stat-sub">Cloud Quest, SimuLearn, Builder Labs, AWS Jam</div>
+    <div class="info-item">
+      <div class="info-label">Venue</div>
+      <div class="info-value">UNIZIK Auditorium</div>
     </div>
   </div>
 
@@ -521,12 +661,63 @@
 </section>
 
 <!-- ════════════════════════════════════════════════════════
-     SLIDE 6 — WHY SPONSOR
+     SLIDE 9 - WHO'S IN THE ROOM
      ════════════════════════════════════════════════════════ -->
 <section class="slide">
-  <span class="slide-num">06 / 10</span>
+  <span class="slide-num">09 / 14</span>
 
-  <h2>Why <span class="accent">Sponsor</span> Us</h2>
+  <h2>Who's in the <span class="accent">Room</span></h2>
+  <p style="margin-bottom:4px;">Not a crowd of people scrolling their phones in the back row. These are the students who actually build stuff, run businesses, and will be earning real money in 2-3 years.</p>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:start; margin-top:20px;">
+    <div class="audience-grid" style="margin-top:0;">
+      <div class="audience-item">
+        <div class="audience-bar" style="background:var(--orange);"></div>
+        <div>
+          <h4>CS, Engineering &amp; Business Students</h4>
+          <p>The students most likely to end up building software, running companies, or both. UNIZIK's technical core.</p>
+        </div>
+      </div>
+      <div class="audience-item">
+        <div class="audience-bar" style="background:var(--purple);"></div>
+        <div>
+          <h4>Student Founders &amp; Side-Hustle Operators</h4>
+          <p>Mini-importers, POS agents, freelance developers, food vendors. They already make money. They just need better tools.</p>
+        </div>
+      </div>
+      <div class="audience-item">
+        <div class="audience-bar" style="background:var(--mint);"></div>
+        <div>
+          <h4>Aspiring Cloud Engineers &amp; Developers</h4>
+          <p>Building portfolios, shipping projects, studying for AWS certs. These ones are serious about tech careers.</p>
+        </div>
+      </div>
+      <div class="audience-item">
+        <div class="audience-bar" style="background:var(--blue);"></div>
+        <div>
+          <h4>Early-Career Pros &amp; Ecosystem Partners</h4>
+          <p>Working professionals from Awka tech hubs, She Code Africa, and innovation spaces across the South-East.</p>
+        </div>
+      </div>
+    </div>
+    <div class="photo-frame" style="height:380px; margin-top:0;">
+      <img src="assets/photos/panel-discussion.jpg" alt="Panel discussion at an AWS student event">
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <svg viewBox="0 0 3000 3000" fill="none"><path d="M2333.33 3000H2000V2666.67H1666.67V3000H1333.33V2666.67H1000V3000H666.667V2333.33H2333.33V3000ZM666.667 2333.33H0V2000H333.333V1666.67H0V1333.33H333.333V1000H0V666.667H666.667V2333.33ZM3000 1000H2666.67V1333.33H3000V1666.67H2666.67V2000H3000V2333.33H2333.33V666.667H3000V1000ZM1000 333.333H1333.33V0H1666.67V333.333H2000V0H2333.33V666.667H666.667V0H1000V333.333Z" fill="#FF9900"/></svg>
+    <span class="ft-text">AWS Student Builder Group &bull; UNIZIK Awka</span>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 10 - WHY PARTNER WITH US
+     ════════════════════════════════════════════════════════ -->
+<section class="slide">
+  <span class="slide-num">10 / 14</span>
+
+  <h2>Invest in <span class="accent">Innovation</span></h2>
   <p style="margin-bottom:8px;">You're not buying a logo on a banner. You're getting a room full of your next customers, your next hires, or both.</p>
 
   <div class="cards cards-4" style="margin-top:28px;">
@@ -534,29 +725,29 @@
       <div class="card-icon">
         <svg viewBox="0 0 6880 3870" fill="none"><path d="M430 3870H0V3440H430V3870ZM2150 3870H1720V3440H430V3010H2150V3870ZM6450 3010V3440H5160V3870H4730V3010H6450ZM6880 3870H6450V3440H6880V3870ZM2580 3010H2150V2580H2580V3010ZM4730 3010H4300V2580H4730V3010ZM1720 2580H860V2150H1720V2580ZM4300 2580H2580V2150H4300V2580ZM6020 2580H5160V2150H6020V2580ZM860 2150H430V1290H860V2150ZM2150 2150H1720V1290H2150V2150ZM5160 2150H4730V1290H5160V2150ZM6450 2150H6020V1290H6450V2150ZM3870 1720H3010V1290H3870V1720ZM1720 1290H860V860H1720V1290ZM3010 1290H2580V430H3010V1290ZM4300 1290H3870V430H4300V1290ZM6020 1290H5160V860H6020V1290ZM3870 430H3010V0H3870V430Z" fill="#FF9900"/></svg>
       </div>
-      <h3>Talent Pipeline</h3>
-      <p>Meet the best student builders in South-East Nigeria before anyone else does. First access beats LinkedIn any day.</p>
+      <h3>Unrivaled Talent Pipeline</h3>
+      <p>Direct access to 500+ of Awka's most technically skilled students before they enter the open market. First access beats LinkedIn any day.</p>
     </div>
     <div class="card" style="border-top:3px solid var(--purple);">
       <div class="card-icon">
         <svg viewBox="0 0 5592 3440" fill="none"><path d="M2150 3440H1720V3010H1290V2580H1720V860H1290V430H1720V0H2150V3440ZM4732 3440H4302V3010H4732V3440ZM3871 3010H3441V2580H3871V3010ZM5162 3010H4732V2150H5162V3010ZM1290 2580H860V2150H1290V2580ZM3011 2580H2581V2150H3011V2580ZM4301 2580H3871V860H4301V2580ZM860 2150H0V1290H860V2150ZM3441 2150H3011V1290H3441V2150ZM5592 2150H5162V1290H5592V2150ZM1290 1290H860V860H1290V1290ZM3010 1290H2580V860H3010V1290ZM5161 1290H4731V430H5161V1290ZM3871 860H3441V430H3871V860ZM4731 430H4301V0H4731V430Z" fill="#AD5CFF"/></svg>
       </div>
-      <h3>Brand Authority</h3>
-      <p>This is the first AWS Student Community Day in Awka. The brands that show up now get remembered. The ones that show up late get forgotten.</p>
+      <h3>Market-Leading Brand Authority</h3>
+      <p>Associate your brand with the first-ever AWS Student Community event in Awka. The brands that show up now get remembered. The ones that show up late get forgotten.</p>
     </div>
     <div class="card" style="border-top:3px solid var(--mint);">
       <div class="card-icon">
         <svg viewBox="0 0 2580 3870" fill="none"><path d="M2150 860H1720V1720H2580V2150H2150V2580H1720V3010H1290V3440H860V3870H430V3010H860V2150H0V1720H430V1290H860V860H1290V430H1720V0H2150V860Z" fill="#00E582"/></svg>
       </div>
-      <h3>Product Adoption</h3>
-      <p>1,200 students trying your product in one afternoon. These are early adopters who tell their friends. That's how you win campuses.</p>
+      <h3>Product Adoption &amp; Feedback</h3>
+      <p>Get your tools, APIs, or services into the hands of builders who are eager to learn and adopt new technologies. 1,200 students trying your product in one afternoon.</p>
     </div>
     <div class="card" style="border-top:3px solid var(--blue);">
       <div class="card-icon">
         <svg viewBox="0 0 5590 2580" fill="none"><path d="M1290 430H1720V860H3870V430H4300V0H5160V430H5590V860H4730V1720H5590V2150H5160V2580H4300V2150H3870V1720H1720V2150H1290V2580H430V2150H0V1720H860V860H0V430H430V0H1290V430Z" fill="#42B4FF"/></svg>
       </div>
       <h3>Ecosystem Impact</h3>
-      <p>Awka's tech scene is growing fast and nobody owns it yet. Help us build it and your name is on the foundation.</p>
+      <p>Make a tangible contribution to the growth of the South-East Nigerian tech ecosystem. Awka's tech scene is growing fast and nobody owns it yet. Help us build it.</p>
     </div>
   </div>
 
@@ -567,13 +758,71 @@
 </section>
 
 <!-- ════════════════════════════════════════════════════════
-     SLIDE 7 — SPONSORSHIP TIERS
+     SLIDE 11 - WHAT PARTNERS GET
      ════════════════════════════════════════════════════════ -->
 <section class="slide">
-  <span class="slide-num">07 / 10</span>
+  <span class="slide-num">11 / 14</span>
+
+  <h2>What You <span class="accent">Actually Get</span></h2>
+  <p>No hand-waving. Here's exactly what shows up in your inbox and on your brand report after the event.</p>
+
+  <table class="del-table">
+    <thead>
+      <tr>
+        <th style="width:220px;">Deliverable</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Brand Visibility</td>
+        <td>Your logo on merch, stage backdrops, banners, digital screens, and printed materials. People will see your name all day.</td>
+      </tr>
+      <tr>
+        <td>Exhibition Booth</td>
+        <td>Your own booth space for product demos, sign-ups, and live activations. 1,200 people walking past is a lot of foot traffic.</td>
+      </tr>
+      <tr>
+        <td>Speaking Session</td>
+        <td>Stage time to talk to the room. Show what you do, hire who you want, or just tell your story. Duration depends on tier.</td>
+      </tr>
+      <tr>
+        <td>Product Activation</td>
+        <td>Onboard users on the spot. QR codes, live demos, app downloads. The conversion rate in a room of engaged students is wild.</td>
+      </tr>
+      <tr>
+        <td>Social Media</td>
+        <td>Shoutouts before, during, and after the event across all our channels. Tagged, hashtagged, the whole thing.</td>
+      </tr>
+      <tr>
+        <td>Stage Recognition</td>
+        <td>We say your name out loud. Opening, closing, and at key moments throughout the event. Everyone hears it.</td>
+      </tr>
+      <tr>
+        <td>Talent Access</td>
+        <td>Talk directly to students, founders, and early-career builders. Recruiting, internships, or just making connections.</td>
+      </tr>
+      <tr>
+        <td>Impact Report</td>
+        <td>A real report within 72 hours. Attendance, social reach, booth visits, app downloads, photos, and your specific numbers.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="slide-footer">
+    <svg viewBox="0 0 3000 3000" fill="none"><path d="M2333.33 3000H2000V2666.67H1666.67V3000H1333.33V2666.67H1000V3000H666.667V2333.33H2333.33V3000ZM666.667 2333.33H0V2000H333.333V1666.67H0V1333.33H333.333V1000H0V666.667H666.667V2333.33ZM3000 1000H2666.67V1333.33H3000V1666.67H2666.67V2000H3000V2333.33H2333.33V666.667H3000V1000ZM1000 333.333H1333.33V0H1666.67V333.333H2000V0H2333.33V666.667H666.667V0H1000V333.333Z" fill="#FF9900"/></svg>
+    <span class="ft-text">AWS Student Builder Group &bull; UNIZIK Awka</span>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 12 - SPONSORSHIP TIERS
+     ════════════════════════════════════════════════════════ -->
+<section class="slide">
+  <span class="slide-num">12 / 14</span>
 
   <h2>Pick Your <span class="accent">Level</span></h2>
-  <p style="margin-bottom:8px;">One event, both events, or the whole year. The more you commit, the better the deal gets.</p>
+  <p style="margin-bottom:8px;">One event, both events, or the whole year.</p>
 
   <table class="tier-table">
     <thead>
@@ -678,13 +927,13 @@
 </section>
 
 <!-- ════════════════════════════════════════════════════════
-     SLIDE 8 — PARTNERSHIP TRACKS
+     SLIDE 13 - PARTNERSHIP TRACKS
      ════════════════════════════════════════════════════════ -->
 <section class="slide">
-  <span class="slide-num">08 / 10</span>
+  <span class="slide-num">13 / 14</span>
 
   <h2>Partnership <span class="accent">Tracks</span></h2>
-  <p style="margin-bottom:8px;">Cash isn't the only currency. If you can feed 500 people, keep the Wi-Fi alive, or print 300 hoodies, we want to talk.</p>
+  <p style="margin-bottom:8px;">Cash isn't the only currency. If you can feed 500+ people, keep the Wi-Fi alive, or print 300 hoodies, we want to talk.</p>
 
   <div class="cards cards-5" style="margin-top:24px;">
     <div class="card" style="padding:20px 16px; border-top:3px solid var(--orange);">
@@ -721,68 +970,10 @@
 </section>
 
 <!-- ════════════════════════════════════════════════════════
-     SLIDE 9 — SPONSOR DELIVERABLES
-     ════════════════════════════════════════════════════════ -->
-<section class="slide">
-  <span class="slide-num">09 / 10</span>
-
-  <h2>What You <span class="accent">Actually Get</span></h2>
-  <p>No hand-waving. Here's exactly what shows up in your inbox and on your brand report after the event.</p>
-
-  <table class="del-table">
-    <thead>
-      <tr>
-        <th style="width:220px;">Deliverable</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Brand Visibility</td>
-        <td>Your logo on merch, stage backdrops, banners, digital screens, and printed materials. People will see your name all day.</td>
-      </tr>
-      <tr>
-        <td>Exhibition Booth</td>
-        <td>Your own booth space for product demos, sign-ups, and live activations. 1,200 people walking past is a lot of foot traffic.</td>
-      </tr>
-      <tr>
-        <td>Speaking Session</td>
-        <td>Stage time to talk to the room. Show what you do, hire who you want, or just tell your story. Duration depends on tier.</td>
-      </tr>
-      <tr>
-        <td>Product Activation</td>
-        <td>Onboard users on the spot. QR codes, live demos, app downloads. The conversion rate in a room of engaged students is wild.</td>
-      </tr>
-      <tr>
-        <td>Social Media</td>
-        <td>Shoutouts before, during, and after the event across all our channels. Tagged, hashtagged, the whole thing.</td>
-      </tr>
-      <tr>
-        <td>Stage Recognition</td>
-        <td>We say your name out loud. Opening, closing, and at key moments throughout the event. Everyone hears it.</td>
-      </tr>
-      <tr>
-        <td>Talent Access</td>
-        <td>Talk directly to students, founders, and early-career builders. Recruiting, internships, or just making connections.</td>
-      </tr>
-      <tr>
-        <td>Impact Report</td>
-        <td>A real report within 72 hours. Attendance, social reach, booth visits, app downloads, photos, and your specific numbers.</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="slide-footer">
-    <svg viewBox="0 0 3000 3000" fill="none"><path d="M2333.33 3000H2000V2666.67H1666.67V3000H1333.33V2666.67H1000V3000H666.667V2333.33H2333.33V3000ZM666.667 2333.33H0V2000H333.333V1666.67H0V1333.33H333.333V1000H0V666.667H666.667V2333.33ZM3000 1000H2666.67V1333.33H3000V1666.67H2666.67V2000H3000V2333.33H2333.33V666.667H3000V1000ZM1000 333.333H1333.33V0H1666.67V333.333H2000V0H2333.33V666.667H666.667V0H1000V333.333Z" fill="#FF9900"/></svg>
-    <span class="ft-text">AWS Student Builder Group &bull; UNIZIK Awka</span>
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════════════════
-     SLIDE 10 — CTA / CONTACT
+     SLIDE 14 - CTA / CONTACT
      ════════════════════════════════════════════════════════ -->
 <section class="slide" style="align-items:center; text-align:center;">
-  <span class="slide-num">10 / 10</span>
+  <span class="slide-num">14 / 14</span>
 
   <!-- Orange block accents -->
   <div class="block-accent" style="top:0; left:0; width:80px; height:80px; opacity:.5;"></div>
@@ -798,7 +989,11 @@
     </div>
 
     <h2 style="font-size:2.4rem;">Let's Build <span class="accent">Together</span></h2>
-    <p style="text-align:center; max-width:560px; margin:0 auto 32px;">December 4 is coming fast. If you want a seat at the table for Awka's biggest tech event of the year, now's the time to reach out.</p>
+    <p style="text-align:center; max-width:560px; margin:0 auto 20px;">December 4th is coming fast. If you want a seat at the table for Awka's biggest tech event of the year, now is the time to reach out.</p>
+
+    <div class="photo-frame" style="width:100%; height:180px; margin-bottom:24px;">
+      <img src="assets/photos/students-desk.jpg" alt="Student Builder Group members at their desk with laptops">
+    </div>
 
     <div class="contact-grid">
       <div class="contact-block">
@@ -818,7 +1013,7 @@
       </div>
     </div>
 
-    <div style="margin-top:32px; font-size:.78rem; color:var(--gray);">
+    <div style="margin-top:28px; font-size:.78rem; color:var(--gray);">
       Learn more about AWS Student Builder Groups: <span style="color:var(--orange);">community.aws/buildergroups</span>
     </div>
   </div>

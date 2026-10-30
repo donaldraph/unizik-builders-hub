@@ -29,16 +29,16 @@
 | # | Document | What It Contains |
 |---|----------|-----------------|
 | 01 | [Compliance & Discovery](01-COMPLIANCE-AND-DISCOVERY.md) | Leaders Library audit, AWS co-branding rules, sponsorship compliance checklist, creative asset inventory |
-| 02 | [Sponsor Directory](02-SPONSOR-DIRECTORY.md) | 28 prospects across 3 pools (Awka local + pan-Nigerian tech + Anambra-rooted/traditional banks), with value alignment, outreach channels, and tier suggestions |
+| 02 | [Sponsor Directory](02-SPONSOR-DIRECTORY.md) | 39 prospects across 4 pools (Awka local + pan-Nigerian tech + Anambra-rooted/traditional banks + media/community partners), with value alignment, outreach channels, and tier suggestions |
 | 03 | [Pitch Engine](03-PITCH-ENGINE.md) | 13 bespoke email + LinkedIn pitches (including banks, Seaman Rice, Sir Pius Ufudo Foundation), follow-up templates, 8-objection handling matrix |
 | 04 | [Sponsorship Tiers](04-SPONSORSHIP-TIERS.md) | 5-tier architecture with 3 scopes (Single Event / Dual Event / Full Season), benefits matrices, campus games design, banner placement strategy |
 | 05 | [Event Formats](05-EVENT-FORMATS.md) | re:Invent Watch Party run-of-show, SCD conference agenda (dual-track), ecosystem collaboration blueprint, Awka-specific contingency (power, internet, AV) |
 | 06 | [Curriculum Engine](06-CURRICULUM-ENGINE.md) | 12-month beginner-to-pro progression (4 stages, 48 weeks), weekly cadence with specific Skill Builder courses, gamification with 19 badges |
 | 07 | [Post-Event ROI Kit](07-POST-EVENT-ROI-KIT.md) | Impact report template, data collection toolkit, 72-hour post-event timeline, thank-you templates |
-| - | [Contact Research](CONTACT-RESEARCH.md) | Verified contact details for all 28 prospects - emails, phones, LinkedIn targets, outreach priority strategy |
+| - | [Contact Research](CONTACT-RESEARCH.md) | Verified contact details for all 39 prospects - emails, phones, LinkedIn targets, outreach priority strategy |
 | - | [SCD Partnership Deck](UNIZIK-AWS-SBG-Partnership-Deck.html) | Polished HTML presentation deck for sponsor outreach (open in browser, print to PDF) |
 | - | [Sponsor One-Pager](UNIZIK-AWS-SBG-Sponsor-OnePager.html) | Single-page partnership overview for email attachments (open in browser, Ctrl+P to PDF) |
-| - | [Outreach Emails](OUTREACH-EMAILS.md) | Ready-to-send personalized emails for all 28 sponsors, mapped to each company's business model |
+| - | [Outreach Emails](OUTREACH-EMAILS.md) | Ready-to-send personalized emails for sponsors, mapped to each company's business model |
 
 ## Compliance Foundation
 
