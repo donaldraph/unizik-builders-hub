@@ -1371,7 +1371,7 @@ linkedin.com/in/donaldraph
 
 ### 40. Raenest (Rent Payment Fintech)
 
-**Send to:** Via LinkedIn InMail (search "Raenest Partnerships" or "Raenest Marketing")
+**Send to:** Via LinkedIn InMail (search "Raenest Partnerships" or "Raenest Marketing") OR use help.raenest.com / contact form at raenest.com/contact-us (no public partnership email available)
 **Subject:** Partnership Opportunity: Raenest x AWS Student Builder Group UNIZIK - 700+ Students Entering the Rental Market
 
 Hi Raenest team,
@@ -1408,7 +1408,7 @@ linkedin.com/in/donaldraph
 
 ### 41. Grey (Foreign Accounts & USD Cards)
 
-**Send to:** Via LinkedIn InMail (search "Grey Partnerships" or "Grey Marketing")
+**Send to:** marketing@grey.co OR hello@grey.co (also try LinkedIn InMail for faster response)
 **Subject:** Partnership Opportunity: Grey x AWS Student Builder Group UNIZIK - 700+ Students Learning Skills for Remote Work
 
 Hi Grey team,

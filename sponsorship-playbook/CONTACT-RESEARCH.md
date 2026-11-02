@@ -106,6 +106,8 @@
 | 1 | **She Code Africa** | **info@shecodeafrica.org** (widely cited) | LinkedIn: @shecodeafrica. Twitter/X: @SheCodeAfrica. Instagram: @shecodeafrica. Website: shecodeafrica.org. Founder: Ada Nduka Oyom (DM on LinkedIn/Twitter). Chapters at universities across Africa. | BEST-AVAILABLE - shecodeafrica.org uses JS rendering; info@ is widely cited across sponsorship contexts. DM Ada Nduka Oyom directly for fastest response |
 | 2 | **TechCabal** | **toads@bigcabal.com** (Big Cabal Media, parent company) | LinkedIn: @techcabal. Instagram: @techcabal. Facebook: @TechCabal. Twitter/X: @TechCabal. Website: techcabal.com. Parent: Big Cabal Media. Also runs TC Daily newsletter and Moonshot conference | **VERIFIED** - toads@bigcabal.com extracted from techcabal.com source. For media partnership pitch, DM editorial team on Twitter/LinkedIn in parallel |
 | 3 | **TechPoint Africa** | **hello@techpoint.africa** (widely cited) | Twitter/X: @TechpointAfrica. LinkedIn: @techpoint-africa. Website: techpoint.africa. Also runs Techpoint Inspired newsletter and Techpoint Build conference | BEST-AVAILABLE - techpoint.africa uses JS rendering; hello@ is widely cited in media/sponsorship contexts |
+| 4 | **Raenest** | No public email - use **help.raenest.com** or contact form at raenest.com/contact-us | Twitter/X: @RaenestHQ. Instagram: @raenestapp. LinkedIn: @raenest. YouTube: @raenest. Physical: 7460 Warren Parkway, Suite 100, Frisco, TX 75034, US | NO PUBLIC EMAIL - LinkedIn InMail to partnerships/marketing team is primary channel, or use help center/contact form |
+| 5 | **Grey** | **hello@grey.co** (general), **marketing@grey.co** (partnerships/business) | Twitter/X: @greyfinance. Instagram: @greyfinance. LinkedIn: @grey. YouTube: @Grey_finance. Support: support.grey.co. Physical: 1285 West Broadway Suite 600, Vancouver BC V6H 3X8 (Canada) | **VERIFIED** - hello@grey.co and marketing@grey.co extracted from grey.co website. Use marketing@grey.co for partnership pitch |
 
 ---
 
@@ -123,6 +125,7 @@ These have confirmed email addresses. Customize the pitches from `03-PITCH-ENGIN
 - Interswitch → developer@interswitchgroup.com + partnerships@interswitchgroup.com (InterswitchSPAK uni engagement precedent)
 - Termii → support@termii.com + ada.obi@termii.ai (communications API, developer adoption angle)
 - Slot Systems → info@slot.ng (device prizes for hackathon, biggest impact-per-naira sponsorship)
+- Grey → marketing@grey.co or hello@grey.co (foreign accounts for remote-work-ready students, developer angle)
 
 ### Tier 2: LinkedIn-First Approach
 These companies have no public partnership email. Start with LinkedIn InMail to the right person:
@@ -134,8 +137,7 @@ These companies have no public partnership email. Start with LinkedIn InMail to 
 - Mono → LinkedIn @withmono (DM Head of Developer Relations, fintech API angle)
 - Andela → LinkedIn @andela (DM Head of Talent Partnerships, recruitment pipeline angle)
 - ALX Africa → LinkedIn @alxafrica (DM Head of Partnerships, training cohort sign-ups angle)
-- Raenest → LinkedIn @raenest (DM Head of Partnerships / Marketing, rent-now-pay-later solution for students moving off-campus)
-- Grey → LinkedIn @grey (DM Head of Partnerships / Marketing, foreign accounts and USD cards for remote-work-ready students)
+- Raenest → LinkedIn @raenest (DM Head of Partnerships / Marketing, rent-now-pay-later solution for students moving off-campus - NO PUBLIC EMAIL)
 
 ### Tier 3: Branch Visit + Formal Letter
 Traditional banks respond best to formal letters delivered to branch managers who escalate to CSR/Marketing HQ:
