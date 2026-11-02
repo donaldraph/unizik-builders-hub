@@ -392,12 +392,12 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 
 ---
 
-## B22. Raenest
+## B22. Raenest (formerly Geepay)
 
 | Field | Detail |
 |-------|--------|
 | **Tagline** | "Rent Now, Pay Later" |
-| **Overview & Core Users** | Raenest is a Nigerian fintech platform that provides flexible rent payment solutions. They allow users to pay rent monthly or quarterly instead of the traditional annual lump-sum payment. Core users are young professionals and students who struggle with upfront rent payments. |
+| **Overview & Core Users** | Raenest (formerly Geepay) is a Nigerian fintech platform that provides flexible rent payment solutions. They allow users to pay rent monthly or quarterly instead of the traditional annual lump-sum payment. Core users are young professionals and students who struggle with upfront rent payments. Founded as Geepay, they rebranded to Raenest to focus specifically on solving Africa's housing affordability crisis. |
 | **Value Alignment** | UNIZIK students are entering the housing rental market, and many struggle with annual rent payments (especially final-year students and postgrads moving off-campus). Raenest solves this exact pain point. Sponsoring the AWS Student Community Day positions Raenest as the go-to solution for housing affordability among young Nigerians entering the workforce. A booth at the event where students can learn about flexible rent payments and sign up for waitlist access creates immediate value. The AWS SBG audience is tech-literate, mobile-first, and exactly Raenest's ideal early-adopter demographic. |
 | **Outreach Channels** | LinkedIn: Search "Raenest Partnerships" or "Raenest Marketing". Twitter/X: @raenest. Email: hello@raenest.com or partnerships@raenest.com (estimate). Website: raenest.com. |
 | **Suggested Tier** | **Silver Partner** or **Bronze Partner** (booth, social media coverage, and logo placement) |
@@ -606,7 +606,7 @@ Based on alignment strength, budget likelihood, and outreach warmth:
 | 37 | **She Code Africa** | Community partner, "She Code Africa Builder Award" for one female builder (laptop/mentorship) | Community Partner | Dual Event |
 | 38 | **TechCabal** | Africa's leading tech media, event coverage and articles in exchange for media booth + exclusive access | Media Partner | Dual Event |
 | 39 | **TechPoint Africa** | Second major tech media outlet, doubles coverage, validates event significance | Media Partner | Dual Event |
-| 40 | **Raenest** | Rent-now-pay-later fintech, solves housing affordability for students moving off-campus, target demographic is young professionals and students | Silver / Bronze | Single Event (SCD) |
+| 40 | **Raenest (formerly Geepay)** | Rent-now-pay-later fintech, solves housing affordability for students moving off-campus, target demographic is young professionals and students | Silver / Bronze | Single Event (SCD) |
 | 41 | **Grey** | Foreign accounts and USD cards for Africans, perfect fit for students learning cloud skills for remote work and global freelancing | Gold / Silver | Dual Event |
 
 ---
