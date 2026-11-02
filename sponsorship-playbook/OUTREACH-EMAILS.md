@@ -69,29 +69,31 @@ linkedin.com/in/donaldraph
 ### 2. Kuda Bank
 
 **Send to:** help@kuda.com (request forwarding to Partnerships/Campus Marketing team)
-**Subject:** 500+ Students at UNIZIK Are Picking Their First "Real" Bank - Kuda Should Be in the Room
+**Subject:** Partnership Opportunity: Kuda Bank x AWS Student Builder Group UNIZIK - 1,200+ Students
 
 Hi Kuda team,
 
-Here's something you probably already know: UNIZIK students are opening bank accounts left and right. The campus corridor between Ifite and Aroma Junction is basically a battleground for Zenith, First Bank, and UBA reps handing out flyers.
+I'm reaching out to explore a partnership between Kuda Bank and the AWS Student Builder Group at UNIZIK Awka.
 
-But most of these students don't want branch visits and minimum balance headaches. They want Kuda. No fees, clean app, money just works. The problem is nobody's putting Kuda directly in front of them at the right moment.
+We're hosting two AWS-backed tech events:
 
-We can fix that.
+- **AWS re:Invent Watch & Build Party** (December 4, 2026) - 500+ attendees at UNIZIK Auditorium
+- **AWS Student Community Day Awka** (Q1 2027) - 700+ attendees, full-day conference
 
-I lead the **AWS Student Builder Group at UNIZIK**, backed by Amazon Web Services. We're hosting two major events:
+Amazon Web Services backs us directly with grants and premium training access. Our members are students actively building cloud computing skills, shipping projects, and learning skills that lead to remote jobs and tech careers.
 
-- **AWS re:Invent Watch & Build Party** (Dec 4, 2026) - 500+ students
-- **AWS Student Community Day Awka** (Q1 2027) - 700+ students and early-career professionals
+**Where Kuda fits:**
 
-These aren't random campus hangouts. These are students actively building cloud computing skills, shipping projects, learning things that lead to remote jobs and tech careers. High-value accounts.
+We're looking for a banking partner and would like Kuda to be the official bank for our events. This includes:
 
-What I'm proposing:
+- Kuda sign-up booth at both events (QR code download, staff for onboarding support)
+- Kuda-branded prize for hackathon winners (₦10,000 dropped into winner's Kuda account)
+- Logo placement on all event materials, social media, and livestream
+- Stage recognition as our banking partner
 
-- A **Kuda sign-up booth** at both events. QR code to download, staff on ground to help with onboarding. Hundreds of new accounts in one afternoon.
-- **Kuda-branded prize**: "₦10,000 dropped into your Kuda account" for hackathon winners. Simple, memorable, on-brand.
-- Logo placement on all event collateral, social media shoutouts, and livestream graphics.
-- Stage mention: "Banking for this event powered by Kuda." Clean and direct.
+These students are opening their first "real" bank accounts right now, and this puts Kuda directly in front of 1,200+ high-value accounts in one go.
+
+Everything you need to review is attached: our AWS affiliation letter, partnership overview, and the full event deck with tier pricing.
 
 If this should land on someone else's desk, I'd be grateful for the redirect.
 
