@@ -1036,6 +1036,8 @@ We'd like to create the "She Code Africa Builder Award" at our Student Community
 - Dedicated stage time
 - Named award that puts SCA front and center
 
+**To be clear:** We're not expecting financial support from She Code Africa. We're looking for community partnership and cross-promotion. The award can be sponsored separately or kept non-monetary (recognition + mentorship package).
+
 Everything you need to review is attached: our AWS affiliation letter, partnership overview, and the full event deck.
 
 If this doesn't land on the right desk, I'd appreciate it if you could pass it along to whoever handles community partnerships at SCA.
@@ -1072,6 +1074,8 @@ Amazon Web Services backs us directly. This is the first AWS Student Community e
 - Logo on all materials as "Official Media Partner"
 - First access to post-event impact data
 
+**To be clear:** We're not requesting financial sponsorship from TechCabal. We're looking for media coverage and partnership. All we need is the story told and your presence at the events.
+
 Everything you need to review is attached: our AWS affiliation letter, partnership overview, and the full event deck.
 
 If this sits better with someone else on your team, I'd be grateful if you could point me their way.
@@ -1106,6 +1110,8 @@ Amazon Web Services backs us directly with grants. Our members are actively buil
 - Media booth and exclusive access at both events
 - Logo on all materials as "Media Partner"
 - First access to event data, attendee demographics, and impact numbers
+
+**To be clear:** We're not requesting financial sponsorship from TechPoint Africa. We're looking for media coverage and partnership. All we need is the story told and your presence at the events.
 
 Everything you need to review is attached: our AWS affiliation letter, partnership overview, and the full event deck.
 
@@ -1354,6 +1360,80 @@ Amazon Web Services backs us directly. We're looking for a device partner to pro
 Everything you need to review is attached: our AWS affiliation letter, partnership overview, and the full event deck.
 
 If this needs to reach your marketing or partnerships team specifically, I'd appreciate the pointer.
+
+Best,
+Donald Anyamba
+AWS Student Builder Group Leader, UNIZIK Awka
+donaldraph.dev@gmail.com | +234 704 979 1307
+linkedin.com/in/donaldraph
+
+---
+
+### 40. Raenest (Rent Payment Fintech)
+
+**Send to:** Via LinkedIn InMail (search "Raenest Partnerships" or "Raenest Marketing")
+**Subject:** Partnership Opportunity: Raenest x AWS Student Builder Group UNIZIK - 700+ Students Entering the Rental Market
+
+Hi Raenest team,
+
+I'm reaching out to explore a partnership between Raenest and the AWS Student Builder Group at UNIZIK Awka.
+
+We're hosting two AWS-backed tech events:
+
+- **AWS re:Invent Watch & Build Party** (December 4, 2026) - 500+ attendees
+- **AWS Student Community Day Awka** (Q1 2027) - 700+ attendees (hackathon, workshops, career panels)
+
+Amazon Web Services backs us directly with grants and premium training access. Our members are students learning cloud computing and tech skills, and many are in their final year or postgrad - exactly the group that's about to move off-campus and face the annual rent payment challenge.
+
+**Where Raenest fits:**
+
+- Booth at both events showcasing the "Pay Rent Monthly" solution
+- Workshop or lightning talk: "How to Afford Off-Campus Housing Without Upfront Lump-Sum Rent"
+- Logo on all event materials and social media
+- Direct access to 700+ students who are your ideal early-adopter demographic
+
+UNIZIK has 36,000+ students, many of whom struggle with annual rent payments. This partnership positions Raenest as the go-to solution for housing affordability among South-East Nigeria students.
+
+Everything you need to review is attached: our AWS affiliation letter, partnership overview, and the full event deck.
+
+If this should reach someone specific on your partnerships or marketing team, I'd appreciate the connection.
+
+Best,
+Donald Anyamba
+AWS Student Builder Group Leader, UNIZIK Awka
+donaldraph.dev@gmail.com | +234 704 979 1307
+linkedin.com/in/donaldraph
+
+---
+
+### 41. Grey (Foreign Accounts & USD Cards)
+
+**Send to:** Via LinkedIn InMail (search "Grey Partnerships" or "Grey Marketing")
+**Subject:** Partnership Opportunity: Grey x AWS Student Builder Group UNIZIK - 700+ Students Learning Skills for Remote Work
+
+Hi Grey team,
+
+I'm reaching out to explore a partnership between Grey and the AWS Student Builder Group at UNIZIK Awka.
+
+We're hosting two AWS-backed tech events:
+
+- **AWS re:Invent Watch & Build Party** (December 4, 2026) - 500+ attendees
+- **AWS Student Community Day Awka** (Q1 2027) - 700+ attendees (hackathon, workshops, career sessions)
+
+Amazon Web Services backs us directly. Our members are learning cloud computing, software development, and tech skills that lead directly to remote jobs, freelance contracts, and international opportunities. Many will soon be receiving payments in USD from global clients or remote employers.
+
+**Where Grey fits:**
+
+- Booth at both events showcasing how to open a Grey USD account and use the virtual card
+- Workshop: "Getting Paid Globally as a Nigerian Developer - Foreign Accounts and USD Cards"
+- Logo on all event materials, social media, and livestream
+- Direct access to 700+ students who are your perfect target demographic (tech skills + remote-work-ready)
+
+Grey is the infrastructure Nigerian tech talent needs to go global. This partnership positions you as the financial tool for students entering the remote work economy.
+
+Everything you need to review is attached: our AWS affiliation letter, partnership overview, and the full event deck.
+
+If I've reached the wrong inbox, could you point me to whoever handles partnerships or campus marketing at Grey?
 
 Best,
 Donald Anyamba

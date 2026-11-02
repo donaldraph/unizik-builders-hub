@@ -134,6 +134,8 @@ These companies have no public partnership email. Start with LinkedIn InMail to 
 - Mono → LinkedIn @withmono (DM Head of Developer Relations, fintech API angle)
 - Andela → LinkedIn @andela (DM Head of Talent Partnerships, recruitment pipeline angle)
 - ALX Africa → LinkedIn @alxafrica (DM Head of Partnerships, training cohort sign-ups angle)
+- Raenest → LinkedIn @raenest (DM Head of Partnerships / Marketing, rent-now-pay-later solution for students moving off-campus)
+- Grey → LinkedIn @grey (DM Head of Partnerships / Marketing, foreign accounts and USD cards for remote-work-ready students)
 
 ### Tier 3: Branch Visit + Formal Letter
 Traditional banks respond best to formal letters delivered to branch managers who escalate to CSR/Marketing HQ:

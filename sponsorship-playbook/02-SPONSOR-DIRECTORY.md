@@ -392,6 +392,30 @@ Nationally scaled tech companies, fintechs, and telcos for whom UNIZIK's 36,000-
 
 ---
 
+## B22. Raenest
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | "Rent Now, Pay Later" |
+| **Overview & Core Users** | Raenest is a Nigerian fintech platform that provides flexible rent payment solutions. They allow users to pay rent monthly or quarterly instead of the traditional annual lump-sum payment. Core users are young professionals and students who struggle with upfront rent payments. |
+| **Value Alignment** | UNIZIK students are entering the housing rental market, and many struggle with annual rent payments (especially final-year students and postgrads moving off-campus). Raenest solves this exact pain point. Sponsoring the AWS Student Community Day positions Raenest as the go-to solution for housing affordability among young Nigerians entering the workforce. A booth at the event where students can learn about flexible rent payments and sign up for waitlist access creates immediate value. The AWS SBG audience is tech-literate, mobile-first, and exactly Raenest's ideal early-adopter demographic. |
+| **Outreach Channels** | LinkedIn: Search "Raenest Partnerships" or "Raenest Marketing". Twitter/X: @raenest. Email: hello@raenest.com or partnerships@raenest.com (estimate). Website: raenest.com. |
+| **Suggested Tier** | **Silver Partner** or **Bronze Partner** (booth, social media coverage, and logo placement) |
+
+---
+
+## B23. Grey
+
+| Field | Detail |
+|-------|--------|
+| **Tagline** | "Foreign Accounts for Africans" |
+| **Overview & Core Users** | Grey (grey.co) is a Nigerian fintech platform that provides virtual foreign bank accounts (USD, GBP, EUR) and debit cards to Africans. Their core users are remote workers, freelancers, and young professionals receiving payments in foreign currencies. |
+| **Value Alignment** | AWS Student Builder Group members are learning cloud computing skills that lead to remote jobs, freelance contracts, and international opportunities. Many will soon be receiving payments in USD from global clients or employers. Grey is the infrastructure they'll need to receive those payments. Sponsoring the AWS events positions Grey as the go-to financial tool for Nigerian tech talent going global. A booth demonstrating how to open a Grey USD account and showcasing the virtual card product creates immediate value for students already thinking about remote work. This is a perfect audience match. |
+| **Outreach Channels** | LinkedIn: Search "Grey Partnerships" or "Grey Marketing". Twitter/X: @grey. Email: hello@grey.co or partnerships@grey.co (estimate). Website: grey.co. Instagram: @grey. |
+| **Suggested Tier** | **Gold Partner** or **Silver Partner** (booth, workshop on "Getting Paid Globally as a Nigerian Developer", social media coverage, logo placement) |
+
+---
+
 # POOL C - ANAMBRA-ROOTED PARTNERS & TRADITIONAL BANKS
 
 Companies with deep roots in Anambra State, South-East Nigeria, or the traditional banking sector - targeting CSR budgets, youth empowerment mandates, and community goodwill.
@@ -582,6 +606,8 @@ Based on alignment strength, budget likelihood, and outreach warmth:
 | 37 | **She Code Africa** | Community partner, "She Code Africa Builder Award" for one female builder (laptop/mentorship) | Community Partner | Dual Event |
 | 38 | **TechCabal** | Africa's leading tech media, event coverage and articles in exchange for media booth + exclusive access | Media Partner | Dual Event |
 | 39 | **TechPoint Africa** | Second major tech media outlet, doubles coverage, validates event significance | Media Partner | Dual Event |
+| 40 | **Raenest** | Rent-now-pay-later fintech, solves housing affordability for students moving off-campus, target demographic is young professionals and students | Silver / Bronze | Single Event (SCD) |
+| 41 | **Grey** | Foreign accounts and USD cards for Africans, perfect fit for students learning cloud skills for remote work and global freelancing | Gold / Silver | Dual Event |
 
 ---
 
