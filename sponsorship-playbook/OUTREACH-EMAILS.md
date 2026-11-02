@@ -1369,10 +1369,10 @@ linkedin.com/in/donaldraph
 
 ---
 
-### 40. Raenest (formerly Geepay)
+### 40. Raenest (Rent Payment Fintech)
 
 **Send to:** Via LinkedIn InMail (search "Raenest Partnerships" or "Raenest Marketing") OR use help.raenest.com / contact form at raenest.com/contact-us (no public partnership email available)
-**Subject:** Partnership Opportunity: Raenest (formerly Geepay) x AWS Student Builder Group UNIZIK - 700+ Students
+**Subject:** Partnership Opportunity: Raenest x AWS Student Builder Group UNIZIK - 700+ Students Entering the Rental Market
 
 Hi Raenest team,
 
